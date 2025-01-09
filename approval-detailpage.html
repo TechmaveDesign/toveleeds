@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approval Detail</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS -->
+</head>
+<body>
+    <div class="approval-detail">
+        <h1>Approval Detail</h1>
+        
+        <!-- Approval Information -->
+        <div class="approval-info">
+            <p><strong>Job/Certificate ID:</strong> JO-001</p>
+            <p><strong>Client Name:</strong> Stephan Peralt</p>
+            <p><strong>Inspector:</strong> Alex Doe</p>
+            <p><strong>Submission Date:</strong> 2024-01-15</p>
+        </div>
+        
+        <!-- Multi-Level Workflow Progress -->
+        <div class="workflow-progress">
+            <h3>Approval Workflow</h3>
+            <div class="progress-bar">
+                <span class="step completed">Supervisor</span>
+                <span class="step active">Technical Manager</span>
+                <span class="step">OM/GM</span>
+            </div>
+        </div>
+
+        <!-- Action Section -->
+        <div class="action-section">
+            <h3>Take Action</h3>
+            <textarea placeholder="Add comments (optional)"></textarea>
+            <button class="approve-btn">Approve</button>
+            <button class="reject-btn">Reject</button>
+        </div>
+        
+        <!-- Related Documents -->
+        <div class="related-documents">
+            <h3>Related Documents</h3>
+            <ul>
+                <li><a href="#">Inspection Report.pdf</a></li>
+                <li><a href="#">Certificate Draft.docx</a></li>
+            </ul>
+        </div>
+        
+        <!-- Comments Section -->
+        <div class="comments-section">
+            <h3>Previous Comments</h3>
+            <ul>
+                <li><strong>Supervisor:</strong> Looks good to proceed. (2024-01-14)</li>
+                <li><strong>Technical Manager:</strong> Need to verify client details. (2024-01-15)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

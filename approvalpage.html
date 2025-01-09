@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approval Board</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS -->
+</head>
+<body>
+    <div class="approval-board">
+        <h1>Approval Board</h1>
+        
+        <!-- Summary Panel -->
+        <div class="summary-panel">
+            <div class="summary-item">
+                <h3>Supervisor</h3>
+                <p>Pending Approvals: <span class="count">5</span></p>
+            </div>
+            <div class="summary-item">
+                <h3>Technical Manager</h3>
+                <p>Pending Approvals: <span class="count">3</span></p>
+            </div>
+            <div class="summary-item">
+                <h3>OM/GM</h3>
+                <p>Pending Approvals: <span class="count">2</span></p>
+            </div>
+        </div>
+
+        <!-- Filter Options -->
+        <div class="filter-options">
+            <label for="filter-type">Filter by:</label>
+            <select id="filter-type">
+                <option value="all">All Approvals</option>
+                <option value="inspection">Inspection Reports</option>
+                <option value="certificate">Certificates</option>
+            </select>
+        </div>
+
+        <!-- Approval List Table -->
+        <table class="approval-list">
+            <thead>
+                <tr>
+                    <th>Job/Certificate ID</th>
+                    <th>Client Name</th>
+                    <th>Inspector/Trainer</th>
+                    <th>Submission Date</th>
+                    <th>Approval Level</th>
+                    <th>Current Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>JO-001</td>
+                    <td>Stephan Peralt</td>
+                    <td>Alex Doe</td>
+                    <td>2024-01-15</td>
+                    <td>Supervisor</td>
+                    <td><span class="status-pending">Pending</span></td>
+                    <td>
+                        <button class="view-details-btn" onclick="openDetailPage('JO-001')">View Details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>CR-005</td>
+                    <td>Elena Cruz</td>
+                    <td>Mia Lee</td>
+                    <td>2024-01-16</td>
+                    <td>Technical Manager</td>
+                    <td><span class="status-pending">Pending</span></td>
+                    <td>
+                        <button class="view-details-btn" onclick="openDetailPage('CR-005')">View Details</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
