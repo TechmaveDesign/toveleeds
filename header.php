@@ -568,7 +568,7 @@
 
                                 <li class="">
                                     <a href="all-locations.php">
-                                    <iconify-icon icon="fluent:location-24-regular"></iconify-icon> <span>All Regions</span>
+                                    <iconify-icon icon="fluent:location-24-regular"></iconify-icon> <span>All Regions </span>
                                         
                                     </a>
                                     
