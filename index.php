@@ -335,7 +335,7 @@
 					<div class="d-flex align-items-center justify-content-between flex-wrap">
 						<h5>Notifications</h5>
 						<div>
-							<a href="#" class="btn btn-light btn-sm px-3">View All</a>
+							<a href="all-notification.php" class="btn btn-light btn-sm px-3">View All</a>
 						</div>
 					</div>
 				</div>

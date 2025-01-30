@@ -6,14 +6,14 @@
     <!-- Breadcrumb -->
     <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb ">
         <div class="my-auto mb-2">
-            <h2 class="mb-1">All Locations</h2>
+            <h2 class="mb-1">All Regions</h2>
             <nav>
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item">
                         <a href="index.html"><i class="ti ti-smart-home"></i></a>
                     </li>
                   
-                    <li class="breadcrumb-item active" aria-current="page">All Locations</li>
+                    <li class="breadcrumb-item active" aria-current="page">All Regions</li>
                 </ol>
             </nav>
         </div>
@@ -22,7 +22,7 @@
             <div class="mb-2">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#add_location"
                     class="btn btn-primary d-flex align-items-center cmnaddbtn">
-                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Add New Location
+                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Add New Region
                 </a>
             </div>
             <div class="head-icons ms-2">
@@ -44,7 +44,7 @@
                     <thead class="thead-light">
                         <tr>
                             <th>S.No.</th>
-                            <th>Location Name</th>
+                            <th>Region Name</th>
                             <th>Created On</th>
                             <th>Status</th>
                             <th>Action</th>
@@ -241,7 +241,7 @@
 			<div class="modal-dialog modal-dialog-centered modal-md">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h4 class="modal-title">Add New Location</h4>
+						<h4 class="modal-title">Add New Region</h4>
 						<button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
 							<i class="ti ti-x"></i>
 						</button>
@@ -251,7 +251,7 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="mb-3">
-										<label class="form-label">Location Name</label>
+										<label class="form-label">Region Name</label>
 										<input type="text" class="form-control">
 									</div>	
 								</div>
@@ -269,7 +269,7 @@
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</button>
-							<button type="submit" class="btn btn-primary">Add Location</button>
+							<button type="submit" class="btn btn-primary">Add Region</button>
 						</div>
 					</form>
 				</div>
@@ -282,7 +282,7 @@
 			<div class="modal-dialog modal-dialog-centered modal-md">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h4 class="modal-title">Edit Location</h4>
+						<h4 class="modal-title">Edit Region</h4>
 						<button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
 							<i class="ti ti-x"></i>
 						</button>
@@ -292,7 +292,7 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="mb-3">
-										<label class="form-label">Location Name</label>
+										<label class="form-label">Region Name</label>
 										<input type="text" class="form-control" value="Mumbai">
 									</div>	
 								</div>
@@ -310,7 +310,7 @@
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</button>
-							<button type="submit" class="btn btn-primary">Save Location</button>
+							<button type="submit" class="btn btn-primary">Save Region</button>
 						</div>
 					</form>
 				</div>
@@ -329,7 +329,7 @@
                             <img src="assets/img/newimages/delectvector.gif" alt="">
                         </div>
 						<h4 class="mb-2">Confirm Delete</h4>
-						<p class="mb-3">You want to delete this location,  this cant  be undone <br> once you delete.</p>
+						<p class="mb-3">You want to delete this Region,  this cant  be undone <br> once you delete.</p>
 						<div class="d-flex justify-content-center">
 							<a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
 							<a href="all-locations.php" class="btn btn-danger">Yes, Delete</a>

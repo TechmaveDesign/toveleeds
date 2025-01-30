@@ -125,7 +125,11 @@
                                                     <span class="title" contenteditable="false">Your Title</span>
                                                     <span class="edit-icon">&#9998;</span>
                                                 </div>
-                                              
+                                                <div class="title_edtibale_desc_container">
+                                                    <p>This checklist is designed for managing tasks or questions
+                                                        related to the selected template. Add your specific questions
+                                                        and response types here.</p>
+                                                </div>
                                             </div>
                                             <div class="questionans_container">
                                                 <div class="questionheader_title_head">
@@ -143,7 +147,115 @@
                                                 <div class="template_pagecontainer">
                                                     <div class="question_listitem">
                                                         <ul class="sortable-list" id="accordion">
-                                                          
+                                                            <!-- <li class="sortable-item">
+                                                                <div class="sortebla_item_edit">
+                                                                    <span class="handle-dots">
+                                                                        <iconify-icon icon="ph:dots-six-vertical-bold">
+                                                                        </iconify-icon>
+                                                                    </span>
+                                                                    <input type="text" class="question-input"
+                                                                        placeholder="Type Question">
+                                                                    <div class="col-lg-4">
+                                                                        <div class="answerboxwth_dropdown">
+                                                                            <div type="button"
+                                                                                class="answer-button accordion-button"
+                                                                                onclick="toggleAccordion(this, 'Modal 1');">
+                                                                                <div
+                                                                                    class="iconaccordian_fields purpleiush_bg">
+                                                                                    T</div> Text
+                                                                                Answer
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="accordion-content active">
+                                                                    <div class="item-settings__Container">
+                                                                        <div class="leftfield_setting_container">
+
+                                                                            <div class="required_firlscheck">
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox" value=""
+                                                                                        id="flexCheckDefault">
+                                                                                    <label class="form-check-label"
+                                                                                        for="flexCheckDefault">
+                                                                                        Required
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div>
+                                                                                <div class="field_format">Format: <span
+                                                                                        role="button" class="">Short
+                                                                                        answer</span></div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <button class="delete-button"
+                                                                        onclick="deleteItem(this)">
+                                                                        <iconify-icon icon="fluent:delete-24-regular">
+                                                                        </iconify-icon>
+                                                                    </button>
+
+                                                                </div>
+
+                                                            </li>
+                                                            <li class="sortable-item">
+                                                                <div class="sortebla_item_edit">
+                                                                    <span class="handle-dots">
+                                                                        <iconify-icon icon="ph:dots-six-vertical-bold">
+                                                                        </iconify-icon>
+                                                                    </span>
+                                                                    <input type="text" class="question-input"
+                                                                        placeholder="Type Question">
+                                                                    <div class="col-lg-4">
+                                                                        <div class="answerboxwth_dropdown">
+                                                                            <div type="button"
+                                                                                class="answer-button accordion-button"
+                                                                                onclick="toggleAccordion(this, 'Modal 1');">
+                                                                                <div
+                                                                                    class="iconaccordian_fields greeniush_bg">
+                                                                                    1,2</div>
+                                                                                Number
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="accordion-content">
+                                                                    <div class="item-settings__Container">
+                                                                        <div class="leftfield_setting_container">
+
+                                                                            <div class="required_firlscheck">
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox" value=""
+                                                                                        id="flexCheckDefault">
+                                                                                    <label class="form-check-label"
+                                                                                        for="flexCheckDefault">
+                                                                                        Required
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div>
+                                                                                <div class="field_format">Format: <span
+                                                                                        role="button" class="">
+                                                                                        Number</span></div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <button class="delete-button"
+                                                                        onclick="deleteItem(this)">
+                                                                        <iconify-icon icon="fluent:delete-24-regular">
+                                                                        </iconify-icon>
+                                                                    </button>
+
+                                                                </div>
+
+                                                            </li> -->
                                                             <li class="sortable-item">
                                                                 <div class="sortebla_item_edit">
                                                                     <span class="handle-dots">
@@ -162,7 +274,7 @@
                                                                                     <iconify-icon
                                                                                         icon="fluent:checkbox-checked-16-filled">
                                                                                     </iconify-icon>
-                                                                                </div> Options
+                                                                                </div> Text
                                                                             </div>
 
                                                                         </div>
@@ -172,38 +284,20 @@
                                                                 <div class="accordion-content">
                                                                     <div class="item-settings__Container">
                                                                         <div class="leftfield_setting_container">
-                                                                           <!-- Input Groups in <ul> format -->
-                                                                            <div class="input-group1">
-                                                                                <ul class="input-list">
-                                                                                    <li class="input-container">
-                                                                                        <label for="input">Option 1:</label>
-                                                                                        <div class="optionBox">
-                                                                                            <input type="text" name="input[]" class="form-control">
-                                                                                            <button type="button" class="remove-btn" onclick="removeInput(this)">
-                                                                                                <iconify-icon icon="material-symbols:delete-outline-rounded"></iconify-icon>
-                                                                                            </button>
-                                                                                        </div>
-                                                                                         <!-- Mark as Answer Container -->
-                                                                                         <div class="mark-answer-container" onclick="markAsAnswer(this)">
-                                                                                                <input type="radio" name="answer" class="answer-radio">
-                                                                                                <button type="button" class="mark-answer-btn">Mark as Answer</button>
-                                                                                            </div>
-                                                                                    </li>
-                                                                                </ul>
-                                                                                <div class="addOptionButton">
-                                                                                    <button type="button" class="add-more-btn" onclick="addInput(this)">Add More</button>
+
+                                                                            <div class="required_firlscheck">
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox" value=""
+                                                                                        id="flexCheckDefault">
+                                                                                    <label class="form-check-label"
+                                                                                        for="flexCheckDefault">
+                                                                                        Required
+                                                                                    </label>
                                                                                 </div>
                                                                             </div>
+
                                                                         </div>
-
-                                                                        <div class="AttachmentImg">
-                                                                            <div class="form-group">
-                                                                                <label for="">Attachment</label>
-                                                                                <input name="file1" type="file" class="dropify" data-height="100" />
-                                                                            </div>
-                                                                        </div>
-
-
 
                                                                     </div>
                                                                     <button class="delete-button"
@@ -244,40 +338,23 @@
                                                                 </div>
 
                                                                 <div class="accordion-content">
-                                                                    <div class="item-settings__Container ImageAppendSection">
+                                                                    <div class="item-settings__Container">
                                                                         <div class="leftfield_setting_container">
 
-                                                                        <div id="imageBoxContainer">
-                                                                                <div class="ImageBoxSub">
-                                                                                <div class="ImageBoxKOp">
-                                                                                    <div class="image-display">
-                                                                                    <a href="assets/img/newimages/dummyImage.png" data-fancybox="gallery">
-                                                                                        <img src="assets/img/newimages/dummyImage.png" alt="Default Image">
-                                                                                    </a>
-                                                                                    <p class="truncate">No image uploaded</p>
-                                                                                    </div>
-                                                                                    <div class="upload-card">
-                                                                                    <button class="upload-button" type="button"><iconify-icon icon="majesticons:plus-line"></iconify-icon></button>
-                                                                                    <input type="file" class="image-upload" accept="image/*" style="display: none;">
-                                                                                    <button class="remove-button" type="button"><iconify-icon icon="tabler:trash"></iconify-icon></button>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="footerImageBOx">
-                                                                                    <div class="mark-answer-Box">
-                                                                                    <input type="radio" name="answer" class="answer-radioOption">
-                                                                                    <button type="button" class="mark-answer-action-btn" type="button">Mark as Answer</button>
-                                                                                    </div>
-                                                                                    
-                                                                                </div>
+                                                                            <div class="required_firlscheck">
+                                                                                <div class="form-check">
+                                                                                    <input class="form-check-input"
+                                                                                        type="checkbox" value=""
+                                                                                        id="flexCheckDefault">
+                                                                                    <label class="form-check-label"
+                                                                                        for="flexCheckDefault">
+                                                                                        Required
+                                                                                    </label>
                                                                                 </div>
                                                                             </div>
-                                                                            
 
                                                                         </div>
-                                                                        <div class="ActionArea">
-                                                                          <button class="addMoreImageOptionBtn" type="button"><iconify-icon icon="stash:plus-duotone"></iconify-icon> Add Options</button>
-                                                                        </div>
-                                                                       
+
                                                                     </div>
                                                                     <button class="delete-button"
                                                                         onclick="deleteItem(this)">
@@ -296,9 +373,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="main-container">
-                                            <!-- New sections will be appended here -->
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -309,10 +383,7 @@
                                     <iconify-icon icon="icon-park-outline:plus"></iconify-icon>
                                     Add Question
                                 </button>
-                                <button type="button" class="add-section-button" onclick="addSection()">
-                                <iconify-icon icon="tabler:section"></iconify-icon>
-                                    Add Section
-                                </button>
+
                             </div>
                             <a href="all-templates.php" class="canvascancel_button commonCanvas_buttonFooter">Cancel</a>
                             <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Publish <iconify-icon icon="grommet-icons:share-rounded"></iconify-icon></button>
@@ -428,7 +499,7 @@
                                 <div class="item-type-menu-styled__MenuHeader-sc-1jgt554-4 iLmpfC">
                                     <div class="acrd_rightbox_title">Other responses</div>
                                 </div>
-                                <div class="menu_items__acrd">
+                                <!-- <div class="menu_items__acrd">
                                     <div class="type_icon__box purpleiush_bg">
                                         T
                                     </div>
@@ -439,7 +510,7 @@
                                         1,2
                                     </div>
                                     <span>Number</span>
-                                </div>
+                                </div> -->
                                 <div class="menu_items__acrd">
                                     <div class="type_icon__box bleuiush_bg">
                                         <svg viewBox="0 0 24 24" width="15" height="15" focusable="false"
@@ -450,15 +521,15 @@
                                             </path>
                                         </svg>
                                     </div>
-                                    <span>Options</span>
+                                    <span>Text</span>
                                 </div>
-                                <div class="item-type-menu-styled__MenuDivider-sc-1jgt554-6 lmQjgD"></div>
+                                <!-- <div class="item-type-menu-styled__MenuDivider-sc-1jgt554-6 lmQjgD"></div>
                                 <div class="menu_items__acrd">
                                     <div class="type_icon__box radiush_bg">
                                         <iconify-icon icon="solar:calendar-broken"></iconify-icon>
                                     </div>
                                     <span>Date &amp; Time</span>
-                                </div>
+                                </div> -->
                                 <div class="menu_items__acrd">
                                     <div class="type_icon__box darkgreen_bg">
                                         <svg width="15" height="15" viewBox="0 0 16 16" focusable="false" fill="none">
@@ -629,7 +700,7 @@
 <!-- template tiele editable js start -->
 <script>
     $(document).ready(function() {
-        var defaultTitle = "Your Section Title";
+        var defaultTitle = "Your Checklist Title";
         var titleContainer = $('.editable-title');
         var titleElement = $('.title');
         var editIcon = $('.edit-icon');
@@ -722,394 +793,3 @@
 </script>
 <!-- end -->
 
-
-
-
-<script>
-    // Function to add new input fields
-    function addInput(button) {
-        const inputGroup = button.closest('.input-group1');
-        const inputList = inputGroup.querySelector('.input-list');
-        const inputCount = inputList.querySelectorAll('.input-container').length + 1;
-
-        // Create a new input container (li)
-        const newLi = document.createElement('li');
-        newLi.classList.add('input-container');
-        newLi.innerHTML = `
-            <label for="input">Option ${inputCount}:</label>
-            <div class="optionBox">
-                <input type="text" name="input[]" class="form-control">
-                
-                
-                <button type="button" class="remove-btn" onclick="removeInput(this)">
-                    <iconify-icon icon="material-symbols:delete-outline-rounded"></iconify-icon>
-                </button>
-            </div>
-            <!-- Mark as Answer Container -->
-                <div class="mark-answer-container" onclick="markAsAnswer(this)">
-                    <input type="radio" name="answer" class="answer-radio">
-                    <button type="button" class="mark-answer-btn">
-                        Mark as Answer
-                    </button>
-                </div>
-
-        `;
-        inputList.appendChild(newLi);
-    }
-
-    // Function to remove an input field
-    function removeInput(button) {
-        const inputItem = button.closest('.input-container');
-        inputItem.remove();
-    }
-
-    // Function to mark an input as the answer
-    function markAsAnswer(container) {
-        const inputGroup = container.closest('.input-group1');
-        const allContainers = inputGroup.querySelectorAll('.mark-answer-container');
-
-        // Unselect all other buttons
-        allContainers.forEach(item => {
-            item.classList.remove('selected');
-            item.querySelector('.answer-radio').checked = false;
-            item.querySelector('.mark-answer-btn').innerHTML = "Mark as Answer";
-        });
-
-        // Select this one
-        container.classList.add('selected');
-        container.querySelector('.answer-radio').checked = true;
-        container.querySelector('.mark-answer-btn').innerHTML = `
-            <iconify-icon icon="material-symbols:check-box-outline"></iconify-icon> Marked as Answer
-        `;
-    }
-</script>
-
-<script type="text/javascript" src="https://jeremyfagis.github.io/dropify/dist/js/dropify.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://jeremyfagis.github.io/dropify/dist/css/dropify.min.css">
-<script>
-    $('.dropify').dropify();
-</script>
-
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-<script>
-   $(document).ready(function () {
-  const defaultImage = "assets/img/newimages/dummyImage.png";
-
-  // Handle click on upload button
-  $(document).on('click', '.upload-button', function () {
-    $(this).siblings('.image-upload').click();
-  });
-
-  // Handle image upload
-  $(document).on('change', '.image-upload', function (event) {
-    const file = event.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = function (e) {
-        $(event.target).closest('.ImageBoxKOp').find('.image-display').html(`
-          <a href="${e.target.result}" data-fancybox="gallery">
-            <img src="${e.target.result}" alt="${file.name}">
-          </a>
-          <p class="truncate">${file.name}</p>
-        `);
-        $.fancybox.bind("[data-fancybox]", {});
-      };
-      reader.readAsDataURL(file);
-    }
-  });
-
-  // Handle remove button inside upload section
-  $(document).on('click', '.remove-button', function () {
-    // Remove the entire image box (ImageBoxSub) on click of the remove button
-    $(this).closest('.ImageBoxSub').remove();
-  });
-
-  // Handle "Mark as Answer" button
-  $(document).on('click', '.mark-answer-action-btn', function () {
-    $('.mark-answer-action-btn').removeClass('marked').html('<span>Mark as Answer</span>');
-    $(this).html(`
-      <iconify-icon icon="gg:check-r"></iconify-icon>
-      <span>Marked as Answer</span>
-    `).addClass('marked');
-  });
-
-  // Handle Add More button
-  $('.addMoreImageOptionBtn').on('click', function () {
-    const newImageBox = `
-      <div class="ImageBoxSub">
-        <div class="ImageBoxKOp">
-          <div class="image-display">
-            <a href="${defaultImage}" data-fancybox="gallery">
-              <img src="${defaultImage}" alt="Default Image">
-            </a>
-            <p class="truncate">No image uploaded</p>
-          </div>
-          <div class="upload-card">
-            <button class="upload-button" type="button"><iconify-icon icon="majesticons:plus-line"></iconify-icon></button>
-            <input type="file" class="image-upload" accept="image/*" style="display: none;">
-            <button class="remove-button" type="button"><iconify-icon icon="tabler:trash"></iconify-icon></button>
-          </div>
-        </div>
-        <div class="footerImageBOx">
-          <div class="mark-answer-Box">
-            <input type="radio" name="answer" class="answer-radioOption">
-            <button type="button" class="mark-answer-action-btn">Mark as Answer</button>
-          </div>
-        </div>
-      </div>
-    `;
-    $('#imageBoxContainer').append(newImageBox);
-    $.fancybox.bind("[data-fancybox]", {});
-  });
-});
-
-  </script>
-
-<script>
-  function addSection() {
-    // Create the new templateformbox structure
-    var newTemplateBox = $("<div class='templateformbox'>" +
-        "<div class='template_title_edgt'>" +
-            "<div class='editable-title' contenteditable='false'>" +
-                "<span class='title'>Your Title</span>" +
-                "<span class='edit-icon'>&#9998;</span>" +
-            "</div>" +
-        "</div>" +
-        "<div class='questionans_container'>" +
-            "<div class='questionheader_title_head'>" +
-                "<div class='row'>" +
-                    "<div class='col-lg-8 nopaddingcol'>" +
-                        "<div class='questionhead__ '>Question</div>" +
-                    "</div>" +
-                    "<div class='col-lg-4 nopaddingcol border_left_egtr'>" +
-                        "<div class='response_type_question'>Type of response</div>" +
-                    "</div>" +
-                "</div>" +
-            "</div>" +
-            "<div class='template_pagecontainer'>" +
-                "<div class='question_listitem'>" +
-                    "<ul class='sortable-list' id='accordion'>" +
-
-                        // First question (with options)
-                        "<li class='sortable-item'>" +
-                            "<div class='sortebla_item_edit'>" +
-                                "<span class='handle-dots'>" +
-                                    "<iconify-icon icon='ph:dots-six-vertical-bold'></iconify-icon>" +
-                                "</span>" +
-                                "<input type='text' class='question-input' placeholder='Type Question'>" +
-                                "<div class='col-lg-4'>" +
-                                    "<div class='answerboxwth_dropdown'>" +
-                                        "<div type='button' class='answer-button accordion-button' onclick='toggleAccordion(this, \"Modal 1\");'>" +
-                                            "<div class='iconaccordian_fields bleuiush_bg'>" +
-                                                "<iconify-icon icon='fluent:checkbox-checked-16-filled'></iconify-icon>" +
-                                            "</div> Options" +
-                                        "</div>" +
-                                    "</div>" +
-                                "</div>" +
-                            "</div>" +
-                            "<div class='accordion-content'>" +
-                                "<div class='item-settings__Container'>" +
-                                    "<div class='leftfield_setting_container'>" +
-                                        "<div class='input-group1'>" +
-                                            "<ul class='input-list'>" +
-                                                "<li class='input-container'>" +
-                                                    "<label for='input'>Option 1:</label>" +
-                                                    "<div class='optionBox'>" +
-                                                        "<input type='text' name='input[]' class='form-control'>" +
-                                                        "<button type='button' class='remove-btn' onclick='removeInput(this)'>" +
-                                                            "<iconify-icon icon='material-symbols:delete-outline-rounded'></iconify-icon>" +
-                                                        "</button>" +
-                                                    "</div>" +
-                                                    "<div class='mark-answer-container' onclick='markAsAnswer(this)'>" +
-                                                        "<input type='radio' name='answer' class='answer-radio'>" +
-                                                        "<button type='button' class='mark-answer-btn'>Mark as Answer</button>" +
-                                                    "</div>" +
-                                                "</li>" +
-                                            "</ul>" +
-                                            "<div class='addOptionButton'>" +
-                                                "<button type='button' class='add-more-btn' onclick='addInput(this)'>Add More</button>" +
-                                            "</div>" +
-                                        "</div>" +
-                                    "</div>" +
-                                    "<div class='AttachmentImg'>" +
-                                        "<div class='form-group'>" +
-                                            "<label for=''>Attachment</label>" +
-                                            "<input name='file1' type='file' class='dropify' data-height='100' />" +
-                                        "</div>" +
-                                    "</div>" +
-                                "</div>" +
-                                "<button class='delete-button' onclick='deleteItem(this)'>" +
-                                    "<iconify-icon icon='fluent:delete-24-regular'></iconify-icon>" +
-                                "</button>" +
-                            "</div>" +
-                        "</li>" +
-
-                        // Second question (with image upload)
-                        "<li class='sortable-item'>" +
-                            "<div class='sortebla_item_edit'>" +
-                                "<span class='handle-dots'>" +
-                                    "<iconify-icon icon='ph:dots-six-vertical-bold'></iconify-icon>" +
-                                "</span>" +
-                                "<input type='text' class='question-input' placeholder='Type Question'>" +
-                                "<div class='col-lg-4'>" +
-                                    "<div class='answerboxwth_dropdown'>" +
-                                        "<div type='button' class='answer-button accordion-button' onclick='toggleAccordion(this, \"Modal 1\");'>" +
-                                            "<div class='iconaccordian_fields darkgreen_bg'>" +
-                                                "<iconify-icon icon='iconoir:media-image'></iconify-icon>" +
-                                            "</div> Media" +
-                                        "</div>" +
-                                    "</div>" +
-                                "</div>" +
-                            "</div>" +
-                            "<div class='accordion-content'>" +
-                                "<div class='item-settings__Container ImageAppendSection'>" +
-                                    "<div class='leftfield_setting_container'>" +
-                                        "<div id='imageBoxContainer'>" +
-                                            "<div class='ImageBoxSub'>" +
-                                                "<div class='ImageBoxKOp'>" +
-                                                    "<div class='image-display'>" +
-                                                        "<a href='assets/img/newimages/dummyImage.png' data-fancybox='gallery'>" +
-                                                            "<img src='assets/img/newimages/dummyImage.png' alt='Default Image'>" +
-                                                        "</a>" +
-                                                        "<p class='truncate'>No image uploaded</p>" +
-                                                    "</div>" +
-                                                    "<div class='upload-card'>" +
-                                                        "<button class='upload-button' type='button'>" +
-                                                            "<iconify-icon icon='majesticons:plus-line'></iconify-icon>" +
-                                                        "</button>" +
-                                                        "<input type='file' class='image-upload' accept='image/*' style='display: none;'>" +
-                                                        "<button class='remove-button' type='button'>" +
-                                                            "<iconify-icon icon='tabler:trash'></iconify-icon>" +
-                                                        "</button>" +
-                                                    "</div>" +
-                                                "</div>" +
-                                                "<div class='footerImageBOx'>" +
-                                                    "<div class='mark-answer-Box'>" +
-                                                        "<input type='radio' name='answer' class='answer-radioOption'>" +
-                                                        "<button type='button' class='mark-answer-action-btn'>Mark as Answer</button>" +
-                                                    "</div>" +
-                                                "</div>" +
-                                            "</div>" +
-                                        "</div>" +
-                                    "</div>" +
-                                    "<div class='ActionArea'>" +
-                                        "<button class='addMoreImageOptionBtn' type='button'>" +
-                                            "<iconify-icon icon='stash:plus-duotone'></iconify-icon> Add Options" +
-                                        "</button>" +
-                                    "</div>" +
-                                "</div>" +
-                                "<button class='delete-button' onclick='deleteItem(this)'>" +
-                                    "<iconify-icon icon='fluent:delete-24-regular'></iconify-icon>" +
-                                "</button>" +
-                            "</div>" +
-                        "</li>" +
-
-                    "</ul>" +
-                "</div>" +
-            "</div>" +
-        "</div>" +
-    "</div>");
-
-    // Append the new templateformbox to the main container (replace with your actual parent container)
-    $(".main-container").append(newTemplateBox);
-
-    // Reapply dropify and sortable functionality to the newly added elements
-    newTemplateBox.find('.dropify').dropify();
-    newTemplateBox.find('.sortable-list').sortable({
-        handle: ".handle-dots",
-        axis: "y", // Allow only vertical dragging
-        containment: "parent", // Constrain to the parent container
-        tolerance: "pointer", // Use the pointer for more accurate positioning
-    }).disableSelection();
-
-    // Editable title functionality
-    newTemplateBox.find('.editable-title').each(function() {
-        var defaultTitle = "Your Section Title";
-        var titleContainer = $(this);
-        var titleElement = titleContainer.find('.title');
-        var editIcon = titleContainer.find('.edit-icon');
-
-        // Set the default title
-        titleElement.text(defaultTitle);
-
-        editIcon.click(function() {
-            // Get the current title text
-            var currentTitle = titleElement.text();
-            // If the current title is the default title, clear it for editing
-            if (currentTitle === defaultTitle) {
-                titleElement.text('');
-            }
-            titleContainer.addClass('editing_title');
-            titleElement.addClass('editing_title');
-            titleElement.attr('contenteditable', true);
-            titleElement.focus();
-            editIcon.hide();
-        });
-
-        // When the title loses focus, check if it's empty and set it to default if needed
-        titleElement.blur(function() {
-            var currentTitle = titleElement.text().trim();
-            if (currentTitle === '') {
-                titleElement.text(defaultTitle);
-            }
-            titleContainer.removeClass('editing_title');
-            titleElement.removeClass('editing_title');
-            titleElement.removeAttr('contenteditable');
-            editIcon.show();
-        });
-
-        // Hide edit icon and remove editing classes when clicking outside the title box
-        $(document).on('click', function(event) {
-            if (!$(event.target).closest(titleContainer).length) {
-                titleContainer.removeClass('editing_title');
-                titleElement.removeClass('editing_title');
-                titleElement.removeAttr('contenteditable');
-                editIcon.show();
-            }
-        });
-    });
-
-    // Handle Add More Image Option Button
-    newTemplateBox.find('.addMoreImageOptionBtn').on('click', function() {
-        var imageBoxSub = "<div class='ImageBoxSub'>" +
-            "<div class='ImageBoxKOp'>" +
-                "<div class='image-display'>" +
-                    "<a href='assets/img/newimages/dummyImage.png' data-fancybox='gallery'>" +
-                        "<img src='assets/img/newimages/dummyImage.png' alt='Default Image'>" +
-                    "</a>" +
-                    "<p class='truncate'>No image uploaded</p>" +
-                "</div>" +
-                "<div class='upload-card'>" +
-                    "<button class='upload-button' type='button'>" +
-                        "<iconify-icon icon='majesticons:plus-line'></iconify-icon>" +
-                    "</button>" +
-                    "<input type='file' class='image-upload' accept='image/*' style='display: none;'>" +
-                    "<button class='remove-button' type='button'>" +
-                        "<iconify-icon icon='tabler:trash'></iconify-icon>" +
-                    "</button>" +
-                "</div>" +
-            "</div>" +
-            "<div class='footerImageBOx'>" +
-                "<div class='mark-answer-Box'>" +
-                    "<input type='radio' name='answer' class='answer-radioOption'>" +
-                    "<button type='button' class='mark-answer-action-btn'>Mark as Answer</button>" +
-                "</div>" +
-            "</div>" +
-        "</div>";
-
-        // Append the new ImageBoxSub to the ImageBoxContainer
-        $(this).closest('.ImageAppendSection').find('#imageBoxContainer').append(imageBoxSub);
-    });
-
-    // When clicking question-input, toggle the accordion-content
-    newTemplateBox.find('.question-input').on('click', function() {
-        $(this).closest('li').find('.accordion-content').toggleClass('active');
-    });
-}
-
-
-
-</script>

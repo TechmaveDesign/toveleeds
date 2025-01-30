@@ -568,7 +568,14 @@
 
                                 <li class="">
                                     <a href="all-locations.php">
-                                    <iconify-icon icon="fluent:location-24-regular"></iconify-icon> <span>All Locations</span>
+                                    <iconify-icon icon="fluent:location-24-regular"></iconify-icon> <span>All Regions</span>
+                                        
+                                    </a>
+                                    
+                                </li>
+                                <li class="">
+                                    <a href="system-activites.php">
+                                    <iconify-icon icon="fluent:shifts-activity-24-regular"></iconify-icon> <span>System Activity</span>
                                         
                                     </a>
                                     

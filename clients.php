@@ -20,11 +20,14 @@
 			</nav>
 		</div>
 		<div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
-		
-			<div class="mb-2">
-				<a href="#" data-bs-toggle="modal" data-bs-target="#add_users"
+		<div class="mb-2">
+				<a href="client-add.php" 
 					class="btn btn-primary d-flex align-items-center cmnaddbtn"><iconify-icon icon="fluent-mdl2:add-to"></iconify-icon> Add Client</a>
 			</div>
+			<!-- <div class="mb-2">
+				<a href="#" data-bs-toggle="modal" data-bs-target="#add_users"
+					class="btn btn-primary d-flex align-items-center cmnaddbtn"><iconify-icon icon="fluent-mdl2:add-to"></iconify-icon> Add Client</a>
+			</div> -->
 			<div class="head-icons ms-2">
 				<a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
 					data-bs-original-title="Collapse" id="collapse-header">
@@ -90,7 +93,7 @@
 								<div class="d-flex align-items-center ActionDropdown">
 									<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
 										data-bs-toggle="tooltip" data-placement="top" title="View Job Orders"
-										href="job-orders.php">
+										href="client-detail.php">
 										<span class="icon">
 											<span class="feather-icon">
 												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -149,7 +152,7 @@
         <div class="d-flex align-items-center ActionDropdown">
             <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                 data-bs-toggle="tooltip" data-placement="top" title="View Job Orders"
-                href="job-orders.php">
+                href="client-detail.php">
                 <span class="icon">
                     <span class="feather-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -208,7 +211,7 @@
         <div class="d-flex align-items-center ActionDropdown">
             <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                 data-bs-toggle="tooltip" data-placement="top" title="View Job Orders"
-                href="job-orders.php">
+                href="client-detail.php">
                 <span class="icon">
                     <span class="feather-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -267,7 +270,7 @@
         <div class="d-flex align-items-center ActionDropdown">
             <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                 data-bs-toggle="tooltip" data-placement="top" title="View Job Orders"
-                href="job-orders.php">
+                href="client-detail.php">
                 <span class="icon">
                     <span class="feather-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"

@@ -86,7 +86,7 @@
 								<div class="d-flex align-items-center ActionDropdown">
 									<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
 										data-bs-toggle="tooltip" data-placement="top" title="View User Details"
-										href="##">
+										href="user-detail.php">
 										<span class="icon">
 											<span class="feather-icon">
 												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -149,7 +149,7 @@
 								<div class="d-flex align-items-center ActionDropdown">
 									<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
 										data-bs-toggle="tooltip" data-placement="top" title="View User Details"
-										href="##">
+										href="user-detail.php">
 										<span class="icon">
 											<span class="feather-icon">
 												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -211,7 +211,7 @@
 								<div class="d-flex align-items-center ActionDropdown">
 									<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
 										data-bs-toggle="tooltip" data-placement="top" title="View User Details"
-										href="##">
+										href="user-detail.php">
 										<span class="icon">
 											<span class="feather-icon">
 												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -273,7 +273,7 @@
 								<div class="d-flex align-items-center ActionDropdown">
 									<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
 										data-bs-toggle="tooltip" data-placement="top" title="View User Details"
-										href="##">
+										href="user-detail.php">
 										<span class="icon">
 											<span class="feather-icon">
 												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -336,7 +336,7 @@
 								<div class="d-flex align-items-center ActionDropdown">
 									<a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
 										data-bs-toggle="tooltip" data-placement="top" title="View User Details"
-										href="##">
+										href="user-detail.php">
 										<span class="icon">
 											<span class="feather-icon">
 												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -405,7 +405,12 @@
 								<input type="text" class="form-control">
 							</div>
 						</div>
-
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Designation</label>
+								<input type="text" class="form-control">
+							</div>
+						</div>
 						<div class="col-md-6">
 							<div class="form-group">
 								<label class="form-label">Contact Details</label>
@@ -446,16 +451,84 @@
 								</select>
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-lg-6">
 							<div class="form-group">
 								<label class="form-label">Department</label>
-								<select class="select2">
+								<div class="dropdown filterdropDownCustom available-users-dropdown-wrapper" >
+									<button class="dropbtn dropdown-toggle dropmenuBtn" type="button"
+										data-bs-toggle="dropdown" aria-expanded="false">
+										<span class="selected-count">Select Department</span>
+										<!-- <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon> -->
+									</button>
+									<div
+										class="dropdown-menu customdropdownmenu_style available-users-dropdown">
+										<div class="filTerSearchMain">
+											<input type="text" class="filterclSearch available-users-search"
+												placeholder="Search Department">
+											<iconify-icon icon="basil:search-outline"></iconify-icon>
+										</div>
+										<div class="sellallitemsMain">
+											<div class="CustomselectallContainer">
+												<input type="checkbox"
+													class="select-all-available-users form-check-input">
+												Select All
+											</div>
+											<div class="clDivider_full"></div>
+										</div>
+										<div class="Customdrpitems_container">
+											<div class="mainoptionContainer">
+												<div class="dropfilter_options">
+													<input type="checkbox"
+														class="individual-option form-check-input">
+														Inspection
+												</div>
+											</div>
+											<div class="mainoptionContainer">
+												<div class="dropfilter_options">
+													<input type="checkbox"
+														class="individual-option form-check-input">
+													NDT
+												</div>
+											</div>
+											<div class="mainoptionContainer">
+												<div class="dropfilter_options">
+													<input type="checkbox"
+														class="individual-option form-check-input">
+													Training
+												</div>
+											</div>
+											<div class="mainoptionContainer">
+												<div class="dropfilter_options">
+													<input type="checkbox"
+														class="individual-option form-check-input">
+													Operator Assessment
+												</div>
+											</div>
+										</div>
+
+										<p class="no-data" style="display: none;">No data found</p>
+									</div>
+								</div>
+							</div>
+
+							</div>
+						
+						<!-- <div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Department</label>
+								<select class="select2" multiple>
 									<option>Select an option</option>
 									<option value="Inspection">Inspection</option>
 									<option value="NDT">NDT</option>
 									<option value="Training">Training</option>
-
+									<option value="OperatorAssessment">Operator Assessment</option>
 								</select>
+							</div>
+						</div> -->
+						<div class="col-lg-12">
+							<div class="form-group">
+							<label class="form-label">Upload Signature</label>
+							<input name="file1" type="file" class="dropify" data-height="100" />
 							</div>
 						</div>
 						<!-- <div class="col-md-12">
@@ -701,6 +774,24 @@
 								</select>
 							</div>
 						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="form-label">Department</label>
+								<select class="select2">
+									<option>Select an option</option>
+									<option value="Inspection">Inspection</option>
+									<option value="NDT">NDT</option>
+									<option value="Training">Training</option>
+									<option value="OperatorAssessment">Operator Assessment</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-lg-12">
+							<div class="form-group">
+							<label class="form-label">Upload Signature</label>
+							<input name="file1" type="file" class="dropify" data-height="100" />
+							</div>
+						</div>
 						<!-- <div class="col-md-12">
 									<div class="card">
 										<div class="card-body p-0">
@@ -897,3 +988,87 @@
 <!-- /Delete Modal -->
 
 <?php include("footer.php") ?>
+
+<!----------------------
+Dropify Code Start Here
+------------------------>
+<link rel="stylesheet" type="text/css" href="https://jeremyfagis.github.io/dropify/dist/css/dropify.min.css">
+<script type="text/javascript" src="https://jeremyfagis.github.io/dropify/dist/js/dropify.min.js"></script>
+<script>
+	$('.dropify').dropify();
+
+</script>
+<!----------------------
+Dropify Code End Here
+----------------------->
+
+ <!-- custom multiple select js start -->
+ <script>
+    $(document).ready(function () {
+     // Update the count of selected options
+     function updateSelectedCount(dropdownWrapper) {
+         const selectedCount = dropdownWrapper.find(".individual-option:checked").length;
+         const selectedCountElement = dropdownWrapper.find(".selected-count");
+ 
+         if (selectedCount === 0) {
+             selectedCountElement.text("Select Location");
+         } else if (selectedCount === 1) {
+             selectedCountElement.text("1 selected");
+         } else {
+             selectedCountElement.text(`${selectedCount} selected`);
+         }
+     }
+ 
+     // Handle Select All checkbox
+     $(".select-all-available-users").on("change", function () {
+         const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+         const isChecked = $(this).prop("checked");
+         dropdownWrapper.find(".individual-option").prop("checked", isChecked);
+         updateSelectedCount(dropdownWrapper);
+     });
+ 
+     // Handle individual option selection
+     $(".individual-option").on("change", function () {
+         const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+         const totalOptions = dropdownWrapper.find(".individual-option").length;
+         const selectedOptions = dropdownWrapper.find(".individual-option:checked").length;
+ 
+         // Toggle the Select All checkbox
+         dropdownWrapper.find(".select-all-available-users").prop("checked", totalOptions === selectedOptions);
+ 
+         updateSelectedCount(dropdownWrapper);
+     });
+ 
+     // Reset Filter button
+     $(".reset-filter").on("click", function () {
+         const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+         dropdownWrapper.find(".individual-option").prop("checked", false);
+         dropdownWrapper.find(".select-all-available-users").prop("checked", false);
+         updateSelectedCount(dropdownWrapper);
+     });
+ 
+     // Apply Filter button
+     $(".apply-filter").on("click", function () {
+         const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+         const selectedItems = dropdownWrapper.find(".individual-option:checked").map(function () {
+             return $(this).parent().text().trim();
+         }).get();
+         console.log("Selected Items:", selectedItems);
+     });
+ 
+     // Filter search functionality
+     $(".available-users-search").on("keyup", function () {
+         const dropdownWrapper = $(this).closest(".available-users-dropdown-wrapper");
+         const searchTerm = $(this).val().toLowerCase();
+         const options = dropdownWrapper.find(".mainoptionContainer");
+ 
+         options.filter(function () {
+             $(this).toggle($(this).text().toLowerCase().includes(searchTerm));
+         });
+ 
+         const noDataMessage = dropdownWrapper.find(".no-data");
+         noDataMessage.toggle(options.filter(":visible").length === 0);
+     });
+ });
+ 
+ </script>

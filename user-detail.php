@@ -2,11 +2,118 @@
 
 <!-- Page Wrapper -->
 <div class="content">
+    <div class="client_detailContainer">
+        <div class="leftSideBar">
+            <form action="#">
+                <div class="card sideprofile">
+                    <div class="card-body">
+                        <div class="sidepro">
+                            <div class="nnBox">
+                                <div class="avtar_box">
+                                    <div class="avatar-upload">
+                                        <div class="avatar-edit">
+                                            <input type="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+                                            <label for="imageUpload"></label>
+                                        </div>
+                                        <div class="avatar-preview">
+                                            <div id="imagePreview"
+                                                style="background-image: url('assets/img/newimages/userdummy.png');">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clientBasic">
+                                    <h5 class="clientName">Amit Patel</h5>
+                                    <p class="clientEmail">amitPatel24@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="clientDetails">
+                                <div class="user-fields-container">
+                                    <h5 class="infoTitle">Basic Info</h5>
+                                    <div class="user-custom-field">
+                                        <div class="custom-field-name">Employee ID</div>
+                                        <div class="custom-field-value">
+                                            <div><input type="text" placeholder="" class="r-user-input" value="#EMP0001">
+                                            </div>
+                                        </div>
+                                    </div>
 
-    <!-- Breadcrumb -->
+                                    <div class="user-custom-field">
+                                        <div class="custom-field-name">Employee Name</div>
+                                        <div class="custom-field-value">
+                                            <div><input type="text" placeholder="" class="r-user-input" value="Amit Patel">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-custom-field">
+                                        <div class="custom-field-name">Designation</div>
+                                        <div class="custom-field-value">
+                                            <div><input type="text" placeholder="" class="r-user-input" value="Manager">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <div class="user-custom-field">
+                                        <div class="custom-field-name">Email:</div>
+                                        <div class="custom-field-value">
+                                            <div><input type="text" placeholder="" class="r-user-input"
+                                                    value="amitPatel24@gmail.com"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="user-custom-field">
+                                        <div class="custom-field-name">Mobile No.</div>
+                                        <div class="custom-field-value">
+                                            <div><input type="text" placeholder="" class="r-user-input"
+                                                    value="+927959754829"></div>
+                                        </div>
+                                    </div>
+                                    <div class="user-custom-field">
+                                        <div class="custom-field-name">Role</div>
+                                        <div class="custom-field-value">
+                                            <div><input type="text" placeholder="" class="r-user-input" value="Manager">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-custom-field">
+                                        <div class="custom-field-name">Department</div>
+                                        <div class="custom-field-value">
+                                            <div><input type="text" placeholder="" class="r-user-input" value="Equipment Inspection">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-custom-field">
+                                    <div class="form-group">
+                                    <label class="form-label">Upload Signature</label>
+                                    <input name="file1" type="file" class="dropify" data-height="100" />
+                                    </div>
+                                    </div>
+
+                                    
+
+                                    
+                                    <div class="requestverification_button">
+                                        <button type="button" class="buttonRequest_verify">
+                                            <iconify-icon icon="tdesign:save"></iconify-icon> Save Changes
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="rightSideClientDetails">
+            <!-- Breadcrumb -->
     <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb ">
         <div class="my-auto mb-2">
-            <h2 class="mb-1">Job Orders</h2>
+            <h2 class="mb-1">User Details</h2>
             <nav>
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item">
@@ -15,19 +122,19 @@
                     <li class="breadcrumb-item">
                         Home
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">All Job Orders</li>
+                    <li class="breadcrumb-item active" aria-current="page">All Details</li>
                 </ol>
             </nav>
         </div>
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
 
-            <div class="mb-2">
+            <!-- <div class="mb-2">
                 <a href="#" data-bs-toggle="offcanvas" data-bs-target="#createjoborder" aria-controls="offcanvasRight"
                     class="btn btn-primary d-flex align-items-center cmnaddbtn">
                     <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Create Job
                     Order
                 </a>
-            </div>
+            </div> -->
             <div class="head-icons ms-2">
                 <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
                     data-bs-original-title="Collapse" id="collapse-header">
@@ -38,39 +145,53 @@
     </div>
     <!-- /Breadcrumb -->
 
-    <div class="card tablemaincard_nopaddingleftright">
+        <div class="card tablemaincard_nopaddingleftright">
         <div class="tbuppertabs">
-            <nav class="nav nav-style-6 nav-pills d-block" role="tablist">
-                <a class="nav-link active" data-bs-toggle="tab" role="tab" aria-current="page" href="#nav-newjobs"
-                    aria-selected="false">New Job Orders
-                    <span class="badge bg-warning-transparent ms-1">08</span></a>
+                <div class="tab-container position-relative">
+                    <!-- Left arrow -->
+                    <button class="scroll-btn left-arrow" aria-label="Scroll left">
+                        &#8592;
+                    </button>
+                    
+                    <!-- Tabs -->
+                    <nav class="nav nav-style-6 nav-pills d-block tab-list" role="tablist">
+                    <!-- <a class="nav-link active" data-bs-toggle="tab" role="tab" aria-current="page" href="#nav-allLocations"
+                            aria-selected="false">All Locations
+                          </a> -->
+                        <a class="nav-link active" data-bs-toggle="tab" role="tab" aria-current="page" href="#nav-newjobs"
+                            aria-selected="false">New Job Orders
+                            <span class="badge bg-warning-transparent ms-1">08</span></a>
 
-                <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-in-pending" aria-selected="true">Pending
-                    Job Orders
-                    <span class="badge bg-secondary-transparent ms-1">03</span></a>
-                <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-in-progress" aria-selected="true">In
-                    Progress
-                    <span class="badge bg-secondary-transparent ms-1">03</span></a>
-                <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-cart-justified"
-                    aria-selected="true">Completed Job Orders
-                    <span class="badge bg-success-transparent ms-1">07</span></a>
-                <a class="nav-link" data-bs-toggle="tab" role="tab" href="#nav-orders-justified"
-                    aria-selected="false">Approved Job Orders
-                    <span class="badge bg-info-transparent ms-1">11</span>
-                </a>
-                <a class="nav-link" data-bs-toggle="tab" role="tab" href="#nav-draftjobs"
-                    aria-selected="false">Draft Job Orders
-                    <span class="badge bg-info-draft ms-1">05</span>
-                </a>
-                <a class="nav-link" data-bs-toggle="tab" role="tab" href="#nav-closedjobs"
-                    aria-selected="false">Closed Job Orders
-                    <span class="badge bg-info-closed ms-1">10</span>
-                </a>
+                        <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-in-pending" aria-selected="true">Pending
+                            Job Orders
+                            <span class="badge bg-secondary-transparent ms-1">03</span></a>
+                        <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-in-progress" aria-selected="true">In
+                            Progress
+                            <span class="badge bg-secondary-transparent ms-1">03</span></a>
+                        <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-cart-justified"
+                            aria-selected="true">Completed Job Orders
+                            <span class="badge bg-success-transparent ms-1">07</span></a>
+                        <a class="nav-link" data-bs-toggle="tab" role="tab" href="#nav-orders-justified"
+                            aria-selected="false">Approved Job Orders
+                            <span class="badge bg-info-transparent ms-1">11</span>
+                        </a>
+                        <a class="nav-link" data-bs-toggle="tab" role="tab" href="#nav-draftjobs"
+                            aria-selected="false">Draft Job Orders
+                            <span class="badge bg-info-draft ms-1">05</span>
+                        </a>
+                        <a class="nav-link" data-bs-toggle="tab" role="tab" href="#nav-closedjobs"
+                            aria-selected="false">Closed Job Orders
+                            <span class="badge bg-info-closed ms-1">10</span>
+                        </a>
+                    </nav>
 
-            </nav>
-
-        </div>
-        <div class="tab-content">
+                    <!-- Right arrow -->
+                    <button class="scroll-btn right-arrow" aria-label="Scroll right">
+                        &#8594;
+                    </button>
+                </div>
+            </div>
+            <div class="tab-content">
             <div class="tab-pane show active text-muted" id="nav-newjobs" role="tabpanel">
                 <div class="custom-datatable-filter">
                 <div id="tablefiltesa_container">
@@ -161,7 +282,7 @@
                                 <th>Department</th>
                                 <th>Region</th>
                                 <th>Scheduled date/time</th>
-                                <th>assigned Inspector/Trainer</th>
+                                <!-- <th>assigned Inspector/Trainer</th> -->
                                 <th>Checklist Template Name</th>
                                
                                 <th>Status</th>
@@ -192,17 +313,7 @@
                                 <td>
                                     10/02/2024 15:15
                                 </td>
-                                <td>
-                                    <div class="d-flex align-items-center file-name-icon">
-                                        <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/userdummy.png" class="img-fluid"
-                                                alt="Stephan Peralt">
-                                        </a>
-                                        <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Stephan Peralt</a></h6>
-                                        </div>
-                                    </div>
-                                </td>
+                                
                                 <td> <a href="manage-template.php" target="_blank" class="tablelink_data">Monthly
                                         Maintenance</a> </td>
                               
@@ -266,16 +377,7 @@
                                 <td>Inspection</td>
                                 <td>Mumbai</td>
                                 <td>11/02/2024 10:45</td>
-                                <td>
-                                    <div class="d-flex align-items-center file-name-icon">
-                                        <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/userdummy.png" class="img-fluid" alt="Alex Doe">
-                                        </a>
-                                        <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Alex Doe</a></h6>
-                                        </div>
-                                    </div>
-                                </td>
+                                
                                 <td><a href="manage-template.php" target="_blank" class="tablelink_data">Annual
                                         Inspection</a> </td>
                                
@@ -339,16 +441,7 @@
                                 <td>NDT</td>
                                 <td>Pune</td>
                                 <td>12/02/2024 13:20</td>
-                                <td>
-                                    <div class="d-flex align-items-center file-name-icon">
-                                        <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/userdummy.png" class="img-fluid" alt="Mia Lee">
-                                        </a>
-                                        <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Mia Lee</a></h6>
-                                        </div>
-                                    </div>
-                                </td>
+                                
                                 <td><a href="manage-template.php" target="_blank"
                                         class="tablelink_data">Pre-Construction Review</a> </td>
                              
@@ -492,7 +585,7 @@
                                 <th>Department</th>
                                 <th>Region</th>
                                 <th>Scheduled date/time</th>
-                                <th>assigned Inspector/Trainer</th>
+                                <!-- <th>assigned Inspector/Trainer</th> -->
                                 <th>Checklist Template Name</th>
                           
                                 <th>Status</th>
@@ -523,7 +616,7 @@
                                 <td>
                                     10/02/2024 15:15
                                 </td>
-                                <td>
+                                <!-- <td>
                                     <div class="d-flex align-items-center file-name-icon">
                                         <a href="#" class="avatar avatar-md avatar-rounded">
                                             <img src="assets/img/users/userdummy.png" class="img-fluid"
@@ -533,7 +626,7 @@
                                             <h6 class="fw-medium"><a href="#">Stephan Peralt</a></h6>
                                         </div>
                                     </div>
-                                </td>
+                                </td> -->
                                 <td> <a href="manage-template.php" target="_blank" class="tablelink_data">Monthly
                                         Maintenance</a> </td>
                              
@@ -597,7 +690,7 @@
                                 <td>Inspection</td>
                                 <td>Kolkata</td>
                                 <td>11/02/2024 10:45</td>
-                                <td>
+                                <!-- <td>
                                     <div class="d-flex align-items-center file-name-icon">
                                         <a href="#" class="avatar avatar-md avatar-rounded">
                                             <img src="assets/img/users/userdummy.png" class="img-fluid" alt="Alex Doe">
@@ -606,7 +699,7 @@
                                             <h6 class="fw-medium"><a href="#">Alex Doe</a></h6>
                                         </div>
                                     </div>
-                                </td>
+                                </td> -->
                                 <td><a href="manage-template.php" target="_blank" class="tablelink_data">Annual
                                         Inspection</a> </td>
                               
@@ -670,7 +763,7 @@
                                 <td>NDT</td>
                                 <td>Bangalore</td>
                                 <td>12/02/2024 13:20</td>
-                                <td>
+                                <!-- <td>
                                     <div class="d-flex align-items-center file-name-icon">
                                         <a href="#" class="avatar avatar-md avatar-rounded">
                                             <img src="assets/img/users/userdummy.png" class="img-fluid" alt="Mia Lee">
@@ -679,7 +772,7 @@
                                             <h6 class="fw-medium"><a href="#">Mia Lee</a></h6>
                                         </div>
                                     </div>
-                                </td>
+                                </td> -->
                                 <td><a href="manage-template.php" target="_blank"
                                         class="tablelink_data">Pre-Construction Review</a> </td>
                               
@@ -822,7 +915,7 @@
                                 <th>Department</th>
                                 <th>Region</th>
                                 <th>Scheduled date/time</th>
-                                <th>assigned Inspector/Trainer</th>
+                              
                                 <th>Checklist Template Name</th>
                                 <!-- <th>Location</th> -->
                                 <th>Status</th>
@@ -853,17 +946,7 @@
                                 <td>
                                     10/02/2024 15:15
                                 </td>
-                                <td>
-                                    <div class="d-flex align-items-center file-name-icon">
-                                        <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/userdummy.png" class="img-fluid"
-                                                alt="Stephan Peralt">
-                                        </a>
-                                        <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Stephan Peralt</a></h6>
-                                        </div>
-                                    </div>
-                                </td>
+                                
                                 <td>Safety Compliance Check</td>
                                 <td>
                                     <span class="badge bg-outline-secondary pendingbadge badgecustomstyle"><span
@@ -925,16 +1008,7 @@
                                 <td>Inspection</td>
                                 <td>Mumbai</td>
                                 <td>11/02/2024 10:45</td>
-                                <td>
-                                    <div class="d-flex align-items-center file-name-icon">
-                                        <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/userdummy.png" class="img-fluid" alt="Alex Doe">
-                                        </a>
-                                        <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Alex Doe</a></h6>
-                                        </div>
-                                    </div>
-                                </td>
+                                
                                 <td>Equipment Audit</td>
                              
                                 <td>
@@ -997,16 +1071,7 @@
                                 <td>Training</td>
                                 <td>Mumbai</td>
                                 <td>12/02/2024 13:20</td>
-                                <td>
-                                    <div class="d-flex align-items-center file-name-icon">
-                                        <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/userdummy.png" class="img-fluid" alt="Mia Lee">
-                                        </a>
-                                        <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Mia Lee</a></h6>
-                                        </div>
-                                    </div>
-                                </td>
+                               
                                 <td>Quality Assurance Review</td>
                                
                                 <td>
@@ -1148,7 +1213,7 @@
                                 <th>Department</th>
                                 <th>Region</th>
                                 <th>Scheduled date/time</th>
-                                <th>assigned Inspector/Trainer</th>
+                                <!-- <th>assigned Inspector/Trainer</th> -->
                                 <th>Checklist Template Name</th>
                                 <th>Status</th>
                                 <th>Action</th>
@@ -1178,17 +1243,7 @@
                                 <td>
                                     10/02/2024 15:15
                                 </td>
-                                <td>
-                                    <div class="d-flex align-items-center file-name-icon">
-                                        <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/userdummy.png" class="img-fluid"
-                                                alt="Stephan Peralt">
-                                        </a>
-                                        <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Stephan Peralt</a></h6>
-                                        </div>
-                                    </div>
-                                </td>
+                                
                                 <td>Safety Compliance Check</td>
                                
                                 <td>
@@ -1251,16 +1306,7 @@
                                 <td>Inspection</td>
                                 <td>Delhi</td>
                                 <td>11/02/2024 10:45</td>
-                                <td>
-                                    <div class="d-flex align-items-center file-name-icon">
-                                        <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/userdummy.png" class="img-fluid" alt="Alex Doe">
-                                        </a>
-                                        <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Alex Doe</a></h6>
-                                        </div>
-                                    </div>
-                                </td>
+                              
                                 <td>Equipment Audit</td>
                                
                                 <td>
@@ -1323,16 +1369,7 @@
                                 <td>Training</td>
                                 <td>Chennai</td>
                                 <td>12/02/2024 13:20</td>
-                                <td>
-                                    <div class="d-flex align-items-center file-name-icon">
-                                        <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/userdummy.png" class="img-fluid" alt="Mia Lee">
-                                        </a>
-                                        <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Mia Lee</a></h6>
-                                        </div>
-                                    </div>
-                                </td>
+                               
                                 <td>Quality Assurance Review</td>
                                 
                                 <td>
@@ -1474,7 +1511,7 @@
                                 <th>Departments</th>
                                 <th>Region</th>
                                 <th>Scheduled date/time</th>
-                                <th>assigned Inspector/Trainer</th>
+                                <!-- <th>assigned Inspector/Trainer</th> -->
                                 <th>Checklist Template Name</th>
                                 <th>Status</th>
                                 <th>Action</th>
@@ -1504,17 +1541,7 @@
                                 <td>
                                     10/02/2024 15:15
                                 </td>
-                                <td>
-                                    <div class="d-flex align-items-center file-name-icon">
-                                        <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/userdummy.png" class="img-fluid"
-                                                alt="Stephan Peralt">
-                                        </a>
-                                        <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Stephan Peralt</a></h6>
-                                        </div>
-                                    </div>
-                                </td>
+                                
                                 <td>Post-Event Evaluation</td>
                               
                                 <td>
@@ -1577,16 +1604,7 @@
                                 <td>NDT</td>
                                 <td>Kolkata</td>
                                 <td>11/02/2024 10:45</td>
-                                <td>
-                                    <div class="d-flex align-items-center file-name-icon">
-                                        <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/userdummy.png" class="img-fluid" alt="Alex Doe">
-                                        </a>
-                                        <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Alex Doe</a></h6>
-                                        </div>
-                                    </div>
-                                </td>
+                               
                                 <td>Routine Checkup</td>
                             
                                 <td>
@@ -1649,16 +1667,7 @@
                                 <td>Training</td>
                                 <td>Bangalore</td>
                                 <td>12/02/2024 13:20</td>
-                                <td>
-                                    <div class="d-flex align-items-center file-name-icon">
-                                        <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/userdummy.png" class="img-fluid" alt="Mia Lee">
-                                        </a>
-                                        <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Mia Lee</a></h6>
-                                        </div>
-                                    </div>
-                                </td>
+                               
                                 <td>Quality Assurance Review</td>
                        
                                 <td>
@@ -1801,7 +1810,7 @@
                                 <th>Department</th>
                                 <th>Region</th>
                                 <th>Scheduled date/time</th>
-                                <th>assigned Inspector/Trainer</th>
+                                <!-- <th>assigned Inspector/Trainer</th> -->
                                 <th>Checklist Template Name</th>
                       
                                 <th>Status</th>
@@ -1832,17 +1841,7 @@
                                 <td>
                                     10/02/2024 15:15
                                 </td>
-                                <td>
-                                    <div class="d-flex align-items-center file-name-icon">
-                                        <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/userdummy.png" class="img-fluid"
-                                                alt="Stephan Peralt">
-                                        </a>
-                                        <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Stephan Peralt</a></h6>
-                                        </div>
-                                    </div>
-                                </td>
+                               
                                 <td>Post-Event Evaluation</td>
                             
                                 <td>
@@ -1905,16 +1904,7 @@
                                 <td>NDT</td>
                                 <td>Pune</td>
                                 <td>11/02/2024 10:45</td>
-                                <td>
-                                    <div class="d-flex align-items-center file-name-icon">
-                                        <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/userdummy.png" class="img-fluid" alt="Alex Doe">
-                                        </a>
-                                        <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Alex Doe</a></h6>
-                                        </div>
-                                    </div>
-                                </td>
+                                
                                 <td>Routine Checkup</td>
                                 
                                 <td>
@@ -1978,16 +1968,7 @@
                                 <td>Training</td>
                                 <td>Delhi</td>
                                 <td>12/02/2024 13:20</td>
-                                <td>
-                                    <div class="d-flex align-items-center file-name-icon">
-                                        <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/userdummy.png" class="img-fluid" alt="Mia Lee">
-                                        </a>
-                                        <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Mia Lee</a></h6>
-                                        </div>
-                                    </div>
-                                </td>
+                               
                                 <td>Quality Assurance Review</td>
              
                                 <td>
@@ -2130,7 +2111,7 @@
                                 <th>Department</th>
                                 <th>Region</th>
                                 <th>Scheduled date/time</th>
-                                <th>assigned Inspector/Trainer</th>
+                                <!-- <th>assigned Inspector/Trainer</th> -->
                                 <th>Checklist Template Name</th>
                               
                                 <th>Status</th>
@@ -2161,17 +2142,7 @@
                                 <td>
                                     10/02/2024 15:15
                                 </td>
-                                <td>
-                                    <div class="d-flex align-items-center file-name-icon">
-                                        <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/userdummy.png" class="img-fluid"
-                                                alt="Stephan Peralt">
-                                        </a>
-                                        <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Stephan Peralt</a></h6>
-                                        </div>
-                                    </div>
-                                </td>
+                               
                                 <td>Post-Event Evaluation</td>
                                
                                 <td>
@@ -2234,16 +2205,7 @@
                                 <td>NDT</td>
                                 <td>Mumbai</td>
                                 <td>11/02/2024 10:45</td>
-                                <td>
-                                    <div class="d-flex align-items-center file-name-icon">
-                                        <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/userdummy.png" class="img-fluid" alt="Alex Doe">
-                                        </a>
-                                        <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Alex Doe</a></h6>
-                                        </div>
-                                    </div>
-                                </td>
+                                
                                 <td>Routine Checkup</td>
                           
                                 <td>
@@ -2307,16 +2269,7 @@
                                 <td>Training</td>
                                 <td>Kolkata</td>
                                 <td>12/02/2024 13:20</td>
-                                <td>
-                                    <div class="d-flex align-items-center file-name-icon">
-                                        <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/userdummy.png" class="img-fluid" alt="Mia Lee">
-                                        </a>
-                                        <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Mia Lee</a></h6>
-                                        </div>
-                                    </div>
-                                </td>
+                                
                                 <td>Quality Assurance Review</td>
                                
                                 <td>
@@ -2371,10 +2324,10 @@
             </div>
         </div>
 
+        </div>
+        </div>
     </div>
-
 </div>
-
 <div class="offcanvas offcanvas-end rightlarge_offcanvas commonoffcanvas_style" tabindex="-1" id="createjoborder"
     aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header flexbetweenheader">
@@ -2415,7 +2368,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="form-label">Service Type</label>
+                                <label class="form-label">Department</label>
                                 <select name="" class="form-control select2">
                                     <option disabled="" selected="" value="">Please Select...</option>
                                     <option value="Equipment Inspection">Equipment Inspection</option>
@@ -2478,8 +2431,23 @@
 
                             </div>
                         </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label class="form-label">Select Part</label>
+                                <select name="" class="form-control select2">
+                                    <option disabled="" selected="" value="">Please Select...</option>
+                                    <option value="1">Control Panel</option>
+                                    <option value="2">Motors</option>
+                                    <option value="3">Sensors</option>
+                                    <option value="4">Limit Switches</option>
+                                    <option value="5">Remote Controls</option>
+                                    <option value="6">Winch</option>
+                                </select>
 
-                        <div class="col-md-6">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label class="form-label">Checklist Template </label>
                                 <select name="" class="form-control select2">
@@ -2492,7 +2460,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label class="form-label">Status</label>
                                 <select name="" id="" class="form-control select2">
@@ -2546,10 +2514,216 @@
         </div>
     </form>
 </div>
+<!-- Add client -->
+<div class="modal fade custombottm_modalStyle" id="add_users">
+	<div class="modal-dialog modal-dialog-centered modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title locationTitleEdit">Edit Location & Representative Details</h4>
+				<button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+					<i class="ti ti-x"></i>
+				</button>
+			</div>
+			<form action="client-detail.php">
+				<div class="modal-body">
+					<div class="row">
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                    <label class="form-label">Representative Name</label>
+                                    <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                    <label class="form-label">Contact No.</label>
+                                    <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                    <label class="form-label">Email</label>
+                                    <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Representative Status</label>
+                                        <select class="select2">
+                                        <option disabled selected readonly>Select option</option>
+                                            <option value="Active">Active</option>
+                                            <option value="Inactive">Inactive</option>
+                                        </select>
+                                    </div>
+                                </div>
+                               <div class="col-lg-6">
+                                    <div class="form-group">
+                                    <label class="form-label">Address Line 1</label>
+                                    <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                    <label class="form-label">Address Line 2 (Optional)</label>
+                                    <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                    <label class="form-label">Town/City</label>
+                                    <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                    <label class="form-label">Country</label>
+                                    <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                    <label class="form-label">Postal Code</label>
+                                    <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                        
+						
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-white border me-2" data-bs-dismiss="modal">Cancel</button>
+					<button type="submit" class="btn btn-primary canvasSubmit_button">Update</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- /Add Users -->
+
+<!-- Add client -->
+<div class="modal fade custombottm_modalStyle" id="add_Location">
+	<div class="modal-dialog modal-dialog-centered modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title locationTitleEdit">Add Location & Representative Details</h4>
+				<button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+					<i class="ti ti-x"></i>
+				</button>
+			</div>
+			<form action="client-detail.php">
+				<div class="modal-body">
+					<div class="row">
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                    <label class="form-label">Representative Name</label>
+                                    <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                    <label class="form-label">Contact No.</label>
+                                    <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                    <label class="form-label">Email</label>
+                                    <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Representative Status</label>
+                                        <select class="select2">
+                                        <option disabled selected readonly>Select option</option>
+                                            <option value="Active">Active</option>
+                                            <option value="Inactive">Inactive</option>
+                                        </select>
+                                    </div>
+                                </div>
+                               <div class="col-lg-6">
+                                    <div class="form-group">
+                                    <label class="form-label">Address Line 1</label>
+                                    <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                    <label class="form-label">Address Line 2 (Optional)</label>
+                                    <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                    <label class="form-label">Town/City</label>
+                                    <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                    <label class="form-label">Country</label>
+                                    <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                    <label class="form-label">Postal Code</label>
+                                    <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                        
+						
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-white border me-2" data-bs-dismiss="modal">Cancel</button>
+					<button type="submit" class="btn btn-primary canvasSubmit_button">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- /Add Users -->
 
 <?php include("footer.php") ?>
 
-<!-- filepond for videos uploader -->
+<!-- pROFILE UPDATE JS -->
+<script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                    $('#imagePreview').hide();
+                    $('#imagePreview').fadeIn(650);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#imageUpload").change(function () {
+            readURL(this);
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const tabList = document.querySelector(".tab-list");
+    const leftArrow = document.querySelector(".left-arrow");
+    const rightArrow = document.querySelector(".right-arrow");
+
+    leftArrow.addEventListener("click", () => {
+        tabList.scrollBy({ left: -150, behavior: "smooth" });
+    });
+
+    rightArrow.addEventListener("click", () => {
+        tabList.scrollBy({ left: 150, behavior: "smooth" });
+    });
+});
+
+    </script>
+
+    <!-- filepond for videos uploader -->
 <link href="assets/customplugins/file-uploader/filepond.css" rel="stylesheet">
 <link href="assets/customplugins/file-uploader/filepond-plugin-media-preview.min.css" rel="stylesheet">
 <script src="assets/customplugins/file-uploader/filepond.js"></script>
@@ -2626,4 +2800,15 @@
 </script>
 <!-- filepod image uploader end-->
 
+<!----------------------
+Dropify Code Start Here
+------------------------>
+<link rel="stylesheet" type="text/css" href="https://jeremyfagis.github.io/dropify/dist/css/dropify.min.css">
+<script type="text/javascript" src="https://jeremyfagis.github.io/dropify/dist/js/dropify.min.js"></script>
+<script>
+	$('.dropify').dropify();
 
+</script>
+<!----------------------
+Dropify Code End Here
+----------------------->
