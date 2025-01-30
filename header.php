@@ -620,8 +620,36 @@
                             </ul>
                         </li>
 
+                        <li class="menu-title"><span>Label Management</span></li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href="labels.php">
+                                        <iconify-icon icon="mdi:tag-outline"></iconify-icon>
+                                        <span>Label's</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="labels-transfer.php">
+                                        <iconify-icon icon="mdi:swap-horizontal"></iconify-icon>
+                                        <span>Label's Transfer</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="labels-allotment.php">
+                                        <iconify-icon icon="mdi:clipboard-check-outline"></iconify-icon>
+                                        <span>Label's Allotment</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
                     </ul>
                     </li>
+                    
 
                     <div class="tab-column collapse-view">
                         <div class="plan-based-nav-dark py-1 plan-based-com ">
