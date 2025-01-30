@@ -37,11 +37,41 @@
     </div>
     <!-- /Breadcrumb -->
 
-    <!-- Performance Indicator list -->
     <div class="card tablemaincard_nopaddingleftright">
+        <div class="tbuppertabs">
+            <nav class="nav nav-style-6 nav-pills d-block" role="tablist">
+                <a class="nav-link active" data-bs-toggle="tab" role="tab" aria-current="page" href="#nav-newjobs"
+                    aria-selected="false">Equipment Inspection
+                 </a>
 
-        <div class="card-body p-0">
-            <div class="custom-datatable-filter">
+                <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-in-pending" aria-selected="true">
+                    Operator Assessment
+                   </a>
+                <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-in-progress" aria-selected="true">
+                   Training
+                   </a>
+                <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-cart-justified"
+                    aria-selected="true">NDT
+                    </a>
+                <!-- <a class="nav-link" data-bs-toggle="tab" role="tab" href="#nav-orders-justified"
+                    aria-selected="false">Approved Job Orders
+                    <span class="badge bg-info-transparent ms-1">11</span>
+                </a>
+                <a class="nav-link" data-bs-toggle="tab" role="tab" href="#nav-draftjobs"
+                    aria-selected="false">Draft Job Orders
+                    <span class="badge bg-info-draft ms-1">05</span>
+                </a>
+                <a class="nav-link" data-bs-toggle="tab" role="tab" href="#nav-closedjobs"
+                    aria-selected="false">Closed Job Orders
+                    <span class="badge bg-info-closed ms-1">10</span>
+                </a> -->
+
+            </nav>
+
+        </div>
+        <div class="tab-content">
+            <div class="tab-pane show active text-muted" id="nav-newjobs" role="tabpanel">
+                <div class="custom-datatable-filter">
                 <table class="table common-datatable withoutActionTR nowrap w-100">
                     <thead class="thead-light">
                         <tr>
@@ -232,10 +262,611 @@
                     </tbody>
 
                 </table>
+                </div>
             </div>
+
+            <div class="tab-pane text-muted" id="nav-in-pending" role="tabpanel">
+                <div class="custom-datatable-filter">
+                <table class="table common-datatable withoutActionTR nowrap w-100">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>S.No.</th>
+                            <th>Template Name</th>
+                            <th>Created On</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td>Untitled Template</td>
+                            <td>27 Dec 2024</td>
+                            <td>
+                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Active
+                                </span>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                   
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+                                        href="manage-template.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Marketing Template</td>
+                            <td>25 Dec 2024</td>
+                            <td>
+                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Inactive
+                                </span>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                   
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+                                        href="manage-template.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Newsletter Template</td>
+                            <td>22 Dec 2024</td>
+                            <td>
+                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Active
+                                </span>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                   
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+                                        href="manage-template.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Event Template</td>
+                            <td>20 Dec 2024</td>
+                            <td>
+                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Inactive
+                                </span>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                   
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+                                        href="manage-template.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+                </div>
+            </div>
+            <div class="tab-pane  text-muted" id="nav-in-progress" role="tabpanel">
+                <div class="custom-datatable-filter">
+                <table class="table common-datatable withoutActionTR nowrap w-100">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>S.No.</th>
+                            <th>Template Name</th>
+                            <th>Created On</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td>Untitled Template</td>
+                            <td>27 Dec 2024</td>
+                            <td>
+                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Active
+                                </span>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                   
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+                                        href="manage-template.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Marketing Template</td>
+                            <td>25 Dec 2024</td>
+                            <td>
+                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Inactive
+                                </span>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                   
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+                                        href="manage-template.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Newsletter Template</td>
+                            <td>22 Dec 2024</td>
+                            <td>
+                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Active
+                                </span>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                   
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+                                        href="manage-template.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Event Template</td>
+                            <td>20 Dec 2024</td>
+                            <td>
+                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Inactive
+                                </span>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                   
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+                                        href="manage-template.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+                </div>
+            </div>
+            <div class="tab-pane  text-muted" id="nav-cart-justified" role="tabpanel">
+                <div class="custom-datatable-filter">
+                <table class="table common-datatable withoutActionTR nowrap w-100">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>S.No.</th>
+                            <th>Template Name</th>
+                            <th>Created On</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td>Untitled Template</td>
+                            <td>27 Dec 2024</td>
+                            <td>
+                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Active
+                                </span>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                   
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+                                        href="manage-template.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Marketing Template</td>
+                            <td>25 Dec 2024</td>
+                            <td>
+                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Inactive
+                                </span>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                   
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+                                        href="manage-template.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Newsletter Template</td>
+                            <td>22 Dec 2024</td>
+                            <td>
+                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Active
+                                </span>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                   
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+                                        href="manage-template.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Event Template</td>
+                            <td>20 Dec 2024</td>
+                            <td>
+                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Inactive
+                                </span>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                   
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+                                        href="manage-template.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
+                                        href="view-user-details.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+                </div>
+            </div>
+            <!-- <div class="tab-pane text-muted" id="nav-orders-justified" role="tabpanel">
+                <div class="custom-datatable-filter">
+                    
+                </div>
+            </div>
+
+            <div class="tab-pane text-muted" id="nav-draftjobs" role="tabpanel">
+                <div class="custom-datatable-filter">
+                
+                    
+                </div>
+            </div>
+            <div class="tab-pane text-muted" id="nav-closedjobs" role="tabpanel">
+                <div class="custom-datatable-filter">
+               
+                </div>
+            </div> -->
         </div>
+
     </div>
-    <!-- /Performance Indicator list -->
 
 </div>
 
