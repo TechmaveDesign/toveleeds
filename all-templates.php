@@ -75,7 +75,7 @@
                 <table class="table common-datatable withoutActionTR nowrap w-100">
                     <thead class="thead-light">
                         <tr>
-                            <th>S.No.</th>
+                            <th>#ID</th>
                             <th>Template Name</th>
                             <th>Created On</th>
                             <!-- <th>Status</th> -->
@@ -85,7 +85,7 @@
                     <tbody>
                         <tr>
                             <td>
-                                1
+                                #INS-CH0001
                             </td>
                             <td>Air Compressor checklist</td>
                             <td>27 Dec 2024</td>
@@ -135,7 +135,7 @@
                         </tr>
 
                         <tr>
-                            <td>2</td>
+                            <td>#INS-CH0002</td>
                             <td>Marketing Template</td>
                             <td>25 Dec 2024</td>
                           
@@ -183,7 +183,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>3</td>
+                            <td>#INS-CH0003</td>
                             <td>Newsletter Template</td>
                             <td>22 Dec 2024</td>
                           
@@ -231,7 +231,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>4</td>
+                            <td>#INS-CH0004</td>
                             <td>Event Template</td>
                             <td>20 Dec 2024</td>
                            
@@ -290,7 +290,7 @@
                 <table class="table common-datatable withoutActionTR nowrap w-100">
                     <thead class="thead-light">
                         <tr>
-                            <th>S.No.</th>
+                            <th>#ID</th>
                             <th>Template Name</th>
                             <th>Created On</th>
                             <!-- <th>Status</th> -->
@@ -300,7 +300,7 @@
                     <tbody>
                         <tr>
                             <td>
-                                1
+                              #OPASS-CH0001
                             </td>
                             <td>Agricultural Tractor Operator</td>
                             <td>27 Dec 2024</td>
@@ -349,7 +349,7 @@
                         </tr>
 
                         <tr>
-                            <td>2</td>
+                            <td> #OPASS-CH0002</td>
                             <td>Rigger Level I</td>
                             <td>25 Dec 2024</td>
                            
@@ -397,7 +397,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>3</td>
+                            <td>#OPASS-CH0003</td>
                             <td>Newsletter Template</td>
                             <td>22 Dec 2024</td>
                           
@@ -445,7 +445,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>4</td>
+                            <td>#OPASS-CH0004</td>
                             <td>Event Template</td>
                             <td>20 Dec 2024</td>
                            

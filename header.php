@@ -584,7 +584,34 @@
                             </ul>
                         </li>
 
-                        
+                        <li class="menu-title"><span>Job Form Management</span></li>
+                        <li>
+                            <ul>
+                                <li class="">
+                                    <a href="all-rd-forms.php">
+                                    <iconify-icon icon="fluent:form-48-regular"></iconify-icon>
+                                        <span>All RD Forms</span>
+                                    </a>
+                                    
+                                </li>
+
+                                <li class="">
+                                    <a href="#">
+                                    <iconify-icon icon="carbon:tool-kit"></iconify-icon>
+                                    <span>All Equipments</span>
+                                        
+                                    </a>
+                                    
+                                </li>
+                                <li class="">
+                                    <a href="#">
+                                    <iconify-icon icon="icon-park-outline:mind-mapping"></iconify-icon> 
+                                    <span>Form Mappings</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
 
                         <li class="menu-title"><span>Reporting and Certificate</span></li>
                         <li>
