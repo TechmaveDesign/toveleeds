@@ -3638,3 +3638,136 @@ button.add-more-btn {
     display: flex;
     gap: 10px;
 }
+
+/* Assessment View Page css */
+.checklistSubContainer {
+    margin-top: 20px;
+}
+.card-header.cardHeaderAss {
+    background: #f8f8f8;
+}
+.card-header.cardHeaderAss h5 {
+    margin-bottom: 5px !important;
+}
+.card-header.cardHeaderAss p {
+    font-size: 13px;
+    color: #4e5e6c;
+}
+.AssessmentSectionTitle {
+    padding-bottom: 20px;
+    position: relative;
+    padding-left: 10px;
+}
+h6.AssessmentSectionTitle::before {
+    content: '';
+    width: 3px;
+    height: 20px;
+    background: #42a549;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.insp_quest_ansChecklist {
+    margin-top: 20px;
+}
+.checklist {
+    list-style: upper-alpha;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding-left: 20px;
+}
+.checklist li {
+    /* display: flex; */
+    width: 100%;
+    /* margin-left: 18px; */
+    padding-left: 20px;
+}
+
+.checklist label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+    width: 95%;
+    justify-content: space-between;
+}
+
+.check-icon {
+    display: none;
+    color: #15c215;
+    font-size: 20px;
+}
+
+/* Change border color when checked */
+.checklist label:has(input:checked) {
+    border-color: #36c140;
+    color: #22a62c;
+}
+/* Show check icon when checked */
+.checklist label:has(input:checked) .check-icon {
+	display: inline;
+}
+
+/* Responsive: If screen is smaller than 500px, show one item per row */
+@media (max-width: 500px) {
+	.checklist {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+.AttachmentChecklist.checklist {
+    list-style: upper-alpha;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    width: 70%;
+    margin-left: 25px;
+}
+.insp_quest_ansChecklist.AttachmentCheckList {
+    display: flex;
+    justify-content: space-between;
+}
+
+.QuestionAns_list_item {
+    margin-bottom: 20px !important;
+}
+.attachmentImg img {
+    width: 100px;
+    object-fit: contain;
+	height: 200px;
+}
+.checklist.MediaQuesOptions label {
+    
+    align-items: self-start;
+  
+}
+.QuestionImg img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+}
+.InspectionOption .response-yes{
+    padding: 0px 10px;
+}
+.InspectionOption .no_optionmenu, .InspectionOption .na_responsice_menu{
+margin-right: 0;
+}
+.insp_quest_ans.InspectionOption {
+    gap: 7px;
+}
+.btn-back {
+    background: #f3f3f3;
+    border: 1px solid #ececec;
+}
+.btn-back:hover {
+    background: #eae9e9;
+    border: 1px solid #ececec;
+	color: #000 !important;
+}

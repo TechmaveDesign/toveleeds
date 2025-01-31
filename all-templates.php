@@ -6,7 +6,7 @@
     <!-- Breadcrumb -->
     <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb ">
         <div class="my-auto mb-2">
-            <h2 class="mb-1">All Templates</h2>
+            <h2 class="mb-1">All Checklist Templates</h2>
             <nav>
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item">
@@ -78,7 +78,7 @@
                             <th>S.No.</th>
                             <th>Template Name</th>
                             <th>Created On</th>
-                            <th>Status</th>
+                            <!-- <th>Status</th> -->
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -87,22 +87,27 @@
                             <td>
                                 1
                             </td>
-                            <td>Untitled Template</td>
+                            <td>Air Compressor checklist</td>
                             <td>27 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Active
-                                </span>
-                            </td>
+                        
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="View Template"
+                                        href="inspection-checklist-view.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                              <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
                                         href="manage-template.php">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                              <iconify-icon icon="cuida:edit-outline"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -133,20 +138,25 @@
                             <td>2</td>
                             <td>Marketing Template</td>
                             <td>25 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Inactive
-                                </span>
-                            </td>
+                          
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="View Template"
+                                        href="inspection-checklist-view.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                              <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
                                         href="manage-template.php">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                              <iconify-icon icon="cuida:edit-outline"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -176,20 +186,25 @@
                             <td>3</td>
                             <td>Newsletter Template</td>
                             <td>22 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Active
-                                </span>
-                            </td>
+                          
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="View Template"
+                                        href="inspection-checklist-view.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                              <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
                                         href="manage-template.php">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                              <iconify-icon icon="cuida:edit-outline"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -219,20 +234,25 @@
                             <td>4</td>
                             <td>Event Template</td>
                             <td>20 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Inactive
-                                </span>
-                            </td>
+                           
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="View Template"
+                                        href="inspection-checklist-view.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                              <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
                                         href="manage-template.php">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                              <iconify-icon icon="cuida:edit-outline"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -273,7 +293,7 @@
                             <th>S.No.</th>
                             <th>Template Name</th>
                             <th>Created On</th>
-                            <th>Status</th>
+                            <!-- <th>Status</th> -->
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -282,22 +302,26 @@
                             <td>
                                 1
                             </td>
-                            <td>Untitled Template</td>
+                            <td>Agricultural Tractor Operator</td>
                             <td>27 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Active
-                                </span>
-                            </td>
+                           
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
-                                   
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="View Template"
+                                        href="agriculture-assessment-view.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                              <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
                                         href="manage-template.php">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                              <iconify-icon icon="cuida:edit-outline"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -326,22 +350,27 @@
 
                         <tr>
                             <td>2</td>
-                            <td>Marketing Template</td>
+                            <td>Rigger Level I</td>
                             <td>25 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Inactive
-                                </span>
-                            </td>
+                           
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="View Template"
+                                        href="riger-level-1.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                              <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
                                         href="manage-template.php">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                              <iconify-icon icon="cuida:edit-outline"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -371,20 +400,25 @@
                             <td>3</td>
                             <td>Newsletter Template</td>
                             <td>22 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Active
-                                </span>
-                            </td>
+                          
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="View Template"
+                                        href="agriculture-assessment-view.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                              <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
                                         href="manage-template.php">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                              <iconify-icon icon="cuida:edit-outline"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -414,20 +448,25 @@
                             <td>4</td>
                             <td>Event Template</td>
                             <td>20 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Inactive
-                                </span>
-                            </td>
+                           
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        data-bs-toggle="tooltip" data-placement="top" title="View Template"
+                                        href="riger-level-1.php">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                              <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
                                         href="manage-template.php">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                              <iconify-icon icon="cuida:edit-outline"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -467,7 +506,7 @@
                             <th>S.No.</th>
                             <th>Template Name</th>
                             <th>Created On</th>
-                            <th>Status</th>
+                            <!-- <th>Status</th> -->
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -478,11 +517,7 @@
                             </td>
                             <td>Untitled Template</td>
                             <td>27 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Active
-                                </span>
-                            </td>
+                           
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
@@ -522,11 +557,7 @@
                             <td>2</td>
                             <td>Marketing Template</td>
                             <td>25 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Inactive
-                                </span>
-                            </td>
+                           
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
@@ -565,11 +596,7 @@
                             <td>3</td>
                             <td>Newsletter Template</td>
                             <td>22 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Active
-                                </span>
-                            </td>
+                          
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
@@ -608,11 +635,7 @@
                             <td>4</td>
                             <td>Event Template</td>
                             <td>20 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Inactive
-                                </span>
-                            </td>
+                           
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
@@ -661,7 +684,7 @@
                             <th>S.No.</th>
                             <th>Template Name</th>
                             <th>Created On</th>
-                            <th>Status</th>
+                            <!-- <th>Status</th> -->
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -672,11 +695,7 @@
                             </td>
                             <td>Untitled Template</td>
                             <td>27 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Active
-                                </span>
-                            </td>
+                            
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
@@ -716,11 +735,7 @@
                             <td>2</td>
                             <td>Marketing Template</td>
                             <td>25 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Inactive
-                                </span>
-                            </td>
+                           
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
@@ -759,11 +774,7 @@
                             <td>3</td>
                             <td>Newsletter Template</td>
                             <td>22 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Active
-                                </span>
-                            </td>
+                           
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
@@ -802,11 +813,7 @@
                             <td>4</td>
                             <td>Event Template</td>
                             <td>20 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Inactive
-                                </span>
-                            </td>
+                          
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
@@ -839,7 +846,7 @@
                                     </a>
 
                                 </div>
-                            </td>
+                            </td> 
                         </tr>
 
                     </tbody>
