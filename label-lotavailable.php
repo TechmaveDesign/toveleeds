@@ -6,7 +6,7 @@
     <!-- Breadcrumb -->
     <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb ">
         <div class="my-auto mb-2">
-            <h2 class="mb-1">All Label's</h2>
+            <h2 class="mb-1">Label's Lot Available</h2>
             <nav>
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item">
@@ -15,7 +15,7 @@
                     <li class="breadcrumb-item">
                         Home
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Label's</li>
+                    <li class="breadcrumb-item active" aria-current="page">Label's Lot Available</li>
                 </ol>
             </nav>
         </div>
@@ -24,16 +24,17 @@
             <div class="mb-2 me-2" id="addStickerBtn">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#addStickerModal"
                     class="btn btn-primary d-flex align-items-center cmnaddbtn">
-                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Add Sticker
+                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Add Lot Sticker
                 </a>
             </div>
 
-            <div class="mb-2" id="addTagBtn" style="display: none;">
+            <div class="mb-2 me-2" id="addTagBtn" style="display: none;">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#addTagModal"
                     class="btn btn-primary d-flex align-items-center cmnaddbtn">
-                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Add Tag
+                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Add Lot Tag
                 </a>
             </div>
+
             <div class="head-icons ms-2">
                 <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
                     data-bs-original-title="Collapse" id="collapse-header">
@@ -78,12 +79,12 @@
                                 1
                             </td>
                             <td>AEF - 0129</td>
-                            <td>001 - 999</td>
+                            <td>001 - 299</td>
                             <td>27 Dec 2024</td>
                             <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
-                                                                </span>
+                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Not Available
+                                </span>
                             </td>
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
@@ -97,7 +98,9 @@
                                             </span>
                                         </span>
                                     </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+
+                                    <!-- Printer icon -->
+                                    <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
                                         href="view-user-details.php">
                                         <span class="icon">
@@ -105,7 +108,8 @@
                                                 <iconify-icon icon="ion:print-outline"></iconify-icon>
                                             </span>
                                         </span>
-                                    </a>
+                                    </a> -->
+
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Delete "
                                         href="view-user-details.php">
@@ -123,11 +127,11 @@
                         <tr>
                             <td>2</td>
                             <td>BEC - 1011</td>
-                            <td>1000 - 1999</td>
+                            <td>1000 - 1199</td>
                             <td>25 Dec 2024</td>
                             <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched
+                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Available
                                 </span>
                             </td>
                             <td>
@@ -142,7 +146,7 @@
                                             </span>
                                         </span>
                                     </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                    <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
                                         href="view-user-details.php">
                                         <span class="icon">
@@ -151,7 +155,8 @@
 
                                             </span>
                                         </span>
-                                    </a>
+                                    </a> -->
+
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Delete "
                                         href="view-user-details.php">
@@ -171,14 +176,14 @@
                             <td>22 Dec 2024</td>
                             <td>
                                 <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i> Dispatched For Printing
-                                                                </span>
+                                    <i class="ti ti-point-filled me-1"></i>Available
+                                </span>
                             </td>
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+                                        data-bs-toggle="tooltip" data-placement="top" title="See Details"
                                         href="">
                                         <span class="icon">
                                             <span class="feather-icon">
@@ -186,7 +191,7 @@
                                             </span>
                                         </span>
                                     </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                    <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
                                         href="view-user-details.php">
                                         <span class="icon">
@@ -195,7 +200,7 @@
 
                                             </span>
                                         </span>
-                                    </a>
+                                    </a> -->
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Delete "
                                         href="view-user-details.php">
@@ -212,18 +217,18 @@
                         <tr>
                             <td>4</td>
                             <td>GHI - 2211</td>
-                            <td>4001 - 5000</td>
+                            <td>4001 - 4299</td>
                             <td>20 Dec 2024</td>
                             <td>
                                 <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched 
+                                    <i class="ti ti-point-filled me-1"></i>Not Available
                                 </span>
                             </td>
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+                                        data-bs-toggle="tooltip" data-placement="top" title="See Details"
                                         href="">
                                         <span class="icon">
                                             <span class="feather-icon">
@@ -231,7 +236,7 @@
                                             </span>
                                         </span>
                                     </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                    <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
                                         href="view-user-details.php">
                                         <span class="icon">
@@ -240,7 +245,7 @@
 
                                             </span>
                                         </span>
-                                    </a>
+                                    </a> -->
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Delete "
                                         href="view-user-details.php">
@@ -281,17 +286,17 @@
                             </td>
                             <td>TA - 123</td>
                             <td>199 - 299</td>
-                            <td>27 Dec 2024</td>
+                            <td>20 Dec 2024</td>
                             <td>
                                 <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
+                                    <i class="ti ti-point-filled me-1"></i>Available
                                 </span>
                             </td>
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+                                        data-bs-toggle="tooltip" data-placement="top" title="See Details"
                                         href="">
                                         <span class="icon">
                                             <span class="feather-icon">
@@ -299,7 +304,7 @@
                                             </span>
                                         </span>
                                     </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                    <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
                                         href="view-user-details.php">
                                         <span class="icon">
@@ -308,7 +313,7 @@
 
                                             </span>
                                         </span>
-                                    </a>
+                                    </a> -->
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Delete"
                                         href="view-user-details.php">
@@ -330,14 +335,14 @@
                             <td>25 Dec 2024</td>
                             <td>
                                 <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched
+                                    <i class="ti ti-point-filled me-1"></i>Not Available
                                 </span>
                             </td>
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+                                        data-bs-toggle="tooltip" data-placement="top" title="See Details"
                                         href="">
                                         <span class="icon">
                                             <span class="feather-icon">
@@ -345,7 +350,7 @@
                                             </span>
                                         </span>
                                     </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                    <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
                                         href="view-user-details.php">
                                         <span class="icon">
@@ -354,7 +359,7 @@
 
                                             </span>
                                         </span>
-                                    </a>
+                                    </a> -->
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Delete"
                                         href="view-user-details.php">
@@ -375,14 +380,14 @@
                             <td>22 Dec 2024</td>
                             <td>
                                 <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
+                                    <i class="ti ti-point-filled me-1"></i>Available
                                                                 </span>
                             </td>
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+                                        data-bs-toggle="tooltip" data-placement="top" title="See Details"
                                         href="">
                                         <span class="icon">
                                             <span class="feather-icon">
@@ -390,7 +395,7 @@
                                             </span>
                                         </span>
                                     </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                    <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
                                         href="view-user-details.php">
                                         <span class="icon">
@@ -399,7 +404,7 @@
 
                                             </span>
                                         </span>
-                                    </a>
+                                    </a> -->
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Delete"
                                         href="view-user-details.php">
@@ -417,10 +422,10 @@
                             <td>4</td>
                             <td>TD - 223</td>
                             <td>001 - 999</td>
-                            <td>20 Dec 2024</td>
+                            <td>11 Dec 2024</td>
                             <td>
                                 <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched
+                                    <i class="ti ti-point-filled me-1"></i>Not Available
                                 </span>
                             </td>
                             <td>
@@ -435,7 +440,7 @@
                                             </span>
                                         </span>
                                     </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                    <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
                                         href="view-user-details.php">
                                         <span class="icon">
@@ -444,404 +449,9 @@
 
                                             </span>
                                         </span>
-                                    </a>
+                                    </a> -->
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Delete"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
-                </div>
-            </div>
-            <div class="tab-pane  text-muted" id="nav-in-progress" role="tabpanel">
-                <div class="custom-datatable-filter">
-                <table class="table common-datatable withoutActionTR nowrap w-100">
-                    <thead class="thead-light">
-                        <tr>
-                            <th>S.No.</th>
-                            <th>Template Name</th>
-                            <th>Created On</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>Untitled Template</td>
-                            <td>27 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
-                                                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
-
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>2</td>
-                            <td>Marketing Template</td>
-                            <td>25 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
-
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Newsletter Template</td>
-                            <td>22 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
-                                                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
-
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Event Template</td>
-                            <td>20 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched 
-                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
-
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
-                </div>
-            </div>
-            <div class="tab-pane  text-muted" id="nav-cart-justified" role="tabpanel">
-                <div class="custom-datatable-filter">
-                <table class="table common-datatable withoutActionTR nowrap w-100">
-                    <thead class="thead-light">
-                        <tr>
-                            <th>S.No.</th>
-                            <th>Template Name</th>
-                            <th>Created On</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>Untitled Template</td>
-                            <td>27 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
-                                                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
-
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>2</td>
-                            <td>Marketing Template</td>
-                            <td>25 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched
-                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
-
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Newsletter Template</td>
-                            <td>22 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
-                                                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
-
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Event Template</td>
-                            <td>20 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched 
-                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
-
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
                                         href="view-user-details.php">
                                         <span class="icon">
                                             <span class="feather-icon">
@@ -865,7 +475,7 @@
 
 </div>
 
-<!-- Add Template modal start -->
+<!-- Update Status modal start -->
 <div class="modal fade custombottm_modalStyle" id="addStickerModal">
     <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
@@ -893,12 +503,12 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
+                                <label class="form-label">Ready From:</label>
                                 <input type="text" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
                             </div>
 
                             <div class="form-group">
-                                <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
+                                <label class="form-label">Ready To:</label>
                                 <input type="text" placeholder="Please Enter The End Range" class="form-control largeinp_height">
                             </div>
 
@@ -907,8 +517,8 @@
                                 <label class="form-label">Status:<div class="requiredLabel">*</div></label>
                                 <select class="form-control largeinp_height">
                                     <option value="" selected >Choose Status</option>
-                                    <option value="Not Dispatched">Not Dispatched</option>
-                                    <option value="Dispatched for Printing">Dispatched for Printing</option>
+                                    <option value="Not Available">Not Available</option>
+                                    <option value="Available">Available</option>
                                 </select>
                             </div>
 
@@ -916,17 +526,24 @@
 
                     </div>
                 </div>
+
                 <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">
+                        Save
+                    </button>
+                </div>
+
+                <!-- <div class="modal-footer">
                     <button type="submit" class="btn btnContinueProcess btn-primary editEnquiryBtn">
                         <div class="buttontext">
                             <div class="formediticon_modal">
                                 <iconify-icon icon="uit:process"></iconify-icon>
                             </div>
-                            Continue to Process
+                            Update
                         </div>
                         <iconify-icon icon="bi:arrow-right"></iconify-icon>
                     </button>
-                </div>
+                </div> -->
             </form>
         </div>
     </div>
@@ -974,8 +591,8 @@
                                 <label class="form-label">Status:<div class="requiredLabel">*</div></label>
                                 <select class="form-control largeinp_height">
                                     <option value="" selected >Choose Status</option>
-                                    <option value="Not Dispatched">Not Dispatched</option>
-                                    <option value="Dispatched for Printing">Dispatched for Printing</option>
+                                    <option value="Not Available">Not Available</option>
+                                    <option value="Available">Available</option>
                                 </select>
                             </div>
 
@@ -984,6 +601,11 @@
                     </div>
                 </div>
                 <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">
+                        Save
+                    </button>
+                </div>
+                <!-- <div class="modal-footer">
                     <button type="submit" class="btn btnContinueProcess btn-primary editEnquiryBtn">
                         <div class="buttontext">
                             <div class="formediticon_modal">
@@ -993,7 +615,7 @@
                         </div>
                         <iconify-icon icon="bi:arrow-right"></iconify-icon>
                     </button>
-                </div>
+                </div> -->
             </form>
         </div>
     </div>
