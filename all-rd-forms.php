@@ -49,27 +49,85 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>Inspection RD 1 Form</td>
-                           
-                            
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        href="view-rd1-from.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
+                    <tr>
+                        <td>1</td>
+                        <td>Inspection RD 1 Form</td>
+                        <td>
+                            <div class="d-flex align-items-center ActionDropdown">
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-rd1-from.php">
+                                    <span class="icon">
+                                        <span class="feather-icon">
                                             <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
                                         </span>
-                                    </a>
+                                    </span>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
 
-                                </div>
-                            </td>
-                        </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Inspection RD 2 Form</td>
+                        <td>
+                            <div class="d-flex align-items-center ActionDropdown">
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-rd1-from.php">
+                                    <span class="icon">
+                                        <span class="feather-icon">
+                                            <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Inspection RD 3 Form</td>
+                        <td>
+                            <div class="d-flex align-items-center ActionDropdown">
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-rd1-from.php">
+                                    <span class="icon">
+                                        <span class="feather-icon">
+                                            <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Inspection RD 4 Form</td>
+                        <td>
+                            <div class="d-flex align-items-center ActionDropdown">
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-rd1-from.php">
+                                    <span class="icon">
+                                        <span class="feather-icon">
+                                            <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Inspection RD 5 Form</td>
+                        <td>
+                            <div class="d-flex align-items-center ActionDropdown">
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-rd1-from.php">
+                                    <span class="icon">
+                                        <span class="feather-icon">
+                                            <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
 
                         
                     </tbody>

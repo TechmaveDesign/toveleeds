@@ -384,13 +384,13 @@
                                  </div>
                                  <div class="InspectionFormsContainer border-top">
                                     <div class="row">
-                                        <div class="col-md-4">
+                                        <div class="col-md-3">
                                             <div class="form-group">
                                                 <div class="row">
-                                                    <div class="col-lg-4">
+                                                    <div class="col-lg-3">
                                                         <label class="form-label">Sticker</label>
                                                     </div>
-                                                    <div class="col-lg-8">
+                                                    <div class="col-lg-9">
                                                         <select class="form-control select2">
                                                             <option disabled selected value="">Please Select...</option>
                                                             <option value="ST-0001">ST-0001</option>
@@ -403,13 +403,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-3">
                                             <div class="form-group">
                                                 <div class="row">
-                                                    <div class="col-lg-4">
+                                                    <div class="col-lg-3">
                                                         <label class="form-label">Tag</label>
                                                     </div>
-                                                    <div class="col-lg-8">
+                                                    <div class="col-lg-9">
                                                         <select class="form-control select2">
                                                             <option disabled selected value="">Please Select...</option>
                                                             <option value="TG-0001">TG-0001</option>
@@ -422,11 +422,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        
+                                        <div class="col-md-6">
                                             <div class="form-group">
                                                 <div class="row">
                                                     <div class="col-lg-4">
-                                                        <label class="form-label">Tag</label>
+                                                        <label class="form-label">Reason for Examination</label>
                                                     </div>
                                                     <div class="col-lg-8">
                                                         <select class="form-control select2">
@@ -437,6 +438,155 @@
                                                             <option value="Written Scheme">Written Scheme</option>
                                                             <option value="Exceptional Circumstances">Exceptional Circumstances</option>
                                                             <option value="Installation">Installation</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <label class="form-label">Client Mobile Number:</label>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <label class="form-label">Survey Requested by:</label>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <label class="form-label">Mobile Number:</label>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <label class="form-label">Inspector Checklist</label>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <select class="form-control select2">
+                                                            <option disabled selected value="">Please Select...</option>
+                                                            <option value="yes">Yes</option>
+                                                            <option value="no">No</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <label class="form-label">Inspector’s Test Method</label>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <select class="form-control select2">
+                                                            <option disabled selected value="">Please Select...</option>
+                                                            <option value="yes">Yes</option>
+                                                            <option value="no">No</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <label class="form-label">Visual Test</label>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <select class="form-control select2">
+                                                            <option disabled selected value="">Please Select...</option>
+                                                            <option value="yes">Yes</option>
+                                                            <option value="no">No</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <label class="form-label">Functional Test</label>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <select class="form-control select2">
+                                                            <option disabled selected value="">Please Select...</option>
+                                                            <option value="yes">Yes</option>
+                                                            <option value="no">No</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <label class="form-label">Load Test</label>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <select class="form-control select2">
+                                                            <option disabled selected value="">Please Select...</option>
+                                                            <option value="yes">Yes</option>
+                                                            <option value="no">No</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <label class="form-label">Witness</label>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <select class="form-control select2">
+                                                            <option disabled selected value="">Please Select...</option>
+                                                            <option value="yes">Yes</option>
+                                                            <option value="no">No</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <label class="form-label">Payment Status</label>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <select class="form-control select2">
+                                                            <option disabled selected value="">Please Select...</option>
+                                                            <option value="Pending">Pending</option>
+                                                            <option value="Received">Received</option>
                                                         </select>
                                                     </div>
                                                 </div>

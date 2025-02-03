@@ -596,18 +596,28 @@
                                 </li>
 
                                 <li class="">
-                                    <a href="#">
+                                    <a href="all-equipments.php">
                                     <iconify-icon icon="carbon:tool-kit"></iconify-icon>
                                     <span>All Equipments</span>
-                                        
                                     </a>
-                                    
                                 </li>
-                                <li class="">
+                                <!-- <li class="">
                                     <a href="#">
                                     <iconify-icon icon="icon-park-outline:mind-mapping"></iconify-icon> 
                                     <span>Form Mappings</span>
                                     </a>
+                                </li> -->
+                                <li class="submenu">
+                                    <a href="javascript:void(0);">
+                                    <iconify-icon icon="icon-park-outline:mind-mapping"></iconify-icon>
+                                    <span>Mappings</span>
+                                        <span class="menu-arrow"></span>
+                                    </a>
+                                    <ul>
+                                        <li><a href="form-mapping.php">Inspection Mapping</a></li>
+                                        <li><a href="assessment-checklist-mapping.php">Assessment Mapping</a></li>
+                                        <!-- <li><a href="##">Customizable Analytics</a></li> -->
+                                    </ul>
                                 </li>
 
                             </ul>
@@ -656,7 +666,12 @@
                                         <span>Label's</span>
                                     </a>
                                 </li>
-
+                                <li>
+                                    <a href="label-lotavailable.php">
+                                        <iconify-icon icon="mdi:tag-outline"></iconify-icon>
+                                        <span>All Available Label's</span>
+                                    </a>
+                                </li>
                                 <li>
                                     <a href="labels-transfer.php">
                                         <iconify-icon icon="mdi:swap-horizontal"></iconify-icon>
