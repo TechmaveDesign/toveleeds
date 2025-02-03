@@ -83,17 +83,17 @@
                             <td>
                                 <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
                                     <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
-                                                                </span>
+                                </span>
                             </td>
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="See Details"
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                        data-bs-target="#editStickerModal" data-placement="top" title="See Details"
                                         href="">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                <iconify-icon icon="mage:edit"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -106,12 +106,20 @@
                                             </span>
                                         </span>
                                     </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                    <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Delete "
                                         href="view-user-details.php">
                                         <span class="icon">
                                             <span class="feather-icon">
                                             <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a> -->
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                        data-id="" title="Delete" href="#">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -133,12 +141,12 @@
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="See Details"
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                        data-bs-target="#editStickerModal" data-placement="top" title="See Details"
                                         href="">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                <iconify-icon icon="mage:edit"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -152,12 +160,11 @@
                                             </span>
                                         </span>
                                     </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete "
-                                        href="view-user-details.php">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                        data-id="" title="Delete" href="#">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                                <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -177,12 +184,12 @@
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                        data-bs-target="#editStickerModal" data-placement="top" title="See Details"
                                         href="">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                <iconify-icon icon="mage:edit"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -196,12 +203,11 @@
                                             </span>
                                         </span>
                                     </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete "
-                                        href="view-user-details.php">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                        data-id="" title="Delete" href="#">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                                <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -222,12 +228,12 @@
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                        data-bs-target="#editStickerModal" data-placement="top" title="See Details"
                                         href="">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                <iconify-icon icon="mage:edit"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -241,12 +247,11 @@
                                             </span>
                                         </span>
                                     </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete "
-                                        href="view-user-details.php">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                        data-id="" title="Delete" href="#">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                                <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -290,12 +295,12 @@
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                        data-bs-target="#editTagModal" data-placement="top" title="See Details"
                                         href="">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                <iconify-icon icon="mage:edit"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -309,12 +314,11 @@
                                             </span>
                                         </span>
                                     </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete"
-                                        href="view-user-details.php">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                        data-id="" title="Delete" href="#">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                                <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -335,13 +339,13 @@
                             </td>
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                        data-bs-target="#editTagModal" data-placement="top" title="See Details"
                                         href="">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                <iconify-icon icon="mage:edit"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -355,12 +359,11 @@
                                             </span>
                                         </span>
                                     </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete"
-                                        href="view-user-details.php">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                        data-id="" title="Delete" href="#">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                                <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -381,12 +384,12 @@
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                        data-bs-target="#editTagModal" data-placement="top" title="See Details"
                                         href="">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                <iconify-icon icon="mage:edit"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -400,12 +403,11 @@
                                             </span>
                                         </span>
                                     </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete"
-                                        href="view-user-details.php">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                        data-id="" title="Delete" href="#">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                                <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -426,12 +428,12 @@
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="See Details"
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                        data-bs-target="#editTagModal" data-placement="top" title="See Details"
                                         href="">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                <iconify-icon icon="mage:edit"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -445,16 +447,14 @@
                                             </span>
                                         </span>
                                     </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete"
-                                        href="view-user-details.php">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                        data-id="" title="Delete" href="#">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                                <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
-
                                 </div>
                             </td>
                         </tr>
@@ -496,7 +496,7 @@
                                         href="">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                <iconify-icon icon="mage:edit"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -540,7 +540,7 @@
                                         href="">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                <iconify-icon icon="mage:edit"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -584,7 +584,7 @@
                                         href="">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                <iconify-icon icon="mage:edit"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -628,7 +628,7 @@
                                         href="">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                <iconify-icon icon="mage:edit"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -693,7 +693,7 @@
                                         href="">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                <iconify-icon icon="mage:edit"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -738,7 +738,7 @@
                                         href="">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                <iconify-icon icon="mage:edit"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -782,7 +782,7 @@
                                         href="">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                <iconify-icon icon="mage:edit"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -826,7 +826,7 @@
                                         href="">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                <iconify-icon icon="mage:edit"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
@@ -887,10 +887,22 @@
                         </div>
 
                         <div class="col-md-12">
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                     <label class="form-label">Sticker ID:<div class="requiredLabel">*</div></label>
                                     <input type="text" placeholder="Please Enter the Sticker ID" class="form-control largeinp_height">
+                            </div> -->
+                            <div class="form-group">
+                                <label class="form-label">Sticker ID:<div class="requiredLabel">*</div></label>
+                                <select class="form-control largeinp_height select2">
+                                    <option value="">Select a Sticker ID</option>
+                                    <option value="AEB-0129">AEB - 0129</option>
+                                    <option value="BEC-1011">BEC - 1011</option>
+                                    <option value="FBC-1230">FBC - 1230</option>
+                                    <option value="GHI-2211">GHI - 2211</option>
+
+                                </select>
                             </div>
+
 
                             <div class="form-group">
                                 <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
@@ -905,7 +917,7 @@
                             <!-- Dropdown for Status -->
                             <div class="form-group">
                                 <label class="form-label">Status:<div class="requiredLabel">*</div></label>
-                                <select class="form-control largeinp_height">
+                                <select class="form-control largeinp_height select2">
                                     <option value="" selected >Choose Status</option>
                                     <option value="Not Dispatched">Not Dispatched</option>
                                     <option value="Dispatched for Printing">Dispatched for Printing</option>
@@ -954,9 +966,20 @@
                         </div>
                         <div class="col-md-12">
 
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                     <label class="form-label">Tag ID:<div class="requiredLabel">*</div></label>
                                     <input type="text" placeholder="Please Enter the Tag ID" class="form-control largeinp_height">
+                            </div> -->
+                            <div class="form-group">
+                                <label class="form-label">Tag ID:<div class="requiredLabel">*</div></label>
+                                <select class="form-control largeinp_height select2">
+                                    <option value="">Select a Tag ID</option>
+                                    <option value="TA-123">TA - 123</option>
+                                    <option value="TB-345">TB - 345</option>
+                                    <option value="TC-112">TC - 112</option>
+                                    <option value="TD-233">TD - 223</option>
+
+                                </select>
                             </div>
 
                             <div class="form-group">
@@ -972,7 +995,7 @@
                             <!-- Dropdown for Status -->
                             <div class="form-group">
                                 <label class="form-label">Status:<div class="requiredLabel">*</div></label>
-                                <select class="form-control largeinp_height">
+                                <select class="form-control largeinp_height select2">
                                     <option value="" selected >Choose Status</option>
                                     <option value="Not Dispatched">Not Dispatched</option>
                                     <option value="Dispatched for Printing">Dispatched for Printing</option>
@@ -999,6 +1022,131 @@
     </div>
 </div>
 <!-- /Add template -->
+
+
+<!-- Edit Modal Sticker-->
+<div class="modal fade custombottm_modalStyle" id="editStickerModal">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Edit Sticker</h4>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x"></i>
+                </button>
+            </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="iconImageSection">
+                                <img src="assets/aditya_assests/sticker_icon.png" alt="Sticker Icon">
+                            </div>
+                        </div>
+
+                        <input type="hidden" id="stickerIdHidden" name="sticker_id">
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="form-label">Sticker ID:<div class="requiredLabel">*</div></label>
+                                <select id="editStickerID" name="sticker_id" class="form-control largeinp_height select2">
+                                    <option value="">Select a Sticker ID</option>
+                                    <option value="AEB-0129">AEB - 0129</option>
+                                    <option value="BEC-1011">BEC - 1011</option>
+                                    <option value="FBC-1230">FBC - 1230</option>
+                                    <option value="GHI-2211">GHI - 2211</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
+                                <input type="text" id="editStartRange" name="start_range" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
+                                <input type="text" id="editEndRange" name="end_range" placeholder="Please Enter The End Range" class="form-control largeinp_height">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Status:<div class="requiredLabel">*</div></label>
+                                <select id="editStatus" name="status" class="form-control largeinp_height select2">
+                                    <option value="">Choose Status</option>
+                                    <option value="Not Dispatched">Not Dispatched</option>
+                                    <option value="Dispatched for Printing">Dispatched for Printing</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end me-3 mb-3">
+                    <button type="submit" class="btn btn-primary">
+                        Save & Update
+                    </button>
+                </div>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Modal Tag-->
+<div class="modal fade custombottm_modalStyle" id="editTagModal">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Edit Tag</h4>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x"></i>
+                </button>
+            </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="iconImageSection">
+                                <img src="assets/aditya_assests/sticker_icon.png" alt="Sticker Icon">
+                            </div>
+                        </div>
+
+                        <input type="hidden" id="tagIdHidden" name="tag_id">
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="form-label">Tag ID:<div class="requiredLabel">*</div></label>
+                                <select id="editTagID" name="tag_id" class="form-control largeinp_height select2">
+                                    <option value="">Select a Tag ID</option>
+                                    <option value="TA-123">TA - 0123</option>
+                                    <option value="TB-345">TB - 345</option>
+                                    <option value="TC-112">TC - 112</option>
+                                    <option value="TD-223">TD - 223</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
+                                <input type="text" id="editStartRange" name="start_range" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
+                                <input type="text" id="editEndRange" name="end_range" placeholder="Please Enter The End Range" class="form-control largeinp_height">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Status:<div class="requiredLabel">*</div></label>
+                                <select id="editStatus" name="status" class="form-control largeinp_height select2">
+                                    <option value="">Choose Status</option>
+                                    <option value="Not Dispatched">Not Dispatched</option>
+                                    <option value="Dispatched for Printing">Dispatched for Printing</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end me-3 mb-3">
+                    <button type="submit" class="btn btn-primary">
+                        Save & Update
+                    </button>
+                </div>
+        </div>
+    </div>
+</div>
 
 <!-- Delete Modal -->
 <div class="modal fade" id="delete_modal">
@@ -1101,3 +1249,32 @@
     });
 </script>
 <!-- button submit loader js end -->
+
+<!-- Delete SweetAlert2 -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".delete-btn").forEach(button => {
+        button.addEventListener("click", function (e) {
+            e.preventDefault();
+            
+            let stickerId = this.getAttribute("data-id"); 
+
+            Swal.fire({
+                title: "Are you sure?",
+                text: "This action cannot be undone!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#d33",
+                cancelButtonColor: "#6c757d",
+                confirmButtonText: "Yes, delete it!",
+                cancelButtonText: "Cancel"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Perform delete action here (e.g., AJAX request)
+                    Swal.fire("Deleted!", "The sticker has been deleted.", "success");
+                }
+            });
+        });
+    });
+});
+</script>
