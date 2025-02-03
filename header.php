@@ -48,6 +48,7 @@
     <!-- Color Picker Css -->
     <link rel="stylesheet" href="assets/plugins/flatpickr/flatpickr.min.css">
     <link rel="stylesheet" href="assets/plugins/@simonwep/pickr/themes/nano.min.css">
+    
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css">

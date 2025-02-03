@@ -22,11 +22,6 @@
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
 
             <div class="mb-2 me-2" id="addStickerBtn">
-                <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#addStickerModal" aria-controls="offcanvasRight"
-                    class="btn btn-primary d-flex align-items-center cmnaddbtn">
-                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Add Sticker
-                </a> -->
-
                 <a href="#" data-bs-toggle="offcanvas" data-bs-target="#createstickerorder" aria-controls="offcanvasRight" id="addStickerBtn"
                     class="btn btn-primary d-flex align-items-center cmnaddbtn">
                     <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Request Sticker
@@ -73,227 +68,165 @@
                     <thead class="thead-light">
                             <tr>
                                 <th>S.No.</th>
-                                <th>Sticker ID</th>
-                                <th>Total Range</th>
-                                <!-- <th>Client ID</th> -->
-                                <!-- <th>Client Name</th> -->
-                                <!-- <th>Department</th> -->
                                 <th>Region</th>
-                                <th>Alloted Range</th>
-                                <th>Date & Time</th>
-                                <!-- <th>Checklist Name</th> -->
-                                <th>Status</th>
+                                <th>Manager</th>
+                                <th>Email</th>
+                                <th>Phone</th>
                                 <th>Action</th>
                             </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td>AEF - 0129</td>
-                            <td>001 - 999</td>
-                                <td>East Kolkata</td>
-                                <td>001 - 500</td>
-                                <td>
-                                    10/02/2024 15:15
+                            <td>Maharashtra</td>
+                            <td>
+                                    <div class="d-flex align-items-center file-name-icon">
+                                        <a href="#" class="avatar avatar-md avatar-rounded">
+                                            <img src="assets/img/users/user-33.jpg" class="img-fluid"
+                                                alt="Stephan Peralt">
+                                        </a>
+                                        <div class="ms-2">
+                                            <h6 class="fw-medium"><a href="#">Stephan Peralt</a></h6>
+                                        </div>
+                                    </div>
                                 </td>
-                                <td>
-                                    <span class="badge bg-outline-secondary pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Under Printing</span>
-                                        <iconify-icon icon="mynaui:info-waves"></iconify-icon>
-                                    </span>
-                                </td>
-
+                            <td>stephanwolf@yahoo.com</td>
+                            <td>9011221100</td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                            href="job-order-details.php">
+                                            href="view-labelAllotment.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="feather feather-eye">
-                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
-                                                        </path>
-                                                        <circle cx="12" cy="12" r="3"></circle>
-                                                    </svg>
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
-                                        <button
-                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                            data-id="" title="Delete" href="#">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="feather feather-trash">
-                                                        <polyline points="3 6 5 6 21 6"></polyline>
-                                                        <path
-                                                            d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
-                                                        </path>
-                                                    </svg>
+                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
                                                 </span>
                                             </span>
-                                        </button>
+                                        </a>
                                     </div>
                                 </td>
                             </tr>
 
                             <tr>
                                 <td>2</td>
-                                <td>BEC - 1011</td>
-                                <td>1000 - 1999</td>
-                                <td>East Mumbai</td>
-                                <td>1000 - 1599</td>
-                                <td>11/02/2024 10:45</td>
+                                <td>New Delhi</td>
                                 <td>
-                                    <span class="badge bg-outline-secondary pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Under Printing</span>
-                                        <iconify-icon icon="tabler:progress-alert"></iconify-icon>
-                                    </span>
+                                    <div class="d-flex align-items-center file-name-icon">
+                                        <a href="" class="avatar avatar-md avatar-rounded">
+                                            <img src="assets/img/users/user-34.jpg" class="img-fluid" alt="Elena Cruz">
+                                        </a>
+                                        <div class="ms-2">
+                                            <h6 class="fw-medium"><a href="#">Elena Cruz</a></h6>
+                                        </div>
+                                    </div>
                                 </td>
+                                <td>elena@gmail.com</td>
+                                <td>9876543210</td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                            data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                            href="job-order-details.php">
+                                            data-bs-toggle="tooltip" data-placement="top" title="Edit"
+                                            href="view-labelAllotment.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="feather feather-eye">
-                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
-                                                        </path>
-                                                        <circle cx="12" cy="12" r="3"></circle>
-                                                    </svg>
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
-                                        <button
-                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                            data-id="" title="Delete" href="#">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="feather feather-trash">
-                                                        <polyline points="3 6 5 6 21 6"></polyline>
-                                                        <path
-                                                            d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
-                                                        </path>
-                                                    </svg>
+                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
                                                 </span>
                                             </span>
-                                        </button>
+                                        </a>
                                     </div>
                                 </td>
                             </tr>
 
                             <tr>
                                 <td>3</td>
-                                <td>CEA - 2020</td>
-                                <td>2000 - 2999</td>
-                                <td>West Pune</td>
-                                <td>2000 - 2499</td>
-                                <td>12/02/2024 13:20</td>
+                                <td>Karnataka</td>
                                 <td>
-                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Delivered</span>
-                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
-                                    </span>
+                                    <div class="d-flex align-items-center file-name-icon">
+                                        <a href="#" class="avatar avatar-md avatar-rounded">
+                                            <img src="assets/img/users/user-19.jpg" class="img-fluid" alt="John Smith">
+                                        </a>
+                                        <div class="ms-2">
+                                            <h6 class="fw-medium"><a href="#">John Smith</a></h6>
+                                        </div>
+                                    </div>
                                 </td>
+                                <td>johnsmith12@gmail.com</td>
+                                <td>1234567890</td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                            href="job-order-details.php">
+                                            href="view-labelAllotment.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="feather feather-eye">
-                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
-                                                        </path>
-                                                        <circle cx="12" cy="12" r="3"></circle>
-                                                    </svg>
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
-                                        <button
-                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                            data-id="" title="Delete" href="#">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="feather feather-trash">
-                                                        <polyline points="3 6 5 6 21 6"></polyline>
-                                                        <path
-                                                            d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
-                                                        </path>
-                                                    </svg>
+                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
                                                 </span>
                                             </span>
-                                        </button>
+                                        </a>
                                     </div>
                                 </td>
                             </tr>
-
                         <tr>
                             <td>4</td>
-                            <td>GHI - 2211</td>
-                            <td>3000 - 5999</td>
-                                <td>North Pune</td>
-                                <td>3000 - 3999</td>                             
-                                <td>12/02/2024 13:20</td>
-                              <td>
-                                    <span class="badge bg-outline-warning pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Dispatched</span>
-                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
-                                    </span>
+                            <td>Noida</td>
+                            <td>
+                                    <div class="d-flex align-items-center file-name-icon">
+                                        <a href="#" class="avatar avatar-md avatar-rounded">
+                                            <img src="assets/img/users/user-20.jpg" class="img-fluid" alt="John Smith">
+                                        </a>
+                                        <div class="ms-2">
+                                            <h6 class="fw-medium"><a href="#">Max Plank</a></h6>
+                                        </div>
+                                    </div>
                                 </td>
+                                <td>maxplank@gmail.com</td>
+                                <td>987612345</td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                            href="job-order-details.php">
+                                            href="view-labelAllotment.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="feather feather-eye">
-                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
-                                                        </path>
-                                                        <circle cx="12" cy="12" r="3"></circle>
-                                                    </svg>
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
-                                        <button
-                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                            data-id="" title="Delete" href="#">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="feather feather-trash">
-                                                        <polyline points="3 6 5 6 21 6"></polyline>
-                                                        <path
-                                                            d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
-                                                        </path>
-                                                    </svg>
+                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
                                                 </span>
                                             </span>
-                                        </button>
+                                        </a>
                                     </div>
                                 </td>
                             </tr>                        
-
                     </tbody>
 
                 </table>
@@ -306,222 +239,163 @@
                 <thead class="thead-light">
                             <tr>
                                 <th>S.No.</th>
-                                <th>Sticker ID</th>
-                                <th>Total Range</th>
-                                <!-- <th>Client ID</th> -->
-                                <!-- <th>Client Name</th> -->
-                                <!-- <th>Department</th> -->
                                 <th>Region</th>
-                                <th>Alloted Range</th>
-                                <th>Date & Time</th>
-                                <th>Status</th>
+                                <th>Manager</th>
+                                <th>Email</th>
+                                <th>Phone</th>
                                 <th>Action</th>
                             </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1</td>
-                            <td>TAG - 1111</td>
-                            <td>001 - 399</td>
-                                <td>North Kolkata</td>
-                                <td>001 - 399</td>
+                                <td>Kolkata</td>
                                 <td>
-                                    10/02/2024 15:15
+                                    <div class="d-flex align-items-center file-name-icon">
+                                        <a href="#" class="avatar avatar-md avatar-rounded">
+                                            <img src="assets/img/users/user-34.jpg" class="img-fluid" alt="Elena Cruz">
+                                        </a>
+                                        <div class="ms-2">
+                                            <h6 class="fw-medium"><a href="#">Elena Cruz</a></h6>
+                                        </div>
+                                    </div>
                                 </td>
-                                <td>
-                                    <span class="badge bg-outline-warning pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Dispatched</span>
-                                        <iconify-icon icon="mynaui:info-waves"></iconify-icon>
-                                    </span>
-                                </td>
-
+                                <td>elena@gmail.com</td>
+                                <td>9876543210</td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                            href="job-order-details.php">
+                                            href="view-labelAllotment.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="feather feather-eye">
-                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
-                                                        </path>
-                                                        <circle cx="12" cy="12" r="3"></circle>
-                                                    </svg>
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
-                                        <button
-                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                            data-id="" title="Delete" href="#">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="feather feather-trash">
-                                                        <polyline points="3 6 5 6 21 6"></polyline>
-                                                        <path
-                                                            d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
-                                                        </path>
-                                                    </svg>
+                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
                                                 </span>
                                             </span>
-                                        </button>
+                                        </a>
                                     </div>
                                 </td>
                             </tr>
 
                             <tr>
                                 <td>2</td>
-                                <td>TSC - 202</td>
-                                <td>499 - 699</td>
-                                <td>South Mumbai</td>
-                                <td>499 - 699</td>
-                                <td>11/02/2024 10:45</td>       
+                                <td>New Delhi</td>
                                 <td>
-                                    <span class="badge bg-outline-secondary pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Under Printing</span>
-                                        <iconify-icon icon="tabler:progress-alert"></iconify-icon>
-                                    </span>
+                                    <div class="d-flex align-items-center file-name-icon">
+                                        <a href="#" class="avatar avatar-md avatar-rounded">
+                                            <img src="assets/img/users/user-32.jpg" class="img-fluid" alt="Elena Cruz">
+                                        </a>
+                                        <div class="ms-2">
+                                            <h6 class="fw-medium"><a href="#">Chelsia Ford</a></h6>
+                                        </div>
+                                    </div>
                                 </td>
+                                <td>ford@gmail.com</td>
+                                <td>9876541122</td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                            href="job-order-details.php">
+                                            href="view-labelAllotment.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="feather feather-eye">
-                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
-                                                        </path>
-                                                        <circle cx="12" cy="12" r="3"></circle>
-                                                    </svg>
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
-                                        <button
-                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                            data-id="" title="Delete" href="#">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="feather feather-trash">
-                                                        <polyline points="3 6 5 6 21 6"></polyline>
-                                                        <path
-                                                            d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
-                                                        </path>
-                                                    </svg>
+                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
                                                 </span>
                                             </span>
-                                        </button>
+                                        </a>
                                     </div>
                                 </td>
+                            </tr>
                             </tr>
 
                             <tr>
                                 <td>3</td>
-                                <td>TC - 1120</td>
-                                <td>800 - 1000</td>
-                                <td>East Pune</td>
-                                <td>800 - 1000</td>
-                                <td>12/02/2024 13:20</td>
+                                <td>Mumbai</td>
                                 <td>
-                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Delivered</span>
-                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
-                                    </span>
+                                    <div class="d-flex align-items-center file-name-icon">
+                                        <a href="#" class="avatar avatar-md avatar-rounded">
+                                            <img src="assets/img/users/user-32.jpg" class="img-fluid" alt="Elena Cruz">
+                                        </a>
+                                        <div class="ms-2">
+                                            <h6 class="fw-medium"><a href="#">Monika Gellar</a></h6>
+                                        </div>
+                                    </div>
                                 </td>
+                                <td>monicagellargmail.com</td>
+                                <td>2221113331</td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                            href="job-order-details.php">
+                                            href="view-labelAllotment.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="feather feather-eye">
-                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
-                                                        </path>
-                                                        <circle cx="12" cy="12" r="3"></circle>
-                                                    </svg>
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
-                                        <button
-                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                            data-id="" title="Delete" href="#">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="feather feather-trash">
-                                                        <polyline points="3 6 5 6 21 6"></polyline>
-                                                        <path
-                                                            d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
-                                                        </path>
-                                                    </svg>
+                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
                                                 </span>
                                             </span>
-                                        </button>
+                                        </a>
                                     </div>
                                 </td>
                             </tr>
 
                         <tr>
                             <td>4</td>
-                            <td>TAG - 4321</td>
-                            <td>499 - 899</td>
-                                <td>Pune</td>
-                                <td>499 - 899</td>
-                                <td>12/02/2024 13:20</td>
-                                <td>
-                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Delivered</span>
-                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
-                                    </span>
+                            <td>Bangalore</td>
+                            <td>
+                                    <div class="d-flex align-items-center file-name-icon">
+                                        <a href="#" class="avatar avatar-md avatar-rounded">
+                                            <img src="assets/img/users/user-33.jpg" class="img-fluid" alt="Elena Cruz">
+                                        </a>
+                                        <div class="ms-2">
+                                            <h6 class="fw-medium"><a href="#">Rick Ross</a></h6>
+                                        </div>
+                                    </div>
                                 </td>
+                                <td>Rickross@gmail.com</td>
+                                <td>9876543210</td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                            href="job-order-details.php">
+                                            href="view-labelAllotment.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="feather feather-eye">
-                                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
-                                                        </path>
-                                                        <circle cx="12" cy="12" r="3"></circle>
-                                                    </svg>
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
-                                        <button
-                                            class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover del-button">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                            data-id="" title="Delete" href="#">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="feather feather-trash">
-                                                        <polyline points="3 6 5 6 21 6"></polyline>
-                                                        <path
-                                                            d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
-                                                        </path>
-                                                    </svg>
+                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
                                                 </span>
                                             </span>
-                                        </button>
+                                        </a>
                                     </div>
                                 </td>
                             </tr>                        
@@ -531,256 +405,6 @@
                 </table>
                 </div>
             </div>
-            <!-- <div class="tab-pane  text-muted" id="nav-in-progress" role="tabpanel">
-                <div class="custom-datatable-filter">
-                <table class="table common-datatable withoutActionTR nowrap w-100">
-                    <thead class="thead-light">
-                        <tr>
-                            <th>S.No.</th>
-                            <th>Template Name</th>
-                            <th>Created On</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>Untitled Template</td>
-                            <td>27 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
-                                                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="See Details">
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    
-
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>2</td>
-                            <td>Marketing Template</td>
-                            <td>25 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Newsletter Template</td>
-                            <td>22 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
-                                                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    
-
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Event Template</td>
-                            <td>20 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched 
-                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    
-
-                                </div>
-                            </td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
-                </div>
-            </div> -->
-            <!-- <div class="tab-pane  text-muted" id="nav-cart-justified" role="tabpanel">
-                <div class="custom-datatable-filter">
-                <table class="table common-datatable withoutActionTR nowrap w-100">
-                    <thead class="thead-light">
-                        <tr>
-                            <th>S.No.</th>
-                            <th>Template Name</th>
-                            <th>Created On</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>Untitled Template</td>
-                            <td>27 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
-                                                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    
-
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>2</td>
-                            <td>Marketing Template</td>
-                            <td>25 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched
-                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    
-
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Newsletter Template</td>
-                            <td>22 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
-                                                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    
-
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Event Template</td>
-                            <td>20 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched 
-                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    
-
-                                </div>
-                            </td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
-                </div>
-            </div> -->
         </div>
 
     </div>
@@ -791,12 +415,11 @@
 <div class="offcanvas offcanvas-end rightlarge_offcanvas commonoffcanvas_style" tabindex="-1" id="createstickerorder"
     aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header flexbetweenheader">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel">Request</h5>
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Request Sticker</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
             <iconify-icon icon="mi:close"></iconify-icon>
         </button>
     </div>
-    <form action="clients.php">
         <div class="offcanvas-body">
 
             <div class="offcanvasForm_wrap">
@@ -805,21 +428,20 @@
                     <div class="row">
 
                         <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">Sticker ID<span class="text-danger"> *</span></label>
-                                <input type="text" class="form-control">
-                            </div>
+                            <label class="form-label">Sticker ID:<div class="requiredLabel">*</div></label>
+                                <select class="form-control largeinp_height select2">
+                                    <option value="">Select a Sticker ID</option>
+                                    <option value="AEF - 0129">AEF - 0129</option>
+                                    <option value="BEC - 1011">BEC - 1011</option>
+                                    <option value="CEA - 2020">CEA - 2020</option>
+                                    <option value="GHI - 2211">GHI - 2211</option>
 
-                            <div class="form-group">
-                                <label class="form-label">Client ID<span class="text-danger"> *</span></label>
-                                <input type="text" class="form-control">
-                            </div>
-
+                                </select>
                         </div>
 
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="form-label">Select Client</label>
+                                <label class="form-label">Select Manager</label>
                                 <select name="" class="form-control select2">
                                     <option disabled="" selected="" value="">Please Select...</option>
                                     <option value="1">Danial Craig</option>
@@ -832,31 +454,10 @@
 
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">Service Type</label>
-                                <select name="" class="form-control select2">
-                                    <option disabled="" selected="" value="">Please Select...</option>
-                                    <option value="Equipment Inspection">Equipment Inspection</option>
-                                    <option value="Assessment">Assessment</option>
-                                    <option value="Training">Training</option>
-                                    <option value="NDT">NDT</option>
-                                </select>
-                            </div>
-                        </div>
 
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <label class="form-label">Scheduled Date</label>
-                                <input class="form-control customdataPicker flatpickr-input" type="text" name=""
-                                    placeholder="Select Date" readonly="readonly">
-                                <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
-                                </iconify-icon>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label class="form-label">Deadline</label>
+                                <label class="form-label">Date</label>
                                 <input class="form-control customdataPicker flatpickr-input" type="text" name=""
                                     placeholder="Select Date" readonly="readonly">
                                 <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
@@ -882,7 +483,7 @@
                                 <input type="text" class="form-control">
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <!-- <div class="col-md-6">
                             <div class="form-group">
                                 <label class="form-label">Assigned Inspector/Trainer</label>
                                 <select name="" class="form-control select2">
@@ -896,22 +497,10 @@
                                 </select>
 
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">Checklist Template </label>
-                                <select name="" class="form-control select2">
-                                    <option disabled="" selected="" value="">Please Select...</option>
-                                    <option value="Template 1">Template 1</option>
-                                    <option value="Template 2">Template 2</option>
-                                    <option value="Template 3">Template 3</option>
-                                </select>
 
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
+                        <!-- <div class="col-md-6">
                             <div class="form-group">
                                 <label class="form-label">Status</label>
                                 <select name="" id="" class="form-control select2">
@@ -924,7 +513,8 @@
                                 </select>
 
                             </div>
-                        </div>
+                        </div> -->
+
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <div class="form-label">
@@ -934,14 +524,14 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-12">
+                        <!-- <div class="col-lg-12">
                             <div class="form-group">
                                 <label class="form-label labelno_margin">Attach Documents</label>
                                 <p class="formlabel_description">Attach relevant documents such as technical drawings, specifications, previous inspection reports, or client instructions.</p>
                                 <input type="file" class="filepond" id="imageInput" name="imageInput" multiple
                                     data-max-file-size="3MB" data-max-files="5">
                             </div>
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
@@ -950,10 +540,10 @@
         </div>
         <div class="canvasFooterContainer flexmodalfooter">
             <div class="savedraft_button">
-                <div class="form-check form-check-md">
+                <!-- <div class="form-check form-check-md">
                     <input class="form-check-input" type="checkbox">
                     <label class="form-check-label" for="gridCheck">Save Draft </label>
-                </div>
+                </div> -->
 
             </div>
 
@@ -963,19 +553,17 @@
                 <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Submit</button>
             </div>
         </div>
-    </form>
 </div>
 
 <!-- Add Tag modal start -->
 <div class="offcanvas offcanvas-end rightlarge_offcanvas commonoffcanvas_style" tabindex="-1" id="createtagorder"
     aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header flexbetweenheader">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel">Add Sticker</h5>
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Request Tag</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
             <iconify-icon icon="mi:close"></iconify-icon>
         </button>
     </div>
-    <form action="clients.php">
         <div class="offcanvas-body">
 
             <div class="offcanvasForm_wrap">
@@ -984,16 +572,14 @@
                     <div class="row">
 
                         <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">Tag ID<span class="text-danger"> *</span></label>
-                                <input type="text" class="form-control">
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">Client ID<span class="text-danger"> *</span></label>
-                                <input type="text" class="form-control">
-                            </div>
-
+                            <label class="form-label">Tag ID:<div class="requiredLabel">*</div></label>
+                                <select class="form-control largeinp_height select2">
+                                    <option value="">Select a Tag ID</option>
+                                    <option value="AEB-0129">TAG - 1111</option>
+                                    <option value="BEC-1011">BEC - 1011</option>
+                                    <option value="TC - 1120">TC - 1120</option>
+                                    <option value="TAG - 4321">TAG - 4321</option>
+                                </select>
                         </div>
 
                         <div class="col-md-6">
@@ -1113,15 +699,6 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-12">
-                            <div class="form-group">
-                                <label class="form-label labelno_margin">Attach Documents</label>
-                                <p class="formlabel_description">Attach relevant documents such as technical drawings, specifications, previous inspection reports, or client instructions.</p>
-                                <input type="file" class="filepond" id="imageInput" name="imageInput" multiple
-                                    data-max-file-size="3MB" data-max-files="5">
-                            </div>
-                        </div>
-
                     </div>
                 </div>
 
@@ -1142,7 +719,6 @@
                 <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Submit</button>
             </div>
         </div>
-    </form>
 </div>
 
 
@@ -1162,7 +738,7 @@
                     <a href="javascript:void(0);" class="btn btn-light me-3" data-bs-dismiss="modal">Cancel</a>
                     <a href="users.html" class="btn btn-danger">Yes, Delete</a>
                 </div>
-            </div>
+            </div>  
         </div>
     </div>
 </div>
@@ -1198,7 +774,7 @@
                         <label for="dateTime" class="form-label">Date Time</label>
                         <input type="datetime-local" class="form-control" id="dateTime">
                     </div>
-                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    <button type="submit" class="btn btn-primary">Save & Update Changes</button>
                 </form>
             </div>
         </div>
@@ -1365,3 +941,61 @@
     });
 </script>
 <!-- button submit loader js end -->
+
+<!-- Delete SweetAlert2 -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".delete-btn").forEach(button => {
+        button.addEventListener("click", function (e) {
+            e.preventDefault();
+            
+            let stickerId = this.getAttribute("data-id"); 
+
+            Swal.fire({
+                title: "Are you sure?",
+                text: "This action cannot be undone!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#d33",
+                cancelButtonColor: "#6c757d",
+                confirmButtonText: "Yes, delete it!",
+                cancelButtonText: "Cancel"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Perform delete action here (e.g., AJAX request)
+                    Swal.fire("Deleted!", "The sticker has been deleted.", "success");
+                }
+            });
+        });
+    });
+});
+</script>
+
+<!-- Delete SweetAlert2 -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".delete-btn").forEach(button => {
+        button.addEventListener("click", function (e) {
+            e.preventDefault();
+            
+            let stickerId = this.getAttribute("data-id"); 
+
+            Swal.fire({
+                title: "Are you sure?",
+                text: "This action cannot be undone!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#d33",
+                cancelButtonColor: "#6c757d",
+                confirmButtonText: "Yes, delete it!",
+                cancelButtonText: "Cancel"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Perform delete action here (e.g., AJAX request)
+                    Swal.fire("Deleted!", "The sticker has been deleted.", "success");
+                }
+            });
+        });
+    });
+});
+</script>

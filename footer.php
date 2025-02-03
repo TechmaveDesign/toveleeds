@@ -117,7 +117,14 @@ document.addEventListener('DOMContentLoaded', function() {
 submit trigger processing js end
 -------------------------------------- -->
 
-
+<script>
+    $(document).ready(function() {
+        $('.select2').select2({
+            // placeholder: "Select an option",
+            // allowClear: true
+        });
+    });
+</script>
 
 </body>
 
