@@ -6,27 +6,34 @@
     <!-- Breadcrumb -->
     <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb ">
         <div class="my-auto mb-2">
-            <h2 class="mb-1">All Checklist Templates</h2>
+            <h2 class="mb-1">All Equipments</h2>
             <nav>
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item">
                         <a href="index.html"><i class="ti ti-smart-home"></i></a>
                     </li>
                     <li class="breadcrumb-item">
-                        Manage Templates
+                        Home
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">All Templates</li>
+                    <li class="breadcrumb-item active" aria-current="page">All Equipments</li>
                 </ol>
             </nav>
         </div>
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
 
-            <div class="mb-2">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#addtemplatemodal"
+            <div class="mb-2 me-2" >
+                <a href="#" data-bs-toggle="modal" data-bs-target="#addStickerModal"
                     class="btn btn-primary d-flex align-items-center cmnaddbtn">
-                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Add Template
+                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Add Equipments
                 </a>
             </div>
+
+            <!-- <div class="mb-2" id="addTagBtn" style="display: none;">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#addTagModal"
+                    class="btn btn-primary d-flex align-items-center cmnaddbtn">
+                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Add Assessment Equipments
+                </a>
+            </div> -->
             <div class="head-icons ms-2">
                 <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
                     data-bs-original-title="Collapse" id="collapse-header">
@@ -41,30 +48,12 @@
         <div class="tbuppertabs">
             <nav class="nav nav-style-6 nav-pills d-block" role="tablist">
                 <a class="nav-link active" data-bs-toggle="tab" role="tab" aria-current="page" href="#nav-newjobs"
-                    aria-selected="false">Equipment Inspection
+                    aria-selected="false" id="stickerTab"> Inspection Equipments
                  </a>
 
-                <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-in-pending" aria-selected="true">
-                    Operator Assessment
+                <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-in-pending" aria-selected="true" id="tagTab">
+                    Assessment Equipments
                    </a>
-                <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-in-progress" aria-selected="true">
-                   Training
-                   </a>
-                <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-cart-justified"
-                    aria-selected="true">NDT
-                    </a>
-                <!-- <a class="nav-link" data-bs-toggle="tab" role="tab" href="#nav-orders-justified"
-                    aria-selected="false">Approved Job Orders
-                    <span class="badge bg-info-transparent ms-1">11</span>
-                </a>
-                <a class="nav-link" data-bs-toggle="tab" role="tab" href="#nav-draftjobs"
-                    aria-selected="false">Draft Job Orders
-                    <span class="badge bg-info-draft ms-1">05</span>
-                </a>
-                <a class="nav-link" data-bs-toggle="tab" role="tab" href="#nav-closedjobs"
-                    aria-selected="false">Closed Job Orders
-                    <span class="badge bg-info-closed ms-1">10</span>
-                </a> -->
 
             </nav>
 
@@ -75,209 +64,239 @@
                 <table class="table common-datatable withoutActionTR nowrap w-100">
                     <thead class="thead-light">
                         <tr>
-                            <th>#ID</th>
-                            <th>Template Name</th>
+                            <th>Sr. No.</th>
+                            <th>Equipment Name</th>
                             <th>Created On</th>
-                            <!-- <th>Status</th> -->
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
-                                #INS-CH0001
+                               1
                             </td>
-                            <td>Air Compressor checklist</td>
+                            <td>Agricultural Tractor Operator</td>
                             <td>27 Dec 2024</td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                        <td>2</td>
+                        <td>Air Compressor Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Anchor Machine Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Asphalt Batching Plant Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Asphalt Milling Machine Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Asphalt Mixer Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Asphalt Paver Machine Operator / Crawler Paver Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Asphalt Roller Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Asphalt/Concrete Cutting Machine Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Backhoe Loader Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Bitumen Tanker Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>BMU Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Boom Truck Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+
+
                         
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="View Template"
-                                        href="inspection-checklist-view.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                              <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="manage-template.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                              <iconify-icon icon="cuida:edit-outline"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>#INS-CH0002</td>
-                            <td>Marketing Template</td>
-                            <td>25 Dec 2024</td>
-                          
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="View Template"
-                                        href="inspection-checklist-view.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                              <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="manage-template.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                              <iconify-icon icon="cuida:edit-outline"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>#INS-CH0003</td>
-                            <td>Newsletter Template</td>
-                            <td>22 Dec 2024</td>
-                          
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="View Template"
-                                        href="inspection-checklist-view.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                              <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="manage-template.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                              <iconify-icon icon="cuida:edit-outline"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>#INS-CH0004</td>
-                            <td>Event Template</td>
-                            <td>20 Dec 2024</td>
-                           
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="View Template"
-                                        href="inspection-checklist-view.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                              <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="manage-template.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                              <iconify-icon icon="cuida:edit-outline"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
 
                     </tbody>
 
@@ -290,208 +309,239 @@
                 <table class="table common-datatable withoutActionTR nowrap w-100">
                     <thead class="thead-light">
                         <tr>
-                            <th>#ID</th>
-                            <th>Template Name</th>
+                            <th>Sr. No.</th>
+                            <th>Equipment Name</th>
                             <th>Created On</th>
-                            <!-- <th>Status</th> -->
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
-                              #OPASS-CH0001
+                               1
                             </td>
                             <td>Agricultural Tractor Operator</td>
                             <td>27 Dec 2024</td>
-                           
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
-                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="View Template"
-                                        href="agriculture-assessment-view.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                              <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="manage-template.php">
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                              <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td> #OPASS-CH0002</td>
-                            <td>Rigger Level I</td>
-                            <td>25 Dec 2024</td>
-                           
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="View Template"
-                                        href="riger-level-1.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                              <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="manage-template.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                              <iconify-icon icon="cuida:edit-outline"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td>#OPASS-CH0003</td>
-                            <td>Newsletter Template</td>
-                            <td>22 Dec 2024</td>
-                          
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="View Template"
-                                        href="agriculture-assessment-view.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                              <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
+                        <td>2</td>
+                        <td>Air Compressor Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="manage-template.php">
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                              <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
                                 </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>#OPASS-CH0004</td>
-                            <td>Event Template</td>
-                            <td>20 Dec 2024</td>
-                           
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="View Template"
-                                        href="riger-level-1.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                              <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Anchor Machine Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="manage-template.php">
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                              <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
                                             </span>
                                         </span>
                                     </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
                                 </div>
-                            </td>
-                        </tr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Asphalt Batching Plant Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Asphalt Milling Machine Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Asphalt Mixer Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Asphalt Paver Machine Operator / Crawler Paver Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Asphalt Roller Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Asphalt/Concrete Cutting Machine Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Backhoe Loader Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Bitumen Tanker Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>BMU Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Boom Truck Operator</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                            <iconify-icon icon="cuida:edit-outline"></iconify-icon>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                        </td>
+                    </tr>
+
+
+                        
 
                     </tbody>
 
@@ -506,7 +556,7 @@
                             <th>S.No.</th>
                             <th>Template Name</th>
                             <th>Created On</th>
-                            <!-- <th>Status</th> -->
+                            <th>Status</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -517,13 +567,17 @@
                             </td>
                             <td>Untitled Template</td>
                             <td>27 Dec 2024</td>
-                           
+                            <td>
+                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
+                                                                </span>
+                            </td>
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="manage-template.php">
+                                        href="">
                                         <span class="icon">
                                             <span class="feather-icon">
                                                 <iconify-icon icon="uiw:eye-o"></iconify-icon>
@@ -531,11 +585,12 @@
                                         </span>
                                     </a>
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
                                         href="view-user-details.php">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
+                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
+
                                             </span>
                                         </span>
                                     </a>
@@ -557,13 +612,16 @@
                             <td>2</td>
                             <td>Marketing Template</td>
                             <td>25 Dec 2024</td>
-                           
+                            <td>
+                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched
+                            </td>
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="manage-template.php">
+                                        href="">
                                         <span class="icon">
                                             <span class="feather-icon">
                                                 <iconify-icon icon="uiw:eye-o"></iconify-icon>
@@ -571,11 +629,12 @@
                                         </span>
                                     </a>
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
                                         href="view-user-details.php">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
+                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
+
                                             </span>
                                         </span>
                                     </a>
@@ -596,13 +655,17 @@
                             <td>3</td>
                             <td>Newsletter Template</td>
                             <td>22 Dec 2024</td>
-                          
+                            <td>
+                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
+                                                                </span>
+                            </td>
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="manage-template.php">
+                                        href="">
                                         <span class="icon">
                                             <span class="feather-icon">
                                                 <iconify-icon icon="uiw:eye-o"></iconify-icon>
@@ -610,11 +673,12 @@
                                         </span>
                                     </a>
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
                                         href="view-user-details.php">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
+                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
+
                                             </span>
                                         </span>
                                     </a>
@@ -635,13 +699,17 @@
                             <td>4</td>
                             <td>Event Template</td>
                             <td>20 Dec 2024</td>
-                           
+                            <td>
+                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched 
+                                </span>
+                            </td>
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="manage-template.php">
+                                        href="">
                                         <span class="icon">
                                             <span class="feather-icon">
                                                 <iconify-icon icon="uiw:eye-o"></iconify-icon>
@@ -649,11 +717,12 @@
                                         </span>
                                     </a>
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
                                         href="view-user-details.php">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
+                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
+
                                             </span>
                                         </span>
                                     </a>
@@ -684,7 +753,7 @@
                             <th>S.No.</th>
                             <th>Template Name</th>
                             <th>Created On</th>
-                            <!-- <th>Status</th> -->
+                            <th>Status</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -695,13 +764,17 @@
                             </td>
                             <td>Untitled Template</td>
                             <td>27 Dec 2024</td>
-                            
+                            <td>
+                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
+                                                                </span>
+                            </td>
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="manage-template.php">
+                                        href="">
                                         <span class="icon">
                                             <span class="feather-icon">
                                                 <iconify-icon icon="uiw:eye-o"></iconify-icon>
@@ -709,11 +782,12 @@
                                         </span>
                                     </a>
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
                                         href="view-user-details.php">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
+                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
+
                                             </span>
                                         </span>
                                     </a>
@@ -735,13 +809,17 @@
                             <td>2</td>
                             <td>Marketing Template</td>
                             <td>25 Dec 2024</td>
-                           
+                            <td>
+                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched
+                                </span>
+                            </td>
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="manage-template.php">
+                                        href="">
                                         <span class="icon">
                                             <span class="feather-icon">
                                                 <iconify-icon icon="uiw:eye-o"></iconify-icon>
@@ -749,11 +827,12 @@
                                         </span>
                                     </a>
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
                                         href="view-user-details.php">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
+                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
+
                                             </span>
                                         </span>
                                     </a>
@@ -774,13 +853,17 @@
                             <td>3</td>
                             <td>Newsletter Template</td>
                             <td>22 Dec 2024</td>
-                           
+                            <td>
+                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
+                                                                </span>
+                            </td>
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="manage-template.php">
+                                        href="">
                                         <span class="icon">
                                             <span class="feather-icon">
                                                 <iconify-icon icon="uiw:eye-o"></iconify-icon>
@@ -788,11 +871,12 @@
                                         </span>
                                     </a>
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
                                         href="view-user-details.php">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
+                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
+
                                             </span>
                                         </span>
                                     </a>
@@ -813,13 +897,17 @@
                             <td>4</td>
                             <td>Event Template</td>
                             <td>20 Dec 2024</td>
-                          
+                            <td>
+                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
+                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched 
+                                </span>
+                            </td>
                             <td>
                                 <div class="d-flex align-items-center ActionDropdown">
                                    
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                         data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="manage-template.php">
+                                        href="">
                                         <span class="icon">
                                             <span class="feather-icon">
                                                 <iconify-icon icon="uiw:eye-o"></iconify-icon>
@@ -827,11 +915,12 @@
                                         </span>
                                     </a>
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Duplicate Template"
+                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
                                         href="view-user-details.php">
                                         <span class="icon">
                                             <span class="feather-icon">
-                                                <iconify-icon icon="ion:copy-outline"></iconify-icon>
+                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
+
                                             </span>
                                         </span>
                                     </a>
@@ -846,7 +935,7 @@
                                     </a>
 
                                 </div>
-                            </td> 
+                            </td>
                         </tr>
 
                     </tbody>
@@ -854,23 +943,6 @@
                 </table>
                 </div>
             </div>
-            <!-- <div class="tab-pane text-muted" id="nav-orders-justified" role="tabpanel">
-                <div class="custom-datatable-filter">
-                    
-                </div>
-            </div>
-
-            <div class="tab-pane text-muted" id="nav-draftjobs" role="tabpanel">
-                <div class="custom-datatable-filter">
-                
-                    
-                </div>
-            </div>
-            <div class="tab-pane text-muted" id="nav-closedjobs" role="tabpanel">
-                <div class="custom-datatable-filter">
-               
-                </div>
-            </div> -->
         </div>
 
     </div>
@@ -878,29 +950,38 @@
 </div>
 
 <!-- Add Template modal start -->
-<div class="modal fade custombottm_modalStyle" id="addtemplatemodal">
+<div class="modal fade custombottm_modalStyle" id="addStickerModal">
     <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Add Template</h4>
+                <h4 class="modal-title">Add Equipment</h4>
                 <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
                     <i class="ti ti-x"></i>
                 </button>
             </div>
-            <form action="manage-template.php">
+            <form action="">
                 <div class="modal-body">
                     <div class="row">
 
                         <div class="col-lg-12">
                             <div class="iconImageSection">
-                                <img src="assets/img/newimages/list.png" alt="">
+                                <!-- <img src="assets/img/newimages/list.png" alt=""> -->
+                                <img src="assets/img/newimages/maintenance.png" alt="tttt">
                             </div>
                         </div>
 
                         <div class="col-md-12">
+                        <div class="form-group">
+                                <label class="form-label">Equipment Name<div class="requiredLabel">*</div></label>
+                                <input type="text" placeholder="Please Enter The Equipment Name" class="form-control">
+                            </div>
                             <div class="form-group">
-                                <label class="form-label">Template Name <div class="requiredLabel">*</div></label>
-                                <input type="text" placeholder="Please Enter Template Title" class="form-control largeinp_height">
+                                    <label class="form-label">Equipment Type<div class="requiredLabel">*</div></label>
+                                    <select class="form-control select2">
+                                        <option disabled selected value="">Please Select...</option>
+                                        <option value="Inspection Equipment">Inspection Equipment</option>
+                                        <option value="Assessment Equipment">Assessment Equipment</option>
+                                    </select>
                             </div>
                         </div>
 
@@ -912,7 +993,62 @@
                             <div class="formediticon_modal">
                                 <iconify-icon icon="uit:process"></iconify-icon>
                             </div>
-                            Continue to Process
+                            Save & continue
+                        </div>
+                        <iconify-icon icon="bi:arrow-right"></iconify-icon>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Tag Modal -->
+<!-- Add Template modal start -->
+<div class="modal fade custombottm_modalStyle" id="EditStickerModal">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Edit Equipment</h4>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x"></i>
+                </button>
+            </div>
+            <form action="">
+                <div class="modal-body">
+                    <div class="row">
+
+                        <div class="col-lg-12">
+                            <div class="iconImageSection">
+                                <!-- <img src="assets/img/newimages/list.png" alt=""> -->
+                                <img src="assets/img/newimages/maintenance.png" alt="tttt">
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                        <div class="form-group">
+                                <label class="form-label">Equipment Name<div class="requiredLabel">*</div></label>
+                                <input type="text" placeholder="Agricultural Tractor Operator" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                    <label class="form-label">Equipment Type<div class="requiredLabel">*</div></label>
+                                    <select class="form-control select2">
+                                        <option disabled  value="">Please Select...</option>
+                                        <option value="Inspection Equipment" selected>Inspection Equipment</option>
+                                        <option value="Assessment Equipment">Assessment Equipment</option>
+                                    </select>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btnContinueProcess btn-primary editEnquiryBtn">
+                        <div class="buttontext">
+                            <div class="formediticon_modal">
+                                <iconify-icon icon="uit:process"></iconify-icon>
+                            </div>
+                            Save & continue
                         </div>
                         <iconify-icon icon="bi:arrow-right"></iconify-icon>
                     </button>
@@ -998,6 +1134,29 @@
                 }, 2000); // Delay for 2 seconds (2000ms)
             });
         });
+    });
+</script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const stickerBtn = document.getElementById("addStickerBtn");
+        const tagBtn = document.getElementById("addTagBtn");
+        const stickerTab = document.getElementById("stickerTab");
+        const tagTab = document.getElementById("tagTab");
+
+        function toggleButtons(event) {
+            if (event.target === stickerTab) {
+                stickerBtn.style.display = "block";
+                tagBtn.style.display = "none";
+            } else if (event.target === tagTab) {
+                stickerBtn.style.display = "none";
+                tagBtn.style.display = "block";
+            }
+        }
+
+        stickerTab.addEventListener("click", toggleButtons);
+        tagTab.addEventListener("click", toggleButtons);
     });
 </script>
 <!-- button submit loader js end -->

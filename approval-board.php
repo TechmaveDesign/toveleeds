@@ -34,6 +34,7 @@
 
     <!-- Performance Indicator list -->
     <div class="card tablemaincard_nopaddingleftright">
+    <?php include "headers/approval-header.php"?>
         <div class="row approvalcountcards">
             <!-- Total Companies -->
             <div class="col-lg-4 col-md-6">

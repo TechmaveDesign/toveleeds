@@ -66,7 +66,9 @@
                         <thead class="thead-light">
                             <tr>
                                 <th>S.No.</th>
-                                <th>Inspector</th>
+
+                                <th>Inspectors</th>
+
                                 <th>Sticker ID</th>
                                 <th>Total Range</th>
                                 <th>Alloted Range</th>

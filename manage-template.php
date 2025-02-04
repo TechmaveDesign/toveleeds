@@ -428,7 +428,7 @@
                                 <div class="item-type-menu-styled__MenuHeader-sc-1jgt554-4 iLmpfC">
                                     <div class="acrd_rightbox_title">Other responses</div>
                                 </div>
-                                <div class="menu_items__acrd">
+                                <!-- <div class="menu_items__acrd">
                                     <div class="type_icon__box purpleiush_bg">
                                         T
                                     </div>
@@ -439,7 +439,7 @@
                                         1,2
                                     </div>
                                     <span>Number</span>
-                                </div>
+                                </div> -->
                                 <div class="menu_items__acrd">
                                     <div class="type_icon__box bleuiush_bg">
                                         <svg viewBox="0 0 24 24" width="15" height="15" focusable="false"
@@ -452,13 +452,13 @@
                                     </div>
                                     <span>Options</span>
                                 </div>
-                                <div class="item-type-menu-styled__MenuDivider-sc-1jgt554-6 lmQjgD"></div>
+                                <!-- <div class="item-type-menu-styled__MenuDivider-sc-1jgt554-6 lmQjgD"></div>
                                 <div class="menu_items__acrd">
                                     <div class="type_icon__box radiush_bg">
                                         <iconify-icon icon="solar:calendar-broken"></iconify-icon>
                                     </div>
                                     <span>Date &amp; Time</span>
-                                </div>
+                                </div> -->
                                 <div class="menu_items__acrd">
                                     <div class="type_icon__box darkgreen_bg">
                                         <svg width="15" height="15" viewBox="0 0 16 16" focusable="false" fill="none">
@@ -467,7 +467,7 @@
                                                 fill="#00b6cb"></path>
                                         </svg>
                                     </div>
-                                    <span>Media</span>
+                                    <span>Media Questions</span>
                                 </div>
                                 <!-- <div class="menu_items__acrd">
                            <div class="type_icon__box sliderius_bg">

@@ -6,7 +6,7 @@
     <!-- Breadcrumb -->
     <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb ">
         <div class="my-auto mb-2">
-            <h2 class="mb-1">Assessment Job Orders</h2>
+            <h2 class="mb-1">Inspection Job Orders</h2>
             <nav>
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item">
@@ -218,7 +218,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="Job Order Details"
-                                            href="assessment-job-order-detail.php">
+                                            href="inspection-job-order-detail.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -299,7 +299,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="Job Order Details"
-                                            href="assessment-job-order-detail.php">
+                                            href="inspection-job-order-detail.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -381,7 +381,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="Job Order Details"
-                                            href="assessment-job-order-detail.php">
+                                            href="inspection-job-order-detail.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -576,7 +576,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="Job Order Details"
-                                            href="assessment-job-order-detail.php">
+                                            href="inspection-job-order-detail.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -657,7 +657,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="Job Order Details"
-                                            href="assessment-job-order-detail.php">
+                                            href="inspection-job-order-detail.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -739,7 +739,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="Job Order Details"
-                                            href="assessment-job-order-detail.php">
+                                            href="inspection-job-order-detail.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -931,7 +931,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="Job Order Details"
-                                            href="assessment-job-order-detail.php">
+                                            href="inspection-job-order-detail.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1011,7 +1011,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="Job Order Details"
-                                            href="assessment-job-order-detail.php">
+                                            href="inspection-job-order-detail.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1092,7 +1092,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="Job Order Details"
-                                            href="assessment-job-order-detail.php">
+                                            href="inspection-job-order-detail.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1284,7 +1284,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="Job Order Details"
-                                            href="assessment-job-order-detail.php">
+                                            href="inspection-job-order-detail.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1364,7 +1364,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="Job Order Details"
-                                            href="assessment-job-order-detail.php">
+                                            href="inspection-job-order-detail.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1445,7 +1445,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="Job Order Details"
-                                            href="assessment-job-order-detail.php">
+                                            href="inspection-job-order-detail.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1637,7 +1637,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="Job Order Details"
-                                            href="assessment-job-order-detail.php">
+                                            href="inspection-job-order-detail.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1717,7 +1717,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="Job Order Details"
-                                            href="assessment-job-order-detail.php">
+                                            href="inspection-job-order-detail.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1798,7 +1798,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="Job Order Details"
-                                            href="assessment-job-order-detail.php">
+                                            href="inspection-job-order-detail.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -1992,7 +1992,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="Job Order Details"
-                                            href="assessment-job-order-detail.php">
+                                            href="inspection-job-order-detail.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -2073,7 +2073,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="Job Order Details"
-                                            href="assessment-job-order-detail.php">
+                                            href="inspection-job-order-detail.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -2155,7 +2155,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="Job Order Details"
-                                            href="assessment-job-order-detail.php">
+                                            href="inspection-job-order-detail.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -2348,7 +2348,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="Job Order Details"
-                                            href="assessment-job-order-detail.php">
+                                            href="inspection-job-order-detail.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -2429,7 +2429,7 @@
                                     <div class="d-flex align-items-center ActionDropdown">
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="Job Order Details"
-                                            href="assessment-job-order-detail.php">
+                                            href="inspection-job-order-detail.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -2512,7 +2512,7 @@
                                     
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
                                             data-bs-toggle="tooltip" data-placement="top" title="Job Order Details"
-                                            href="assessment-job-order-detail.php">
+                                            href="inspection-job-order-detail.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
