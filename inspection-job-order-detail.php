@@ -26,7 +26,7 @@
         </div>
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
         <div class="mb-2 d-flex gap-2">
-               <a href="job-orders.php" 
+               <a href="inspection-job-order-list.php" 
                     class="btn btn-back d-flex align-items-center cmnaddbtn">
                     <iconify-icon icon="mingcute:back-line"></iconify-icon> Back
                 </a>
@@ -334,10 +334,10 @@
         </div>
     </div>
         </div>
-        <div class="card-footer">
+        <div class="card-footer CardFooter">
             <div class="FootHu">
             <h6 class="ResultFind">Findings: <span style="color:#04b85e;">90% Pass</span></h6>
-            <a href="#" class="DetailBtnInspection">View Detail</a>
+            <a href="inspection-edit-rd1-form.php" class="DetailBtnInspection">View Detail</a>
             </div>
             
         </div>
@@ -399,10 +399,10 @@
         </div>
     </div>
         </div>
-        <div class="card-footer">
+        <div class="card-footer CardFooter">
             <div class="FootHu">
             <h6 class="ResultFind">Findings: <span style="color:#04b85e;">90% Pass</span></h6>
-            <a href="#" class="DetailBtnInspection">View Detail</a>
+            <a href="inspection-edit-rd1-form.php" class="DetailBtnInspection">View Detail</a>
             </div>
             
         </div>

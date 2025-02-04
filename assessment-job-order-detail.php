@@ -292,12 +292,11 @@
                             <div class="dropdown-menu dropdown-menu-end" style="">
                                 <a href="#" class="dropdown-item"><span><iconify-icon icon="material-symbols:download-rounded"></iconify-icon></span>Download Certificate</a>
                                 <a href="#" class="dropdown-item"><span><iconify-icon icon="material-symbols:download-rounded"></iconify-icon></span>Download Report</a>
-
                             </div>
                             </div>
                         
-                           <a href="opretaor-edit-form.php" class="viewDetailBtnOpt">
-                           <iconify-icon icon="solar:alt-arrow-right-line-duotone"></iconify-icon>
+                            <a href="opretaor-edit-form.php" class="viewDetailBtnOptHUO">
+                            View Detail<iconify-icon icon="solar:alt-arrow-right-line-duotone"></iconify-icon>
                            </a>
                         </div>
                     </div>
@@ -319,13 +318,12 @@
                             <div class="dropdown-menu dropdown-menu-end" style="">
                                 <a href="#" class="dropdown-item"><span><iconify-icon icon="material-symbols:download-rounded"></iconify-icon></span>Download Certificate</a>
                                 <a href="#" class="dropdown-item"><span><iconify-icon icon="material-symbols:download-rounded"></iconify-icon></span>Download Report</a>
-
                             </div>
                             </div>
-                        
-                           <a href="opretaor-edit-form.php" class="viewDetailBtnOpt">
-                           <iconify-icon icon="solar:alt-arrow-right-line-duotone"></iconify-icon>
+                           <a href="opretaor-edit-form.php" class="viewDetailBtnOptHUO">
+                            View Detail<iconify-icon icon="solar:alt-arrow-right-line-duotone"></iconify-icon>
                            </a>
+                           
                         </div>
                     </div>
                 </li>
@@ -350,8 +348,8 @@
                             </div>
                             </div>
                         
-                           <a href="opretaor-edit-form.php" class="viewDetailBtnOpt">
-                           <iconify-icon icon="solar:alt-arrow-right-line-duotone"></iconify-icon>
+                            <a href="opretaor-edit-form.php" class="viewDetailBtnOptHUO">
+                            View Detail<iconify-icon icon="solar:alt-arrow-right-line-duotone"></iconify-icon>
                            </a>
                         </div>
                     </div>

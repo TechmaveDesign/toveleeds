@@ -21,7 +21,7 @@
         </div>
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
         <div class="mb-2 d-flex gap-2">
-               <a href="approval-board.php" class="btn btn-back d-flex align-items-center cmnaddbtn">
+               <a href="all-label-approval.php" class="btn btn-back d-flex align-items-center cmnaddbtn">
                     <iconify-icon icon="mingcute:back-line"></iconify-icon> Back
                 </a>
              
@@ -50,7 +50,7 @@
                                         <div class="ImageOfUser"><img src="assets/img/users/userdummy.png" alt="user"
                                                 class="aprcard_userimage"></div>
                                         <div class="LabelnTitle">
-                                            <label>Client Name</label>
+                                            <label>Requested From</label>
                                             <h3> Danial Craig
                                             </h3>
                                         </div>
@@ -61,7 +61,7 @@
                                         <div class="ImageOfUser"><img src="assets/img/users/userdummy.png" alt="user"
                                                 class="aprcard_userimage"></div>
                                         <div class="LabelnTitle">
-                                            <label>Inspector</label>
+                                            <label>Requested To</label>
                                             <h3> Alex Doe
                                             </h3>
                                         </div>
@@ -69,13 +69,13 @@
                                 </a>
                             </div>
 
-                            <div class="Approval_inner_column">
+                            <!-- <div class="Approval_inner_column">
                                 <div class="LabelnTitle">
                                     <label>Job/Certificate ID</label>
                                     <h3 class="RequestID"><a href="job-order-details.php" target="_blank">PRO-0004</a>
                                     </h3>
                                 </div>
-                            </div>
+                            </div> -->
 
                         </div>
 
@@ -84,7 +84,7 @@
                     <div class="enquiryRight_header_data TaskAction_wrapper ">
                         <div class="enquiryDate dueDate_container">
                             <iconify-icon icon="ion:calendar-outline"></iconify-icon>
-                            <div class="duedatelabel">Submission Date : </div> Nov 01, 2024 15:20
+                            <div class="duedatelabel">Requested On : </div> Nov 01, 2024 15:20
                         </div>
 
                         <div class="enquiryID_container">
@@ -105,47 +105,7 @@
 
                 </header>
 
-                <div class="approvalprogress">
-                    <div class="innerprogress_container">
-                        <!-- Supervisor Step -->
-                        <div class="progress-step" data-status="approved">
-                            <div class="step-circle">1</div>
-                            <span class="step-label">Supervisor</span>
-                            <span class="step-status">
-                                <span class="badge bg-outline-warning pendingbadge badgecustomstyle">
-                                    <span class="badge-label">Awaiting Approval</span>
-                                    <iconify-icon icon="mynaui:info-waves"></iconify-icon>
-                                </span>
-                            </span>
-                        </div>
-                        <div class="progress-line"></div>
-
-                        <!-- Technical Manager Step -->
-                        <div class="progress-step" data-status="awaiting">
-                            <div class="step-circle">2</div>
-                            <span class="step-label">Technical Manager</span>
-                            <span class="step-status">
-                                <span class="badge bg-outline-warning pendingbadge badgecustomstyle">
-                                    <span class="badge-label">Awaiting Approval</span>
-                                    <iconify-icon icon="mynaui:info-waves"></iconify-icon>
-                                </span>
-                            </span>
-                        </div>
-                        <div class="progress-line"></div>
-
-                        <!-- OM/GM Step -->
-                        <div class="progress-step" data-status="pending">
-                            <div class="step-circle">3</div>
-                            <span class="step-label">OM/GM</span>
-                            <span class="step-status">
-                                <span class="badge bg-outline-secondary pendingbadge badgecustomstyle">
-                                    <span class="badge-label">Pending</span>
-                                    <iconify-icon icon="tabler:progress-alert"></iconify-icon>
-                                </span>
-                            </span>
-                        </div>
-                    </div>
-                </div>
+               
 
             </div>
         </div>
@@ -156,9 +116,9 @@
                     aria-selected="false">Previous Comments
                 </a>
 
-                <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-in-pending" aria-selected="true">Related
+                <!-- <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-in-pending" aria-selected="true">Related
                     Documents
-                </a>
+                </a> -->
                 <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-in-progress"
                     aria-selected="true">Approval Activity
                 </a>

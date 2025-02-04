@@ -3137,6 +3137,7 @@ border: none !important;
     left: 0;
     border-top: 1px solid #ececec;
     gap: 8px;
+    z-index: 99;
 }
 .commonUpdateButton {
     padding: 5px 15px;
@@ -3958,13 +3959,14 @@ h6.Instruction {
     background: #f8f8f8 !important;
 }
 .DetailBtnInspection {
-    padding: 6px 15px;
+    padding: 5px 15px;
     background: #2287ff;
     color: #fff;
     border-radius: 5px;
+    font-size: 13px;
 }
 .DetailBtnInspection:hover {
-    padding: 6px 15px;
+    padding: 5px 15px;
     background: #3991fc;
     color: #fff !important;
     border-radius: 5px;
@@ -3977,4 +3979,23 @@ h6.Instruction {
 h6.SecTitleHUo {
     font-size: 18px;
     margin-bottom: 20px;
+}
+.CardFooter {
+    padding: 10px 15px !important;
+}
+.viewDetailBtnOptHUO {
+    border: 1px solid #d8e0e6;
+    padding: 2px 6px 2px 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    background: #ecf1f4;
+}
+.viewDetailBtnOptHUO:hover {
+  color: #000 !important;
+}
+.InspectionChecklistOpt.checklist{
+	grid-template-columns: repeat(3, 1fr);
 }

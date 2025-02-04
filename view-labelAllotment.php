@@ -71,7 +71,7 @@
                         <thead class="thead-light">
                             <tr>
                                 <th>S.No.</th>
-                                <th>Branch Head</th>
+                                <th>Inspectors</th>
                                 <th>Sticker ID</th>
                                 <th>Total Range</th>
                                 <th>Alloted Range</th>
