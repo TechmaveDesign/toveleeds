@@ -106,15 +106,7 @@
                                             </span>
                                         </span>
                                     </a>
-                                    <!-- <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete "
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a> -->
+
                                     <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
                                         data-id="" title="Delete" href="#">
                                         <span class="icon">
@@ -865,7 +857,7 @@
 
 </div>
 
-<!-- Add Template modal start -->
+<!-- Add Sticker modal start -->
 <div class="modal fade custombottm_modalStyle" id="addStickerModal">
     <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
@@ -875,14 +867,13 @@
                     <i class="ti ti-x"></i>
                 </button>
             </div>
-            <form action="">
                 <div class="modal-body">
                     <div class="row">
 
                         <div class="col-lg-12">
                             <div class="iconImageSection">
                                 <!-- <img src="assets/img/newimages/list.png" alt=""> -->
-                                <img src="assets\aditya_assests\sticker_icon.png" alt="tttt">
+                                <img src="assets\aditya_assests\sticker_icon.png" alt="No Icon">
                             </div>
                         </div>
 
@@ -939,12 +930,11 @@
                         <iconify-icon icon="bi:arrow-right"></iconify-icon>
                     </button>
                 </div>
-            </form>
         </div>
     </div>
 </div>
 
-<!-- Tag Modal -->
+<!-- Add Tag Modal -->
 <div class="modal fade custombottm_modalStyle" id="addTagModal">
     <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
@@ -954,7 +944,6 @@
                     <i class="ti ti-x"></i>
                 </button>
             </div>
-            <form action="">
                 <div class="modal-body">
                     <div class="row">
 
@@ -1017,12 +1006,10 @@
                         <iconify-icon icon="bi:arrow-right"></iconify-icon>
                     </button>
                 </div>
-            </form>
         </div>
     </div>
 </div>
 <!-- /Add template -->
-
 
 <!-- Edit Modal Sticker-->
 <div class="modal fade custombottm_modalStyle" id="editStickerModal">
