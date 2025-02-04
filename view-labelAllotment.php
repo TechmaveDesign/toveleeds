@@ -22,21 +22,16 @@
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
 
             <div class="mb-2 me-2" id="addStickerBtn">
-                <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#addStickerModal" aria-controls="offcanvasRight"
+                <a href="#" data-bs-toggle="modal" data-bs-target="#addStickerModal"
                     class="btn btn-primary d-flex align-items-center cmnaddbtn">
-                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Add Sticker
-                </a> -->
-
-                <a href="#" data-bs-toggle="offcanvas" data-bs-target="#createstickerorder" aria-controls="offcanvasRight" id="addStickerBtn"
-                    class="btn btn-primary d-flex align-items-center cmnaddbtn">
-                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Order Sticker
+                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Allot Sticker
                 </a>
             </div>
 
-            <div class="mb-2 me-2" id="addTagBtn" style="display:none;">
-                <a href="#" data-bs-toggle="offcanvas" data-bs-target="#createtagorder" aria-controls="offcanvasRight" id="addTagBtn"
+            <div class="mb-2" id="addTagBtn" style="display: none;">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#addTagModal"
                     class="btn btn-primary d-flex align-items-center cmnaddbtn">
-                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Order Tag
+                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Allot Tag
                 </a>
             </div>
 
@@ -71,7 +66,7 @@
                         <thead class="thead-light">
                             <tr>
                                 <th>S.No.</th>
-                                <th>Branch Head</th>
+                                <th>Inspector</th>
                                 <th>Sticker ID</th>
                                 <th>Total Range</th>
                                 <th>Alloted Range</th>
@@ -110,10 +105,10 @@
                                     <div class="d-flex align-items-center ActionDropdown">
 
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="offcanvas"
-                                            data-bs-target="#editAllotmentModal" data-placement="top" title="Edit">
+                                            data-bs-target="#editAllotmentModal" data-placement="top" title="See Details">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <iconify-icon icon="mage:edit"></iconify-icon>
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
@@ -157,10 +152,10 @@
                                     <div class="d-flex align-items-center ActionDropdown">
 
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="offcanvas"
-                                            data-bs-target="#editAllotmentModal" data-placement="top" title="Edit">
+                                            data-bs-target="#editAllotmentModal" data-placement="top" title="See Details">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <iconify-icon icon="mage:edit"></iconify-icon>
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
@@ -204,10 +199,10 @@
                                     <div class="d-flex align-items-center ActionDropdown">
 
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="offcanvas"
-                                            data-bs-target="#editAllotmentModal" data-placement="top" title="Edit">
+                                            data-bs-target="#editAllotmentModal" data-placement="top" title="See Details">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <iconify-icon icon="mage:edit"></iconify-icon>
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
@@ -251,10 +246,10 @@
                                     <div class="d-flex align-items-center ActionDropdown">
 
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="offcanvas"
-                                            data-bs-target="#editAllotmentModal" data-placement="top" title="Edit">
+                                            data-bs-target="#editAllotmentModal" data-placement="top" title="See Details">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <iconify-icon icon="mage:edit"></iconify-icon>
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
@@ -284,7 +279,7 @@
                         <thead class="thead-light">
                             <tr>
                                 <th>S.No.</th>
-                                <th>Branch Head</th>
+                                <th>Inspector</th>
                                 <th>Tag ID</th>
                                 <th>Total Range</th>
                                 <th>Alloted Range</th>
@@ -323,10 +318,10 @@
                                     <div class="d-flex align-items-center ActionDropdown">
 
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="offcanvas"
-                                            data-bs-target="#editTagAllotmentModal" data-placement="top" title="Edit">
+                                            data-bs-target="#editTagAllotmentModal" data-placement="top" title="See Details">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <iconify-icon icon="mage:edit"></iconify-icon>
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
@@ -371,10 +366,10 @@
                                     <div class="d-flex align-items-center ActionDropdown">
 
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="offcanvas"
-                                            data-bs-target="#editTagAllotmentModal" data-placement="top" title="Edit">
+                                            data-bs-target="#editTagAllotmentModal" data-placement="top" title="See Details">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <iconify-icon icon="mage:edit"></iconify-icon>
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
@@ -418,10 +413,10 @@
                                     <div class="d-flex align-items-center ActionDropdown">
 
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="offcanvas"
-                                            data-bs-target="#editTagAllotmentModal" data-placement="top" title="Edit">
+                                            data-bs-target="#editTagAllotmentModal" data-placement="top" title="See Details">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <iconify-icon icon="mage:edit"></iconify-icon>
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
@@ -465,10 +460,10 @@
                                     <div class="d-flex align-items-center ActionDropdown">
 
                                         <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="offcanvas"
-                                            data-bs-target="#editTagAllotmentModal" data-placement="top" title="Edit">
+                                            data-bs-target="#editTagAllotmentModal" data-placement="top" title="See Details">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <iconify-icon icon="mage:edit"></iconify-icon>
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
@@ -494,572 +489,233 @@
 </div>
 
 
-<!-- Edit Allotment modal start -->
-<div class="offcanvas offcanvas-end rightlarge_offcanvas commonoffcanvas_style" tabindex="-1" id="editAllotmentModal"
-    aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header flexbetweenheader">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel">Edit Sticker Allotment</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-            <iconify-icon icon="mi:close"></iconify-icon>
-        </button>
-    </div>
-    <div class="offcanvas-body">
-
-        <div class="offcanvasForm_wrap">
-
-            <div class="modal-body pb-0">
+<!-- Allot Sticker Modal -->
+<div class="modal fade custombottm_modalStyle" id="addStickerModal">
+    <div class="modal-dialog modal-dialog-centered modal-md"> 
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Sticker Allotment</h4>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x"></i>
+                </button>
+            </div>
+            <div class="modal-body">
                 <div class="row">
-
-                    <div class="col-md-6">
-                        <label class="form-label">Sticker ID:<div class="requiredLabel">*</div></label>
-                        <select class="form-control largeinp_height select2">
-                            <option value="">Select a Sticker ID</option>
-                            <option value="AEF - 0129">AEF - 0129</option>
-                            <option value="BEC - 1011">BEC - 1011</option>
-                            <option value="CEA - 2020">CEA - 2020</option>
-                            <option value="GHI - 2211">GHI - 2211</option>
-
-                        </select>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">Select Branch Head</label>
-                            <select name="" class="form-control select2">
-                                <option disabled="" selected="" value="">Please Select...</option>
-                                <option value="1">Chelsia Ford</option>
-                                <option value="2">Elena Cruz</option>
-                                <option value="3">Monika Gellar</option>
-                                <option value="4">Rick Ross</option>
-                                <option value="5">Michael Jordan</option>
-                                <option value="6">Olivia Smith</option>
-                            </select>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">Location (Region)</label>
-                            <div class="input-blocks">
-                                <iconify-icon icon="ion:location-outline" class="info-img"></iconify-icon>
-                                <select class="select2">
-                                    <option disabled selected>Select Region</option>
-                                    <option>Delhi</option>
-                                    <option>Mumbai</option>
-                                    <option>Kolkata</option>
-                                    <option>Banglore</option>
-                                    <option>Pune</option>
-                                    <option>Chennai</option>
-
-
-                                </select>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
-                            <input type="text" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
-                            <input type="text" placeholder="Please Enter The End Range" class="form-control largeinp_height">
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
-                            <input type="text" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
-                            <input type="text" placeholder="Please Enter The Ending Range" class="form-control largeinp_height">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label class="form-label">Date</label>
-                            <input class="form-control customdataPicker flatpickr-input" type="text" name=""
-                                placeholder="Select Date" readonly="readonly">
-                            <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
-                            </iconify-icon>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">Status</label>
-                            <select name="" id="" class="form-control select2">
-                                <option disabled="" selected="" value="">Please Select...</option>
-                                <option value="Received">Received</option>
-                                <option value="Delievered">Delievered</option>
-                                <option value="Dispatched">Dispatched</option>
-
-                            </select>
-
-                        </div>
-                    </div>
-
                     <div class="col-lg-12">
-                        <div class="form-group">
-                            <div class="form-label">
-                                <label>Additional Notes</label>
+                        <div class="iconImageSection">
+                            <img src="assets\aditya_assests\sticker_icon.png" alt="tttt">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Sticker ID:<div class="requiredLabel">*</div></label>
+                                <select class="form-control largeinp_height select2">
+                                    <option value="">Select a Sticker ID</option>
+                                    <option value="AEB-0129">AEB - 0129</option>
+                                    <option value="BEC-1011">BEC - 1011</option>
+                                    <option value="FBC-1230">FBC - 1230</option>
+                                    <option value="GHI-2211">GHI - 2211</option>
+                                </select>
                             </div>
-                            <textarea class="form-control" rows="4" placeholder="Write here..."></textarea>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label text-muted">Inspector<div class="requiredLabel">*</div></label>
+                                <select class="select2">
+                                    <option disabled selected>Select Inspector</option>
+                                    <option>Stephan Peralt</option>
+                                    <option>Emma Johnson</option>
+                                    <option>Amit Patel</option>
+                                    <option>Sophia Lee</option>
+                                    <option>Michael Carter</option>
+                                    <option>James Smith</option>
+                                    <option>Emily Davis</option>
+                                    <option>Anna Taylor</option>
+                                    <option>John Walker</option>
+                                    <option>Jessica Brown</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Alloted Starting Range:<div class="requiredLabel">*</div></label>
+                                <input type="text" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Alloted Ending Range:<div class="requiredLabel">*</div></label>
+                                <input type="text" placeholder="Please Enter The End Range" class="form-control largeinp_height">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Location (Region)</label>
+                                <div class="input-blocks">
+                                    <select class="select2">
+                                        <option disabled selected>Select Region</option>
+                                        <option selected>Delhi</option>
+                                        <option>Mumbai</option>
+                                        <option>Kolkata</option>
+                                        <option>Banglore</option>
+                                        <option>Pune</option>
+                                        <option>Chennai</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Status:<div class="requiredLabel">*</div></label>
+                                <select class="form-control largeinp_height select2">
+                                    <option value="" selected>Choose Status</option>
+                                    <option value="Not Dispatched">Not Dispatched</option>
+                                    <option value="Dispatched for Printing">Dispatched for Printing</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </div>
-    </div>
-    <div class="canvasFooterContainer flexmodalfooter">
-        <div class="savedraft_button">
-            <!-- <div class="form-check form-check-md">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label" for="gridCheck">Save Draft </label>
-                </div> -->
-        </div>
-
-        <div class="modalbetween_actions">
-            <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
-                data-bs-dismiss="offcanvas">Cancel</button>
-            <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Save & Update</button>
+            <div class="modal-footer">
+                <button type="submit" class="btn btnContinueProcess btn-primary editEnquiryBtn">
+                    <div class="buttontext">
+                        <div class="formediticon_modal">
+                            <iconify-icon icon="uit:process"></iconify-icon>
+                        </div>
+                        Save & Allot
+                    </div>
+                    <iconify-icon icon="bi:arrow-right"></iconify-icon>
+                </button>
+            </div>
         </div>
     </div>
 </div>
 
-<!-- Edit Tag Allotment Modal start -->
-<div class="offcanvas offcanvas-end rightlarge_offcanvas commonoffcanvas_style" tabindex="-1" id="editTagAllotmentModal"
-    aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header flexbetweenheader">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel">Edit Tag Allotment</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-            <iconify-icon icon="mi:close"></iconify-icon>
-        </button>
-    </div>
-    <div class="offcanvas-body">
-
-        <div class="offcanvasForm_wrap">
-
-            <div class="modal-body pb-0">
+<!-- Allot Tag Modal -->
+<div class="modal fade custombottm_modalStyle" id="addTagModal">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Tag Allotment</h4>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x"></i>
+                </button>
+            </div>
+            <div class="modal-body">
                 <div class="row">
-
-                    <div class="col-md-6">
-                        <label class="form-label">Tag ID:<div class="requiredLabel">*</div></label>
-                        <select class="form-control largeinp_height select2">
-                            <option value="">Select a Tag ID</option>
-                            <option value="AEB-0129">TAG - 1111</option>
-                            <option value="BEC-1011">BEC - 1011</option>
-                            <option value="TC - 1120">TC - 1120</option>
-                            <option value="TAG - 4321">TAG - 4321</option>
-                        </select>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">Select Branch Head</label>
-                            <select name="" class="form-control select2">
-                                <option disabled="" selected="" value="">Please Select...</option>
-                                <option value="1">Chelsia Ford</option>
-                                <option value="2">Elena Cruz</option>
-                                <option value="3">Monika Gellar</option>
-                                <option value="4">Rick Ross</option>
-                                <option value="5">Michael Jordan</option>
-                                <option value="6">Olivia Smith</option>
-                            </select>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">Location (Region)</label>
-                            <div class="input-blocks">
-                                <iconify-icon icon="ion:location-outline" class="info-img"></iconify-icon>
-                                <select class="select2">
-                                    <option disabled selected>Select Region</option>
-                                    <option>Delhi</option>
-                                    <option>Mumbai</option>
-                                    <option>Kolkata</option>
-                                    <option>Banglore</option>
-                                    <option>Pune</option>
-                                    <option>Chennai</option>
-
-
-                                </select>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
-                            <input type="text" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
-                            <input type="text" placeholder="Please Enter The End Range" class="form-control largeinp_height">
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
-                            <input type="text" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
-                            <input type="text" placeholder="Please Enter The Ending Range" class="form-control largeinp_height">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label class="form-label">Date</label>
-                            <input class="form-control customdataPicker flatpickr-input" type="text" name=""
-                                placeholder="Select Date" readonly="readonly">
-                            <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
-                            </iconify-icon>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">Status</label>
-                            <select name="" id="" class="form-control select2">
-                                <option disabled="" selected="" value="">Please Select...</option>
-                                <option value="Received">Received</option>
-                                <option value="Delievered">Delievered</option>
-                                <option value="Dispatched">Dispatched</option>
-
-                            </select>
-
-                        </div>
-                    </div>
-
                     <div class="col-lg-12">
-                        <div class="form-group">
-                            <div class="form-label">
-                                <label>Additional Notes</label>
+                        <div class="iconImageSection">
+                            <img src="assets\aditya_assests\sticker_icon.png" alt="tttt">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Tag ID:<div class="requiredLabel">*</div></label>
+                                <select class="form-control largeinp_height select2">
+                                <option value="">Select a Tag ID</option>
+                                <option value="TA-123">TA - 123</option>
+                                <option value="TB-345">TB - 345</option>
+                                <option value="TC-112">TC - 112</option>
+                                <option value="TD-233">TD - 223</option>
+                            </select>
                             </div>
-                            <textarea class="form-control" rows="4" placeholder="Write here..."></textarea>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label text-muted">Inspector<div class="requiredLabel">*</div></label>
+                                <select class="select2">
+                                    <option disabled selected>Select Inspector</option>
+                                    <option>Stephan Peralt</option>
+                                    <option>Emma Johnson</option>
+                                    <option>Amit Patel</option>
+                                    <option>Sophia Lee</option>
+                                    <option>Michael Carter</option>
+                                    <option>James Smith</option>
+                                    <option>Emily Davis</option>
+                                    <option>Anna Taylor</option>
+                                    <option>John Walker</option>
+                                    <option>Jessica Brown</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Alloted Starting Range:<div class="requiredLabel">*</div></label>
+                                <input type="text" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Alloted Ending Range:<div class="requiredLabel">*</div></label>
+                                <input type="text" placeholder="Please Enter The End Range" class="form-control largeinp_height">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Location (Region)</label>
+                                <div class="input-blocks">
+                                    <select class="select2">
+                                        <option disabled selected>Select Region</option>
+                                        <option selected>Delhi</option>
+                                        <option>Mumbai</option>
+                                        <option>Kolkata</option>
+                                        <option>Banglore</option>
+                                        <option>Pune</option>
+                                        <option>Chennai</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Status:<div class="requiredLabel">*</div></label>
+                                <select class="form-control largeinp_height select2">
+                                    <option value="" selected>Choose Status</option>
+                                    <option value="Not Dispatched">Not Dispatched</option>
+                                    <option value="Dispatched for Printing">Dispatched for Printing</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </div>
-    </div>
-    <div class="canvasFooterContainer flexmodalfooter">
-        <div class="savedraft_button">
-            <!-- <div class="form-check form-check-md">
-        <input class="form-check-input" type="checkbox">
-        <label class="form-check-label" for="gridCheck">Save Draft </label>
-    </div> -->
-        </div>
-
-        <div class="modalbetween_actions">
-            <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
-                data-bs-dismiss="offcanvas">Cancel</button>
-            <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Save & Update</button>
-        </div>
-    </div>
-    <div class="canvasFooterContainer flexmodalfooter">
-        <div class="savedraft_button">
-            <!-- <div class="form-check form-check-md">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label" for="gridCheck">Save Draft </label>
-                </div> -->
-
-        </div>
-
-        <div class="modalbetween_actions">
-            <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
-                data-bs-dismiss="offcanvas">Cancel</button>
-            <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Submit</button>
-        </div>
-    </div>
-</div>
-<!-- Add Sticker modal start -->
-<div class="offcanvas offcanvas-end rightlarge_offcanvas commonoffcanvas_style" tabindex="-1" id="createstickerorder"
-    aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header flexbetweenheader">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel">Request Sticker</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-            <iconify-icon icon="mi:close"></iconify-icon>
-        </button>
-    </div>
-    <div class="offcanvas-body">
-
-        <div class="offcanvasForm_wrap">
-
-            <div class="modal-body pb-0">
-                <div class="row">
-
-                    <div class="col-md-6">
-                        <label class="form-label">Sticker ID:<div class="requiredLabel">*</div></label>
-                        <select class="form-control largeinp_height select2">
-                            <option value="">Select a Sticker ID</option>
-                            <option value="AEF - 0129">AEF - 0129</option>
-                            <option value="BEC - 1011">BEC - 1011</option>
-                            <option value="CEA - 2020">CEA - 2020</option>
-                            <option value="GHI - 2211">GHI - 2211</option>
-
-                        </select>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">Select Manager</label>
-                            <select name="" class="form-control select2">
-                                <option disabled="" selected="" value="">Please Select...</option>
-                                <option value="1">Danial Craig</option>
-                                <option value="2">Emily Blunt</option>
-                                <option value="3">John Doe</option>
-                                <option value="4">Sophia Turner</option>
-                                <option value="5">Michael Jordan</option>
-                                <option value="6">Olivia Smith</option>
-                            </select>
-
+            <div class="modal-footer">
+                <button type="submit" class="btn btnContinueProcess btn-primary editEnquiryBtn">
+                    <div class="buttontext">
+                        <div class="formediticon_modal">
+                            <iconify-icon icon="uit:process"></iconify-icon>
                         </div>
+                        Save & Allot
                     </div>
-
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label class="form-label">Date</label>
-                            <input class="form-control customdataPicker flatpickr-input" type="text" name=""
-                                placeholder="Select Date" readonly="readonly">
-                            <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
-                            </iconify-icon>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label class="form-label">Time <span class="text-danger"> *</span></label>
-                            <div class="input-icon-end position-relative">
-                                <input type="text" class="form-control timepicker">
-                                <span class="input-icon-addon">
-                                    <i class="ti ti-clock-hour-10 text-gray-7"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
-                            <input type="text" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
-                            <input type="text" placeholder="Please Enter The End Range" class="form-control largeinp_height">
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">Location (Region)</label>
-                            <div class="input-blocks">
-                                <select class="select2">
-                                    <option disabled selected>Select Region</option>
-                                    <option>Delhi</option>
-                                    <option>Mumbai</option>
-                                    <option>Kolkata</option>
-                                    <option>Banglore</option>
-                                    <option>Pune</option>
-                                    <option>Chennai</option>
-
-
-                                </select>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-12">
-                        <div class="form-group">
-                            <div class="form-label">
-                                <label>Additional Notes</label>
-                            </div>
-                            <textarea class="form-control" rows="4" placeholder="Write here..."></textarea>
-                        </div>
-                    </div>
-                </div>
+                    <iconify-icon icon="bi:arrow-right"></iconify-icon>
+                </button>
             </div>
-
-        </div>
-    </div>
-    <div class="canvasFooterContainer flexmodalfooter">
-        <div class="savedraft_button">
-            <!-- <div class="form-check form-check-md">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label" for="gridCheck">Save Draft </label>
-                </div> -->
-
-        </div>
-
-        <div class="modalbetween_actions">
-            <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
-                data-bs-dismiss="offcanvas">Cancel</button>
-            <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Submit</button>
         </div>
     </div>
 </div>
-
-<!-- Add Tag modal start -->
-<div class="offcanvas offcanvas-end rightlarge_offcanvas commonoffcanvas_style" tabindex="-1" id="createtagorder"
-    aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header flexbetweenheader">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel">Request Sticker</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-            <iconify-icon icon="mi:close"></iconify-icon>
-        </button>
-    </div>
-    <div class="offcanvas-body">
-
-        <div class="offcanvasForm_wrap">
-
-            <div class="modal-body pb-0">
-                <div class="row">
-
-                    <div class="col-md-6">
-                        <label class="form-label">Tag ID:<div class="requiredLabel">*</div></label>
-                        <select class="form-control largeinp_height select2">
-                            <option value="">Select a Tag ID</option>
-                            <option value="AEF - 0129">AEF - 0129</option>
-                            <option value="BEC - 1011">BEC - 1011</option>
-                            <option value="CEA - 2020">CEA - 2020</option>
-                            <option value="GHI - 2211">GHI - 2211</option>
-
-                        </select>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">Select Manager</label>
-                            <select name="" class="form-control select2">
-                                <option disabled="" selected="" value="">Please Select...</option>
-                                <option value="1">Danial Craig</option>
-                                <option value="2">Emily Blunt</option>
-                                <option value="3">John Doe</option>
-                                <option value="4">Sophia Turner</option>
-                                <option value="5">Michael Jordan</option>
-                                <option value="6">Olivia Smith</option>
-                            </select>
-
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label class="form-label">Date</label>
-                            <input class="form-control customdataPicker flatpickr-input" type="text" name=""
-                                placeholder="Select Date" readonly="readonly">
-                            <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
-                            </iconify-icon>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label class="form-label">Time <span class="text-danger"> *</span></label>
-                            <div class="input-icon-end position-relative">
-                                <input type="text" class="form-control timepicker">
-                                <span class="input-icon-addon">
-                                    <i class="ti ti-clock-hour-10 text-gray-7"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
-                            <input type="text" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
-                            <input type="text" placeholder="Please Enter The End Range" class="form-control largeinp_height">
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">Location (Region)</label>
-                            <div class="input-blocks">
-                                <iconify-icon icon="ion:location-outline" class="info-img"></iconify-icon>
-                                <select class="select2">
-                                    <option disabled selected>Select Region</option>
-                                    <option>Delhi</option>
-                                    <option>Mumbai</option>
-                                    <option>Kolkata</option>
-                                    <option>Banglore</option>
-                                    <option>Pune</option>
-                                    <option>Chennai</option>
-
-
-                                </select>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-12">
-                        <div class="form-group">
-                            <div class="form-label">
-                                <label>Additional Notes</label>
-                            </div>
-                            <textarea class="form-control" rows="4" placeholder="Write here..."></textarea>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="canvasFooterContainer flexmodalfooter">
-        <div class="savedraft_button">
-            <!-- <div class="form-check form-check-md">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label" for="gridCheck">Save Draft </label>
-                </div> -->
-
-        </div>
-
-        <div class="modalbetween_actions">
-            <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
-                data-bs-dismiss="offcanvas">Cancel</button>
-            <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Submit</button>
-        </div>
-    </div>
-</div>
-<!-- /Add template -->
 
 <!-- Delete Modal -->
 <div class="modal fade" id="delete_modal">
@@ -1080,121 +736,6 @@
     </div>
 </div>
 <!-- /Delete Modal -->
-
-<!-- Edit Sticker modal start -->
-<div class="offcanvas offcanvas-end rightlarge_offcanvas commonoffcanvas_style" tabindex="-1" id="editStickerModal"
-    aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header flexbetweenheader">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel">Edit Allotment</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-            <iconify-icon icon="mi:close"></iconify-icon>
-        </button>
-    </div>
-    <div class="offcanvas-body">
-
-        <div class="offcanvasForm_wrap">
-
-            <div class="modal-body pb-0">
-                <div class="row">
-
-                    <div class="col-md-6">
-                        <label class="form-label">Sticker ID:<div class="requiredLabel">*</div></label>
-                        <select class="form-control largeinp_height select2">
-                            <option value="">Select a Sticker ID</option>
-                            <option value="AEF - 0129">AEF - 0129</option>
-                            <option value="BEC - 1011">BEC - 1011</option>
-                            <option value="CEA - 2020">CEA - 2020</option>
-                            <option value="GHI - 2211">GHI - 2211</option>
-
-                        </select>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">Location (Region)</label>
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
-                            <input type="text" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
-                            <input type="text" placeholder="Please Enter The End Range" class="form-control largeinp_height">
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
-                            <input type="text" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
-                            <input type="text" placeholder="Please Enter The Ending Range" class="form-control largeinp_height">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                            <label class="form-label">Date</label>
-                            <input class="form-control customdataPicker flatpickr-input" type="text" name=""
-                                placeholder="Select Date" readonly="readonly">
-                            <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
-                            </iconify-icon>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="form-label">Status</label>
-                            <select name="" id="" class="form-control select2">
-                                <option disabled="" selected="" value="">Please Select...</option>
-                                <option value="Received">Received</option>
-                                <option value="Delievered">Delievered</option>
-                                <option value="Dispatched">Dispatched</option>
-
-                            </select>
-
-                        </div>
-                    </div>
-
-                    <div class="col-lg-12">
-                        <div class="form-group">
-                            <div class="form-label">
-                                <label>Additional Notes</label>
-                            </div>
-                            <textarea class="form-control" rows="4" placeholder="Write here..."></textarea>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="canvasFooterContainer flexmodalfooter">
-        <div class="savedraft_button">
-            <!-- <div class="form-check form-check-md">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label" for="gridCheck">Save Draft </label>
-                </div> -->
-        </div>
-
-        <div class="modalbetween_actions">
-            <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
-                data-bs-dismiss="offcanvas">Cancel</button>
-            <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Save & Update</button>
-        </div>
-    </div>
-</div>
 
 
 <?php include("footer.php") ?>
