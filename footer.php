@@ -82,7 +82,7 @@
   <!-- ------------------------------------
 submit trigger processing js
 -------------------------------------- -->
-<script>
+<!-- <script>
 document.addEventListener('DOMContentLoaded', function() {
   const forms = document.querySelectorAll('form');
 
@@ -112,12 +112,19 @@ document.addEventListener('DOMContentLoaded', function() {
     button.disabled = false; 
   }
 });
-</script>
+</script> -->
     <!-- ------------------------------------
 submit trigger processing js end
 -------------------------------------- -->
 
-
+<script>
+    $(document).ready(function() {
+        $('.select2').select2({
+            // placeholder: "Select an option",
+            // allowClear: true
+        });
+    });
+</script>
 
 </body>
 

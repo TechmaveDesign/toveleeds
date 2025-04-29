@@ -10,20 +10,20 @@
 		<div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
 			<div class="dashselect_Location">
 			<select class="select2">
-				<option>Select Location</option>
+				<option>Select Region</option>
 				<option value="1">Delhi</option>
-  <option value="2">Noida</option>
-  <option value="3">Mumbai</option>
-  <option value="4">Bangalore</option>
-  <option value="5">Chennai</option>
-  <option value="6">Kolkata</option>
-  <option value="7">Hyderabad</option>
-  <option value="8">Pune</option>
-  <option value="9">Jaipur</option>
-  <option value="10">Ahmedabad</option>
-  <option value="11">Lucknow</option>
-  <option value="12">Surat</option>
-			</select>
+					<option value="2">Noida</option>
+					<option value="3">Mumbai</option>
+					<option value="4">Bangalore</option>
+					<option value="5">Chennai</option>
+					<option value="6">Kolkata</option>
+					<option value="7">Hyderabad</option>
+					<option value="8">Pune</option>
+					<option value="9">Jaipur</option>
+					<option value="10">Ahmedabad</option>
+					<option value="11">Lucknow</option>
+					<option value="12">Surat</option>
+				</select>
 			</div>
 
 			<div class="input-icon mb-2 position-relative">
@@ -46,87 +46,117 @@
 
 		<!-- Widget Info -->
 		<div class="col-xxl-8 ">
-			<div class="row ">
-				<div class="col-md-3 d-flex">
+			<div class="row">
+				<div class="col-md-4 ">
 					<div class="card flex-fill">
 						<div class="card-body">
+							<div class="DB_Cardj">
+							<div class="ctn">
+							<h6 class="fs-13 fw-medium text-default mb-1">Equipment Inspection </h6>
+							<h3 class="">120 </h3>
+							</div>
 							<span class="avatar rounded-circle bg-primary mb-2">
 								<i class="ti ti-calendar-share fs-16"></i>
 							</span>
-							<h6 class="fs-13 fw-medium text-default mb-1">Equipment Inspection </h6>
-							<h3 class="">120/154 </h3>
-							
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 d-flex">
+				<div class="col-md-4">
 					<div class="card flex-fill">
 						<div class="card-body">
-							<span class="avatar rounded-circle bg-secondary mb-2">
+						  <div class="DB_Cardj">
+						  <div class="ctn">
+						  <h6 class="fs-13 fw-medium text-default mb-1">Operator Assessment</h6>
+						  <h3 class="">90</h3>
+						  </div>
+						  <span class="avatar rounded-circle bg-secondary mb-2">
 								<i class="ti ti-browser fs-16"></i>
 							</span>
-							<h6 class="fs-13 fw-medium text-default mb-1">Operator Assessments</h6>
-							<h3 class="">90/125 </h3>
+						  </div>
+							
+							
 							
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 d-flex">
+				<div class="col-md-4 d-flex">
 					<div class="card flex-fill">
 						<div class="card-body">
-							<span class="avatar rounded-circle bg-info mb-2">
+						<div class="DB_Cardj">
+						<div class="ctn">
+						<h6 class="fs-13 fw-medium text-default mb-1">Training</h6>
+						<h3 class="">69</h3>
+						</div>
+						<span class="avatar rounded-circle bg-info mb-2">
 								<i class="ti ti-users-group fs-16"></i>
 							</span>
-							<h6 class="fs-13 fw-medium text-default mb-1">Total Trainers</h6>
-							<h3 class="">69/86 </h3>
+						</div>
+							
+					
 							
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 d-flex">
+				<div class="col-md-4 d-flex">
 					<div class="card flex-fill">
 						<div class="card-body">
-							<span class="avatar rounded-circle bg-pink mb-2">
+						<div class="DB_Cardj">
+						<div class="ctn">
+						<h6 class="fs-13 fw-medium text-default mb-1">NDT</h6>
+						<h3 class="">225</h3>
+						</div>
+						<span class="avatar rounded-circle bg-pink mb-2">
 								<i class="ti ti-checklist fs-16"></i>
 							</span>
-							<h6 class="fs-13 fw-medium text-default mb-1">NDT Tasks</h6>
-							<h3 class="">225/28 </h3>
+						</div>
+							
+							
 							
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 d-flex">
+				<div class="col-md-4 d-flex">
 					<div class="card flex-fill">
 						<div class="card-body">
-							<span class="avatar rounded-circle bg-purple mb-2">
+						<div class="DB_Cardj">
+						<div class="ctn">
+						<h6 class="fs-13 fw-medium text-default mb-1">Approval Board</h6>
+						<h3 class="">21445 </h3>
+						</div>
+						<span class="avatar rounded-circle bg-purple mb-2">
 								<i class="ti ti-moneybag fs-16"></i>
 							</span>
-							<h6 class="fs-13 fw-medium text-default mb-1">Approval Board</h6>
-							<h3 class="">$21445 </h3>
+						</div>
+							
+						
 							
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 d-flex">
+				<div class="col-md-4 d-flex">
 					<div class="card flex-fill">
 						<div class="card-body">
-							<span class="avatar rounded-circle bg-danger mb-2">
+						<div class="DB_Cardj">
+						<div class="ctn">
+						<h6 class="fs-13 fw-medium text-default mb-1">Job Orders</h6>
+						<h3 class="">5,544 </h3>
+						</div>
+						<span class="avatar rounded-circle bg-danger mb-2">
 								<i class="ti ti-browser fs-16"></i>
 							</span>
-							<h6 class="fs-13 fw-medium text-default mb-1">Job Orders</h6>
-							<h3 class="">$5,544 </h3>
-							
+						</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 d-flex">
+				<!-- <div class="col-md-3 d-flex">
 					<div class="card flex-fill">
 						<div class="card-body">
 							<span class="avatar rounded-circle bg-success mb-2">
 								<i class="ti ti-users-group fs-16"></i>
 							</span>
 							<h6 class="fs-13 fw-medium text-default mb-1">Training Applications</h6>
-							<h3 class="">98 </h3>
+							<h3 class="">98</h3>
 							
 						</div>
 					</div>
@@ -138,11 +168,11 @@
 								<i class="ti ti-user-star fs-16"></i>
 							</span>
 							<h6 class="fs-13 fw-medium text-default mb-1">Certificate Pending</h6>
-							<h3 class="">45/48 </h3>
+							<h3 class="">45</h3>
 							
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 
 		</div>
@@ -172,7 +202,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="card-body">
+				<div class="card-body py-0">
 					<div id="emp-department"></div>
 					
 				</div>
@@ -187,9 +217,9 @@
 			<div class="card flex-fill">
 				<div class="card-header">
 					<div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
-						<h5>Recent Added Customers</h5>
+						<h5>Recent Added Clients</h5>
 						<div>
-							<a href="#" class="btn btn-light btn-sm px-3">View All</a>
+							<a href="clients.php" class="btn btn-light btn-sm px-3">View All</a>
 						</div>
 					</div>
 				</div>
@@ -206,7 +236,7 @@
 							</div>
 						</div>
 						<div class="d-flex align-items-center">
-							<a href="#" class="btn btn-light btn-icon btn-sm"><i class="ti ti-eye fs-16"></i></a>
+							<a href="client-detail.php" class="btn btn-light btn-icon btn-sm"><i class="ti ti-eye fs-16"></i></a>
 						</div>
 					</div>
 					<div class="d-flex align-items-center justify-content-between mb-4">
@@ -221,7 +251,7 @@
 							</div>
 						</div>
 						<div class="d-flex align-items-center">
-							<a href="#" class="btn btn-light btn-icon btn-sm"><i class="ti ti-eye fs-16"></i></a>
+							<a href="client-detail.php" class="btn btn-light btn-icon btn-sm"><i class="ti ti-eye fs-16"></i></a>
 						</div>
 					</div>
 					<div class="d-flex align-items-center justify-content-between mb-4">
@@ -236,7 +266,7 @@
 							</div>
 						</div>
 						<div class="d-flex align-items-center">
-							<a href="#" class="btn btn-light btn-icon btn-sm"><i class="ti ti-eye fs-16"></i></a>
+							<a href="client-detail.php" class="btn btn-light btn-icon btn-sm"><i class="ti ti-eye fs-16"></i></a>
 						</div>
 					</div>
 					<div class="d-flex align-items-center justify-content-between mb-4">
@@ -251,7 +281,7 @@
 							</div>
 						</div>
 						<div class="d-flex align-items-center">
-							<a href="#" class="btn btn-light btn-icon btn-sm"><i class="ti ti-eye fs-16"></i></a>
+							<a href="client-detail.php" class="btn btn-light btn-icon btn-sm"><i class="ti ti-eye fs-16"></i></a>
 						</div>
 					</div>
 					<div class="d-flex align-items-center justify-content-between">
@@ -266,7 +296,7 @@
 							</div>
 						</div>
 						<div class="d-flex align-items-center">
-							<a href="#" class="btn btn-light btn-icon btn-sm"><i class="ti ti-eye fs-16"></i></a>
+							<a href="client-detail.php" class="btn btn-light btn-icon btn-sm"><i class="ti ti-eye fs-16"></i></a>
 						</div>
 					</div>
 				</div>
@@ -278,7 +308,7 @@
 					<div class="d-flex align-items-center justify-content-between flex-wrap row-gap-2">
 						<h5>Recent Activities</h5>
 						<div>
-							<a href="activity.html" class="btn btn-sm btn-light px-3">View All</a>
+							<a href="system-activites.php" class="btn btn-sm btn-light px-3">View All</a>
 						</div>
 					</div>
 				</div>
@@ -288,7 +318,7 @@
 							<i class="ti ti-phone fs-20"></i>
 						</div>
 						<div class="flex-fill ps-3 pb-4 timeline-flow">
-							<p class="fw-medium text-gray-9 mb-1"><a href="activity.html">Drain responded to
+							<p class="fw-medium text-gray-9 mb-1"><a href="system-activites.php">Drain responded to
 									your appointment schedule question.</a></p>
 							<span>09:25 PM</span>
 						</div>
@@ -298,7 +328,7 @@
 							<i class="ti ti-message-circle-2 fs-20"></i>
 						</div>
 						<div class="flex-fill ps-3 pb-4 timeline-flow">
-							<p class="fw-medium text-gray-9 mb-1"><a href="activity.html">You sent 1 Message
+							<p class="fw-medium text-gray-9 mb-1"><a href="system-activites.php">You sent 1 Message
 									to the James.</a></p>
 							<span>10:25 PM</span>
 						</div>
@@ -308,7 +338,7 @@
 							<i class="ti ti-phone fs-20"></i>
 						</div>
 						<div class="flex-fill ps-3 pb-4 timeline-flow">
-							<p class="fw-medium text-gray-9 mb-1"><a href="activity.html">Denwar responded
+							<p class="fw-medium text-gray-9 mb-1"><a href="system-activites.php">Denwar responded
 									to your appointment on 25 Jan 2025, 08:15 PM</a></p>
 							<span>09:25 PM</span>
 						</div>
@@ -318,7 +348,7 @@
 							<i class="ti ti-user-circle fs-20"></i>
 						</div>
 						<div class="flex-fill ps-3 timeline-flow">
-							<p class="fw-medium text-gray-9 mb-1"><a href="activity.html"
+							<p class="fw-medium text-gray-9 mb-1"><a href="system-activites.php"
 									class="d-flex align-items-center">Meeting With <img
 										src="assets/img/users/user-58.jpg" class="avatar avatar-sm rounded-circle mx-2"
 										alt="Img">Abraham</a>
@@ -335,7 +365,7 @@
 					<div class="d-flex align-items-center justify-content-between flex-wrap">
 						<h5>Notifications</h5>
 						<div>
-							<a href="#" class="btn btn-light btn-sm px-3">View All</a>
+							<a href="all-notification.php" class="btn btn-light btn-sm px-3">View All</a>
 						</div>
 					</div>
 				</div>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Uploader</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f9;
+    }
+    .ImageBoxKOp {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      border: 1px solid #b4b4b4;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .image-display {
+      text-align: center;
+      font-size: 14px;
+      color: #888;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .image-display img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    .upload-card {
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .upload-card .upload-button {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .upload-card .upload-button:hover {
+      background: #0056b3;
+    }
+    .upload-card .remove-button {
+      background: #ff4d4d;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .upload-card .remove-button:hover {
+      background: #cc0000;
+    }
+    .truncate {
+      max-width: 120px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .mark-answer-action-btn {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+    .mark-answer-action-btn.marked {
+      background: #28a745;
+      color: #fff;
+    }
+    .answer-radioOption {
+      display: none; /* Hide the radio button */
+    }
+    .addMoreImageOptionBtn {
+      background: #28a745;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .addMoreImageOptionBtn:hover {
+      background: #218838;
+    }
+    .RemoveImageAppend {
+      background: #dc3545;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .RemoveImageAppend:hover {
+      background: #c82333;
+    }
+  </style>
+</head>
+<body>
+  <button class="addMoreImageOptionBtn">Add More</button>
+
+  <div id="imageBoxContainer">
+    <div class="ImageBoxSub">
+      <div class="ImageBoxKOp">
+        <div class="image-display">
+          <a href="assets/img/newimages/dummyImage.png" data-fancybox="gallery">
+            <img src="assets/img/newimages/dummyImage.png" alt="Default Image">
+          </a>
+          <p class="truncate">No image uploaded</p>
+        </div>
+        <div class="upload-card">
+          <button class="upload-button">+</button>
+          <input type="file" class="image-upload" accept="image/*" style="display: none;">
+          <button class="remove-button" type="button">Remove</button>
+        </div>
+      </div>
+      <div class="footerImageBOx">
+        <div class="mark-answer-Box">
+          <input type="radio" name="answer" class="answer-radioOption">
+          <button type="button" class="mark-answer-action-btn">Mark as Answer</button>
+        </div>
+        <button type="button" class="RemoveImageAppend">Remove</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      const defaultImage = "assets/img/newimages/dummyImage.png";
+
+      // Handle click on upload button
+      $(document).on('click', '.upload-button', function () {
+        $(this).siblings('.image-upload').click();
+      });
+
+      // Handle image upload
+      $(document).on('change', '.image-upload', function (event) {
+        const file = event.target.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            $(event.target).closest('.ImageBoxKOp').find('.image-display').html(`
+              <a href="${e.target.result}" data-fancybox="gallery">
+                <img src="${e.target.result}" alt="${file.name}">
+              </a>
+              <p class="truncate">${file.name}</p>
+            `);
+            $.fancybox.bind("[data-fancybox]", {});
+          };
+          reader.readAsDataURL(file);
+        }
+      });
+
+      // Handle remove button inside upload section
+      $(document).on('click', '.remove-button', function () {
+        $(this).closest('.ImageBoxKOp').find('.image-display').html(`
+          <a href="${defaultImage}" data-fancybox="gallery">
+            <img src="${defaultImage}" alt="Default Image">
+          </a>
+          <p class="truncate">No image uploaded</p>
+        `);
+        $(this).closest('.ImageBoxKOp').find('.image-upload').val(null);
+        $.fancybox.bind("[data-fancybox]", {});
+      });
+
+      // Handle "Mark as Answer" button
+      $(document).on('click', '.mark-answer-action-btn', function () {
+        $('.mark-answer-action-btn').removeClass('marked').text('Mark as Answer');
+        $(this).text('Marked as Answer').addClass('marked');
+      });
+
+      // Handle Add More button
+      $('.addMoreImageOptionBtn').on('click', function () {
+        const newImageBox = `
+          <div class="ImageBoxSub">
+            <div class="ImageBoxKOp">
+              <div class="image-display">
+                <a href="${defaultImage}" data-fancybox="gallery">
+                  <img src="${defaultImage}" alt="Default Image">
+                </a>
+                <p class="truncate">No image uploaded</p>
+              </div>
+              <div class="upload-card">
+                <button class="upload-button">+</button>
+                <input type="file" class="image-upload" accept="image/*" style="display: none;">
+                <button class="remove-button" type="button">Remove</button>
+              </div>
+            </div>
+            <div class="footerImageBOx">
+              <div class="mark-answer-Box">
+                <input type="radio" name="answer" class="answer-radioOption">
+                <button type="button" class="mark-answer-action-btn">Mark as Answer</button>
+              </div>
+              <button type="button" class="RemoveImageAppend">Remove</button>
+            </div>
+          </div>
+        `;
+        $('#imageBoxContainer').append(newImageBox);
+        $.fancybox.bind("[data-fancybox]", {});
+      });
+
+      // Handle RemoveImageAppend button
+      $(document).on('click', '.RemoveImageAppend', function () {
+        $(this).closest('.ImageBoxSub').remove();
+      });
+    });
+  </script>
+</body>
+</html>

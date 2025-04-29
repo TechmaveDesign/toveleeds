@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinyMCE Editor with Video Upload</title>
+
+    <!-- Load TinyMCE -->
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>TinyMCE Editor with Video Upload</h2>
+    
+    <!-- Textarea for TinyMCE -->
+    <textarea id="editor"></textarea>
+
+    <script>
+        // Initialize TinyMCE
+        tinymce.init({
+            selector: '#editor',
+            height: 400,
+            plugins: 'media image link code',
+            toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | outdent indent | media image link | code',
+            media_live_embeds: true,
+            content_style: 'body { font-family: Arial; font-size: 14px; }',
+            readonly: false, // Ensure the editor is not in read-only mode
+
+            // File picker for video upload
+            file_picker_callback: function(callback, value, meta) {
+                if (meta.filetype === 'media') {
+                    const input = document.createElement('input');
+                    input.setAttribute('type', 'file');
+                    input.setAttribute('accept', 'video/*');
+                    input.onchange = function() {
+                        const file = this.files[0];
+                        if (file) {
+                            const reader = new FileReader();
+                            reader.onload = function() {
+                                callback(reader.result, { source2: reader.result, type: 'video/mp4' });
+                            };
+                            reader.readAsDataURL(file);
+                        }
+                    };
+                    input.click();
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
