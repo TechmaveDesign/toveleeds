@@ -67,6 +67,13 @@
                                         </div>
                                     </div>
                                 </a>
+                                <div class="Approval_inner_column ms-3">
+                                <div class="LabelnTitle">
+                                    <label>Manager</label>
+                                    <h3 class="RequestID"><a href="#" target="_blank">Chicago</a>
+                                    </h3>
+                                </div>
+                            </div>
                             </div>
 
                             <!-- <div class="Approval_inner_column">

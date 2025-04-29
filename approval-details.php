@@ -71,8 +71,8 @@
 
                             <div class="Approval_inner_column">
                                 <div class="LabelnTitle">
-                                    <label>Job/Certificate ID</label>
-                                    <h3 class="RequestID"><a href="job-order-details.php" target="_blank">PRO-0004</a>
+                                    <label>Job ID</label>
+                                    <h3 class="RequestID"><a href="job-order-details.php" target="_blank">JOB-0004</a>
                                     </h3>
                                 </div>
                             </div>
@@ -152,13 +152,14 @@
 
         <div class="tbuppertabs no_tab_padding_top">
             <nav class="nav nav-style-6 nav-pills d-block" role="tablist">
-                <a class="nav-link active" data-bs-toggle="tab" role="tab" aria-current="page" href="#nav-newjobs"
+               <a class="nav-link  active" data-bs-toggle="tab" role="tab" href="#nav-in-pending" aria-selected="true">
+                    Request For
+                </a>
+                <a class="nav-link" data-bs-toggle="tab" role="tab" aria-current="page" href="#nav-newjobs"
                     aria-selected="false">Previous Comments
                 </a>
 
-                <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-in-pending" aria-selected="true">Related
-                    Documents
-                </a>
+               
                 <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-in-progress"
                     aria-selected="true">Approval Activity
                 </a>
@@ -167,7 +168,199 @@
 
         </div>
         <div class="tab-content">
-            <div class="tab-pane show active text-muted" id="nav-newjobs" role="tabpanel">
+        <div class="tab-pane text-muted show active" id="nav-in-pending" role="tabpanel">
+            <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+                <h5>Approval Request List</h5>
+                <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
+                    <div class="me-3">
+                        <div class="input-icon-end position-relative">
+                            <input type="text" class="form-control date-range bookingrange"
+                                placeholder="dd/mm/yyyy - dd/mm/yyyy">
+                            <span class="input-icon-addon">
+                                <i class="ti ti-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="javascript:void(0);"
+                            class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
+                            data-bs-toggle="dropdown">
+                            Sort By : Last 7 Days
+                        </a>
+                        <ul class="dropdown-menu  dropdown-menu-end p-3">
+                            <li>
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="Downloadall_docs btn" type="button">Download All <iconify-icon
+                            icon="mynaui:download"></iconify-icon></button>
+                </div>
+            </div>
+            <div class="card-body p-0">
+                <div class="custom-datatable-filter">
+                <table
+                        class="table common-datatable withoutActionTR nowrap w-100">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>#</th>
+                                <th>Data Log No.</th>
+                                <th>Equipment Name</th>
+                                <th>Completion On</th>
+                                <th>DLS Type</th>
+                                <th>Certificate No.</th>
+                                <th>Checklist No.</th>
+                                <th>FIR Form </th>
+                                <th>RR Form</th>
+                                <th>Sticker/Tag ID</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td>
+                                    <div class="form-check form-check-md">
+                                        <input class="form-check-input row-checkbox" type="checkbox">
+                                        <label class="form-check-label" for="training"></label>
+                                    </div>
+                                </td>
+                                <td><a href="inspection-edit-rd1-form.php"
+                                        class="hightlightKOPID">#DLS2500001</a></td>
+                                <td>Air Compressor</td>
+                                <td>27 Jan, 2025 11:00 AM</td>
+                                <td>DLS1</td>
+                                <td><a href="#"
+                                        class="hightlightKOP">#Cert2500000</a><a href="#" class="DownLoadBtn"><iconify-icon icon="material-symbols:download"></iconify-icon></a></td>
+                                <td><a href="#" class="hightlightKOP">CL2500000</a><a href="#" class="DownLoadBtn"><iconify-icon icon="material-symbols:download"></iconify-icon></a>
+                                </td>
+                                <td><a href="#" class="hightlightKOP">FIR</a><a href="#" class="DownLoadBtn"><iconify-icon icon="material-symbols:download"></iconify-icon></a></td>
+                                <td>--</td>
+                                <td>L.Stk2500000</td>
+                                <td><span
+                                        class="badge badge-soft-success">Completed</span>
+                                </td>
+                                <td>
+                                    <div
+                                        class="d-flex align-items-center ActionDropdown">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#"
+                                        data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRight"
+                                        title="DLS Activity">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="hugeicons:activity-02"></iconify-icon>
+                                            </span>
+                                        </span>
+                                        </a>
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                            data-bs-toggle="tooltip"
+                                            data-placement="top"
+                                            title="View Job Orders"
+                                            href="inspection-edit-rd1-form.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="24" height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-eye">
+                                                        <path
+                                                            d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
+                                                        </path>
+                                                        <circle cx="12" cy="12"
+                                                            r="3"></circle>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td>
+                                    <div class="form-check form-check-md">
+                                        <input class="form-check-input row-checkbox" type="checkbox">
+                                        <label class="form-check-label" for="training"></label>
+                                    </div>
+                                </td>
+                                <td><a href="inspection-edit-rd1-form.php"
+                                        class="hightlightKOPID">#DLS2500004</a></td>
+                                <td>Cooling Tower</td>
+                                <td>30 Jan, 2025 03:45 PM</td>
+                                <td>DLS4</td>
+                                <td><a href="#"
+                                        class="hightlightKOP">#Cert2500003 </a><a href="#" class="DownLoadBtn"><iconify-icon icon="material-symbols:download"></iconify-icon></a></td>
+                                <td><a href="#" class="hightlightKOP">CL2500003 </a><a href="#" class="DownLoadBtn"><iconify-icon icon="material-symbols:download"></iconify-icon></a>
+                                </td>
+                                <td><a href="#" class="hightlightKOP">FIR </a><a href="#" class="DownLoadBtn"><iconify-icon icon="material-symbols:download"></iconify-icon></a></td>
+                                <td><a href="#" class="hightlightKOP">--</a></td>
+                                <td>L.Stk2500003</td>
+                                <td><span
+                                        class="badge badge-soft-success">Completed</span>
+                                </td>
+                                <td>
+                                    <div
+                                        class="d-flex align-items-center ActionDropdown">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                        href="#"
+                                        data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRight"
+                                        title="DLS Activity">
+                                        <span class="icon">
+                                            <span class="feather-icon">
+                                                <iconify-icon icon="hugeicons:activity-02"></iconify-icon>
+                                            </span>
+                                        </span>
+                                        </a>
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                            data-bs-toggle="tooltip"
+                                            data-placement="top"
+                                            title="View Job Orders"
+                                            href="inspection-edit-rd1-form.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="24" height="24"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="feather feather-eye">
+                                                        <path
+                                                            d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z">
+                                                        </path>
+                                                        <circle cx="12" cy="12"
+                                                            r="3"></circle>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+
+            </div>
+            <div class="tab-pane  text-muted" id="nav-newjobs" role="tabpanel">
                 <div class="custom-datatable-filter">
                     <div class="card border-0 noboxshadow">
                         <div class="card-header">
@@ -204,7 +397,7 @@
                                         </ul>
                                     </div>
                                     <a href="javascript:void(0);"
-                                        class="d-inline-flex align-items-center text-primary fw-medium"
+                                        class="addNoteBtn"
                                         data-bs-toggle="modal" data-bs-target="#add_notes">
                                         <i class="ti ti-circle-plus me-1"></i>
                                         Add Note
@@ -289,128 +482,7 @@
                 </div>
             </div>
 
-            <div class="tab-pane text-muted" id="nav-in-pending" role="tabpanel">
-
-                <div class="card-header d-flex align-items-center justify-content-between flex-wrap row-gap-3">
-                    <h5>Documents List</h5>
-                    <div class="d-flex my-xl-auto right-content align-items-center flex-wrap row-gap-3">
-                        <div class="me-3">
-                            <div class="input-icon-end position-relative">
-                                <input type="text" class="form-control date-range bookingrange"
-                                    placeholder="dd/mm/yyyy - dd/mm/yyyy">
-                                <span class="input-icon-addon">
-                                    <i class="ti ti-chevron-down"></i>
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="dropdown">
-                            <a href="javascript:void(0);"
-                                class="dropdown-toggle btn btn-white d-inline-flex align-items-center"
-                                data-bs-toggle="dropdown">
-                                Sort By : Last 7 Days
-                            </a>
-                            <ul class="dropdown-menu  dropdown-menu-end p-3">
-                                <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Recently Added</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last Month</a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Last 7 Days</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <button class="Downloadall_docs btn" type="button">Download All <iconify-icon
-                                icon="mynaui:download"></iconify-icon></button>
-                    </div>
-                </div>
-                <div class="card-body p-0">
-                    <div class="custom-datatable-filter table-responsive">
-                        <table class="table common-datatable withoutActionTR nowrap w-100">
-                            <thead class="thead-light">
-                                <tr>
-                                    <th class="no-sort">
-                                        <div class="form-check form-check-md">
-                                            <input class="form-check-input" type="checkbox" id="select-all">
-                                        </div>
-                                    </th>
-                                    <th>Document ID</th>
-                                    <th>Document Name</th>
-                                    <th>Document Format</th>
-                                    <th>Uploaded Date</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <div class="form-check form-check-md">
-                                            <input class="form-check-input" type="checkbox">
-                                        </div>
-                                    </td>
-                                    <td><a href="javascript:void(0);" class="link-default">DOC101</a></td>
-                                    <td>Inspection Report</td>
-                                    <td>PDF</td>
-                                    <td>01 Jan 2024</td>
-                                    <td>
-                                        <div class="action-icon d-inline-flex">
-
-                                            <a href="#" class="me-2" data-bs-toggle="tooltip" data-placement="top"
-                                                title="Download Document">
-                                                <i class="ti ti-download"></i>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="form-check form-check-md">
-                                            <input class="form-check-input" type="checkbox">
-                                        </div>
-                                    </td>
-                                    <td><a href="javascript:void(0);" class="link-default">DOC102</a></td>
-                                    <td>Certification Draft</td>
-                                    <td>DOCX</td>
-                                    <td>10 Feb 2024</td>
-                                    <td>
-                                        <div class="action-icon d-inline-flex">
-
-                                            <a href="#" class="me-2" data-bs-toggle="tooltip" data-placement="top"
-                                                title="Download Document">
-                                                <i class="ti ti-download"></i>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="form-check form-check-md">
-                                            <input class="form-check-input" type="checkbox">
-                                        </div>
-                                    </td>
-                                    <td><a href="javascript:void(0);" class="link-default">DOC103</a></td>
-                                    <td>Technical Assessment</td>
-                                    <td>PDF</td>
-                                    <td>18 Mar 2024</td>
-                                    <td>
-                                        <div class="action-icon d-inline-flex">
-
-                                            <a href="#" class="me-2" data-bs-toggle="tooltip" data-placement="top"
-                                                title="Download Document">
-                                                <i class="ti ti-download"></i>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-            </div>
+            
             <div class="tab-pane  text-muted" id="nav-in-progress" role="tabpanel">
                 <div class="custom-datatable-filter">
                     <div class="card border-0 noboxshadow">
@@ -609,7 +681,98 @@
     </div>
 </div>
 </div>
+<div class="offcanvas offcanvas-end customOffcanvasWidth-400" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Recent Activity <span class="RecentActivityID"><a href="inspection-edit-rd1-form.php">#DLS2500001</a></span></h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+  <div class="ActivityBox">
+            <span class="badge badge-soft-secondary  d-inline-flex align-items-center mb-3">
+                <i class="ti ti-calendar me-1"></i>
+                15 Feb 2024
+            </span>
+            <div class="border rounded p-3 mb-3">
+                <div class="d-flex align-items-start">
+                    <span class="avatar avatar-md avatar-rounded flex-shrink-0 bg-skyblue me-2"><i class="ti ti-message-circle-2 fs-20"></i></span>
+                    <div>
+                        <h6 class="fw-medium mb-1">You sent 1 Message to the contact.</h6>
+                        <span>10:25 pm</span>
+                    </div>
+                </div>
+            </div>
+            <div class="border rounded p-3 mb-3">
+                <div class="d-flex align-items-start">
+                    <span class="avatar avatar-md avatar-rounded bg-success flex-shrink-0 me-2"><i class="ti ti-phone fs-20"></i></span>
+                    <div>
+                        <h6 class="fw-medium mb-1">Denwar responded to your appointment schedule
+                            question by call at 09:30pm.</h6>
+                        <span>09:25 pm</span>
+                    </div>
+                </div>
+            </div>
+            <div class="border rounded p-3 mb-3">
+                <div class="d-flex align-items-start">
+                    <span class="avatar avatar-md avatar-rounded flex-shrink-0 bg-warning me-2"><i class="ti ti-file-description fs-20"></i></span>
+                    <div>
+                        <h6 class="fw-medium mb-1">Notes added by Antony</h6>
+                        <p class="mb-1">Please accept my apologies for the inconvenience caused. It
+                            would be much appreciated if it's possible to reschedule to 6:00 PM, or any
+                            other day that week.</p>
+                        <span>10.00 pm</span>
+                    </div>
+                </div>
+            </div>
+            <span class="badge badge-soft-secondary  d-inline-flex align-items-center mb-3">
+                <i class="ti ti-calendar me-1"></i>
+                15 Feb 2024
+            </span>
+            <div class="border rounded p-3 mb-3">
+                <div class="d-flex align-items-start">
+                    <span class="avatar avatar-md avatar-rounded flex-shrink-0 bg-purple me-2"><i class="ti ti-user-circle fs-20"></i></span>
+                    <div>
+                        <h6 class="fw-medium d-flex align-items-center mb-1">
+                            Meeting With
+                            <span class="avatar avatar-sm avatar-rounded mx-1"><img src="assets/img/profiles/avatar-02.jpg" alt="Img"></span>
+                            Abraham
+                        </h6>
+                        <span>Schedueled on 05:00 pm</span>
+                    </div>
+                </div>
+            </div>
+            <div class="border rounded p-3 mb-3">
+                <div class="d-flex align-items-start">
+                    <span class="avatar avatar-md avatar-rounded bg-success flex-shrink-0 me-2"><i class="ti ti-phone fs-20"></i></span>
+                    <div>
+                        <h6 class="fw-medium mb-1">Drain responded to your appointment schedule
+                            question.</h6>
+                        <span>09:25 pm</span>
+                    </div>
+                </div>
+            </div>
+            <span class="badge badge-soft-secondary  d-inline-flex align-items-center mb-3">
+                <i class="ti ti-calendar me-1"></i>
+                Upcoming Activity
+            </span>
+            <div class="border rounded p-3">
+                <div class="d-flex align-items-start mb-2">
+                    <span class="avatar avatar-md avatar-rounded flex-shrink-0 bg-purple me-2"><i class="ti ti-user-circle fs-20"></i></span>
+                    <div>
+                        <h6 class="fw-medium mb-1">
+                            Product Meeting
+                        </h6>
+                        <p class="mb-1">A product team meeting is a gathering of the cross-functional
+                            product team — ideally including
+                            team members from product, engineering, marketing, and customer support.
+                        </p>
+                        <span>Schedueled on 05:00 pm</span>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+  </div>
+</div>
 <?php include("footer.php") ?>
 
 <!-- progressbar js start -->
@@ -703,3 +866,14 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 <!-- approve condition functionalty end -->
+
+
+<!-- tooltip & offcanvas both are working on anchor tag-->
+<script>
+   document.addEventListener("DOMContentLoaded", function() {
+       var tooltipTriggerList = [].slice.call(document.querySelectorAll('[title]'));
+       var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+           return new bootstrap.Tooltip(tooltipTriggerEl);
+       });
+   });
+</script>

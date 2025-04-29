@@ -1,12 +1,9 @@
 <ul class="pageTabs">
-    <li><a href="job-orders.php">Assessment Jobs</a></li>
-    <li><a href="inspection-job-order-list.php">Inspection Jobs</a></li>
-    <li><a href="#">NDT Review Jobs</a></li>
-    <li><a href="#">Training Jobs</a></li>
-
+    <li><a href="inspection-job-order-list.php">Equipment Inspection</a></li>
+    <li><a href="job-orders.php">Operator Assessment</a></li>
+    <li><a href="ndt-job-order-list.php">NDT Review</a></li>
+    <li><a href="training-job-order-list.php">Training</a></li>
 </ul>
-
-
 <script>
     // Get current URL path
     const currentUrl = window.location.pathname.split("/").pop();

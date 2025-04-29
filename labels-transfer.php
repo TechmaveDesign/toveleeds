@@ -66,169 +66,131 @@
                     <table class="table common-datatable withoutActionTR nowrap w-100">
                         <thead class="thead-light">
                             <tr>
-                                <th>S.No.</th>
+                                <th>Transfer ID</th>
                                 <th>Region</th>
-                                <th>Sticker ID</th>
-                                <th>Total Range</th>
-                                <th>Alloted Range</th>
+                                <th>Sticker Type</th>
+                                <th>Transfer Qty</th>
+                                <th>Transfer Range</th>
                                 <th>Date & Time</th>
                                 <th>Status</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Gujrat</td>
-                                <td>AEF - 0129</td>
-                                <td>001 - 999</td>
-                                <td>001 - 399</td>
-                                <td>
-                                    10/02/2024 15:15
-                                </td>
+                        <tr>
+                            <td>#TF0001</td>
+                            <td>Gujarat</td>
+                            <td>Small</td>
+                            <td>800</td>
+                            <td>S.Stk2500000 - S.Stk2500079</td>
+                            <td>10/02/2024 15:15</td>
+                            <td>
+                                <select class="form-control select2">
+                                    <option value="" disabled>Choose Status</option>
+                                    <option value="Dispatched" selected>Dispatched</option>
+                                    <option value="Delivered">Delivered</option>
+                                    <option value="Received">Received</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                        data-bs-target="#editStickerModal" data-placement="top" title="Edit" href="">
+                                        <span class="icon"><span class="feather-icon"><iconify-icon icon="mage:edit"></iconify-icon></span></span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" data-id="" title="Delete" href="#">
+                                        <span class="icon"><span class="feather-icon"><iconify-icon icon="fluent:delete-24-regular"></iconify-icon></span></span>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
 
-                                <td>
-                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Delivered</span>
-                                        <iconify-icon icon="mynaui:info-waves"></iconify-icon>
-                                    </span>
-                                </td>
+                        <tr>
+                            <td>#TF0002</td>
+                            <td>Maharashtra</td>
+                            <td>Large</td>
+                            <td>900</td>
+                            <td>L.Stk2500080 - L.Stk2500179</td>
+                            <td>11/02/2024 14:30</td>
+                            <td>
+                                <select class="form-control select2">
+                                    <option value="" disabled>Choose Status</option>
+                                    <option value="Dispatched">Dispatched</option>
+                                    <option value="Delivered" selected>Delivered</option>
+                                    <option value="Received">Received</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                        data-bs-target="#editStickerModal" data-placement="top" title="Edit" href="">
+                                        <span class="icon"><span class="feather-icon"><iconify-icon icon="mage:edit"></iconify-icon></span></span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" data-id="" title="Delete" href="#">
+                                        <span class="icon"><span class="feather-icon"><iconify-icon icon="fluent:delete-24-regular"></iconify-icon></span></span>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
 
-                                <td>
-                                    <div class="d-flex align-items-center ActionDropdown">
+                        <tr>
+                            <td>#TF0003</td>
+                            <td>Rajasthan</td>
+                            <td>Small</td>
+                            <td>750</td>
+                            <td>S.Stk2500180 - S.Stk2500259</td>
+                            <td>12/02/2024 16:00</td>
+                            <td>
+                                <select class="form-control select2">
+                                    <option value=""disabled>Choose Status</option>
+                                    <option value="Dispatched">Dispatched</option>
+                                    <option value="Delivered">Delivered</option>
+                                    <option value="Received" selected>Received</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                        data-bs-target="#editStickerModal" data-placement="top" title="Edit" href="">
+                                        <span class="icon"><span class="feather-icon"><iconify-icon icon="mage:edit"></iconify-icon></span></span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" data-id="" title="Delete" href="#">
+                                        <span class="icon"><span class="feather-icon"><iconify-icon icon="fluent:delete-24-regular"></iconify-icon></span></span>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
 
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
-                                            data-bs-target="#editStickerModal" data-placement="top" title="Edit"
-                                            href="">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="mage:edit"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
+                        <tr>
+                            <td>#TF0004</td>
+                            <td>Punjab</td>
+                            <td>Large</td>
+                            <td>820</td>
+                            <td>L.Stk2500260 - L.Stk2500339</td>
+                            <td>13/02/2024 17:45</td>
+                            <td>
+                                <select class="form-control select2">
+                                    <option value="" disabled>Choose Status</option>
+                                    <option value="Dispatched" selected>Dispatched</option>
+                                    <option value="Delivered">Delivered</option>
+                                    <option value="Received">Received</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                        data-bs-target="#editStickerModal" data-placement="top" title="Edit" href="">
+                                        <span class="icon"><span class="feather-icon"><iconify-icon icon="mage:edit"></iconify-icon></span></span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" data-id="" title="Delete" href="#">
+                                        <span class="icon"><span class="feather-icon"><iconify-icon icon="fluent:delete-24-regular"></iconify-icon></span></span>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
 
 
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                            data-id="" title="Delete" href="#">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>2</td>
-                                <td>Mumbai</td>
-                                <td>BEC - 1011</td>
-                                <td>1000 - 1999</td>
-                                <td>1000 - 1199</td>
-                                <td>11/02/2024 10:45</td>
-                                <td>
-                                    <span class="badge bg-outline-secondary pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Recieved</span>
-                                        <iconify-icon icon="tabler:progress-alert"></iconify-icon>
-                                    </span>
-                                </td>
-                                <td>
-                                    <div class="d-flex align-items-center ActionDropdown">
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
-                                            data-bs-target="#editStickerModal" data-placement="top" title="Edit"
-                                            href="">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="mage:edit"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                            data-id="" title="Delete" href="#">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>3</td>
-                                <td>Pune</td>
-                                <td>CEA - 2020</td>
-                                <td>2000 - 2999</td>
-                                <td>2000 - 2599</td>
-                                <td>12/02/2024 13:20</td>
-                                <td>
-                                    <span class="badge bg-outline-warning pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Dispatched</span>
-                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
-                                    </span>
-                                </td>
-                                <td>
-                                    <div class="d-flex align-items-center ActionDropdown">
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
-                                            data-bs-target="#editStickerModal" data-placement="top" title="Edit"
-                                            href="">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="mage:edit"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                            data-id="" title="Delete" href="#">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>4</td>
-                                <td>Rajasthan</td>
-                                <td>GHI - 2211</td>
-                                <td>3000 - 5999</td>
-                                <td>3000 - 5000</td>
-                                <td>12/02/2024 13:20</td>
-                                <td>
-                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Delivered</span>
-                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
-                                    </span>
-                                </td>
-                                <td>
-                                    <div class="d-flex align-items-center ActionDropdown">
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
-                                            data-bs-target="#editStickerModal" data-placement="top" title="Edit"
-                                            href="">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="mage:edit"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                            data-id="" title="Delete" href="#">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
+                            
 
                         </tbody>
 
@@ -238,166 +200,162 @@
 
             <div class="tab-pane text-muted" id="nav-in-pending" role="tabpanel">
                 <div class="custom-datatable-filter">
-                    <table class="table common-datatable withoutActionTR nowrap w-100">
+                <table class="table common-datatable withoutActionTR nowrap w-100">
                         <thead class="thead-light">
                             <tr>
-                                <th>S.No.</th>
+                                <th>Transfer ID</th>
                                 <th>Region</th>
-                                <th>Tag ID</th>
-                                <th>Total Range</th>
-                                <th>Alloted Range</th>
+                                <th>Tag No.</th>
+                                <th>Transfer Qty</th>
+                                <th>Transfer Range</th>
                                 <th>Date & Time</th>
                                 <th>Status</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Gujrat</td>
-                                <td>TAG - 1111</td>
-                                <td>001 - 999</td>
-                                <td>001 - 699</td>
-                                <td>
-                                    10/02/2024 15:15
-                                </td>
-                                <td>
-                                    <span class="badge bg-outline-secondary pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Recieved</span>
-                                        <iconify-icon icon="mynaui:info-waves"></iconify-icon>
-                                    </span>
-                                </td>
-
-                                <td>
-                                    <div class="d-flex align-items-center ActionDropdown">
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
-                                            data-bs-target="#editTagModal" data-placement="top" title="Edit"
-                                            href="">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="mage:edit"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                            data-id="" title="Delete" href="#">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>2</td>
-                                <td>Mumbai</td>
-                                <td>TSC - 202</td>
-                                <td>499 - 699</td>
-                                <td>499 - 699</td>
-                                <td>11/02/2024 10:45</td>
-                                <td>
-                                    <span class="badge bg-outline-secondary pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Recieved</span>
-                                        <iconify-icon icon="tabler:progress-alert"></iconify-icon>
-                                    </span>
-                                </td>
-                                <td>
-                                    <div class="d-flex align-items-center ActionDropdown">
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
-                                            data-bs-target="#editTagModal" data-placement="top" title="Edit"
-                                            href="">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="mage:edit"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                            data-id="" title="Delete" href="#">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>3</td>
-                                <td>Pune</td>
-                                <td>TC - 1120</td>
-                                <td>800 - 1000</td>
-                                <td>800 - 1000</td>
-                                <td>12/02/2024 13:20</td>
-                                <td>
-                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Delivered</span>
-                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
-                                    </span>
-                                </td>
-                                <td>
-                                    <div class="d-flex align-items-center ActionDropdown">
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
-                                            data-bs-target="#editTagModal" data-placement="top" title="Edit"
-                                            href="">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="mage:edit"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                        data-id="" title="Delete" href="#">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
+                        <tr>
+                            <td>#TF0001</td>
+                            <td>Gujarat</td>
+                            <td>039907</td>
+                            <td>100</td>
+                            <td>039907 - 040006</td>
+                            <td>10/02/2024 15:15</td>
+                            <td>
+                                <select class="form-control select2">
+                                    <option value="" disabled>Choose Status</option>
+                                    <option value="Dispatched" selected>Dispatched</option>
+                                    <option value="Delivered">Delivered</option>
+                                    <option value="Received">Received</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                        data-bs-target="#editTagModal" data-placement="top" title="Edit" href="">
+                                        <span class="icon"><span class="feather-icon"><iconify-icon icon="mage:edit"></iconify-icon></span></span>
                                     </a>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>4</td>
-                                <td>Rajasthan</td>
-                                <td>TAG - 4321</td>
-                                <td>499 - 899</td>
-                                <td>499 - 699</td>
-                                <td>12/02/2024 13:20</td>
-                                <td>
-                                    <span class="badge bg-outline-warning pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Dispatched</span>
-                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
-                                    </span>
-                                </td>
-                                <td>
-                                    <div class="d-flex align-items-center ActionDropdown">
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
-                                            data-bs-target="#editTagModal" data-placement="top" title="Edit"
-                                            href="">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="mage:edit"></iconify-icon>
-                                                </span>
-                                            </span>
-                                        </a>
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                        data-id="" title="Delete" href="#">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" data-id="" title="Delete" href="#">
+                                        <span class="icon"><span class="feather-icon"><iconify-icon icon="fluent:delete-24-regular"></iconify-icon></span></span>
                                     </a>
-                                    </div>
-                                </td>
-                            </tr>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>#TF0002</td>
+                            <td>Maharashtra</td>
+                            <td>040007</td>
+                            <td>100</td>
+                            <td>040007 - 040106</td>
+                            <td>11/02/2024 14:30</td>
+                            <td>
+                                <select class="form-control select2">
+                                    <option value="" disabled>Choose Status</option>
+                                    <option value="Dispatched">Dispatched</option>
+                                    <option value="Delivered" selected>Delivered</option>
+                                    <option value="Received">Received</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                        data-bs-target="#editTagModal" data-placement="top" title="Edit" href="">
+                                        <span class="icon"><span class="feather-icon"><iconify-icon icon="mage:edit"></iconify-icon></span></span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" data-id="" title="Delete" href="#">
+                                        <span class="icon"><span class="feather-icon"><iconify-icon icon="fluent:delete-24-regular"></iconify-icon></span></span>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>#TF0003</td>
+                            <td>Rajasthan</td>
+                            <td>040107</td>
+                            <td>100</td>
+                            <td>040107 - 040206</td>
+                            <td>12/02/2024 16:00</td>
+                            <td>
+                                <select class="form-control select2">
+                                    <option value="" disabled>Choose Status</option>
+                                    <option value="Dispatched">Dispatched</option>
+                                    <option value="Delivered">Delivered</option>
+                                    <option value="Received" selected>Received</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                        data-bs-target="#editTagModal" data-placement="top" title="Edit" href="">
+                                        <span class="icon"><span class="feather-icon"><iconify-icon icon="mage:edit"></iconify-icon></span></span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" data-id="" title="Delete" href="#">
+                                        <span class="icon"><span class="feather-icon"><iconify-icon icon="fluent:delete-24-regular"></iconify-icon></span></span>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>#TF0004</td>
+                            <td>Punjab</td>
+                            <td>040207</td>
+                            <td>100</td>
+                            <td>040207 - 040306</td>
+                            <td>13/02/2024 17:45</td>
+                            <td>
+                                <select class="form-control select2">
+                                    <option value="" disabled>Choose Status</option>
+                                    <option value="Dispatched">Dispatched</option>
+                                    <option value="Delivered" selected>Delivered</option>
+                                    <option value="Received">Received</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                        data-bs-target="#editTagModal" data-placement="top" title="Edit" href="">
+                                        <span class="icon"><span class="feather-icon"><iconify-icon icon="mage:edit"></iconify-icon></span></span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" data-id="" title="Delete" href="#">
+                                        <span class="icon"><span class="feather-icon"><iconify-icon icon="fluent:delete-24-regular"></iconify-icon></span></span>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>#TF0005</td>
+                            <td>Karnataka</td>
+                            <td>040307</td>
+                            <td>100</td>
+                            <td>040307 - 040406</td>
+                            <td>14/02/2024 18:30</td>
+                            <td>
+                                <select class="form-control select2">
+                                    <option value="" disabled>Choose Status</option>
+                                    <option value="Dispatched">Dispatched</option>
+                                    <option value="Delivered">Delivered</option>
+                                    <option value="Received" selected>Received</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center ActionDropdown">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                        data-bs-target="#editTagModal" data-placement="top" title="Edit" href="">
+                                        <span class="icon"><span class="feather-icon"><iconify-icon icon="mage:edit"></iconify-icon></span></span>
+                                    </a>
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" data-id="" title="Delete" href="#">
+                                        <span class="icon"><span class="feather-icon"><iconify-icon icon="fluent:delete-24-regular"></iconify-icon></span></span>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+
+                            
 
                         </tbody>
 
@@ -430,71 +388,152 @@
                             </div>
                         </div>
 
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="form-label">Sticker ID:<div class="requiredLabel">*</div></label>
-                                <select class="form-control largeinp_height select2">
-                                    <option value="">Select a Sticker ID</option>
-                                    <option value="AEB-0129">AEB - 0129</option>
-                                    <option value="BEC-1011">BEC - 1011</option>
-                                    <option value="FBC-1230">FBC - 1230</option>
-                                    <option value="GHI-2211">GHI - 2211</option>
-
-                                </select>
-                            </div>
-
-
-                            <div class="form-group">
-                                <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
-                                <input type="text" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
-                                <input type="text" placeholder="Please Enter The End Range" class="form-control largeinp_height">
-                            </div>
-
-                            <div class="form-group">
+                        <div class="col-lg-12">
+                        <div class="form-group">
                                 <label class="form-label">Location (Region)</label>
                                 <div class="input-blocks">
-                                                <select class="select2">
-                                                    <option disabled selected>Select Region</option>
-                                                    <option>Delhi</option>
-                                                    <option>Mumbai</option>
-                                                    <option>Kolkata</option>
-                                                    <option>Banglore</option>
-                                                    <option>Pune</option>
-                                                    <option>Chennai</option>
-
-                                            
-                                                </select>
-
-                                            </div>
-                            </div>
-
-                            <!-- Dropdown for Status -->
-                            <div class="form-group">
-                                <label class="form-label">Status:<div class="requiredLabel">*</div></label>
+                                    <select class="select2">
+                                        <option disabled selected>Select Region</option>
+                                        <option>Delhi</option>
+                                        <option>Mumbai</option>
+                                        <option>Kolkata</option>
+                                        <option>Banglore</option>
+                                        <option>Pune</option>
+                                        <option>Chennai</option>
+                                    </select>
+                                </div>
+                             </div>
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="form-group">
+                                <label class="form-label">Sticker Type</label>
                                 <select class="form-control largeinp_height select2">
-                                    <option value="" selected >Choose Status</option>
-                                    <option value="Not Dispatched">Not Dispatched</option>
-                                    <option value="Dispatched for Printing">Dispatched for Printing</option>
+                                    <option value="">Select Type</option>
+                                    <option value="Small">Small</option>
+                                    <option value="Large">Large</option>
                                 </select>
                             </div>
                         </div>
+           
+                        <div class="col-lg-6">
+                        <div class="form-group">
+                                <label class="form-label">Quantity</label>
+                                <input type="text" placeholder="Enter Qty." class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="form-group">
+                                <label class="form-label">Available Start Range:</label>
+                                <input type="text" placeholder="Auto Generate Starting Range" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="form-group">
+                                <label class="form-label">Available End Range:</label>
+                                <input type="text" placeholder="Auto Generate End Range" class="form-control">
+                            </div>
+                        </div>
+                     
 
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btnContinueProcess btn-primary editEnquiryBtn">
-                        <div class="buttontext">
-                            <div class="formediticon_modal">
-                                <iconify-icon icon="uit:process"></iconify-icon>
-                            </div>
-                            Save & Transfer
-                        </div>
-                        <iconify-icon icon="bi:arrow-right"></iconify-icon>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">
+                    <iconify-icon icon="ci:save"></iconify-icon>  Save & Transfer 
                     </button>
+                </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Edit Transfer Sticker Modal-->
+<div class="modal fade custombottm_modalStyle" id="editStickerModal">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Edit Sticker Transfer</h4>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x"></i>
+                </button>
+            </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="iconImageSection">
+                                <img src="assets/aditya_assests/sticker_icon.png" alt="Sticker Icon">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                        <div class="form-group">
+                                <label class="form-label">Location (Region)</label>
+                                <div class="input-blocks">
+                                    <select class="select2">
+                                        <option disabled selected>Select Region</option>
+                                        <option>Delhi</option>
+                                        <option>Mumbai</option>
+                                        <option>Kolkata</option>
+                                        <option>Banglore</option>
+                                        <option>Pune</option>
+                                        <option>Chennai</option>
+                                    </select>
+                                </div>
+                             </div>
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="form-group">
+                                <label class="form-label">Sticker Type</label>
+                                <select class="form-control largeinp_height select2">
+                                    <option value="">Select Type</option>
+                                    <option value="Small">Small</option>
+                                    <option value="Large">Large</option>
+                                </select>
+                            </div>
+                        </div>
+           
+                        <div class="col-lg-6">
+                        <div class="form-group">
+                                <label class="form-label">Quantity</label>
+                                <input type="text" placeholder="Enter Qty." class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="form-group">
+                                <label class="form-label">Available Start Range:</label>
+                                <input type="text" placeholder="Auto Generate Starting Range" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="form-group">
+                                <label class="form-label">Available End Range:</label>
+                                <input type="text" placeholder="Auto Generate End Range" class="form-control">
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-12">
+                         
+                            <div class="form-group">
+                                <label class="form-label">Status:</label>
+                                <select class="form-control select2">
+                                    <option value="" selected >Choose Status</option>
+                                    <option value="Dispatched">Dispatched</option>
+                                    <option value="Delivered">Delivered</option>
+                                    <option value="Received">Received</option>
+                                </select>
+                            </div>
+                        </div> -->
+
+                       
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">
+                    <iconify-icon icon="ci:save"></iconify-icon>  Update & Transfer 
+                    </button>
+                </div>
                 </div>
         </div>
     </div>
@@ -519,163 +558,85 @@
                                 <img src="assets\aditya_assests\sticker_icon.png" alt="tttt">
                             </div>
                         </div>
-                        <div class="col-md-12">
 
-                            <div class="form-group">
-                                <label class="form-label">Tag ID:<div class="requiredLabel">*</div></label>
-                                <select class="form-control largeinp_height select2">
-                                    <option value="">Select a Tag ID</option>
-                                    <option value="TA-123">TA - 123</option>
-                                    <option value="TB-345">TB - 345</option>
-                                    <option value="TC-112">TC - 112</option>
-                                    <option value="TD-233">TD - 223</option>
-
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
-                                <input type="text" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
-                                <input type="text" placeholder="Please Enter The End Range" class="form-control largeinp_height">
-                            </div>
-
-                            <div class="form-group">
+                        <div class="col-lg-12">
+                        <div class="form-group">
                                 <label class="form-label">Location (Region)</label>
                                 <div class="input-blocks">
-                                                <select class="select2">
-                                                    <option disabled selected>Select Region</option>
-                                                    <option>Delhi</option>
-                                                    <option>Mumbai</option>
-                                                    <option>Kolkata</option>
-                                                    <option>Banglore</option>
-                                                    <option>Pune</option>
-                                                    <option>Chennai</option>
-
-                                            
-                                                </select>
-
-                                            </div>
-                            </div>
-
-                            <!-- Dropdown for Status -->
-                            <div class="form-group">
-                                <label class="form-label">Status:<div class="requiredLabel">*</div></label>
+                                    <select class="select2">
+                                        <option disabled selected>Select Region</option>
+                                        <option>Delhi</option>
+                                        <option>Mumbai</option>
+                                        <option>Kolkata</option>
+                                        <option>Banglore</option>
+                                        <option>Pune</option>
+                                        <option>Chennai</option>
+                                    </select>
+                                </div>
+                             </div>
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="form-group">
+                                <label class="form-label">Tag No.</label>
                                 <select class="form-control largeinp_height select2">
-                                    <option value="" selected >Choose Status</option>
-                                    <option value="Not Dispatched">Not Dispatched</option>
-                                    <option value="Dispatched for Printing">Dispatched for Printing</option>
+                                    <option value="">Select a Tag ID</option>
+                                    <option value="039907">039907</option>
+                                    <option value="040307">040307</option>
+                                    <option value="040007">040007</option>
+                                    <option value="040207">040207</option>
+
                                 </select>
                             </div>
-
                         </div>
+                        <div class="col-lg-6">
+                        <div class="form-group">
+                                <label class="form-label">Tag Qty</label>
+                                <input type="text" placeholder="Enter Qty" class="form-control largeinp_height">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="form-group">
+                                <label class="form-label">Available Start Range:</label>
+                                <input type="text" placeholder="Auto Generate Starting Range" class="form-control largeinp_height">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="form-group">
+                                <label class="form-label">Available End Range:</label>
+                                <input type="text" placeholder="Auto Generate End Range" class="form-control largeinp_height">
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="form-label">Status:</label>
+                                <select class="form-control largeinp_height select2">
+                                    <option value="" selected >Choose Status</option>
+                                    <option value="Dispatched">Dispatched</option>
+                                    <option value="Delivered">Delivered</option>
+                                    <option value="Received">Received</option>
+                                </select>
+                            </div>
+                        </div> -->
+                       
 
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btnContinueProcess btn-primary editEnquiryBtn">
-                        <div class="buttontext">
-                            <div class="formediticon_modal">
-                                <iconify-icon icon="uit:process"></iconify-icon>
-                            </div>
-                            Save & Transfer
-                        </div>
-                        <iconify-icon icon="bi:arrow-right"></iconify-icon>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">
+                    <iconify-icon icon="ci:save"></iconify-icon>  Save & Transfer 
                     </button>
+                </div>
                 </div>
         </div>
     </div>
 </div>
-
-<!-- Edit Transfer Sticker Modal-->
-<div class="modal fade custombottm_modalStyle" id="editStickerModal">
-    <div class="modal-dialog modal-dialog-centered modal-md">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Edit Sticker</h4>
-                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
-                    <i class="ti ti-x"></i>
-                </button>
-            </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="iconImageSection">
-                                <img src="assets/aditya_assests/sticker_icon.png" alt="Sticker Icon">
-                            </div>
-                        </div>
-
-                        <input type="hidden" id="stickerIdHidden" name="sticker_id">
-
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="form-label">Sticker ID:<div class="requiredLabel">*</div></label>
-                                <select id="editStickerID" name="sticker_id" class="form-control largeinp_height select2">
-                                    <option value="">Select a Sticker ID</option>
-                                    <option selected value="AEB-0129">AEB - 0129</option>
-                                    <option value="BEC-1011">BEC - 1011</option>
-                                    <option value="FBC-1230">FBC - 1230</option>
-                                    <option value="GHI-2211">GHI - 2211</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
-                                <input type="text" id="editStartRange" name="start_range" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
-                                <input type="text" id="editEndRange" name="end_range" placeholder="Please Enter The End Range" class="form-control largeinp_height">
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">Location (Region)</label>
-                                <div class="input-blocks">
-                                                <select class="select2">
-                                                    <!-- <option disabled selected>Select Region</option> -->
-                                                    <option selected>Delhi</option>
-                                                    <option>Mumbai</option>
-                                                    <option>Kolkata</option>
-                                                    <option>Banglore</option>
-                                                    <option>Pune</option>
-                                                    <option>Chennai</option>
-
-                                            
-                                                </select>
-
-                                            </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">Status:<div class="requiredLabel">*</div></label>
-                                <select id="editStatus" name="status" class="form-control largeinp_height select2">
-                                    <option value="">Choose Status</option>
-                                    <option value="Not Dispatched">Not Dispatched</option>
-                                    <option value="Dispatched for Printing">Dispatched for Printing</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-end me-3 mb-3">
-                    <button type="submit" class="btn btn-primary">
-                        Save & Update
-                    </button>
-                </div>
-        </div>
-    </div>
-</div>
-
 <!-- Edit Transfer Tag Modal-->
 <div class="modal fade custombottm_modalStyle" id="editTagModal">
     <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Edit Tag</h4>
+                <h4 class="modal-title">Edit Tag Transfer</h4>
                 <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
                     <i class="ti ti-x"></i>
                 </button>
@@ -688,63 +649,62 @@
                             </div>
                         </div>
 
-                        <input type="hidden" id="tagIdHidden" name="tag_id">
-
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="form-label">Tag ID:<div class="requiredLabel">*</div></label>
-                                <select id="editTagID" name="tag_id" class="form-control largeinp_height select2">
-                                    <option value="">Select a Tag ID</option>
-                                    <option  selected value="TA-123">TA - 0123</option>
-                                    <option value="TB-345">TB - 345</option>
-                                    <option value="TC-112">TC - 112</option>
-                                    <option value="TD-223">TD - 223</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
-                                <input type="text" id="editStartRange" name="start_range" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
-                                <input type="text" id="editEndRange" name="end_range" placeholder="Please Enter The End Range" class="form-control largeinp_height">
-                            </div>
-
-                            <div class="form-group">
+                        <div class="col-lg-12">
+                        <div class="form-group">
                                 <label class="form-label">Location (Region)</label>
                                 <div class="input-blocks">
-                                                <select class="select2">
-                                                    <!-- <option disabled selected>Select Region</option> -->
-                                                    <option>Delhi</option>
-                                                    <option>Mumbai</option>
-                                                    <option selected>Kolkata</option>
-                                                    <option>Banglore</option>
-                                                    <option>Pune</option>
-                                                    <option>Chennai</option>
+                                    <select class="select2">
+                                        <option disabled selected>Select Region</option>
+                                        <option>Delhi</option>
+                                        <option>Mumbai</option>
+                                        <option>Kolkata</option>
+                                        <option>Banglore</option>
+                                        <option>Pune</option>
+                                        <option>Chennai</option>
+                                    </select>
+                                </div>
+                             </div>
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="form-group">
+                                <label class="form-label">Tag No.</label>
+                                <select class="form-control largeinp_height select2">
+                                    <option value="">Select a Tag ID</option>
+                                    <option value="039907">039907</option>
+                                    <option value="040307">040307</option>
+                                    <option value="040007">040007</option>
+                                    <option value="040207">040207</option>
 
-                                            
-                                                </select>
-
-                                            </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">Status:<div class="requiredLabel">*</div></label>
-                                <select id="editStatus" name="status" class="form-control largeinp_height select2">
-                                    <option value="">Choose Status</option>
-                                    <option value="Not Dispatched">Not Dispatched</option>
-                                    <option value="Dispatched for Printing">Dispatched for Printing</option>
                                 </select>
                             </div>
                         </div>
+                        <div class="col-lg-6">
+                        <div class="form-group">
+                                <label class="form-label">Tag Qty</label>
+                                <input type="text" placeholder="Enter Qty" class="form-control largeinp_height">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="form-group">
+                                <label class="form-label">Available Start Range:</label>
+                                <input type="text" placeholder="Auto Generate Starting Range" class="form-control largeinp_height">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="form-group">
+                                <label class="form-label">Available End Range:</label>
+                                <input type="text" placeholder="Auto Generate End Range" class="form-control largeinp_height">
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
-                <div class="d-flex justify-content-end me-3 mb-3">
-                    <button type="submit" class="btn btn-primary">
-                        Save & Update
+                <div class="modal-footer">
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">
+                    <iconify-icon icon="ci:save"></iconify-icon>  Update & Transfer 
                     </button>
+                </div>
                 </div>
         </div>
     </div>

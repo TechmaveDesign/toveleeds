@@ -6,7 +6,7 @@
 	<!-- Breadcrumb -->
 	<div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb ">
 		<div class="my-auto mb-2">
-			<h2 class="mb-1">Users</h2>
+			<h2 class="mb-1">All User</h2>
 			<nav>
 				<ol class="breadcrumb mb-0">
 					<li class="breadcrumb-item">
@@ -15,14 +15,14 @@
 					<li class="breadcrumb-item">
 						User Management
 					</li>
-					<li class="breadcrumb-item active" aria-current="page">Users</li>
+					<li class="breadcrumb-item active" aria-current="page">User</li>
 				</ol>
 			</nav>
 		</div>
 		<div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
 			
 			<div class="mb-2">
-				<a href="#" data-bs-toggle="modal" data-bs-target="#add_users"
+				<a href="inspector-add.php" 
 					class="btn btn-primary d-flex align-items-center cmnaddbtn"><iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Add User</a>
 			</div>
 			<div class="head-icons ms-2">
@@ -43,13 +43,12 @@
 				<table class="table common-datatable withoutActionTR nowrap w-100">
 					<thead class="thead-light">
 						<tr>
-							<th>Employee ID</th>
-							<th>Employee Name</th>
-							<th>Employee Email</th>
-							<th>Employee Created On</th>
+							<th>User ID</th>
+							<th>User Name</th>
+							<th>User Email</th>
+							<th>User Created On</th>
 							<th>Role</th>
 							<th>Department</th>
-							<th>Job Orders Assigned </th>
 							<th>Status</th>
 							<th>Action</th>
 						</tr>
@@ -57,7 +56,7 @@
 					<tbody>
 						<tr>
 							<td>
-								EMP001
+								<a href="user-detail.php" class="hightlightKOPID">#US0001</a>
 							</td>
 							<td>
 								<div class="d-flex align-items-center file-name-icon">
@@ -75,8 +74,13 @@
 							<td>17 Oct 2024</td>
 							<td>Inspectors
 							</td>
-							<td>Inspection</td>
-							<td><a href="##" class="tablelink_data">Job Orders</a></td>
+							<td>
+								<div class="departmentInspector">
+								<span>Equipment Inspection</span>
+								<span>Operator Assessment</span>
+								</div>
+							</td>
+							
 							<td>
 								<span class="badge badge-success d-inline-flex align-items-center badge-xs">
 									<i class="ti ti-point-filled me-1"></i>Active
@@ -120,7 +124,7 @@
 
 						<tr>
 							<td>
-								EMP002
+							<a href="user-detail.php" class="hightlightKOPID">#US0002</a>
 							</td>
 							<td>
 								<div class="d-flex align-items-center file-name-icon">
@@ -136,10 +140,14 @@
 								thomas.bordelon@example.com
 							</td>
 							<td>20 Jul 2024</td>
-							<td>Trainer
+							<td>Trainer</td>
+							<td>
+								<div class="departmentInspector">
+								<span>NDT Review</span>
+								<span>Training</span>
+								</div>
 							</td>
-							<td>Training</td>
-							<td><a href="##" class="tablelink_data">Job Orders</a></td>
+							
 							<td>
 								<span class="badge badge-success d-inline-flex align-items-center badge-xs">
 									<i class="ti ti-point-filled me-1"></i>Active
@@ -182,7 +190,7 @@
 						</tr>
 						<tr>
 							<td>
-								EMP003
+							<a href="user-detail.php" class="hightlightKOPID">#US0003</a>
 							</td>
 							<td>
 								<div class="d-flex align-items-center file-name-icon">
@@ -200,8 +208,13 @@
 							<td>17 Oct 2024</td>
 							<td>Manager
 							</td>
-							<td>NDT</td>
-							<td><a href="##" class="tablelink_data">_ _</a></td>
+							<td>
+								<div class="departmentInspector">
+								<span>Equipment Inspection</span>
+								<span>Training</span>
+								</div>
+							</td>
+							
 							<td>
 								<span class="badge badge-success d-inline-flex align-items-center badge-xs">
 									<i class="ti ti-point-filled me-1"></i>Active
@@ -244,7 +257,7 @@
 						</tr>
 						<tr>
 							<td>
-								EMP004
+							<a href="user-detail.php" class="hightlightKOPID">#US0004</a>
 							</td>
 							<td>
 								<div class="d-flex align-items-center file-name-icon">
@@ -262,8 +275,13 @@
 							<td>20 Jul 2024</td>
 							<td>Supervisor
 							</td>
-							<td>NDT</td>
-							<td><a href="##" class="tablelink_data">_ _</a></td>
+							<td>
+								<div class="departmentInspector">
+								<span>NDT Review</span>
+								<span>Operator Assessment</span>
+								</div>
+							</td>
+							
 							<td>
 								<span class="badge badge-success d-inline-flex align-items-center badge-xs">
 									<i class="ti ti-point-filled me-1"></i>Active
@@ -307,7 +325,7 @@
 
 						<tr>
 							<td>
-								EMP005
+							<a href="user-detail.php" class="hightlightKOPID">#US0005</a>
 							</td>
 							<td>
 								<div class="d-flex align-items-center file-name-icon">
@@ -325,8 +343,13 @@
 							<td>20 Jul 2024</td>
 							<td>Accountant
 							</td>
-							<td>NDT</td>
-							<td><a href="##" class="tablelink_data">_ _</a></td>
+							<td>
+								<div class="departmentInspector">
+								<span>Equipment Inspection</span>
+								<span>Operator Assessment</span>
+								</div>
+							</td>
+							
 							<td>
 								<span class="badge badge-success d-inline-flex align-items-center badge-xs">
 									<i class="ti ti-point-filled me-1"></i>Active
@@ -383,7 +406,7 @@
 	<div class="modal-dialog modal-dialog-centered modal-md">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h4 class="modal-title">Add User</h4>
+				<h4 class="modal-title">Add Inspector</h4>
 				<button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
 					<i class="ti ti-x"></i>
 				</button>
@@ -394,14 +417,14 @@
 
 						<div class="col-md-6">
 							<div class="form-group">
-								<label class="form-label">Employee ID</label>
+								<label class="form-label">Inspector ID</label>
 								<input type="text" class="form-control">
 							</div>
 						</div>
 
 						<div class="col-md-6">
 							<div class="form-group">
-								<label class="form-label">Employee Name</label>
+								<label class="form-label">Inspector Name</label>
 								<input type="text" class="form-control">
 							</div>
 						</div>
@@ -698,7 +721,7 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-white border me-2" data-bs-dismiss="modal">Cancel</button>
-					<button type="submit" class="btn btn-primary canvasSubmit_button">Add User</button>
+					<button type="submit" class="btn btn-primary canvasSubmit_button">Save & Continue</button>
 				</div>
 			</form>
 		</div>
@@ -711,7 +734,7 @@
 	<div class="modal-dialog modal-dialog-centered modal-md">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h4 class="modal-title">Edit User</h4>
+				<h4 class="modal-title">Edit Inspector</h4>
 				<button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
 					<i class="ti ti-x"></i>
 				</button>
@@ -722,14 +745,14 @@
 
 						<div class="col-md-6">
 							<div class="form-group">
-								<label class="form-label">Employee ID</label>
+								<label class="form-label">Inspector ID</label>
 								<input type="text" class="form-control">
 							</div>
 						</div>
 
 						<div class="col-md-6">
 							<div class="form-group">
-								<label class="form-label">Employee Name</label>
+								<label class="form-label">Inspector Name</label>
 								<input type="text" class="form-control">
 							</div>
 						</div>

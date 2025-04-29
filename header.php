@@ -321,10 +321,10 @@
                                                 <i class="ti ti-user-circle me-1"></i>My Profile
                                             </a>
 
-                                            <a class="dropdown-item d-inline-flex align-items-center p-0 py-2"
+                                            <!-- <a class="dropdown-item d-inline-flex align-items-center p-0 py-2"
                                                 href="##">
                                                 <i class="ti ti-circle-arrow-up me-1"></i>My Account
-                                            </a>
+                                            </a> -->
 
                                         </div>
                                         <div class="card-footer py-1">
@@ -437,230 +437,62 @@
             <div class="sidebar-inner slimscroll">
                 <div id="sidebar-menu" class="sidebar-menu">
                     <ul>
-                        <li class="menu-title"><span>MAIN MENU</span></li>
+                    <li class="menu-title"><span>ADMINISTRATION</span></li>
+                     
                         <li>
                             <ul>
-                         <li>
-                         <a href="index.php" class="active">
-                                        <iconify-icon icon="stash:home-duotone"></iconify-icon><span>Dashboard</span>
-                                    </a>
+                            <li>
+                             <a href="index.php" class="active">
+                                <iconify-icon icon="stash:home-duotone"></iconify-icon><span>Dashboard</span>
+                            </a>
                          </li>
-
-                            </ul>
-                        </li>
-
-                        <li class="menu-title"><span>CRM</span></li>
-                        <li>
+                            <li class="submenu">
+                            <a href="javascript:void(0);">
+                              <iconify-icon icon="ph:users-duotone"></iconify-icon> <span>All User</span>
+                                <span class="menu-arrow"></span>
+                            </a>
                             <ul>
                                 <li>
-                                    <a href="clients.php">
-                                        <iconify-icon icon="ph:users-duotone"></iconify-icon>
-                                        <span>Clients/Customers</span>
+                                    <a href="users.php">
+                                        <span>All User</span>
                                     </a>
                                 </li>
-
+                                <li>
+                                    <a href="inspector-add.php">
+                                        <span>Add New User</span>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
-
-                        <!-- <li class="menu-title"><span>Departments</span></li>
-                        <li>
-                            <ul>
-
-                                <li class="submenu submenu-two">
-                                    <a href="javascript:void(0);">
-                                        <iconify-icon icon="lsicon:equipment-outline"></iconify-icon> Equipment
-                                        Inspection<span class="menu-arrow inside-submenu"></span>
+                     
+                            <!-- <li class="submenu">
+                                <a href="javascript:void(0);">
+                                    <iconify-icon icon="hugeicons:new-job"></iconify-icon> <span>Job Orders</span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul>
+                                    <li><a href="inspection-job-order-list.php">All Job Orders</a></li>
+                                    <li><a href="create-job-order.php">Create Job Order</a></li>
+                                </ul>
+                            </li> -->
+                          
+                             
+                             <li class="">
+                                    <a href="approval-board-setting.php">
+                                    <iconify-icon icon="weui:setting-outlined"></iconify-icon>
+                                        </iconify-icon><span>Approval Board Setting</span>
                                     </a>
-                                    <ul>
-                                        <li><a href="##">Inspection Planning</a></li>
-                                        <li><a href="##">Real-time Data Capture</a></li>
-                                        <li><a href="##">Attachment of Pictures and Files</a></li>
-                                        <li><a href="##">Equipment-Specific Checklists</a></li>
-                                        <li><a href="##">Client Access and Control</a></li>
-                                        <li><a href="##">Digital Signature Capture</a></li>
-                                        <li><a href="##">Geo-tagging and Time Stamping</a></li>
-
-                                    </ul>
-                                </li>
-                                <li class="submenu submenu-two">
-                                    <a href="javascript:void(0);">
-                                        <iconify-icon icon="carbon:kubernetes-operator"></iconify-icon> Machine Operator
-                                        Assessment<span class="menu-arrow inside-submenu"></span>
-                                    </a>
-                                    <ul>
-                                        <li><a href="##">Assessment Creation</a></li>
-                                        <li><a href="##">Assessment Scheduling</a></li>
-                                        <li><a href="##">Performance Recording</a></li>
-                                        <li><a href="##">Operator Picture Capture</a></li>
-                                        <li><a href="##">Card Printing</a></li>
-                                        <li><a href="##">Certificate Management</a></li>
-                                        <li><a href="##">Performance Tracking</a></li>
-
-                                    </ul>
-                                </li>
-                                <li class="submenu submenu-two">
-                                    <a href="javascript:void(0);">
-                                        <iconify-icon icon="nrk:latest-news"></iconify-icon> Non-Destructive Testing
-                                        (NDT)<span class="menu-arrow inside-submenu"></span>
-                                    </a>
-                                    <ul>
-                                        <li><a href="##">Request and Quote Generation</a></li>
-                                        <li><a href="##">Client Approval and Job Assignment</a></li>
-                                        <li><a href="##">Inspection Process at Client Site</a></li>
-                                        <li><a href="##">Inspection Result Processing</a></li>
-                                        <li><a href="##"> Approval of Inspection Resultsa></li>
-                                        <li><a href="##">Issuance of Inspection Certificate</a></li>
-                                    </ul>
-                                </li>
-                                <li class="submenu submenu-two">
-                                    <a href="javascript:void(0);">
-                                        <iconify-icon icon="oui:training"></iconify-icon>Training<span
-                                            class="menu-arrow inside-submenu"></span>
-                                    </a>
-                                    <ul>
-                                        <li><a href="##"></a></li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </li> -->
-
-                        <li class="menu-title"><span>ADMINISTRATION</span></li>
-                        <li>
-                            <ul>
-                            <li class="submenu">
-                                    <a href="javascript:void(0);">
-                                    <iconify-icon icon="fluent:calendar-template-20-regular"></iconify-icon> <span>  Manage Templates</span>
-                                        <span class="menu-arrow"></span>
-                                    </a>
-                                    <ul>
-                                        <li><a href="all-templates.php">All Templates</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="submenu">
-                                    <a href="javascript:void(0);">
-                                        <iconify-icon icon="ph:users-duotone"></iconify-icon><span>User
-                                            Management</span>
-                                        <span class="menu-arrow"></span>
-                                    </a>
-                                    <ul>
-                                        <li><a href="users.php">Users</a></li>
-                                        <li><a href="##">Roles & Permissions</a></li>
-                                    </ul>
-                                </li>
-                                <li class="submenu">
-                                    <a href="javascript:void(0);">
-                                        <iconify-icon icon="hugeicons:new-job"></iconify-icon> <span>Job Orders</span>
-                                        <span class="menu-arrow"></span>
-                                    </a>
-                                    <ul>
-                                        <li><a href="job-orders.php">All Job Orders</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="">
-                                    <a href="approval-board.php">
-                                        <iconify-icon icon="material-symbols-light:order-approve-outline">
-                                        </iconify-icon><span>Approval Board</span>
-                                    </a>
-                                    
-                                </li>
-
-                                <li class="">
-                                    <a href="all-locations.php">
-                                    <iconify-icon icon="fluent:location-24-regular"></iconify-icon> <span>All Regions </span>
-                                        
-                                    </a>
-                                    
                                 </li>
                                 <li class="">
                                     <a href="system-activites.php">
                                     <iconify-icon icon="fluent:shifts-activity-24-regular"></iconify-icon> <span>System Activity</span>
-                                        
                                     </a>
-                                    
                                 </li>
-
-                            </ul>
-                        </li>
-
-                        <li class="menu-title"><span>Job Form Management</span></li>
-                        <li>
-                            <ul>
                                 <li class="">
-                                    <a href="all-rd-forms.php">
-                                    <iconify-icon icon="fluent:form-48-regular"></iconify-icon>
-                                        <span>All RD Forms</span>
-                                    </a>
-                                    
-                                </li>
-
-                                <li class="">
-                                    <a href="all-equipments.php">
-                                    <iconify-icon icon="carbon:tool-kit"></iconify-icon>
-                                    <span>All Equipments</span>
-                                    </a>
-                                </li>
-                                <!-- <li class="">
-                                    <a href="#">
-                                    <iconify-icon icon="icon-park-outline:mind-mapping"></iconify-icon> 
-                                    <span>Form Mappings</span>
-                                    </a>
-                                </li> -->
-                                <li class="submenu">
-                                    <a href="javascript:void(0);">
-                                    <iconify-icon icon="icon-park-outline:mind-mapping"></iconify-icon>
-                                    <span>Mappings</span>
-                                        <span class="menu-arrow"></span>
-                                    </a>
-                                    <ul>
-                                        <li><a href="form-mapping.php">Inspection Mapping</a></li>
-                                        <li><a href="assessment-checklist-mapping.php">Assessment Mapping</a></li>
-                                        <!-- <li><a href="##">Customizable Analytics</a></li> -->
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </li>
-
-                        <li class="menu-title"><span>Reporting and Certificate</span></li>
-                        <li>
-                            <ul>
-
-                                <li class="submenu">
-                                    <a href="javascript:void(0);">
-                                        <iconify-icon icon="lsicon:report-outline"></iconify-icon><span>All Report
-                                        </span>
-                                        <span class="menu-arrow"></span>
-                                    </a>
-                                    <ul>
-                                        <li><a href="##">Report Generation</a></li>
-                                        <li><a href="##">Data Visualization</a></li>
-                                        <li><a href="##">Customizable Analytics</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="submenu">
-                                    <a href="javascript:void(0);">
-                                        <iconify-icon icon="ph:certificate"></iconify-icon><span>Certificate
-                                            Management</span>
-                                        <span class="menu-arrow"></span>
-                                    </a>
-                                    <ul>
-                                        <li><a href="##">Certificate Generation</a></li>
-                                        <li><a href="##">Digital Certificates</a></li>
-                                        <li><a href="##">Certificate Repository</a></li>
-                                        <li><a href="##">Renewal Alerts</a></li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </li>
-
-                        <li class="menu-title"><span>Label Management</span></li>
-                        <li>
-                            <ul>
+                                <a href="all-locations.php">
+                                  <iconify-icon icon="fluent:location-24-regular"></iconify-icon> <span>All Regions </span>
+                                </a>
+                            </li>
                                 <li>
                                     <a href="labels.php">
                                         <iconify-icon icon="mdi:tag-outline"></iconify-icon>
@@ -668,9 +500,9 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="label-lotavailable.php">
+                                    <a href="label-in-company.php">
                                         <iconify-icon icon="mdi:tag-outline"></iconify-icon>
-                                        <span>All Available Label's</span>
+                                        <span>Available Label's</span>
                                     </a>
                                 </li>
                                 <li>
@@ -683,12 +515,161 @@
                                 <li>
                                     <a href="labels-allotment.php">
                                         <iconify-icon icon="mdi:clipboard-check-outline"></iconify-icon>
-                                        <span>Label's Allotment</span>
+                                        <span>Label's Assign</span>
                                     </a>
                                 </li>
+                                <li class="">
+                                    <a href="training.php">
+                                    <iconify-icon icon="healthicons:i-training-class"></iconify-icon>
+                                    <span>Training Setup</span>
+                                    </a>
+                                </li>
+                            <li class="menu-title"><span>Inspection</span></li>
+                            <li class="">
+                                    <a href="all-rd-forms.php">
+                                    <iconify-icon icon="fluent:form-48-regular"></iconify-icon>
+                                        <span>All DLS Forms</span>
+                                    </a>
+                                    
+                                </li>
+                                <li class="submenu">
+                                    <a href="javascript:void(0);">
+                                    <iconify-icon icon="carbon:tool-kit"></iconify-icon> <span>All Equipments</span>
+                                        <span class="menu-arrow"></span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="equipment-inspection-equipments.php">
+                                                <span>Equipment Inspection</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="opreator-assessment-equipments.php">
+                                                <span>Operator Assessment</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- <li class="">
+                                    <a href="all-equipments.php">
+                                    <iconify-icon icon="carbon:tool-kit"></iconify-icon>
+                                    <span>All Equipments</span>
+                                    </a>
+                                </li> -->
+                           
+                                <!-- <li class="submenu">
+                                    <a href="javascript:void(0);">
+                                    <iconify-icon icon="fluent:calendar-template-20-regular"></iconify-icon><span>Checklist Templates</span>
+                                        <span class="menu-arrow"></span>
+                                    </a>
+                                    <ul>
+                                        <li><a href="all-templates.php">All Templates</a></li>
+                                    </ul>
+                                </li> -->
+                                <li class="">
+                                    <a href="all-templates.php">
+                                    <iconify-icon icon="fluent:calendar-template-20-regular"></iconify-icon>
+                                    <span>Checklist Templates</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="role-permission.php">
+                                    <iconify-icon icon="mingcute:safe-lock-line"></iconify-icon>
+                                    <span>Role & Permission</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                       
+                        <li class="menu-title"><span>Work</span></li>
+                            <li>
+                                <ul>
+                                <li class="submenu">
+                                <a href="javascript:void(0);">
+                                <iconify-icon icon="ph:users-duotone"></iconify-icon> <span>All Clients</span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="clients.php">
+                                            <span>All Clients</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="client-add.php">
+                                            <span>Add New Client</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                              <li class="">
+                                    <a href="inspection-job-order-list.php">
+                                    <iconify-icon icon="hugeicons:new-job"></iconify-icon>
+                                        </iconify-icon><span>All Job Orders</span>
+                                    </a>
+                                </li>
+                                
+                                <li class="">
+                                    <a href="create-job-order.php">
+                                    <iconify-icon icon="gridicons:create"></iconify-icon>
+                                        </iconify-icon><span>Create Job Order</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="approval-board.php">
+                                        <iconify-icon icon="material-symbols-light:order-approve-outline">
+                                        </iconify-icon><span>Approval Board</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="equipment-inspection.php">
+                                    <iconify-icon icon="wpf:inspection"></iconify-icon>
+                                    <span>Equipment Inspections</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="opreator-assessment.php">
+                                    <iconify-icon icon="fluent:people-team-toolbox-20-regular"></iconify-icon>
+                                    <span>Operator Assessment</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="ndt-review.php">
+                                    <iconify-icon icon="codicon:open-preview"></iconify-icon>
+                                    <span>NDT Review</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="training-job-orders.php">
+                                    <iconify-icon icon="healthicons:i-training-class"></iconify-icon>
+                                    <span>Training</span>
+                                    </a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                       
+                      
+                        
+                        <li class="menu-title"><span>Reporting</span></li>
+                        <li>
+                            <ul>
+
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <iconify-icon icon="lsicon:report-outline"></iconify-icon><span>All Report
+                                        </span>
+                             
+                                    </a>
+                                   
+                                </li>
+
+                            
 
                             </ul>
                         </li>
+
+                        
 
                     </ul>
                     </li>
@@ -701,8 +682,8 @@
                             </div>
                             <div class="cursor-pointer text-center btn-group"
                                 style="border-top:1px solid rgba(255, 255, 255, 0.2)">
-                                <div class="plan-based-button-dark" data-ember-action="" data-ember-action-133="133">
-                                View Reports</div> <a id="ember134" class="ember-view text-white"
+                             
+                                 <a id="ember134" class="ember-view text-white"
                                     style="padding: 5px 17px;" href="##">Logout</a>
                             </div>
                         </div>
@@ -711,6 +692,7 @@
                     </ul>
                 </div>
             </div>
+            
         </div>
         <!-- /Sidebar -->
         <!-- Page Wrapper -->

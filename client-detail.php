@@ -33,7 +33,7 @@
                                     <div class="user-custom-field">
                                         <div class="custom-field-name">Client Id</div>
                                         <div class="custom-field-value">
-                                            <div><input type="text" placeholder="" class="r-user-input" value="#CL0001">
+                                            <div><input type="text" placeholder="" class="r-user-input" value="#CL0001" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -46,19 +46,13 @@
                                         </div>
                                     </div>
                                     <div class="user-custom-field">
-                                        <div class="custom-field-name">Company Name</div>
+                                        <div class="custom-field-name">Representative Name</div>
                                         <div class="custom-field-value">
                                             <div><input type="text" placeholder="" class="r-user-input" value="Infinix">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="user-custom-field">
-                                        <div class="custom-field-name">Business Type</div>
-                                        <div class="custom-field-value">
-                                            <div><input type="text" placeholder="" class="r-user-input" value="B2b">
-                                            </div>
-                                        </div>
-                                    </div>
+                                 
 
                                     <div class="user-custom-field">
                                         <div class="custom-field-name">Email:</div>
@@ -69,11 +63,38 @@
                                     </div>
 
                                     <div class="user-custom-field">
-                                        <div class="custom-field-name">Mobile No.</div>
+                                        <div class="custom-field-name">Contact No.</div>
                                         <div class="custom-field-value">
                                             <div><input type="text" placeholder="" class="r-user-input"
                                                     value="+927959754829"></div>
                                         </div>
+                                    </div>
+                                    <div class="user-custom-field">
+                                        <div class="custom-field-name">Location</div>
+                                        <div class="custom-field-value">
+                                            <div><input type="text" placeholder="" class="r-user-input" value="B2b">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-custom-field">
+                                        <div class="custom-field-name">Work Location</div>
+                                        <div class="custom-field-value">
+                                            <div><input type="text" placeholder="" class="r-user-input" value="B2b">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-custom-field">
+                                        <div class="custom-field-name">Region</div>
+                                            <div class="">
+                                            <select class="select2">
+                                                <option>Select</option>
+                                                <option value="Manager">New Delhi</option>
+                                                <option value="Supervisor">Bangalore</option>
+                                                <option value="Trainer">Mumbai</option>
+                                                <option value="Inspector/Assessor">Pune</option>
+                                                <option value="Accountant">Karnatka</option>
+                                            </select>
+                                            </div>
                                     </div>
 
                                     
@@ -112,13 +133,13 @@
         </div>
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
 
-            <div class="mb-2">
+            <!-- <div class="mb-2">
                 <a href="#" data-bs-toggle="offcanvas" data-bs-target="#createjoborder" aria-controls="offcanvasRight"
                     class="btn btn-primary d-flex align-items-center cmnaddbtn">
                     <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Create Job
                     Order
                 </a>
-            </div>
+            </div> -->
             <div class="head-icons ms-2">
                 <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
                     data-bs-original-title="Collapse" id="collapse-header">
@@ -139,10 +160,10 @@
                     
                     <!-- Tabs -->
                     <nav class="nav nav-style-6 nav-pills d-block tab-list" role="tablist">
-                    <a class="nav-link active" data-bs-toggle="tab" role="tab" aria-current="page" href="#nav-allLocations"
+                    <!-- <a class="nav-link " data-bs-toggle="tab" role="tab" aria-current="page" href="#nav-allLocations"
                             aria-selected="false">All Locations
-                          </a>
-                        <a class="nav-link" data-bs-toggle="tab" role="tab" aria-current="page" href="#nav-newjobs"
+                          </a> -->
+                        <a class="nav-link active" data-bs-toggle="tab" role="tab" aria-current="page" href="#nav-newjobs"
                             aria-selected="false">New Job Orders
                             <span class="badge bg-warning-transparent ms-1">08</span></a>
 
@@ -163,10 +184,10 @@
                             aria-selected="false">Draft Job Orders
                             <span class="badge bg-info-draft ms-1">05</span>
                         </a>
-                        <a class="nav-link" data-bs-toggle="tab" role="tab" href="#nav-closedjobs"
+                        <!-- <a class="nav-link" data-bs-toggle="tab" role="tab" href="#nav-closedjobs"
                             aria-selected="false">Closed Job Orders
                             <span class="badge bg-info-closed ms-1">10</span>
-                        </a>
+                        </a> -->
                     </nav>
 
                     <!-- Right arrow -->
@@ -176,7 +197,7 @@
                 </div>
             </div>
             <div class="tab-content">
-            <div class="tab-pane show active text-muted" id="nav-allLocations" role="tabpanel">
+            <!-- <div class="tab-pane text-muted" id="nav-allLocations" role="tabpanel">
                     <div class="docfilterbutton">
                         <h2 class="tabinnerTitle">All Locations</h2>
                         <div class="RightTabinr_container">
@@ -333,8 +354,8 @@
 
                         </table>
                     </div>
-                </div>
-                <div class="tab-pane text-muted" id="nav-newjobs" role="tabpanel">
+                </div> -->
+                <div class="tab-pane show active  text-muted" id="nav-newjobs" role="tabpanel">
                     <div class="custom-datatable-filter">
                     <div id="tablefiltesa_container">
                         <div class="row">

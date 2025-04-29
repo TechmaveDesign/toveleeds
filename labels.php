@@ -24,14 +24,14 @@
             <div class="mb-2 me-2" id="addStickerBtn">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#addStickerModal"
                     class="btn btn-primary d-flex align-items-center cmnaddbtn">
-                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Add Sticker
+                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Create Sticker
                 </a>
             </div>
 
             <div class="mb-2" id="addTagBtn" style="display: none;">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#addTagModal"
                     class="btn btn-primary d-flex align-items-center cmnaddbtn">
-                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Add Tag
+                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Add Tag Series
                 </a>
             </div>
             <div class="head-icons ms-2">
@@ -65,7 +65,8 @@
                     <thead class="thead-light">
                         <tr>
                             <th>S.No.</th>
-                            <th>Sticker Lot No.</th>
+                            <th>Sticker Type</th>
+                            <th>Sticker Qty</th>
                             <th>Range</th>
                             <th>Created On</th>
                             <th>Status</th>
@@ -73,184 +74,205 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>AEF - 0129</td>
-                            <td>001 - 999</td>
-                            <td>27 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
-                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
+                    <tr>
+                        <td>1</td>
+                        <td>Small</td>
+                        <td>1000</td>
+                        <td>S.Stk2500000 - S.Stk2500099</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                            <!-- <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
+                                <i class="ti ti-point-filled me-1"></i> Available
+                            </span> -->
+                            <select  name="status" class="form-control select2">
+                                <option value="" disabled>Choose Status</option>
+                                <option value="Created">Created</option>
+                                <option value="Dispatched for Printing">Dispatched for Printing</option>
+                                <option value="Available" selected>Available</option>
+                            </select>
+                        </td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
                                    
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
-                                        data-bs-target="#editStickerModal" data-placement="top" title="See Details"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="mage:edit"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                       data-bs-target="#editStickerModal" data-placement="top" title="See Details"
+                                       href="">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="mage:edit"></iconify-icon>
+                                           </span>
+                                       </span>
+                                   </a>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                       data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
+                                       href="view-user-details.php">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="ion:print-outline"></iconify-icon>
 
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                        data-id="" title="Delete" href="#">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
+                                           </span>
+                                       </span>
+                                   </a>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                       data-id="" title="Delete" href="#">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                           </span>
+                                       </span>
+                                   </a>
 
-                                </div>
-                            </td>
-                        </tr>
+                               </div>
+                        </td>
+                    </tr>
 
-                        <tr>
-                            <td>2</td>
-                            <td>BEC - 1011</td>
-                            <td>1000 - 1999</td>
-                            <td>25 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched
-                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
+                    <tr>
+                        <td>2</td>
+                        <td>Large</td>
+                        <td>800</td>
+                        <td>L.Stk2500000 - L.Stk2500079</td>
+                        <td>28 Dec 2024</td>
+                        <td>
+                           <select  name="status" class="form-control select2">
+                                <option value="" disabled>Choose Status</option>
+                                <option value="Created" selected>Created</option>
+                                <option value="Dispatched for Printing">Dispatched for Printing</option>
+                                <option value="Available" >Available</option>
+                            </select>
+                        </td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
                                    
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
-                                        data-bs-target="#editStickerModal" data-placement="top" title="See Details"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="mage:edit"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                       data-bs-target="#editStickerModal" data-placement="top" title="See Details"
+                                       href="">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="mage:edit"></iconify-icon>
+                                           </span>
+                                       </span>
+                                   </a>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                       data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
+                                       href="view-user-details.php">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="ion:print-outline"></iconify-icon>
 
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                        data-id="" title="Delete" href="#">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>FBC - 1230</td>
-                            <td>2000 - 3000</td>
-                            <td>22 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i> Dispatched For Printing
-                                                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
+                                           </span>
+                                       </span>
+                                   </a>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                       data-id="" title="Delete" href="#">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                           </span>
+                                       </span>
+                                   </a>
+
+                               </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Small</td>
+                        <td>1200</td>
+                        <td>S.Stk2500100 - S.Stk2500199</td>
+                        <td>29 Dec 2024</td>
+                        <td>
+                           <select  name="status" class="form-control select2">
+                                <option value="" disabled>Choose Status</option>
+                                <option value="Created" >Created</option>
+                                <option value="Dispatched for Printing" selected>Dispatched for Printing</option>
+                                <option value="Available" >Available</option>
+                            </select>
+                        </td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
                                    
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
-                                        data-bs-target="#editStickerModal" data-placement="top" title="See Details"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="mage:edit"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                       data-bs-target="#editStickerModal" data-placement="top" title="See Details"
+                                       href="">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="mage:edit"></iconify-icon>
+                                           </span>
+                                       </span>
+                                   </a>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                       data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
+                                       href="view-user-details.php">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="ion:print-outline"></iconify-icon>
 
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                        data-id="" title="Delete" href="#">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
+                                           </span>
+                                       </span>
+                                   </a>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                       data-id="" title="Delete" href="#">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                           </span>
+                                       </span>
+                                   </a>
 
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>GHI - 2211</td>
-                            <td>4001 - 5000</td>
-                            <td>20 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched 
-                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
+                               </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Large</td>
+                        <td>900</td>
+                        <td>L.Stk2500080 - L.Stk2500179</td>
+                        <td>30 Dec 2024</td>
+                        <td>
+                            <select  name="status" class="form-control select2">
+                                <option value="" disabled>Choose Status</option>
+                                <option value="Created" >Created</option>
+                                <option value="Dispatched for Printing">Dispatched for Printing</option>
+                                <option value="Available">Available</option>
+                            </select>
+                        </td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
                                    
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
-                                        data-bs-target="#editStickerModal" data-placement="top" title="See Details"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="mage:edit"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                       data-bs-target="#editStickerModal" data-placement="top" title="See Details"
+                                       href="">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="mage:edit"></iconify-icon>
+                                           </span>
+                                       </span>
+                                   </a>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                       data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
+                                       href="view-user-details.php">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="ion:print-outline"></iconify-icon>
 
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                        data-id="" title="Delete" href="#">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
+                                           </span>
+                                       </span>
+                                   </a>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                       data-id="" title="Delete" href="#">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                           </span>
+                                       </span>
+                                   </a>
 
-                                </div>
-                            </td>
-                        </tr>
+                               </div>
+                        </td>
+                    </tr>
+                       
 
                     </tbody>
 
@@ -264,7 +286,8 @@
                     <thead class="thead-light">
                         <tr>
                             <th>S.No.</th>
-                            <th>Tag Lot No.</th>
+                            <th>Tag No.</th>
+                            <th>Tag Qty</th>
                             <th>Range</th>
                             <th>Created On</th>
                             <th>Status</th>
@@ -272,585 +295,198 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>TA - 123</td>
-                            <td>199 - 299</td>
-                            <td>27 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
-                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
+                    <tr>
+                        <td>1</td>
+                        <td>039207</td>
+                        <td>1000</td>
+                        <td>039207 - 040206</td>
+                        <td>27 Dec 2024</td>
+                        <td>
+                            <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
+                                <i class="ti ti-point-filled me-1"></i> Available
+                            </span>
+                        </td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
                                    
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
-                                        data-bs-target="#editTagModal" data-placement="top" title="See Details"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="mage:edit"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                       data-bs-target="#editTagModal" data-placement="top" title="See Details"
+                                       href="">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="mage:edit"></iconify-icon>
+                                           </span>
+                                       </span>
+                                   </a>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                       data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
+                                       href="#">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="ion:print-outline"></iconify-icon>
 
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                        data-id="" title="Delete" href="#">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
+                                           </span>
+                                       </span>
+                                   </a>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                       data-id="" title="Delete" href="#">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                           </span>
+                                       </span>
+                                   </a>
 
-                                </div>
-                            </td>
-                        </tr>
+                               </div>
+                        </td>
+                    </tr>
 
-                        <tr>
-                            <td>2</td>
-                            <td>TB - 345</td>
-                            <td>200 - 499</td>
-                            <td>25 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched
-                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
-                                        data-bs-target="#editTagModal" data-placement="top" title="See Details"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="mage:edit"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
-
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                        data-id="" title="Delete" href="#">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>TC - 112</td>
-                            <td>401 - 799</td>
-                            <td>22 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
-                                                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
+                    <tr>
+                        <td>2</td>
+                        <td>040207</td>
+                        <td>1000</td>
+                        <td>040207 - 041206</td>
+                        <td>28 Dec 2024</td>
+                        <td>
+                            <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
+                                <i class="ti ti-point-filled me-1"></i> Available
+                            </span>
+                        </td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
                                    
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
-                                        data-bs-target="#editTagModal" data-placement="top" title="See Details"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="mage:edit"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                       data-bs-target="#editTagModal" data-placement="top" title="See Details"
+                                       href="">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="mage:edit"></iconify-icon>
+                                           </span>
+                                       </span>
+                                   </a>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                       data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
+                                       href="#">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="ion:print-outline"></iconify-icon>
 
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                        data-id="" title="Delete" href="#">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
+                                           </span>
+                                       </span>
+                                   </a>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                       data-id="" title="Delete" href="#">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                           </span>
+                                       </span>
+                                   </a>
 
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>TD - 223</td>
-                            <td>001 - 999</td>
-                            <td>20 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched
-                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
+                               </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>041207</td>
+                        <td>1000</td>
+                        <td>041207 - 042206</td>
+                        <td>29 Dec 2024</td>
+                        <td>
+                            <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
+                                <i class="ti ti-point-filled me-1"></i> Used
+                            </span>
+                        </td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
                                    
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
-                                        data-bs-target="#editTagModal" data-placement="top" title="See Details"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="mage:edit"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                       data-bs-target="#editTagModal" data-placement="top" title="See Details"
+                                       href="">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="mage:edit"></iconify-icon>
+                                           </span>
+                                       </span>
+                                   </a>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                       data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
+                                       href="#">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="ion:print-outline"></iconify-icon>
 
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                        data-id="" title="Delete" href="#">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </td>
-                        </tr>
+                                           </span>
+                                       </span>
+                                   </a>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                       data-id="" title="Delete" href="#">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                           </span>
+                                       </span>
+                                   </a>
 
+                               </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>042207</td>
+                        <td>1000</td>
+                        <td>042207 - 043206</td>
+                        <td>30 Dec 2024</td>
+                        <td>
+                            <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
+                                <i class="ti ti-point-filled me-1"></i> Available
+                            </span>
+                        </td>
+                        <td>
+                        <div class="d-flex align-items-center ActionDropdown">
+                                   
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="modal"
+                                       data-bs-target="#editTagModal" data-placement="top" title="See Details"
+                                       href="">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="mage:edit"></iconify-icon>
+                                           </span>
+                                       </span>
+                                   </a>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
+                                       data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
+                                       href="#">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="ion:print-outline"></iconify-icon>
+
+                                           </span>
+                                       </span>
+                                   </a>
+                                   <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
+                                       data-id="" title="Delete" href="#">
+                                       <span class="icon">
+                                           <span class="feather-icon">
+                                               <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                           </span>
+                                       </span>
+                                   </a>
+
+                               </div>
+                        </td>
+                    </tr>
+
+                        
                     </tbody>
 
                 </table>
                 </div>
             </div>
-            <div class="tab-pane  text-muted" id="nav-in-progress" role="tabpanel">
-                <div class="custom-datatable-filter">
-                <table class="table common-datatable withoutActionTR nowrap w-100">
-                    <thead class="thead-light">
-                        <tr>
-                            <th>S.No.</th>
-                            <th>Template Name</th>
-                            <th>Created On</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>Untitled Template</td>
-                            <td>27 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
-                                                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="mage:edit"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
-
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>2</td>
-                            <td>Marketing Template</td>
-                            <td>25 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="mage:edit"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
-
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Newsletter Template</td>
-                            <td>22 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
-                                                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="mage:edit"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
-
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Event Template</td>
-                            <td>20 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched 
-                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="mage:edit"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
-
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
-                </div>
-            </div>
-            <div class="tab-pane  text-muted" id="nav-cart-justified" role="tabpanel">
-                <div class="custom-datatable-filter">
-                <table class="table common-datatable withoutActionTR nowrap w-100">
-                    <thead class="thead-light">
-                        <tr>
-                            <th>S.No.</th>
-                            <th>Template Name</th>
-                            <th>Created On</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>Untitled Template</td>
-                            <td>27 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
-                                                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="mage:edit"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
-
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>2</td>
-                            <td>Marketing Template</td>
-                            <td>25 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched
-                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="mage:edit"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
-
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Newsletter Template</td>
-                            <td>22 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-success d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Dispatched For Printing
-                                                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="mage:edit"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
-
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Event Template</td>
-                            <td>20 Dec 2024</td>
-                            <td>
-                                <span class="badge badge-soft-danger d-inline-flex align-items-center badge-xs">
-                                    <i class="ti ti-point-filled me-1"></i>Not Dispatched 
-                                </span>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center ActionDropdown">
-                                   
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Manage Template"
-                                        href="">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="mage:edit"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Send to Print"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                                <iconify-icon icon="ion:print-outline"></iconify-icon>
-
-                                            </span>
-                                        </span>
-                                    </a>
-                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                        data-bs-toggle="tooltip" data-placement="top" title="Delete Template"
-                                        href="view-user-details.php">
-                                        <span class="icon">
-                                            <span class="feather-icon">
-                                            <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                            </span>
-                                        </span>
-                                    </a>
-
-                                </div>
-                            </td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
-                </div>
-            </div>
+           
+           
         </div>
 
     </div>
@@ -862,7 +498,7 @@
     <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Add Sticker</h4>
+                <h4 class="modal-title">Create Sticker</h4>
                 <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
                     <i class="ti ti-x"></i>
                 </button>
@@ -876,140 +512,49 @@
                                 <img src="assets\aditya_assests\sticker_icon.png" alt="No Icon">
                             </div>
                         </div>
-
-                        <div class="col-md-12">
-                            <!-- <div class="form-group">
-                                    <label class="form-label">Sticker ID:<div class="requiredLabel">*</div></label>
-                                    <input type="text" placeholder="Please Enter the Sticker ID" class="form-control largeinp_height">
-                            </div> -->
+                        <div class="col-lg-6">
                             <div class="form-group">
-                                <label class="form-label">Sticker ID:<div class="requiredLabel">*</div></label>
-                                <select class="form-control largeinp_height select2">
-                                    <option value="">Select a Sticker ID</option>
-                                    <option value="AEB-0129">AEB - 0129</option>
-                                    <option value="BEC-1011">BEC - 1011</option>
-                                    <option value="FBC-1230">FBC - 1230</option>
-                                    <option value="GHI-2211">GHI - 2211</option>
-
-                                </select>
-                            </div>
-
-
-                            <div class="form-group">
-                                <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
-                                <input type="text" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
-                                <input type="text" placeholder="Please Enter The End Range" class="form-control largeinp_height">
-                            </div>
-
-                            <!-- Dropdown for Status -->
-                            <div class="form-group">
-                                <label class="form-label">Status:<div class="requiredLabel">*</div></label>
+                                <label class="form-label">Sticker Type<div class="requiredLabel">*</div></label>
                                 <select class="form-control largeinp_height select2">
                                     <option value="" selected >Choose Status</option>
-                                    <option value="Not Dispatched">Not Dispatched</option>
-                                    <option value="Dispatched for Printing">Dispatched for Printing</option>
+                                    <option value="Small">Small</option>
+                                    <option value="Large">Large</option>
                                 </select>
                             </div>
-
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="form-label">Sticker Qty<div class="requiredLabel">*</div></label>
+                                <input type="text" placeholder="" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
+                                <input type="text" placeholder="Auto Generate Starting Range" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
+                                <input type="text" placeholder="Auto Generate End Range" class="form-control">
+                            </div>
                         </div>
 
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btnContinueProcess btn-primary editEnquiryBtn">
-                        <div class="buttontext">
-                            <div class="formediticon_modal">
-                                <iconify-icon icon="uit:process"></iconify-icon>
-                            </div>
-                            Continue to Process
-                        </div>
-                        <iconify-icon icon="bi:arrow-right"></iconify-icon>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">
+                    <iconify-icon icon="ci:save"></iconify-icon> Create &  Save 
                     </button>
+                </div>
                 </div>
         </div>
     </div>
 </div>
 
-<!-- Add Tag Modal -->
-<div class="modal fade custombottm_modalStyle" id="addTagModal">
-    <div class="modal-dialog modal-dialog-centered modal-md">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Add Tag</h4>
-                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
-                    <i class="ti ti-x"></i>
-                </button>
-            </div>
-                <div class="modal-body">
-                    <div class="row">
 
-                        <div class="col-lg-12">
-                            <div class="iconImageSection">
-                                <!-- <img src="assets/img/newimages/list.png" alt=""> -->
-                                <img src="assets\aditya_assests\sticker_icon.png" alt="tttt">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-
-                            <!-- <div class="form-group">
-                                    <label class="form-label">Tag ID:<div class="requiredLabel">*</div></label>
-                                    <input type="text" placeholder="Please Enter the Tag ID" class="form-control largeinp_height">
-                            </div> -->
-                            <div class="form-group">
-                                <label class="form-label">Tag ID:<div class="requiredLabel">*</div></label>
-                                <select class="form-control largeinp_height select2">
-                                    <option value="">Select a Tag ID</option>
-                                    <option value="TA-123">TA - 123</option>
-                                    <option value="TB-345">TB - 345</option>
-                                    <option value="TC-112">TC - 112</option>
-                                    <option value="TD-233">TD - 223</option>
-
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
-                                <input type="text" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
-                                <input type="text" placeholder="Please Enter The End Range" class="form-control largeinp_height">
-                            </div>
-
-                            <!-- Dropdown for Status -->
-                            <div class="form-group">
-                                <label class="form-label">Status:<div class="requiredLabel">*</div></label>
-                                <select class="form-control largeinp_height select2">
-                                    <option value="" selected >Choose Status</option>
-                                    <option value="Not Dispatched">Not Dispatched</option>
-                                    <option value="Dispatched for Printing">Dispatched for Printing</option>
-                                </select>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btnContinueProcess btn-primary editEnquiryBtn">
-                        <div class="buttontext">
-                            <div class="formediticon_modal">
-                                <iconify-icon icon="uit:process"></iconify-icon>
-                            </div>
-                            Continue to Process
-                        </div>
-                        <iconify-icon icon="bi:arrow-right"></iconify-icon>
-                    </button>
-                </div>
-        </div>
-    </div>
-</div>
-<!-- /Add template -->
 
 <!-- Edit Modal Sticker-->
 <div class="modal fade custombottm_modalStyle" id="editStickerModal">
@@ -1030,55 +575,126 @@
                         </div>
 
                         <input type="hidden" id="stickerIdHidden" name="sticker_id">
-
-                        <div class="col-md-12">
+                        <div class="col-lg-6">
                             <div class="form-group">
-                                <label class="form-label">Sticker ID:<div class="requiredLabel">*</div></label>
-                                <select id="editStickerID" name="sticker_id" class="form-control largeinp_height select2">
-                                    <option value="">Select a Sticker ID</option>
-                                    <option value="AEB-0129">AEB - 0129</option>
-                                    <option value="BEC-1011">BEC - 1011</option>
-                                    <option value="FBC-1230">FBC - 1230</option>
-                                    <option value="GHI-2211">GHI - 2211</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
-                                <input type="text" id="editStartRange" name="start_range" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
-                                <input type="text" id="editEndRange" name="end_range" placeholder="Please Enter The End Range" class="form-control largeinp_height">
-                            </div>
-
-                            <div class="form-group">
-                                <label class="form-label">Status:<div class="requiredLabel">*</div></label>
-                                <select id="editStatus" name="status" class="form-control largeinp_height select2">
-                                    <option value="">Choose Status</option>
-                                    <option value="Not Dispatched">Not Dispatched</option>
-                                    <option value="Dispatched for Printing">Dispatched for Printing</option>
+                                <label class="form-label">Sticker Type<div class="requiredLabel">*</div></label>
+                                <select class="form-control largeinp_height select2">
+                                    <option value="" disabled >Choose Status</option>
+                                    <option value="Small">Small</option>
+                                    <option value="Large" selected>Large</option>
                                 </select>
                             </div>
                         </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="form-label">Sticker Qty<div class="requiredLabel">*</div></label>
+                                <input type="text" placeholder="" class="form-control" value="1000">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
+                                <input type="text" placeholder="Auto Generate Starting Range" class="form-control" value="L.Stk2500000">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
+                                <input type="text" placeholder="Auto Generate End Range" class="form-control" value="L.Stk2500999">
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="form-label">Status:<div class="requiredLabel">*</div></label>
+                                <select id="editStatus" name="status" class="form-control largeinp_height select2">
+                                    <option value="" disabled>Choose Status</option>
+                                    <option value="Not Dispatched">Not Dispatched</option>
+                                    <option value="Dispatched for Printing">Dispatched for Printing</option>
+                                    <option value="Available" selected>Available</option>
+                                    <option value="Available">Out Of Stock</option>
+
+                                </select>
+                            </div>
+                        </div> -->
                     </div>
                 </div>
-                <div class="d-flex justify-content-end me-3 mb-3">
-                    <button type="submit" class="btn btn-primary">
-                        Save & Update
+                <div class="modal-footer">
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">
+                    <iconify-icon icon="ci:save"></iconify-icon>  Save & Update
                     </button>
+                </div>
                 </div>
         </div>
     </div>
 </div>
+
+
+<!-- Add Tag Modal -->
+<div class="modal fade custombottm_modalStyle" id="addTagModal">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Add Tag Series</h4>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x"></i>
+                </button>
+            </div>
+                <div class="modal-body">
+                    <div class="row">
+
+                        <div class="col-lg-12">
+                            <div class="iconImageSection">
+                                <!-- <img src="assets/img/newimages/list.png" alt=""> -->
+                                <img src="assets\aditya_assests\sticker_icon.png" alt="tttt">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                             <div class="form-group">
+                                    <label class="form-label">Tag No.<div class="requiredLabel">*</div></label>
+                                    <input type="text" placeholder="Please Enter the Tag ID" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                             <div class="form-group">
+                                    <label class="form-label">Tag Qty<div class="requiredLabel">*</div></label>
+                                    <input type="text" placeholder="Please Enter the Tag ID" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="form-group">
+                                <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
+                                <input type="text" placeholder="Auto Generate Starting Range" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="form-group">
+                                <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
+                                <input type="text" placeholder="Auto Generate End Range" class="form-control">
+                            </div>
+                        </div>
+                     
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">
+                    <iconify-icon icon="ci:save"></iconify-icon>  Save 
+                    </button>
+                </div>
+                </div>
+        </div>
+    </div>
+</div>
+<!-- /Add template -->
 
 <!-- Edit Modal Tag-->
 <div class="modal fade custombottm_modalStyle" id="editTagModal">
     <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Edit Tag</h4>
+                <h4 class="modal-title">Edit Tag Series</h4>
                 <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
                     <i class="ti ti-x"></i>
                 </button>
@@ -1092,44 +708,48 @@
                         </div>
 
                         <input type="hidden" id="tagIdHidden" name="tag_id">
-
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label class="form-label">Tag ID:<div class="requiredLabel">*</div></label>
-                                <select id="editTagID" name="tag_id" class="form-control largeinp_height select2">
-                                    <option value="">Select a Tag ID</option>
-                                    <option value="TA-123">TA - 0123</option>
-                                    <option value="TB-345">TB - 345</option>
-                                    <option value="TC-112">TC - 112</option>
-                                    <option value="TD-223">TD - 223</option>
-                                </select>
+                        <div class="col-lg-6">
+                             <div class="form-group">
+                                    <label class="form-label">Tag No.<div class="requiredLabel">*</div></label>
+                                    <input type="text" placeholder="Please Enter the Tag ID" class="form-control">
                             </div>
-
-                            <div class="form-group">
+                        </div>
+                        <div class="col-lg-6">
+                             <div class="form-group">
+                                    <label class="form-label">Tag Qty<div class="requiredLabel">*</div></label>
+                                    <input type="text" placeholder="Please Enter the Tag ID" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="form-group">
                                 <label class="form-label">Start Number Range:<div class="requiredLabel">*</div></label>
-                                <input type="text" id="editStartRange" name="start_range" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
+                                <input type="text" placeholder="Auto Generate Starting Range" class="form-control">
                             </div>
-
-                            <div class="form-group">
+                        </div>
+                        <div class="col-lg-6">
+                        <div class="form-group">
                                 <label class="form-label">End Number Range:<div class="requiredLabel">*</div></label>
-                                <input type="text" id="editEndRange" name="end_range" placeholder="Please Enter The End Range" class="form-control largeinp_height">
+                                <input type="text" placeholder="Auto Generate End Range" class="form-control">
                             </div>
-
+                        </div>
+                        <!-- <div class="col-md-12">
                             <div class="form-group">
                                 <label class="form-label">Status:<div class="requiredLabel">*</div></label>
                                 <select id="editStatus" name="status" class="form-control largeinp_height select2">
                                     <option value="">Choose Status</option>
-                                    <option value="Not Dispatched">Not Dispatched</option>
-                                    <option value="Dispatched for Printing">Dispatched for Printing</option>
+                                    <option value="Available">Available</option>
+                                    <option value="Out Of Stock">Out Of Stock</option>
                                 </select>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
-                <div class="d-flex justify-content-end me-3 mb-3">
-                    <button type="submit" class="btn btn-primary">
-                        Save & Update
+                <div class="modal-footer">
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">
+                    <iconify-icon icon="ci:save"></iconify-icon>  Save & Update
                     </button>
+                </div>
                 </div>
         </div>
     </div>

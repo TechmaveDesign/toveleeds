@@ -69,13 +69,13 @@
                                 </a>
                             </div>
 
-                            <!-- <div class="Approval_inner_column">
+                            <div class="Approval_inner_column">
                                 <div class="LabelnTitle">
-                                    <label>Job/Certificate ID</label>
-                                    <h3 class="RequestID"><a href="job-order-details.php" target="_blank">PRO-0004</a>
+                                    <label>Manager</label>
+                                    <h3 class="RequestID"><a href="#" target="_blank">Chicago</a>
                                     </h3>
                                 </div>
-                            </div> -->
+                            </div>
 
                         </div>
 

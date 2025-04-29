@@ -174,7 +174,8 @@
                     <div class="d-flex align-items-center mb-3">
                         <div class="bg-gray-100 p-1 rounded d-flex align-items-center me-2">
                           
-                            <h6 class="fs-12">Equipment Inspection</h6>
+                            <h6 class="fs-12">Equipment Inspection, Operator Assessment</h6>
+                          
                         </div>
 
                     </div>
@@ -409,7 +410,95 @@
     </div>
 
             <!-- card end -->
+            <div class="card">
+        <div class="card-header">
+            <h5>Operator List</h5>
+        </div>
+        <div class="card-body">
+            <ul class="OptListing">
+                <li>
+                    <div class="optProfile">
+                        <img src="assets/img/newimages/userdummy.png" alt="">
+                    </div>
+                    <div class="optDetail">
+                        <div class="leftSideOpt">
+                            <h6>Amir Shaikh</h6>
+                            <p>Assessment No. : #5432134</p>
+                        </div>
+                        <div class="rightSideOpt">
+                            <div class="dropDownBox">
+                            <a class="viewDetailBtnOpt" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            <iconify-icon icon="ph:dots-three-outline-vertical"></iconify-icon>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end" style="">
+                                <a href="#" class="dropdown-item"><span><iconify-icon icon="material-symbols:download-rounded"></iconify-icon></span>Download Certificate</a>
+                                <a href="#" class="dropdown-item"><span><iconify-icon icon="material-symbols:download-rounded"></iconify-icon></span>Download Report</a>
+                            </div>
+                            </div>
+                        
+                            <a href="opretaor-edit-form.php" class="viewDetailBtnOptHUO">
+                            View Detail<iconify-icon icon="solar:alt-arrow-right-line-duotone"></iconify-icon>
+                           </a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="optProfile">
+                        <img src="assets/img/newimages/userdummy.png" alt="">
+                    </div>
+                    <div class="optDetail">
+                        <div class="leftSideOpt">
+                            <h6>Jimmy William</h6>
+                            <p>Assessment No. : #5432165</p>
+                        </div>
+                        <div class="rightSideOpt">
+                            <div class="dropDownBox">
+                            <a class="viewDetailBtnOpt" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            <iconify-icon icon="ph:dots-three-outline-vertical"></iconify-icon>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end" style="">
+                                <a href="#" class="dropdown-item"><span><iconify-icon icon="material-symbols:download-rounded"></iconify-icon></span>Download Certificate</a>
+                                <a href="#" class="dropdown-item"><span><iconify-icon icon="material-symbols:download-rounded"></iconify-icon></span>Download Report</a>
+                            </div>
+                            </div>
+                           <a href="opretaor-edit-form.php" class="viewDetailBtnOptHUO">
+                            View Detail<iconify-icon icon="solar:alt-arrow-right-line-duotone"></iconify-icon>
+                           </a>
+                           
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="optProfile">
+                        <img src="assets/img/newimages/userdummy.png" alt="">
+                    </div>
+                    <div class="optDetail">
+                        <div class="leftSideOpt">
+                            <h6>Arslan</h6>
+                            <p>Assessment No. : #5432189</p>
+                        </div>
+                        <div class="rightSideOpt">
+                            <div class="dropDownBox">
+                            <a class="viewDetailBtnOpt" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                            <iconify-icon icon="ph:dots-three-outline-vertical"></iconify-icon>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end" style="">
+                                <a href="#" class="dropdown-item"><span><iconify-icon icon="material-symbols:download-rounded"></iconify-icon></span>Download Certificate</a>
+                                <a href="#" class="dropdown-item"><span><iconify-icon icon="material-symbols:download-rounded"></iconify-icon></span>Download Report</a>
 
+                            </div>
+                            </div>
+                        
+                            <a href="opretaor-edit-form.php" class="viewDetailBtnOptHUO">
+                            View Detail<iconify-icon icon="solar:alt-arrow-right-line-duotone"></iconify-icon>
+                           </a>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
     <div>
 
     </div>

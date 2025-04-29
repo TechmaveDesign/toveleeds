@@ -6,7 +6,7 @@
     <!-- Breadcrumb -->
     <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb ">
         <div class="my-auto mb-2">
-            <h2 class="mb-1">Label's Allotment</h2>
+            <h2 class="mb-1">Label's Assign</h2>
             <nav>
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item">
@@ -15,7 +15,7 @@
                     <li class="breadcrumb-item">
                         Home
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Label's Allotment</li>
+                    <li class="breadcrumb-item active" aria-current="page">Label's Assign</li>
                 </ol>
             </nav>
         </div>
@@ -24,14 +24,14 @@
             <div class="mb-2 me-2" id="addStickerBtn">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#addStickerModal"
                     class="btn btn-primary d-flex align-items-center cmnaddbtn">
-                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Allot Sticker
+                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Assign Sticker
                 </a>
             </div>
 
             <div class="mb-2" id="addTagBtn" style="display: none;">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#addTagModal"
                     class="btn btn-primary d-flex align-items-center cmnaddbtn">
-                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Allot Tag
+                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Assign Tag
                 </a>
             </div>
 
@@ -50,11 +50,11 @@
         <div class="tbuppertabs">
             <nav class="nav nav-style-6 nav-pills d-block" role="tablist">
                 <a class="nav-link active" data-bs-toggle="tab" role="tab" aria-current="page" href="#nav-newjobs"
-                    aria-selected="false" id="stickerTab"> Sticker List
+                    aria-selected="false" id="stickerTab">Assigned Sticker
                  </a>
 
                 <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-in-pending" aria-selected="true" id="tagTab">
-                    Tag List
+                   Assigned Tag 
                 </a>
 
             </nav>
@@ -64,53 +64,52 @@
             <div class="tab-pane show active text-muted" id="nav-newjobs" role="tabpanel">
                 <div class="custom-datatable-filter">
                 <table class="table common-datatable withoutActionTR nowrap w-100">
-                    <thead class="thead-light">
+                        <thead class="thead-light">
                             <tr>
                                 <th>S.No.</th>
+                                <th>Inspectors</th>
                                 <th>Region</th>
-                                <th>Manager</th>
-                                <th>Email</th>
-                                <th>Phone</th>
-                                <th>Total Inspector</th>
+                                <th>Sticker Type</th>
+                                <th>Assign Qty</th>
+                                <th>Assign Range</th>
+                                <th>Last Date & Time</th>
+                                <th>Status</th>
                                 <th>Action</th>
                             </tr>
-                    </thead>
-                    <tbody>
+                        </thead>
+                        <tbody>
+                            
+
                         <tr>
-                            <td>1</td>
-                            <td>Maharashtra</td>
-                            <td>
+                                <td>1</td>
+                                <td>
                                     <div class="d-flex align-items-center file-name-icon">
                                         <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/user-33.jpg" class="img-fluid"
-                                                alt="Stephan Peralt">
+                                            <img src="assets/img/newimages/userdummy.png" class="img-fluid" alt="Elena Cruz">
                                         </a>
                                         <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Stephan Peralt</a></h6>
+                                            <h6 class="fw-medium"><a href="#">Elena Cruz</a></h6>
                                         </div>
                                     </div>
                                 </td>
-                            <td>stephanwolf@yahoo.com</td>
-                            <td>+91-9897654340</td>
-                            <td> 12 </td>
+                                <td>New Delhi</td>
+                                <td>Small</td>
+                                <td>800</td>
+                                <td>S.Stk2500000 - S.Stk2500099</td>
+                                <td>10/02/2024 15:15</td>
+                                <td>
+                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle">
+                                        <span class="badge-label">Collected</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                            data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                            href="view-labelAllotment.php">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                                </span>
-                                            </span>
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="label-useage.php">
+                                            <span class="icon"><span class="feather-icon"><iconify-icon icon="uiw:eye-o"></iconify-icon></span></span>
                                         </a>
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                            data-id="" title="Delete" href="#">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                                </span>
-                                            </span>
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                            <span class="icon"><span class="feather-icon"><iconify-icon icon="cuida:edit-outline"></iconify-icon></span></span>
                                         </a>
                                     </div>
                                 </td>
@@ -118,38 +117,34 @@
 
                             <tr>
                                 <td>2</td>
-                                <td>New Delhi</td>
                                 <td>
                                     <div class="d-flex align-items-center file-name-icon">
-                                        <a href="" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/user-34.jpg" class="img-fluid" alt="Elena Cruz">
+                                        <a href="#" class="avatar avatar-md avatar-rounded">
+                                            <img src="assets/img/newimages/userdummy.png" class="img-fluid" alt="John Doe">
                                         </a>
                                         <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Elena Cruz</a></h6>
+                                            <h6 class="fw-medium"><a href="#">John Doe</a></h6>
                                         </div>
                                     </div>
                                 </td>
-                                <td>elena@gmail.com</td>
-                                <td>+91-9876543210</td>
-                                <td> 10 </td>
+                                <td>Mumbai</td>
+                                <td>Large</td>
+                                <td>900</td>
+                                <td>L.Stk2500100 - L.Stk2500199</td>
+                                <td>11/02/2024 16:20</td>
+                                <td>
+                                    <span class="badge bg-outline-warning pendingbadge badgecustomstyle">
+                                        <span class="badge-label">Assigned</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                            data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                            href="view-labelAllotment.php">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                                </span>
-                                            </span>
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="label-useage.php">
+                                            <span class="icon"><span class="feather-icon"><iconify-icon icon="uiw:eye-o"></iconify-icon></span></span>
                                         </a>
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                            data-id="" title="Delete" href="#">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                                </span>
-                                            </span>
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                            <span class="icon"><span class="feather-icon"><iconify-icon icon="cuida:edit-outline"></iconify-icon></span></span>
                                         </a>
                                     </div>
                                 </td>
@@ -157,135 +152,132 @@
 
                             <tr>
                                 <td>3</td>
-                                <td>Karnataka</td>
                                 <td>
                                     <div class="d-flex align-items-center file-name-icon">
                                         <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/user-19.jpg" class="img-fluid" alt="John Smith">
+                                            <img src="assets/img/newimages/userdummy.png" class="img-fluid" alt="Emma Watson">
                                         </a>
                                         <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">John Smith</a></h6>
+                                            <h6 class="fw-medium"><a href="#">Emma Watson</a></h6>
                                         </div>
                                     </div>
                                 </td>
-                                <td>johnsmith12@gmail.com</td>
-                                <td>+91-1234567890</td>
-                                <td> 08 </td>
+                                <td>Bangalore</td>
+                                <td>Small</td>
+                                <td>850</td>
+                                <td>S.Stk2500200 - S.Stk2500299</td>
+                                <td>12/02/2024 17:30</td>
+                                <td>
+                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle">
+                                        <span class="badge-label">Collected</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                            data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                            href="view-labelAllotment.php">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                                </span>
-                                            </span>
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="label-useage.php">
+                                            <span class="icon"><span class="feather-icon"><iconify-icon icon="uiw:eye-o"></iconify-icon></span></span>
                                         </a>
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                            data-id="" title="Delete" href="#">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                                </span>
-                                            </span>
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                            <span class="icon"><span class="feather-icon"><iconify-icon icon="cuida:edit-outline"></iconify-icon></span></span>
                                         </a>
                                     </div>
                                 </td>
                             </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Noida</td>
-                            <td>
+
+                            <tr>
+                                <td>4</td>
+                                <td>
                                     <div class="d-flex align-items-center file-name-icon">
                                         <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/user-20.jpg" class="img-fluid" alt="John Smith">
+                                            <img src="assets/img/newimages/userdummy.png" class="img-fluid" alt="Michael Scott">
                                         </a>
                                         <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Max Plank</a></h6>
+                                            <h6 class="fw-medium"><a href="#">Michael Scott</a></h6>
                                         </div>
                                     </div>
                                 </td>
-                                <td>maxplank@gmail.com</td>
-                                <td>+91-9876123451</td>
-                                <td> 10 </td>
+                                <td>Chennai</td>
+                                <td>Large</td>
+                                <td>950</td>
+                                <td>L.Stk2500300 - L.Stk2500399</td>
+                                <td>13/02/2024 18:40</td>
+                                <td>
+                                    <span class="badge bg-outline-warning pendingbadge badgecustomstyle">
+                                        <span class="badge-label">Assigned</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                            data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                            href="view-labelAllotment.php">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                                </span>
-                                            </span>
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="label-useage.php">
+                                            <span class="icon"><span class="feather-icon"><iconify-icon icon="uiw:eye-o"></iconify-icon></span></span>
                                         </a>
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                            data-id="" title="Delete" href="#">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                                </span>
-                                            </span>
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" data-bs-toggle="modal" data-bs-target="#EditStickerModal">
+                                            <span class="icon"><span class="feather-icon"><iconify-icon icon="cuida:edit-outline"></iconify-icon></span></span>
                                         </a>
                                     </div>
                                 </td>
-                            </tr>                        
-                    </tbody>
+                            </tr>
 
-                </table>
+
+                            
+
+                        </tbody>
+
+                    </table>
                 </div>
             </div>
 
             <div class="tab-pane text-muted" id="nav-in-pending" role="tabpanel">
                 <div class="custom-datatable-filter">
                 <table class="table common-datatable withoutActionTR nowrap w-100">
-                <thead class="thead-light">
+                        <thead class="thead-light">
                             <tr>
                                 <th>S.No.</th>
+                                <th>Inspectors</th>
                                 <th>Region</th>
-                                <th>Manager</th>
-                                <th>Email</th>
-                                <th>Phone</th>
-                                <th>Total Inspector</th>
+                                <th>Tag No.</th>
+                                <th>Assign Qty</th>
+                                <th>Assign Range</th>
+                                <th>Last Date & Time</th>
+                                <th>Status</th>
                                 <th>Action</th>
                             </tr>
-                    </thead>
-                    <tbody>
+                        </thead>
+                        <tbody>
+                            
+
                         <tr>
-                            <td>1</td>
-                                <td>Kolkata</td>
+                                <td>1</td>
                                 <td>
                                     <div class="d-flex align-items-center file-name-icon">
                                         <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/user-34.jpg" class="img-fluid" alt="Elena Cruz">
+                                            <img src="assets/img/newimages/userdummy.png" class="img-fluid" alt="Elena Cruz">
                                         </a>
                                         <div class="ms-2">
                                             <h6 class="fw-medium"><a href="#">Elena Cruz</a></h6>
                                         </div>
                                     </div>
                                 </td>
-                                <td>elena@gmail.com</td>
-                                <td>+91-9876543210</td>
-                                <td> 16 </td>
+                                <td>New Delhi</td>
+                                <td>039207</td>
+                                <td>1000</td>
+                                <td>039207 - 040206</td>
+                                <td>10/02/2024 15:15</td>
+                                <td>
+                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle">
+                                        <span class="badge-label">Collected</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                            data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                            href="view-labelAllotment.php">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                                </span>
-                                            </span>
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="label-useage.php">
+                                            <span class="icon"><span class="feather-icon"><iconify-icon icon="uiw:eye-o"></iconify-icon></span></span>
                                         </a>
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                            data-id="" title="Delete" href="#">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                                </span>
-                                            </span>
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" data-bs-toggle="modal" data-bs-target="#EditTagModal">
+                                            <span class="icon"><span class="feather-icon"><iconify-icon icon="cuida:edit-outline"></iconify-icon></span></span>
                                         </a>
                                     </div>
                                 </td>
@@ -293,124 +285,111 @@
 
                             <tr>
                                 <td>2</td>
-                                <td>New Delhi</td>
                                 <td>
                                     <div class="d-flex align-items-center file-name-icon">
                                         <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/user-32.jpg" class="img-fluid" alt="Elena Cruz">
+                                            <img src="assets/img/newimages/userdummy.png" class="img-fluid" alt="John Doe">
                                         </a>
                                         <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Chelsia Ford</a></h6>
+                                            <h6 class="fw-medium"><a href="#">John Doe</a></h6>
                                         </div>
                                     </div>
                                 </td>
-                                <td>ford@gmail.com</td>
-                                <td>+91-9876541122</td>
-                                <td> 06 </td>
+                                <td>Mumbai</td>
+                                <td>041207</td>
+                                <td>1200</td>
+                                <td>041207 - 042406</td>
+                                <td>11/02/2024 16:30</td>
+                                <td>
+                                    <span class="badge bg-outline-warning pendingbadge badgecustomstyle">
+                                        <span class="badge-label">Assigned</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                            data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                            href="view-labelAllotment.php">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                                </span>
-                                            </span>
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="label-useage.php">
+                                            <span class="icon"><span class="feather-icon"><iconify-icon icon="uiw:eye-o"></iconify-icon></span></span>
                                         </a>
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                            data-id="" title="Delete" href="#">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                                </span>
-                                            </span>
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" data-bs-toggle="modal" data-bs-target="#EditTagModal">
+                                            <span class="icon"><span class="feather-icon"><iconify-icon icon="cuida:edit-outline"></iconify-icon></span></span>
                                         </a>
                                     </div>
                                 </td>
-                            </tr>
                             </tr>
 
                             <tr>
                                 <td>3</td>
-                                <td>Mumbai</td>
                                 <td>
                                     <div class="d-flex align-items-center file-name-icon">
                                         <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/user-32.jpg" class="img-fluid" alt="Elena Cruz">
+                                            <img src="assets/img/newimages/userdummy.png" class="img-fluid" alt="Emma Watson">
                                         </a>
                                         <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Monika Gellar</a></h6>
+                                            <h6 class="fw-medium"><a href="#">Emma Watson</a></h6>
                                         </div>
                                     </div>
                                 </td>
-                                <td>monicagellargmail.com</td>
-                                <td>+91-7891113331</td>
-                                <td> 08 </td>
+                                <td>Bangalore</td>
+                                <td>042507</td>
+                                <td>1100</td>
+                                <td>042507 - 043606</td>
+                                <td>12/02/2024 17:45</td>
+                                <td>
+                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle">
+                                        <span class="badge-label">Collected</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                            data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                            href="view-labelAllotment.php">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                                </span>
-                                            </span>
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="label-useage.php">
+                                            <span class="icon"><span class="feather-icon"><iconify-icon icon="uiw:eye-o"></iconify-icon></span></span>
                                         </a>
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                            data-id="" title="Delete" href="#">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                                </span>
-                                            </span>
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" data-bs-toggle="modal" data-bs-target="#EditTagModal">
+                                            <span class="icon"><span class="feather-icon"><iconify-icon icon="cuida:edit-outline"></iconify-icon></span></span>
                                         </a>
                                     </div>
                                 </td>
                             </tr>
 
-                        <tr>
-                            <td>4</td>
-                            <td>Bangalore</td>
-                            <td>
+                            <tr>
+                                <td>4</td>
+                                <td>
                                     <div class="d-flex align-items-center file-name-icon">
                                         <a href="#" class="avatar avatar-md avatar-rounded">
-                                            <img src="assets/img/users/user-33.jpg" class="img-fluid" alt="Elena Cruz">
+                                            <img src="assets/img/newimages/userdummy.png" class="img-fluid" alt="Michael Scott">
                                         </a>
                                         <div class="ms-2">
-                                            <h6 class="fw-medium"><a href="#">Rick Ross</a></h6>
+                                            <h6 class="fw-medium"><a href="#">Michael Scott</a></h6>
                                         </div>
                                     </div>
                                 </td>
-                                <td>Rickross@gmail.com</td>
-                                <td>+91-9876543210</td>
-                                <td> 10 </td>
+                                <td>Chennai</td>
+                                <td>043807</td>
+                                <td>1300</td>
+                                <td>043807 - 045106</td>
+                                <td>13/02/2024 18:50</td>
+                                <td>
+                                    <span class="badge bg-outline-warning pendingbadge badgecustomstyle">
+                                        <span class="badge-label">Assigned</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover"
-                                            data-bs-toggle="tooltip" data-placement="top" title="See Details"
-                                            href="view-labelAllotment.php">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
-                                                </span>
-                                            </span>
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="label-useage.php">
+                                            <span class="icon"><span class="feather-icon"><iconify-icon icon="uiw:eye-o"></iconify-icon></span></span>
                                         </a>
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn" 
-                                            data-id="" title="Delete" href="#">
-                                            <span class="icon">
-                                                <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
-                                                </span>
-                                            </span>
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#" data-bs-toggle="modal" data-bs-target="#EditTagModal">
+                                            <span class="icon"><span class="feather-icon"><iconify-icon icon="cuida:edit-outline"></iconify-icon></span></span>
                                         </a>
                                     </div>
                                 </td>
-                            </tr>                       
-                    </tbody>
+                            </tr>
+                        </tbody>
 
-                </table>
+                    </table>
                 </div>
             </div>
         </div>
@@ -425,7 +404,7 @@
     <div class="modal-dialog modal-dialog-centered modal-md"> 
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Sticker Allotment</h4>
+                <h4 class="modal-title">Assign Sticker</h4>
                 <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
                     <i class="ti ti-x"></i>
                 </button>
@@ -437,59 +416,7 @@
                             <img src="assets\aditya_assests\sticker_icon.png" alt="tttt">
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">Sticker ID:<div class="requiredLabel">*</div></label>
-                                <select class="form-control largeinp_height select2">
-                                    <option value="">Select a Sticker ID</option>
-                                    <option value="AEB-0129">AEB - 0129</option>
-                                    <option value="BEC-1011">BEC - 1011</option>
-                                    <option value="FBC-1230">FBC - 1230</option>
-                                    <option value="GHI-2211">GHI - 2211</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label text-muted">Inspector<div class="requiredLabel">*</div></label>
-                                <select class="select2">
-                                    <option disabled selected>Select Inspector</option>
-                                    <option>Stephan Peralt</option>
-                                    <option>Emma Johnson</option>
-                                    <option>Amit Patel</option>
-                                    <option>Sophia Lee</option>
-                                    <option>Michael Carter</option>
-                                    <option>James Smith</option>
-                                    <option>Emily Davis</option>
-                                    <option>Anna Taylor</option>
-                                    <option>John Walker</option>
-                                    <option>Jessica Brown</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">Start Range:<div class="requiredLabel">*</div></label>
-                                <input type="text" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">End Range:<div class="requiredLabel">*</div></label>
-                                <input type="text" placeholder="Please Enter The End Range" class="form-control largeinp_height">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
+                    <div class="col-md-6">
                             <div class="form-group">
                                 <label class="form-label">Location (Region)</label>
                                 <div class="input-blocks">
@@ -505,31 +432,163 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="form-label">Status:<div class="requiredLabel">*</div></label>
-                                <select class="form-control largeinp_height select2">
-                                    <option value="" selected>Choose Status</option>
-                                    <option value="Not Dispatched">Not Dispatched</option>
-                                    <option value="Dispatched for Printing">Dispatched for Printing</option>
+                                <label class="form-label text-muted">Inspector</label>
+                                <select class="select2">
+                                    <option disabled selected>Select Inspector</option>
+                                    <option>Stephan Peralt</option>
+                                    <option>Emma Johnson</option>
+                                    <option>Amit Patel</option>
+                                    <option>Sophia Lee</option>
+                                    <option>Michael Carter</option>
+                                    <option>James Smith</option>
+                                    <option>Emily Davis</option>
+                                    <option>Anna Taylor</option>
+                                    <option>John Walker</option>
+                                    <option>Jessica Brown</option>
                                 </select>
                             </div>
                         </div>
-                    </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Sticker Type</label>
+                                <select class="form-control largeinp_height select2">
+                                    <option value="">Select Type</option>
+                                    <option value="Small">Small</option>
+                                    <option value="Large">Large</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Quantity</label>
+                                <input type="text" placeholder="Enter Qty." class="form-control">
+                            </div>
+                        </div>
+                                               
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Assign Start Range:</label>
+                                <input type="text" placeholder="Auto Generate Starting Range" class="form-control ">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Assign End Range:</label>
+                                <input type="text" placeholder="Auto Generate  End Range" class="form-control ">
+                            </div>
+                        </div>
+                    
+
+                    
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="submit" class="btn btnContinueProcess btn-primary editEnquiryBtn">
-                    <div class="buttontext">
-                        <div class="formediticon_modal">
-                            <iconify-icon icon="uit:process"></iconify-icon>
-                        </div>
-                        Save & Allot
-                    </div>
-                    <iconify-icon icon="bi:arrow-right"></iconify-icon>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">
+                    <iconify-icon icon="ci:save"></iconify-icon>  Save & Assign
+                    </button>
+                </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<!-- Allot Sticker Modal -->
+<div class="modal fade custombottm_modalStyle" id="EditStickerModal">
+    <div class="modal-dialog modal-dialog-centered modal-md"> 
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Edit Assign Sticker</h4>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x"></i>
                 </button>
             </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="iconImageSection">
+                            <img src="assets\aditya_assests\sticker_icon.png" alt="tttt">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Location (Region)</label>
+                                <div class="input-blocks">
+                                    <select class="select2">
+                                        <option disabled selected>Select Region</option>
+                                        <option>Delhi</option>
+                                        <option>Mumbai</option>
+                                        <option>Kolkata</option>
+                                        <option>Banglore</option>
+                                        <option>Pune</option>
+                                        <option>Chennai</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label text-muted">Inspector</label>
+                                <select class="select2">
+                                    <option disabled selected>Select Inspector</option>
+                                    <option>Stephan Peralt</option>
+                                    <option>Emma Johnson</option>
+                                    <option>Amit Patel</option>
+                                    <option>Sophia Lee</option>
+                                    <option>Michael Carter</option>
+                                    <option>James Smith</option>
+                                    <option>Emily Davis</option>
+                                    <option>Anna Taylor</option>
+                                    <option>John Walker</option>
+                                    <option>Jessica Brown</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Sticker Type</label>
+                                <select class="form-control largeinp_height select2">
+                                    <option value="">Select Type</option>
+                                    <option value="Small">Small</option>
+                                    <option value="Large">Large</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Quantity</label>
+                                <input type="text" placeholder="Enter Qty." class="form-control">
+                            </div>
+                        </div>
+                                               
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Assign Start Range:</label>
+                                <input type="text" placeholder="Auto Generate Starting Range" class="form-control ">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Assign End Range:</label>
+                                <input type="text" placeholder="Auto Generate  End Range" class="form-control ">
+                            </div>
+                        </div>
+                    
+
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">
+                    <iconify-icon icon="ci:save"></iconify-icon>  Save & Update
+                    </button>
+                </div>
+                </div>
         </div>
     </div>
 </div>
@@ -539,7 +598,7 @@
     <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Tag Allotment</h4>
+                <h4 class="modal-title">Tag Assign</h4>
                 <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
                     <i class="ti ti-x"></i>
                 </button>
@@ -551,59 +610,7 @@
                             <img src="assets\aditya_assests\sticker_icon.png" alt="tttt">
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">Tag ID:<div class="requiredLabel">*</div></label>
-                                <select class="form-control largeinp_height select2">
-                                <option value="">Select a Tag ID</option>
-                                <option value="TA-123">TA - 123</option>
-                                <option value="TB-345">TB - 345</option>
-                                <option value="TC-112">TC - 112</option>
-                                <option value="TD-233">TD - 223</option>
-                            </select>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label text-muted">Inspector<div class="requiredLabel">*</div></label>
-                                <select class="select2">
-                                    <option disabled selected>Select Inspector</option>
-                                    <option>Stephan Peralt</option>
-                                    <option>Emma Johnson</option>
-                                    <option>Amit Patel</option>
-                                    <option>Sophia Lee</option>
-                                    <option>Michael Carter</option>
-                                    <option>James Smith</option>
-                                    <option>Emily Davis</option>
-                                    <option>Anna Taylor</option>
-                                    <option>John Walker</option>
-                                    <option>Jessica Brown</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">Start Range:<div class="requiredLabel">*</div></label>
-                                <input type="text" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">End Range:<div class="requiredLabel">*</div></label>
-                                <input type="text" placeholder="Please Enter The End Range" class="form-control largeinp_height">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
+                    <div class="col-md-6">
                             <div class="form-group">
                                 <label class="form-label">Location (Region)</label>
                                 <div class="input-blocks">
@@ -619,36 +626,170 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="form-label">Status:<div class="requiredLabel">*</div></label>
-                                <select class="form-control largeinp_height select2">
-                                    <option value="" selected>Choose Status</option>
-                                    <option value="Not Dispatched">Not Dispatched</option>
-                                    <option value="Dispatched for Printing">Dispatched for Printing</option>
+                                <label class="form-label text-muted">Inspector</label>
+                                <select class="select2">
+                                    <option disabled selected>Select Inspector</option>
+                                    <option>Stephan Peralt</option>
+                                    <option>Emma Johnson</option>
+                                    <option>Amit Patel</option>
+                                    <option>Sophia Lee</option>
+                                    <option>Michael Carter</option>
+                                    <option>James Smith</option>
+                                    <option>Emily Davis</option>
+                                    <option>Anna Taylor</option>
+                                    <option>John Walker</option>
+                                    <option>Jessica Brown</option>
                                 </select>
                             </div>
                         </div>
-                    </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Tag No.</label>
+                                <select class="form-control largeinp_height select2">
+                                <option value="">Select a Tag ID</option>
+                                <option value="TA-123">039207</option>
+                                <option value="TB-345">042507</option>
+                                <option value="TC-112">041207</option>
+                                <option value="TD-233">043807</option>
+                            </select>
+                            </div>
+                        </div>
+                            
+                      
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Quantity</label>
+                                <input type="text" placeholder="Enter Qty" class="form-control largeinp_height">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Start Range:</label>
+                                <input type="text" placeholder="Auto Generate Starting Range" class="form-control largeinp_height">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">End Range:</label>
+                                <input type="text" placeholder="Auto Generate End Range" class="form-control largeinp_height">
+                            </div>
+                        </div>
+
+                    
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="submit" class="btn btnContinueProcess btn-primary editEnquiryBtn">
-                    <div class="buttontext">
-                        <div class="formediticon_modal">
-                            <iconify-icon icon="uit:process"></iconify-icon>
-                        </div>
-                        Save & Allot
-                    </div>
-                    <iconify-icon icon="bi:arrow-right"></iconify-icon>
-                </button>
-            </div>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">
+                    <iconify-icon icon="ci:save"></iconify-icon>  Save & Assign
+                    </button>
+                </div>
+                </div>
         </div>
     </div>
 </div>
 
+<!-- Allot Tag Modal -->
+<div class="modal fade custombottm_modalStyle" id="EditTagModal">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Edit Tag Assign</h4>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="iconImageSection">
+                            <img src="assets\aditya_assests\sticker_icon.png" alt="tttt">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Location (Region)</label>
+                                <div class="input-blocks">
+                                    <select class="select2">
+                                        <option disabled selected>Select Region</option>
+                                        <option>Delhi</option>
+                                        <option>Mumbai</option>
+                                        <option>Kolkata</option>
+                                        <option>Banglore</option>
+                                        <option>Pune</option>
+                                        <option>Chennai</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label text-muted">Inspector</label>
+                                <select class="select2">
+                                    <option disabled selected>Select Inspector</option>
+                                    <option>Stephan Peralt</option>
+                                    <option>Emma Johnson</option>
+                                    <option>Amit Patel</option>
+                                    <option>Sophia Lee</option>
+                                    <option>Michael Carter</option>
+                                    <option>James Smith</option>
+                                    <option>Emily Davis</option>
+                                    <option>Anna Taylor</option>
+                                    <option>John Walker</option>
+                                    <option>Jessica Brown</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Tag No.</label>
+                                <select class="form-control largeinp_height select2">
+                                <option value="">Select a Tag ID</option>
+                                <option value="TA-123">039207</option>
+                                <option value="TB-345">042507</option>
+                                <option value="TC-112">041207</option>
+                                <option value="TD-233">043807</option>
+                            </select>
+                            </div>
+                        </div>
+                            
+                      
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Quantity</label>
+                                <input type="text" placeholder="Enter Qty" class="form-control largeinp_height">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Start Range:</label>
+                                <input type="text" placeholder="Auto Generate Starting Range" class="form-control largeinp_height">
+                            </div>
+                        </div>
 
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">End Range:</label>
+                                <input type="text" placeholder="Auto Generate End Range" class="form-control largeinp_height">
+                            </div>
+                        </div>
+
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">
+                    <iconify-icon icon="ci:save"></iconify-icon>  Save & Assign
+                    </button>
+                </div>
+                </div>
+        </div>
+    </div>
+</div>
 <!-- /Add template -->
 
 <!-- Delete Modal -->

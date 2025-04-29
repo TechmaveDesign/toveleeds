@@ -6,7 +6,7 @@
             <iconify-icon icon="mi:close"></iconify-icon>
         </button>
     </div>
-    <form action="clients.php">
+    <form action="#">
         <div class="offcanvas-body">
 
             <div class="offcanvasForm_wrap">
@@ -14,12 +14,7 @@
                 <div class="modal-body pb-0">
                     <div class="row">
 
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">Client ID</label>
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
+                        
 
                         <div class="col-md-6">
                             <div class="form-group">
@@ -34,6 +29,12 @@
                                     <option value="6">Olivia Smith</option>
                                 </select>
 
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Client ID</label>
+                                <input type="text" class="form-control">
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -88,6 +89,20 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
+                                <label class="form-label">Region</label>
+                                <select name="" id="" class="form-control select2">
+                                    <option disabled="" selected="" value="">Please Select...</option>
+                                    <option value="Ban">Bangalore</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="New Delhi">New Delhi</option>
+                                    <option value="Chennai">Chennai</option>
+
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
                                 <label class="form-label">Assigned Inspector/Trainer</label>
                                 <select name="" class="form-control select2">
                                     <option disabled="" selected="" value="">Please Select...</option>
@@ -117,20 +132,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">Status</label>
-                                <select name="" id="" class="form-control select2">
-                                    <option disabled="" selected="" value="">Please Select...</option>
-                                    <option value="Pending">Pending</option>
-                                    <option value="In Progress">In Progress</option>
-                                    <option value="Completed">Completed</option>
-                                    <option value="Approved">Approved</option>
-
-                                </select>
-
-                            </div>
-                        </div>
+                       
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <div class="form-label">
@@ -165,8 +167,8 @@
 
             <div class="modalbetween_actions">
                 <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
-                    data-bs-dismiss="offcanvas">Cancel</button>
-                <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Submit</button>
+                    data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas" aria-label="Close">Cancel</button>
+                <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter" data-bs-dismiss="offcanvas" aria-label="Close">Submit</button>
             </div>
         </div>
     </form>
@@ -181,7 +183,7 @@
             <iconify-icon icon="mi:close"></iconify-icon>
         </button>
     </div>
-    <form action="clients.php">
+    <form action="#">
         <div class="offcanvas-body">
 
             <div class="offcanvasForm_wrap">
@@ -189,12 +191,7 @@
                 <div class="modal-body pb-0">
                     <div class="row">
 
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">Client ID</label>
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
+                       
 
                         <div class="col-md-6">
                             <div class="form-group">
@@ -209,6 +206,12 @@
                                     <option value="6">Olivia Smith</option>
                                 </select>
 
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Client ID</label>
+                                <input type="text" class="form-control">
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -277,7 +280,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="form-group">
                                 <label class="form-label">Select Equipment </label>
                                 <select class="form-control select2">
@@ -301,6 +304,20 @@
                                     <option value="In Progress">In Progress</option>
                                     <option value="Completed">Completed</option>
                                     <option value="Approved">Approved</option>
+
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Region</label>
+                                <select name="" id="" class="form-control select2">
+                                    <option disabled="" selected="" value="">Please Select...</option>
+                                    <option value="Ban">Bangalore</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="New Delhi">New Delhi</option>
+                                    <option value="Chennai">Chennai</option>
 
                                 </select>
 
@@ -340,8 +357,8 @@
 
             <div class="modalbetween_actions">
                 <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
-                    data-bs-dismiss="offcanvas">Cancel</button>
-                <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Submit</button>
+                    data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas" aria-label="Close">Cancel</button>
+                <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter" data-bs-dismiss="offcanvas" aria-label="Close">Submit</button>
             </div>
         </div>
     </form>

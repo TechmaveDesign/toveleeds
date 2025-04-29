@@ -1,5 +1,10 @@
 <?php include("header.php") ?>
 
+<style>
+.formRight_fields label {
+    display: unset !important;
+}
+</style>
 <!-- Page Wrapper -->
 <div class="content">
 
@@ -70,26 +75,29 @@
                           <div class="formRight_fields">
                             <div class="row">
                                 <div class="col-lg-6">
+                                    <div class="row">
+                                    <div class="col-lg-6">
                                     <div class="form-group">
-                                    <label class="form-label">Client ID</label>
+                                    <label class="form-label">Client ID <div class="requiredLabel">*</div></label>
                                     <input type="text" class="form-control" readonly disabled value="CL00001">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                    <label class="form-label">Client Name</label>
+                                    <label class="form-label">Client Name <div class="requiredLabel">*</div></label>
                                     <input type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                    <label class="form-label">Company Name</label>
+                                    <label class="form-label">Representative Name <div class="requiredLabel">*</div></label>
                                     <input type="text" class="form-control">
                                     </div>
                                 </div>
+                               
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label class="form-label">Business Type</label>
+                                        <label class="form-label">Contact No. <div class="requiredLabel">*</div></label>
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
@@ -100,43 +108,85 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label">Password</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="passwordField">
+                                        <button class="btn btn-primary" type="button" onclick="generatePassword()">Generate</button>
+                                        <button class="btn btn-secondary" type="button" onclick="togglePassword()">
+                                            <span class="iconify" id="eyeIcon" data-icon="mdi:eye-off"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-label">Region <div class="requiredLabel">*</div></label>
+                                    <select name="" id="" class="form-control select2">
+                                            <option disabled="" selected="" value="">Please Select...</option>
+                                            <option value="Ban">Bangalore</option>
+                                            <option value="Karnataka">Karnataka</option>
+                                            <option value="New Delhi">New Delhi</option>
+                                            <option value="Chennai">Chennai</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                <div class="col-md-6">
                                     <div class="form-group">
-                                        <label class="form-label">Contact No.</label>
+                                        <label class="form-label">Location <div class="requiredLabel">*</div></label>
                                         <input type="text" class="form-control">
                                     </div>
                                 </div>
-                            </div>
-
-                          </div>
-
-                        </div>
-                        <div class="fieldsSetting_wrapperFRM addbordertop">
-                          <header class="profile-settings-header">
-                            <h2 class="default-color">Company Logo</h2>
-                            <p class="tertiary-color">Add a high-quality logo for consistent brand identity.</p>
-                          </header>
-
-                          <div class="formRight_fields">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="uploadlogo">
-                                        <div class="preview" id="imagePreview">
-                                            <span>No image uploaded yet</span>
-                                        </div>
-                                        <div class="upload-area" id="uploadArea" onclick="document.getElementById('fileInput').click()">
-                                            <input type="file" id="fileInput" accept="image/*" style="display: none;" onchange="previewImage(event)">
-                                            <span>Drop your file(s) here<br>or click to browse</span>
-                                            <iconify-icon icon="iconamoon:cloud-upload-duotone" class="uploadIcon"></iconify-icon>
-                                        </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">Work Location</label>
+                                        <input type="text" class="form-control">
                                     </div>
                                 </div>
-                               
+                           
+
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-6">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                                <div class="uploadlogo">
+                                                <div class="preview" id="imagePreview">
+                                                    <span>No image uploaded yet</span>
+                                                </div>
+                                                <div class="upload-area" id="uploadArea" onclick="document.getElementById('fileInput').click()">
+                                                    <input type="file" id="fileInput" accept="image/*" style="display: none;" onchange="previewImage(event)">
+                                                    <span>Drop your file(s) here<br>or click to browse</span>
+                                                    <iconify-icon icon="iconamoon:cloud-upload-duotone" class="uploadIcon"></iconify-icon>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-check emailNotificationCheck">
+                                                    <input class="form-check-input" type="checkbox" id="emailNotification" checked onchange="toggleNotificationMessage()">
+                                                    <label class="form-check-label mb-0" for="emailNotification">
+                                                        Enable Email Notifications
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                            
+                                
+                                    </div>
+                                 
+                                </div>
+
+
+                              
                             </div>
 
                           </div>
 
                         </div>
-                        <div class="fieldsSetting_wrapperFRM addbordertop">
+                       
+                        <!-- <div class="fieldsSetting_wrapperFRM addbordertop">
                           <header class="profile-settings-header">
                             <h2 class="default-color">Manage Client Locations</h2>
                             <p class="tertiary-color">Track client locations and assign a representative for each.</p>
@@ -145,56 +195,56 @@
                           <div class="formRight_fields">
                                 
                               <div class="row">
-                              <div class="col-lg-4">
+                              <div class="col-lg-3">
                                     <div class="form-group">
                                     <label class="form-label">Representative Name</label>
                                     <input type="text" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-3">
                                     <div class="form-group">
                                     <label class="form-label">Contact No.</label>
                                     <input type="text" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-3">
                                     <div class="form-group">
                                     <label class="form-label">Email</label>
                                     <input type="text" class="form-control">
                                     </div>
                                 </div>
-                               <div class="col-lg-6">
+                               <div class="col-lg-3">
                                     <div class="form-group">
                                     <label class="form-label">Address Line 1</label>
                                     <input type="text" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-3">
                                     <div class="form-group">
                                     <label class="form-label">Address Line 2 (Optional)</label>
                                     <input type="text" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-3">
                                     <div class="form-group">
                                     <label class="form-label">Town/City</label>
                                     <input type="text" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-3">
                                     <div class="form-group">
                                     <label class="form-label">Country</label>
                                     <input type="text" class="form-control">
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-3">
                                     <div class="form-group">
                                     <label class="form-label">Postal Code</label>
                                     <input type="text" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-lg-12 text-end">
-                                    <a href="#" class="addMorelocationBtn" id="addLocation"><iconify-icon icon="majesticons:plus-line"></iconify-icon> Add More</a>
+                                    <a href="javascript:void(0);" class="addMorelocationBtn" id="addLocation"><iconify-icon icon="majesticons:plus-line"></iconify-icon> Add More</a>
                                 </div>
                                 <div class="col-lg-12" id="multipleLocation">
                                     <div class="multipleLocation">
@@ -257,7 +307,17 @@
                                     </div>
                                     
                                 </div>
-                                <div class="FormSubmit_fix_container">
+                              
+                            </div>
+
+                          </div>
+
+                        </div> -->
+        
+
+        </div>
+        
+        <div class="FormSubmit_fix_container">
                                         <a href="#" class="SaveDataBtn">
                                             <button type="button" class="btn btn-primary commonUpdateButton">
                                             <iconify-icon icon="ci:save"></iconify-icon> Save
@@ -272,16 +332,6 @@
                                         
 
                                 </div>
-                            </div>
-
-                          </div>
-
-                        </div>
-        
-
-        </div>
-        
-
 
        
     </div>
@@ -305,7 +355,7 @@
                 html: `
                     <div style="text-align: center;">
                         <div class="swalalert_custom_icon">
-                            <img src="assets/img/newimages/nutmeg (1).gif" alt="Success">
+                            <img src="assets/img/newimages/nutmeg.gif" alt="Success">
                         </div>
                         <h2 class="Swal_CustomTitle">Created Successfully!</h2>
                         <p>Client details have been saved successfully.</p>
@@ -375,3 +425,28 @@
         })
     })
   </script>
+<script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+<script>
+    function generatePassword() {
+        const length = 12;
+        const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
+        let password = "";
+        for (let i = 0; i < length; i++) {
+            password += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+        document.getElementById("passwordField").value = password;
+    }
+
+    function togglePassword() {
+        const passwordField = document.getElementById("passwordField");
+        const eyeIcon = document.getElementById("eyeIcon");
+
+        if (passwordField.type === "password") {
+            passwordField.type = "text";
+            eyeIcon.setAttribute("data-icon", "mdi:eye");
+        } else {
+            passwordField.type = "password";
+            eyeIcon.setAttribute("data-icon", "mdi:eye-off");
+        }
+    }
+</script>

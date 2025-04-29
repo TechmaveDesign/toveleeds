@@ -6,7 +6,7 @@
     <!-- Breadcrumb -->
     <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb ">
         <div class="my-auto mb-2">
-            <h2 class="mb-1">New Delhi Label's Allotment</h2>
+            <h2 class="mb-1">New Delhi Label's Assign</h2>
             <nav>
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item">
@@ -15,7 +15,7 @@
                     <li class="breadcrumb-item">
                         Home
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Label's Allotment</li>
+                    <li class="breadcrumb-item active" aria-current="page">Label's Assign</li>
                 </ol>
             </nav>
         </div>
@@ -24,14 +24,14 @@
             <div class="mb-2 me-2" id="addStickerBtn">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#addStickerModal"
                     class="btn btn-primary d-flex align-items-center cmnaddbtn">
-                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Allot Sticker
+                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Assign Sticker
                 </a>
             </div>
 
             <div class="mb-2" id="addTagBtn" style="display: none;">
                 <a href="#" data-bs-toggle="modal" data-bs-target="#addTagModal"
                     class="btn btn-primary d-flex align-items-center cmnaddbtn">
-                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Allot Tag
+                    <iconify-icon icon="fluent-mdl2:add-to"></iconify-icon>Assign Tag
                 </a>
             </div>
 
@@ -49,11 +49,11 @@
         <div class="tbuppertabs">
             <nav class="nav nav-style-6 nav-pills d-block" role="tablist">
                 <a class="nav-link active" data-bs-toggle="tab" role="tab" aria-current="page" href="#nav-newjobs"
-                    aria-selected="false" id="stickerTab"> Sticker List
+                    aria-selected="false" id="stickerTab"> Assigned Sticker  List
                 </a>
 
                 <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-in-pending" aria-selected="true" id="tagTab">
-                    Tag List
+                   Assigned Tag List
                 </a>
 
             </nav>
@@ -68,10 +68,10 @@
                                 <th>S.No.</th>
 
                                 <th>Inspectors</th>
-
+                                <th>Sticker Type</th>
                                 <th>Sticker ID</th>
-                                <th>Total Range</th>
-                                <th>Alloted Range</th>
+                                <th>Assign Range</th>
+                                <th>Available Range</th>
                                 <th>Last Date & Time</th>
                                 <th>Status</th>
                                 <th>Action</th>
@@ -90,24 +90,24 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td> AEF - 0129 </td>
+                                <td>Small</td>
+                                <td> AEF</td>
                                 <td> 001 - 999 </td>
                                 <td>001 - 500</td>
                                 <td>
                                     10/02/2024 15:15
                                 </td>
                                 <td>
-                                    <span class="badge bg-outline-secondary pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Dispatched</span>
-                                        <iconify-icon icon="mynaui:info-waves"></iconify-icon>
+                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
+                                            class="badge-label">Collected</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
                                     </span>
                                 </td>
 
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
 
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="offcanvas"
-                                            data-bs-target="#editAllotmentModal" data-placement="top" title="See Details">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="label-useage.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <iconify-icon icon="uiw:eye-o"></iconify-icon>
@@ -115,15 +115,16 @@
                                             </span>
                                         </a>
 
-
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn"
-                                            data-id="" title="Delete" href="#">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#"  data-bs-toggle="modal" data-bs-target="#EditStickerModal">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                                <iconify-icon icon="cuida:edit-outline"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
+
+
+                                        
                                     </div>
                                 </td>
                             </tr>
@@ -140,37 +141,36 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td>BEC - 1011</td>
+                                <td>Small</td>
+                                <td>BEC</td>
                                 <td>1000 - 1999</td>
                                 <td>1000 - 1599</td>
                                 <td>11/02/2024 10:45</td>
                                 <td>
-                                    <span class="badge bg-outline-secondary pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Dispatched</span>
-                                        <iconify-icon icon="tabler:progress-alert"></iconify-icon>
+                                    <span class="badge bg-outline-warning pendingbadge badgecustomstyle"><span
+                                            class="badge-label">Assigned</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
                                     </span>
                                 </td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
 
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="offcanvas"
-                                            data-bs-target="#editAllotmentModal" data-placement="top" title="See Details">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="label-useage.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <iconify-icon icon="uiw:eye-o"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
-
-
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn"
-                                            data-id="" title="Delete" href="#">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#"  data-bs-toggle="modal" data-bs-target="#EditStickerModal">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                                <iconify-icon icon="cuida:edit-outline"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
+
+                                        
                                     </div>
                                 </td>
                             </tr>
@@ -187,37 +187,36 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td>CEA - 2020</td>
+                                <td>Large</td>
+                                <td>CEA</td>
                                 <td>2000 - 2999</td>
                                 <td>2000 - 2499</td>
                                 <td>12/02/2024 13:20</td>
                                 <td>
                                     <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Delivered</span>
+                                            class="badge-label">Collected</span>
                                         <iconify-icon icon="weui:done2-outlined"></iconify-icon>
                                     </span>
                                 </td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
 
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="offcanvas"
-                                            data-bs-target="#editAllotmentModal" data-placement="top" title="See Details">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="label-useage.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <iconify-icon icon="uiw:eye-o"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
-
-
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn"
-                                            data-id="" title="Delete" href="#">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#"  data-bs-toggle="modal" data-bs-target="#EditStickerModal">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                                <iconify-icon icon="cuida:edit-outline"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
+
+                                        
                                     </div>
                                 </td>
                             </tr>
@@ -234,21 +233,21 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td>GHI - 2211</td>
+                                <td>Small</td>
+                                <td>GHI</td>
                                 <td>3000 - 5999</td>
                                 <td>3000 - 3999</td>
                                 <td>12/02/2024 13:20</td>
                                 <td>
                                     <span class="badge bg-outline-warning pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Received</span>
+                                            class="badge-label">Assigned</span>
                                         <iconify-icon icon="weui:done2-outlined"></iconify-icon>
                                     </span>
                                 </td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
 
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="offcanvas"
-                                            data-bs-target="#editAllotmentModal" data-placement="top" title="See Details">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="label-useage.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <iconify-icon icon="uiw:eye-o"></iconify-icon>
@@ -256,15 +255,14 @@
                                             </span>
                                         </a>
 
-
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn"
-                                            data-id="" title="Delete" href="#">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#"  data-bs-toggle="modal" data-bs-target="#EditStickerModal">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                                <iconify-icon icon="cuida:edit-outline"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
+                                        
                                     </div>
                                 </td>
                             </tr>
@@ -283,8 +281,8 @@
                                 <th>S.No.</th>
                                 <th>Inspector</th>
                                 <th>Tag ID</th>
-                                <th>Total Range</th>
-                                <th>Alloted Range</th>
+                                <th>Assign Range</th>
+                                <th>Available Range</th>
                                 <th>Last Date & Time</th>
                                 <th>Status</th>
                                 <th>Action</th>
@@ -303,7 +301,7 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td>TAG - 1111</td>
+                                <td>TAG </td>
                                 <td>001 - 399</td>
                                 <td>001 - 399</td>
                                 <td>
@@ -311,7 +309,7 @@
                                 </td>
                                 <td>
                                     <span class="badge bg-outline-warning pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Received</span>
+                                            class="badge-label">Assigned</span>
                                         <iconify-icon icon="mynaui:info-waves"></iconify-icon>
                                     </span>
                                 </td>
@@ -319,24 +317,22 @@
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
 
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="offcanvas"
-                                            data-bs-target="#editTagAllotmentModal" data-placement="top" title="See Details">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="label-useage.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <iconify-icon icon="uiw:eye-o"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
-
-
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn"
-                                            data-id="" title="Delete" href="#">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#"  data-bs-toggle="modal" data-bs-target="#EditTagModal">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                                <iconify-icon icon="cuida:edit-outline"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
+
+                                        
                                     </div>
                                 </td>
                             </tr>
@@ -354,21 +350,20 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td>TSC - 202</td>
+                                <td>TSC</td>
                                 <td>499 - 699</td>
                                 <td>499 - 699</td>
                                 <td>11/02/2024 10:45</td>
                                 <td>
-                                    <span class="badge bg-outline-secondary pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Dispatched</span>
-                                        <iconify-icon icon="tabler:progress-alert"></iconify-icon>
+                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
+                                            class="badge-label">Collected</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
                                     </span>
                                 </td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
 
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="offcanvas"
-                                            data-bs-target="#editTagAllotmentModal" data-placement="top" title="See Details">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="label-useage.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <iconify-icon icon="uiw:eye-o"></iconify-icon>
@@ -376,15 +371,14 @@
                                             </span>
                                         </a>
 
-
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn"
-                                            data-id="" title="Delete" href="#">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#"  data-bs-toggle="modal" data-bs-target="#EditTagModal">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                                <iconify-icon icon="cuida:edit-outline"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
+                                        
                                     </div>
                                 </td>
                             </tr>
@@ -401,37 +395,35 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td>TC - 1120</td>
+                                <td>TC</td>
                                 <td>800 - 1000</td>
                                 <td> 800- 1000</td>
                                 <td>12/02/2024 13:20</td>
                                 <td>
                                     <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Delivered</span>
+                                            class="badge-label">Collected</span>
                                         <iconify-icon icon="weui:done2-outlined"></iconify-icon>
                                     </span>
                                 </td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
 
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="offcanvas"
-                                            data-bs-target="#editTagAllotmentModal" data-placement="top" title="See Details">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="label-useage.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <iconify-icon icon="uiw:eye-o"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
-
-
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn"
-                                            data-id="" title="Delete" href="#">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#"  data-bs-toggle="modal" data-bs-target="#EditTagModal">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                                <iconify-icon icon="cuida:edit-outline"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
+
+                                        
                                     </div>
                                 </td>
                             </tr>
@@ -448,37 +440,35 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td>TAG - 4321</td>
+                                <td>TAG</td>
                                 <td>499 - 899</td>
                                 <td>499 - 899</td>
                                 <td>12/02/2024 13:20</td>
                                 <td>
                                     <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
-                                            class="badge-label">Delivered</span>
+                                            class="badge-label">Collected</span>
                                         <iconify-icon icon="weui:done2-outlined"></iconify-icon>
                                     </span>
                                 </td>
                                 <td>
                                     <div class="d-flex align-items-center ActionDropdown">
 
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" data-bs-toggle="offcanvas"
-                                            data-bs-target="#editTagAllotmentModal" data-placement="top" title="See Details">
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="label-useage.php">
                                             <span class="icon">
                                                 <span class="feather-icon">
                                                     <iconify-icon icon="uiw:eye-o"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
-
-
-                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover delete-btn"
-                                            data-id="" title="Delete" href="#">
+                                        <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="#"  data-bs-toggle="modal" data-bs-target="#EditTagModal">
                                             <span class="icon">
                                                 <span class="feather-icon">
-                                                    <iconify-icon icon="fluent:delete-24-regular"></iconify-icon>
+                                                <iconify-icon icon="cuida:edit-outline"></iconify-icon>
                                                 </span>
                                             </span>
                                         </a>
+
+                                        
                                     </div>
                                 </td>
                             </tr>
@@ -496,7 +486,7 @@
     <div class="modal-dialog modal-dialog-centered modal-md"> 
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Sticker Allotment</h4>
+                <h4 class="modal-title">Assign Sticker</h4>
                 <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
                     <i class="ti ti-x"></i>
                 </button>
@@ -508,24 +498,27 @@
                             <img src="assets\aditya_assests\sticker_icon.png" alt="tttt">
                         </div>
                     </div>
-
+                    <div class="col-lg-12">
                     <div class="row">
-                        <div class="col-md-6">
+                    <div class="col-md-6">
                             <div class="form-group">
-                                <label class="form-label">Sticker ID:<div class="requiredLabel">*</div></label>
-                                <select class="form-control largeinp_height select2">
-                                    <option value="">Select a Sticker ID</option>
-                                    <option value="AEB-0129">AEB - 0129</option>
-                                    <option value="BEC-1011">BEC - 1011</option>
-                                    <option value="FBC-1230">FBC - 1230</option>
-                                    <option value="GHI-2211">GHI - 2211</option>
-                                </select>
+                                <label class="form-label">Location (Region)</label>
+                                <div class="input-blocks">
+                                    <select class="select2">
+                                        <option disabled selected>Select Region</option>
+                                        <option>Delhi</option>
+                                        <option>Mumbai</option>
+                                        <option>Kolkata</option>
+                                        <option>Banglore</option>
+                                        <option>Pune</option>
+                                        <option>Chennai</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="form-label text-muted">Inspector<div class="requiredLabel">*</div></label>
+                                <label class="form-label text-muted">Inspector</label>
                                 <select class="select2">
                                     <option disabled selected>Select Inspector</option>
                                     <option>Stephan Peralt</option>
@@ -541,32 +534,88 @@
                                 </select>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="form-label">Sticker Type</label>
+                                <select class="form-control largeinp_height select2">
+                                    <option value="">Select Type</option>
+                                    <option value="Small">Small</option>
+                                    <option value="Large">Large</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Sticker ID</label>
+                                <select class="form-control largeinp_height select2">
+                                    <option value="">Select Sticker Lot ID</option>
+                                    <option value="AEB">AEB</option>
+                                    <option value="BEC">BEC</option>
+                                    <option value="FBC">FBC</option>
+                                    <option value="GHI">GHI</option>
+                                </select>
+                            </div>
+                        </div> -->
+                        
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="form-label">Alloted Starting Range:<div class="requiredLabel">*</div></label>
+                                <label class="form-label">Assign Start Range:</label>
                                 <input type="text" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="form-label">Alloted Ending Range:<div class="requiredLabel">*</div></label>
+                                <label class="form-label">Assign End Range:</label>
                                 <input type="text" placeholder="Please Enter The End Range" class="form-control largeinp_height">
                             </div>
                         </div>
+                        
+                        
+                    </div>
                     </div>
 
+                    
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">
+                    <iconify-icon icon="ci:save"></iconify-icon>  Save & Assign
+                    </button>
+                </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<!-- Allot Sticker Modal -->
+<div class="modal fade custombottm_modalStyle" id="EditStickerModal">
+    <div class="modal-dialog modal-dialog-centered modal-md"> 
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Update Assign Sticker</h4>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="iconImageSection">
+                            <img src="assets\aditya_assests\sticker_icon.png" alt="tttt">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
                     <div class="row">
-                        <div class="col-md-6">
+                    <div class="col-md-6">
                             <div class="form-group">
                                 <label class="form-label">Location (Region)</label>
                                 <div class="input-blocks">
                                     <select class="select2">
                                         <option disabled selected>Select Region</option>
-                                        <option selected>Delhi</option>
+                                        <option>Delhi</option>
                                         <option>Mumbai</option>
                                         <option>Kolkata</option>
                                         <option>Banglore</option>
@@ -576,31 +625,75 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="form-label">Status:<div class="requiredLabel">*</div></label>
-                                <select class="form-control largeinp_height select2">
-                                    <option value="" selected>Choose Status</option>
-                                    <option value="Not Dispatched">Not Dispatched</option>
-                                    <option value="Dispatched for Printing">Dispatched for Printing</option>
+                                <label class="form-label text-muted">Inspector</label>
+                                <select class="select2">
+                                    <option disabled selected>Select Inspector</option>
+                                    <option>Stephan Peralt</option>
+                                    <option>Emma Johnson</option>
+                                    <option>Amit Patel</option>
+                                    <option>Sophia Lee</option>
+                                    <option>Michael Carter</option>
+                                    <option>James Smith</option>
+                                    <option>Emily Davis</option>
+                                    <option>Anna Taylor</option>
+                                    <option>John Walker</option>
+                                    <option>Jessica Brown</option>
                                 </select>
                             </div>
                         </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="form-label">Sticker Type</label>
+                                <select class="form-control largeinp_height select2">
+                                    <option value="">Select Type</option>
+                                    <option value="Small">Small</option>
+                                    <option value="Large">Large</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Sticker ID</label>
+                                <select class="form-control largeinp_height select2">
+                                    <option value="">Select Sticker Lot ID</option>
+                                    <option value="AEB">AEB</option>
+                                    <option value="BEC">BEC</option>
+                                    <option value="FBC">FBC</option>
+                                    <option value="GHI">GHI</option>
+                                </select>
+                            </div>
+                        </div> -->
+                        
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Assign Start Range:</label>
+                                <input type="text" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Assign End Range:</label>
+                                <input type="text" placeholder="Please Enter The End Range" class="form-control largeinp_height">
+                            </div>
+                        </div>
+                    
+                        
+                        
                     </div>
+                    </div>
+
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="submit" class="btn btnContinueProcess btn-primary editEnquiryBtn">
-                    <div class="buttontext">
-                        <div class="formediticon_modal">
-                            <iconify-icon icon="uit:process"></iconify-icon>
-                        </div>
-                        Save & Allot
-                    </div>
-                    <iconify-icon icon="bi:arrow-right"></iconify-icon>
-                </button>
-            </div>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">
+                    <iconify-icon icon="ci:save"></iconify-icon>  Save & Update
+                    </button>
+                </div>
+                </div>
         </div>
     </div>
 </div>
@@ -610,7 +703,7 @@
     <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Tag Allotment</h4>
+                <h4 class="modal-title">Assign Tag</h4>
                 <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
                     <i class="ti ti-x"></i>
                 </button>
@@ -622,24 +715,17 @@
                             <img src="assets\aditya_assests\sticker_icon.png" alt="tttt">
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
+                <div class="col-lg-12">
+                <div class="row">
+                      <div class="col-md-6">
                             <div class="form-group">
-                                <label class="form-label">Tag ID:<div class="requiredLabel">*</div></label>
-                                <select class="form-control largeinp_height select2">
-                                <option value="">Select a Tag ID</option>
-                                <option value="TA-123">TA - 123</option>
-                                <option value="TB-345">TB - 345</option>
-                                <option value="TC-112">TC - 112</option>
-                                <option value="TD-233">TD - 223</option>
-                            </select>
+                                <label class="form-label">Location (Region)</label>
+                                <input type="text" placeholder="" value="New Delhi" class="form-control" readonly>
                             </div>
                         </div>
-
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="form-label text-muted">Inspector<div class="requiredLabel">*</div></label>
+                                <label class="form-label text-muted">Inspector</label>
                                 <select class="select2">
                                     <option disabled selected>Select Inspector</option>
                                     <option>Stephan Peralt</option>
@@ -655,66 +741,123 @@
                                 </select>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="row">
+                        <!-- <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Tag ID</label>
+                                <select class="form-control largeinp_height select2">
+                                <option value="">Select a Tag ID</option>
+                                <option value="TA-123">TA</option>
+                                <option value="TB-345">TB</option>
+                                <option value="TC-112">TC</option>
+                                <option value="TD-233">TD</option>
+                            </select>
+                            </div>
+                        </div> -->
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="form-label">Alloted Starting Range:<div class="requiredLabel">*</div></label>
+                                <label class="form-label">Starting Range</label>
                                 <input type="text" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label class="form-label">Alloted Ending Range:<div class="requiredLabel">*</div></label>
+                                <label class="form-label">Ending Range</label>
                                 <input type="text" placeholder="Please Enter The End Range" class="form-control largeinp_height">
                             </div>
                         </div>
+                        
                     </div>
+                    
+                </div>
+                    
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">Location (Region)</label>
-                                <div class="input-blocks">
-                                    <select class="select2">
-                                        <option disabled selected>Select Region</option>
-                                        <option selected>Delhi</option>
-                                        <option>Mumbai</option>
-                                        <option>Kolkata</option>
-                                        <option>Banglore</option>
-                                        <option>Pune</option>
-                                        <option>Chennai</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">Status:<div class="requiredLabel">*</div></label>
-                                <select class="form-control largeinp_height select2">
-                                    <option value="" selected>Choose Status</option>
-                                    <option value="Not Dispatched">Not Dispatched</option>
-                                    <option value="Dispatched for Printing">Dispatched for Printing</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="submit" class="btn btnContinueProcess btn-primary editEnquiryBtn">
-                    <div class="buttontext">
-                        <div class="formediticon_modal">
-                            <iconify-icon icon="uit:process"></iconify-icon>
-                        </div>
-                        Save & Allot
-                    </div>
-                    <iconify-icon icon="bi:arrow-right"></iconify-icon>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">
+                    <iconify-icon icon="ci:save"></iconify-icon>  Save & Assign
+                    </button>
+                </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<!-- Allot Tag Modal -->
+<div class="modal fade custombottm_modalStyle" id="EditTagModal">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Update Assign Tag</h4>
+                <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="ti ti-x"></i>
                 </button>
             </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="iconImageSection">
+                            <img src="assets\aditya_assests\sticker_icon.png" alt="tttt">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                    <div class="row">
+                      <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Location (Region)</label>
+                                <input type="text" placeholder="" value="New Delhi" class="form-control" readonly>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label text-muted">Inspector</label>
+                                <select class="select2">
+                                    <option disabled selected>Select Inspector</option>
+                                    <option>Stephan Peralt</option>
+                                    <option>Emma Johnson</option>
+                                    <option>Amit Patel</option>
+                                    <option>Sophia Lee</option>
+                                    <option>Michael Carter</option>
+                                    <option>James Smith</option>
+                                    <option>Emily Davis</option>
+                                    <option>Anna Taylor</option>
+                                    <option>John Walker</option>
+                                    <option>Jessica Brown</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Starting Range</label>
+                                <input type="text" placeholder="Please Enter The Starting Range" class="form-control largeinp_height">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Ending Range</label>
+                                <input type="text" placeholder="Please Enter The End Range" class="form-control largeinp_height">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    </div>
+                    
+
+                   
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">
+                    <iconify-icon icon="ci:save"></iconify-icon>  Update & Assign
+                    </button>
+                </div>
+                </div>
         </div>
     </div>
 </div>

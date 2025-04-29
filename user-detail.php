@@ -1,5 +1,85 @@
 <?php include("header.php") ?>
+<style>
+   .tabContent .tab-content.tab-mainBox {
+    display: none;
+}
+  .tabContent .tab-content.tab-mainBox.active {
+    display: block;
+}
+.tabsButtonBox {
+    display: flex;
+    align-items: center;
+    gap:5px;
+    /* margin-top: 1px; */
+    /* border-bottom: 1px solid #ececec; */
+    /* padding: 5px 5px; */
+}
+.tabsButtonBox .tab-button {
+    display: block;
+    background: #f7f7f7;
+    border: none;
+    /* width: 33.33%; */
+    padding: 6px 15px;
+    font-weight: 400;
+    margin-bottom: 0;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.tabsButtonBox .tab-button.active {
+    background: #157bbc;
+    color: #ffffff;
+}
 
+/*  */
+.tabs-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ececec;
+}
+
+  .scroll-button {
+    background-color: #ffffff;
+    border: none;
+    padding: 0px 5px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 2;
+    border-radius: 50px;
+    margin: 5px ;
+    border: 1px solid #157bbc;
+    color: #157bbc;
+}
+
+  .scroll-button:hover {
+    background-color: #157bbc;
+    color: #fff;
+  }
+
+  .tabsButtonBox {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    flex-grow: 1;
+  }
+
+  .tabsButtonBox::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* .tab-button {
+    flex: 0 0 auto;
+    padding: 10px 15px;
+    margin: 5px;
+    white-space: nowrap;
+  } */
+</style>
 <!-- Page Wrapper -->
 <div class="content">
     <div class="client_detailContainer">
@@ -31,15 +111,15 @@
                                 <div class="user-fields-container">
                                     <h5 class="infoTitle">Basic Info</h5>
                                     <div class="user-custom-field">
-                                        <div class="custom-field-name">Employee ID</div>
+                                        <div class="custom-field-name">Inspector ID</div>
                                         <div class="custom-field-value">
-                                            <div><input type="text" placeholder="" class="r-user-input" value="#EMP0001">
+                                            <div><input type="text" placeholder="" class="r-user-input" value="#INSPE0001">
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="user-custom-field">
-                                        <div class="custom-field-name">Employee Name</div>
+                                        <div class="custom-field-name">Inspector Name</div>
                                         <div class="custom-field-value">
                                             <div><input type="text" placeholder="" class="r-user-input" value="Amit Patel">
                                             </div>
@@ -70,18 +150,129 @@
                                         </div>
                                     </div>
                                     <div class="user-custom-field">
-                                        <div class="custom-field-name">Role</div>
+                                        <div class="custom-field-name">Address Line 1</div>
                                         <div class="custom-field-value">
-                                            <div><input type="text" placeholder="" class="r-user-input" value="Manager">
-                                            </div>
+                                            <div><input type="text" placeholder="" class="r-user-input"
+                                                    value=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="user-custom-field">
+                                        <div class="custom-field-name">Address Line 2</div>
+                                        <div class="custom-field-value">
+                                            <div><input type="text" placeholder="" class="r-user-input"
+                                                    value=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="user-custom-field">
+                                        <div class="custom-field-name">Town/City</div>
+                                        <div class="custom-field-value">
+                                            <div><input type="text" placeholder="" class="r-user-input"
+                                                    value=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="user-custom-field">
+                                        <div class="custom-field-name">Country</div>
+                                        <div class="custom-field-value">
+                                            <div><input type="text" placeholder="" class="r-user-input"
+                                                    value=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="user-custom-field">
+                                        <div class="custom-field-name">Postal Code</div>
+                                        <div class="custom-field-value">
+                                            <div><input type="text" placeholder="" class="r-user-input"
+                                                    value=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="user-custom-field">
+                                        <div class="custom-field-name">Role</div>
+                                        <div class="">
+                                            <select class="select2">
+                                                <option>Select</option>
+                                                <option value="Manager">Manager</option>
+                                                <option value="Supervisor">Supervisor</option>
+                                                <option value="Trainer">Trainer</option>
+                                                <option value="Inspector/Assessor">Inspector/Assessor</option>
+                                                <option value="Accountant">Accountant</option>
+
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="user-custom-field">
                                         <div class="custom-field-name">Department</div>
-                                        <div class="custom-field-value">
-                                            <div><input type="text" placeholder="" class="r-user-input" value="Equipment Inspection">
+                                        <div class="">
+                                            <div class="form-group">
+                                                <!-- <label class="form-label"></label> -->
+                                                <div class="dropdown filterdropDownCustom available-users-dropdown-wrapper" >
+                                                    <button class="dropbtn dropdown-toggle dropmenuBtn" type="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <span class="selected-count">Select Department</span>
+                                                        <!-- <iconify-icon icon="ic:round-keyboard-arrow-down"></iconify-icon> -->
+                                                    </button>
+                                                    <div
+                                                        class="dropdown-menu customdropdownmenu_style available-users-dropdown">
+                                                        <div class="filTerSearchMain">
+                                                            <input type="text" class="filterclSearch available-users-search"
+                                                                placeholder="Search Department">
+                                                            <iconify-icon icon="basil:search-outline"></iconify-icon>
+                                                        </div>
+                                                        <div class="sellallitemsMain">
+                                                            <div class="CustomselectallContainer">
+                                                                <input type="checkbox"
+                                                                    class="select-all-available-users form-check-input">
+                                                                Select All
+                                                            </div>
+                                                            <div class="clDivider_full"></div>
+                                                        </div>
+                                                        <div class="Customdrpitems_container">
+                                                            <div class="mainoptionContainer">
+                                                                <div class="dropfilter_options">
+                                                                    <input type="checkbox"
+                                                                        class="individual-option form-check-input">
+                                                                        Inspection
+                                                                </div>
+                                                            </div>
+                                                            <div class="mainoptionContainer">
+                                                                <div class="dropfilter_options">
+                                                                    <input type="checkbox"
+                                                                        class="individual-option form-check-input">
+                                                                    NDT
+                                                                </div>
+                                                            </div>
+                                                            <div class="mainoptionContainer">
+                                                                <div class="dropfilter_options">
+                                                                    <input type="checkbox"
+                                                                        class="individual-option form-check-input">
+                                                                    Training
+                                                                </div>
+                                                            </div>
+                                                            <div class="mainoptionContainer">
+                                                                <div class="dropfilter_options">
+                                                                    <input type="checkbox"
+                                                                        class="individual-option form-check-input">
+                                                                    Operator Assessment
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="no-data" style="display: none;">No data found</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="user-custom-field">
+                                        <div class="custom-field-name">Region</div>
+                                            <div class="">
+                                            <select class="select2">
+                                                <option>Select</option>
+                                                <option value="Manager">New Delhi</option>
+                                                <option value="Supervisor">Bangalore</option>
+                                                <option value="Trainer">Mumbai</option>
+                                                <option value="Inspector/Assessor">Pune</option>
+                                                <option value="Accountant">Karnatka</option>
+                                            </select>
+                                            </div>
                                     </div>
                                     <div class="user-custom-field">
                                     <div class="form-group">
@@ -113,7 +304,7 @@
             <!-- Breadcrumb -->
     <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb ">
         <div class="my-auto mb-2">
-            <h2 class="mb-1">User Details</h2>
+            <h2 class="mb-1">Inspector Details</h2>
             <nav>
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item">
@@ -146,7 +337,21 @@
     <!-- /Breadcrumb -->
 
         <div class="card tablemaincard_nopaddingleftright">
-        <div class="tbuppertabs">
+        <div class="tabs-container">
+  <button class="scroll-button scroll-left" onclick="scrollTabs(-100)" id="scrollLeft"> &#8592;</button>
+  <div class="tabs tabsButtonBox" id="tabsBox" onscroll="checkScrollButtons()">
+    <button class="tab-button active" onclick="showContent(event, 'tab1')">Assign Jobs</button>
+    <button class="tab-button" onclick="showContent(event, 'tab2')">Assign Label Usage</button>
+    <button class="tab-button" onclick="showContent(event, 'tab3')">Raised Sticker/Tag Request</button>
+    <button class="tab-button" onclick="showContent(event, 'tab4')">Receive Sticker/Tag Request</button>
+    <button class="tab-button" onclick="showContent(event, 'tab5')">Raised Sticker/Tag Request From Admin</button>
+  </div>
+  <button class="scroll-button scroll-right" onclick="scrollTabs(100)" id="scrollRight"> &#8594;</button>
+</div>
+        <div id="tab-content" class="tabContent">
+            <div id="tab1" class="tab-content tab-mainBox active">
+                <h6 class="InnerTabTitle">All Assign Jobs</h6>
+            <div class="tbuppertabs">
                 <div class="tab-container position-relative">
                     <!-- Left arrow -->
                     <button class="scroll-btn left-arrow" aria-label="Scroll left">
@@ -1482,16 +1687,15 @@
 
                                     <div class="col-lg-3">
                                         <div class="rightPrFilters">
-                                    <div class="input-icon mb-2 position-relative">
-                                        <span class="input-icon-addon">
-                                            <i class="ti ti-calendar text-gray-9"></i>
-                                        </span>
-                                        <input type="text" class="form-control date-range bookingrange"
-                                            placeholder="dd/mm/yyyy - dd/mm/yyyy">
-                                    </div>
-                                    
-                                </div>
+                                            <div class="input-icon mb-2 position-relative">
+                                                <span class="input-icon-addon">
+                                                    <i class="ti ti-calendar text-gray-9"></i>
+                                                </span>
+                                                <input type="text" class="form-control date-range bookingrange"
+                                                    placeholder="dd/mm/yyyy - dd/mm/yyyy">
+                                            </div>
                                         </div>
+                                    </div>
 
                                     </div>
                                 </div>
@@ -1812,7 +2016,6 @@
                                 <th>Scheduled date/time</th>
                                 <!-- <th>assigned Inspector/Trainer</th> -->
                                 <th>Checklist Template Name</th>
-                      
                                 <th>Status</th>
                                 <th>Action</th>
                             </tr>
@@ -2323,276 +2526,1313 @@
                 </div>
             </div>
         </div>
+            </div>
+            <div id="tab2" class="tab-content tab-mainBox">
+            <h6 class="InnerTabTitle">All Assign Label Usage</h6>
 
-        </div>
-        </div>
-    </div>
-</div>
-<div class="offcanvas offcanvas-end rightlarge_offcanvas commonoffcanvas_style" tabindex="-1" id="createjoborder"
-    aria-labelledby="offcanvasRightLabel">
-    <div class="offcanvas-header flexbetweenheader">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel">Create Job Order</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-            <iconify-icon icon="mi:close"></iconify-icon>
-        </button>
-    </div>
-    <form action="clients.php">
-        <div class="offcanvas-body">
+            <div class="tbuppertabs">
+                <div class="tab-container position-relative">
+                    <!-- Left arrow -->
+                    <!-- <button class="scroll-btn left-arrow" aria-label="Scroll left">
+                        &#8592;
+                    </button> -->
+                    
+                    <!-- Tabs -->
+                    <nav class="nav nav-style-6 nav-pills d-block tab-list px-0" role="tablist">
+                    <!-- <a class="nav-link active" data-bs-toggle="tab" role="tab" aria-current="page" href="#nav-allLocations"
+                            aria-selected="false">All Locations
+                          </a> -->
+                        <a class="nav-link active" data-bs-toggle="tab" role="tab" aria-current="page" href="#nav-newSticker"
+                            aria-selected="false">Sticker Usage
+                           </a>
 
-            <div class="offcanvasForm_wrap">
+                        <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-in-Tag" aria-selected="true">
+                            Tag Usage
+                           </a>
+                        <!-- <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-in-progress" aria-selected="true">In
+                            Progress
+                            <span class="badge bg-secondary-transparent ms-1">03</span></a>
+                        <a class="nav-link " data-bs-toggle="tab" role="tab" href="#nav-cart-justified"
+                            aria-selected="true">Completed Job Orders
+                            <span class="badge bg-success-transparent ms-1">07</span></a>
+                        <a class="nav-link" data-bs-toggle="tab" role="tab" href="#nav-orders-justified"
+                            aria-selected="false">Approved Job Orders
+                            <span class="badge bg-info-transparent ms-1">11</span>
+                        </a>
+                        <a class="nav-link" data-bs-toggle="tab" role="tab" href="#nav-draftjobs"
+                            aria-selected="false">Draft Job Orders
+                            <span class="badge bg-info-draft ms-1">05</span>
+                        </a>
+                        <a class="nav-link" data-bs-toggle="tab" role="tab" href="#nav-closedjobs"
+                            aria-selected="false">Closed Job Orders
+                            <span class="badge bg-info-closed ms-1">10</span>
+                        </a> -->
+                    </nav>
 
-                <div class="modal-body pb-0">
-                    <div class="row">
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">Client ID</label>
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">Select Client</label>
-                                <select name="" class="form-control select2">
-                                    <option disabled="" selected="" value="">Please Select...</option>
-                                    <option value="1">Danial Craig</option>
-                                    <option value="2">Emily Blunt</option>
-                                    <option value="3">John Doe</option>
-                                    <option value="4">Sophia Turner</option>
-                                    <option value="5">Michael Jordan</option>
-                                    <option value="6">Olivia Smith</option>
-                                </select>
-
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">Department</label>
-                                <select name="" class="form-control select2">
-                                    <option disabled="" selected="" value="">Please Select...</option>
-                                    <option value="Equipment Inspection">Equipment Inspection</option>
-                                    <option value="Assessment">Assessment</option>
-                                    <option value="Training">Training</option>
-                                    <option value="NDT">NDT</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label class="form-label">Scheduled Date</label>
-                                <input class="form-control customdataPicker flatpickr-input" type="text" name=""
-                                    placeholder="Select Date" readonly="readonly">
-                                <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
-                                </iconify-icon>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <label class="form-label">Deadline</label>
-                                <input class="form-control customdataPicker flatpickr-input" type="text" name=""
-                                    placeholder="Select Date" readonly="readonly">
-                                <iconify-icon icon="ion:calendar-outline" class="dateinput_icon">
-                                </iconify-icon>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="mb-3">
-                                <label class="form-label">Time <span class="text-danger"> *</span></label>
-                                <div class="input-icon-end position-relative">
-                                    <input type="text" class="form-control timepicker">
-                                    <span class="input-icon-addon">
-                                        <i class="ti ti-clock-hour-10 text-gray-7"></i>
-                                    </span>
+                    <!-- Right arrow -->
+                    <!-- <button class="scroll-btn right-arrow" aria-label="Scroll right">
+                        &#8594;
+                    </button> -->
+                </div>
+            </div>
+            <div class="tab-content">
+            <div class="tab-pane show active text-muted" id="nav-newSticker" role="tabpanel">
+                <div class="custom-datatable-filter">
+                <div class="custom-datatable-filter">
+                <header class="task-header">
+                    <div class="d-flex align-items-center">
+                        <div class="Ticket_apr_info whoraisedthis_action">
+                           
+                            <!-- <div class="Approval_inner_column">
+                                <div class="LabelnTitle">
+                                    <label>Sticker Id</label>
+                                    <h3 class="RequestID"><a href="job-order-details.php" target="_blank">AEF - 0129</a>
+                                    </h3>
+                                </div>
+                            </div> -->
+                            <div class="Approval_inner_column">
+                                <div class="LabelnTitle">
+                                    <label>Assign Range</label>
+                                    <h3 class="RequestID"><a href="job-order-details.php" target="_blank">001 - 500</a>
+                                    </h3>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">Location (Client site)</label>
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label class="form-label">Assigned Inspector/Trainer</label>
-                                <select name="" class="form-control select2">
-                                    <option disabled="" selected="" value="">Please Select...</option>
-                                    <option value="1">Danial Craig</option>
-                                    <option value="2">Emily Blunt</option>
-                                    <option value="3">John Doe</option>
-                                    <option value="4">Sophia Turner</option>
-                                    <option value="5">Michael Jordan</option>
-                                    <option value="6">Olivia Smith</option>
-                                </select>
-
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label class="form-label">Select Part</label>
-                                <select name="" class="form-control select2">
-                                    <option disabled="" selected="" value="">Please Select...</option>
-                                    <option value="1">Control Panel</option>
-                                    <option value="2">Motors</option>
-                                    <option value="3">Sensors</option>
-                                    <option value="4">Limit Switches</option>
-                                    <option value="5">Remote Controls</option>
-                                    <option value="6">Winch</option>
-                                </select>
-
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label class="form-label">Checklist Template </label>
-                                <select name="" class="form-control select2">
-                                    <option disabled="" selected="" value="">Please Select...</option>
-                                    <option value="Template 1">Template 1</option>
-                                    <option value="Template 2">Template 2</option>
-                                    <option value="Template 3">Template 3</option>
-                                </select>
-
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label class="form-label">Status</label>
-                                <select name="" id="" class="form-control select2">
-                                    <option disabled="" selected="" value="">Please Select...</option>
-                                    <option value="Pending">Pending</option>
-                                    <option value="In Progress">In Progress</option>
-                                    <option value="Completed">Completed</option>
-                                    <option value="Approved">Approved</option>
-
-                                </select>
-
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="form-group">
-                                <div class="form-label">
-                                    <label>Additional Notes</label>
+                            <div class="Approval_inner_column">
+                                <div class="LabelnTitle">
+                                    <label>Available Range</label>
+                                    <h3 class="RequestID"><a href="job-order-details.php" target="_blank">300 - 500</a>
+                                    </h3>
                                 </div>
-                                <textarea class="form-control" rows="4" placeholder="Write here..."></textarea>
                             </div>
-                        </div>
 
-                        <div class="col-lg-12">
-                            <div class="form-group">
-                                <label class="form-label labelno_margin">Attach Documents</label>
-                                <p class="formlabel_description">Attach relevant documents such as technical drawings, specifications, previous inspection reports, or client instructions.</p>
-                                <input type="file" class="filepond" id="imageInput" name="imageInput" multiple
-                                    data-max-file-size="3MB" data-max-files="5">
-                            </div>
                         </div>
 
                     </div>
+
+                    <div class="enquiryRight_header_data TaskAction_wrapper ">
+                        <div class="enquiryID_container">
+                            <div class="EnquiryID">Label Status</div>
+                            <div class="IDButton approval_status_update">
+                                <button type="button" class="SourceDataBtn success">
+                                    In Stock
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- <button class="ApproveButton" id="approveButton" data-bs-toggle="modal" data-bs-target="#approvalModal">
+                <iconify-icon icon="icon-park-outline:check"></iconify-icon>
+                Approve
+                </button> -->
+
+                    </div>
+
+                </header>
+                <table class="table common-datatable withoutActionTR nowrap w-100">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Job Order Id</th>
+                                <th>Equipment</th>
+                                <th>Sticker ID</th>
+                                <th>Used Date</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="inspection-job-order-detail.php">#JOB-12345</a></td>
+                                <td>Air Compressor</td>
+                                <td>001</td>
+                                <td>
+                                    10/02/2024 15:15
+                                </td>
+                                <td>
+                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
+                                            class="badge-label">Used</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="inspection-job-order-detail.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    
+
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="inspection-job-order-detail.php">#JOB-12345</a></td>
+                                <td>Air Compressor</td>
+                                <td>002</td>
+                                <td>
+                                    10/02/2024 15:15
+                                </td>
+                                <td>
+                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
+                                            class="badge-label">Used</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="inspection-job-order-detail.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    
+
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="inspection-job-order-detail.php">#JOB-12396</a></td>
+                                <td>Asphalt Paving Machine / Paver</td>
+                                <td>003</td>
+                                <td>
+                                    10/02/2024 15:15
+                                </td>
+                                <td>
+                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
+                                            class="badge-label">Used</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="inspection-job-order-detail.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    
+
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="inspection-job-order-detail.php">#JOB-12396</a></td>
+                                <td>Backhoe Loaderr</td>
+                                <td>004</td>
+                                <td>
+                                    10/02/2024 15:15
+                                </td>
+                                <td>
+                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
+                                            class="badge-label">Used</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="inspection-job-order-detail.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    
+
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
                 </div>
-
-            </div>
-        </div>
-        <div class="canvasFooterContainer flexmodalfooter">
-            <div class="savedraft_button">
-                <div class="form-check form-check-md">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label" for="gridCheck">Save Draft </label>
                 </div>
-
             </div>
 
-            <div class="modalbetween_actions">
-                <button type="button" class="canvascancel_button commonCanvas_buttonFooter"
-                    data-bs-dismiss="offcanvas">Cancel</button>
-                <button type="submit" class="canvasSubmit_button commonCanvas_buttonFooter">Submit</button>
+            <div class="tab-pane text-muted" id="nav-in-Tag" role="tabpanel">
+                <div class="custom-datatable-filter">
+                <div class="custom-datatable-filter">
+                <header class="task-header">
+                    <div class="d-flex align-items-center">
+                        <div class="Ticket_apr_info whoraisedthis_action">
+                           
+                            <!-- <div class="Approval_inner_column">
+                                <div class="LabelnTitle">
+                                    <label>Tag Id</label>
+                                    <h3 class="RequestID"><a href="job-order-details.php" target="_blank">AEF - 0129</a>
+                                    </h3>
+                                </div>
+                            </div> -->
+                            <div class="Approval_inner_column">
+                                <div class="LabelnTitle">
+                                    <label>Assign Range</label>
+                                    <h3 class="RequestID"><a href="job-order-details.php" target="_blank">001 - 500</a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="Approval_inner_column">
+                                <div class="LabelnTitle">
+                                    <label>Available Range</label>
+                                    <h3 class="RequestID"><a href="job-order-details.php" target="_blank">300 - 500</a>
+                                    </h3>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="enquiryRight_header_data TaskAction_wrapper ">
+                        <div class="enquiryID_container">
+                            <div class="EnquiryID">Label Status</div>
+                            <div class="IDButton approval_status_update">
+                                <button type="button" class="SourceDataBtn success">
+                                    In Stock
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- <button class="ApproveButton" id="approveButton" data-bs-toggle="modal" data-bs-target="#approvalModal">
+                <iconify-icon icon="icon-park-outline:check"></iconify-icon>
+                Approve
+                </button> -->
+
+                    </div>
+
+                </header>
+                <table class="table common-datatable withoutActionTR nowrap w-100">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Job Order Id</th>
+                                <th>Equipment</th>
+                                <th>Tag ID</th>
+                                <th>Used Date</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="inspection-job-order-detail.php">#JOB-12345</a></td>
+                                <td>Air Compressor</td>
+                                <td>001</td>
+                                <td>
+                                    10/02/2024 15:15
+                                </td>
+                                <td>
+                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
+                                            class="badge-label">Used</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="inspection-job-order-detail.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    
+
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="inspection-job-order-detail.php">#JOB-12345</a></td>
+                                <td>Air Compressor</td>
+                                <td>002</td>
+                                <td>
+                                    10/02/2024 15:15
+                                </td>
+                                <td>
+                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
+                                            class="badge-label">Used</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="inspection-job-order-detail.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    
+
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="inspection-job-order-detail.php">#JOB-12396</a></td>
+                                <td>Asphalt Paving Machine / Paver</td>
+                                <td>003</td>
+                                <td>
+                                    10/02/2024 15:15
+                                </td>
+                                <td>
+                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
+                                            class="badge-label">Used</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="inspection-job-order-detail.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    
+
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><a href="inspection-job-order-detail.php">#JOB-12396</a></td>
+                                <td>Backhoe Loaderr</td>
+                                <td>004</td>
+                                <td>
+                                    10/02/2024 15:15
+                                </td>
+                                <td>
+                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
+                                            class="badge-label">Used</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="inspection-job-order-detail.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    
+
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+                    
+                </div>
             </div>
+            
         </div>
-    </form>
+            
+            </div>
+            <div id="tab3" class="tab-content tab-mainBox">
+             <div class="topHeadKOP">
+                <h6>All Raised Sticker/Tag Request</h6>
+                <a href="#" class="RaisedBtn" data-bs-toggle="modal" data-bs-target="#raiseRequest"><iconify-icon icon="pepicons-pop:label"></iconify-icon> Raise Request</a>
+             </div>
+              <div class="custom-datatable-filter">
+                <div id="tablefiltesa_container">
+                <div class="row">
+                <div class="col-lg-12">
+                                <div class="leftprFilters">
+                                    <div class="row">
+                                    <!-- <div class="col-lg-3 col-sm-6 col-12">
+                                            <div class="input-blocks">
+                                                <iconify-icon icon="iconamoon:category-light" class="info-img"></iconify-icon>
+                                                <select class="select2">
+                                                    <option disabled selected>Select Department</option>
+                                                    <option>Inspection</option>
+                                                    <option>NDT</option>
+                                                    <option>Operator Assessment</option>
+                                                    <option>Training</option>
+                                                </select>
+
+                                            </div>
+                                        </div> -->
+                                        <div class="col-lg-3 col-sm-6 col-12">
+                                            <div class="input-blocks">
+                                                <!-- <i data-feather="box" class="info-img"></i> -->
+                                                <iconify-icon icon="uil:user" class="info-img"></iconify-icon>
+                                                <select class="select2">
+                                                    <option disabled selected>Select Inspector/Trainer</option>
+                                                    <option>Stephan Peralt</option>
+                                                    <option>Emma Johnson</option>
+                                                    <option>Amit Patel</option>
+                                                    <option>Sophia Lee</option>
+                                                    <option>Michael Carter</option>
+                                                    <option>James Smith</option>
+                                                    <option>Emily Davis</option>
+                                                    <option>Anna Taylor</option>
+                                                    <option>John Walker</option>
+                                                    <option>Jessica Brown</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-6 col-12">
+                                            <div class="input-blocks">
+                                                <!-- <i data-feather="box" class="info-img"></i> -->
+                                                <iconify-icon icon="pepicons-pop:label" class="info-img"></iconify-icon>
+                                                <select class="select2">
+                                                    <option disabled selected>Label Type</option>
+                                                    <option>Sticker</option>
+                                                    <option>Tag</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-6 col-12">
+                                            <div class="input-blocks">
+                                                <!-- <i data-feather="box" class="info-img"></i> -->
+                                                <iconify-icon icon="f7:status" class="info-img"></iconify-icon>
+                                                <select class="select2">
+                                                    <option disabled selected>Select Status</option>
+                                                    <option>Approval Pending</option>
+                                                    <option>Approved</option>
+                                                    <option>Collected</option>
+                                                    <option>Transfered</option>
+
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        
+
+                                    <div class="col-lg-3">
+                                        <div class="rightPrFilters">
+                                    <div class="input-icon mb-2 position-relative">
+                                        <span class="input-icon-addon">
+                                            <i class="ti ti-calendar text-gray-9"></i>
+                                        </span>
+                                        <input type="text" class="form-control date-range bookingrange"
+                                            placeholder="dd/mm/yyyy - dd/mm/yyyy">
+                                    </div>
+                                    
+                                </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                </div>
+                
+                <table class="table common-datatable withoutActionTR nowrap w-100">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Inspector</th>
+                                <th>Label Type</th>
+                                <th>Requested Qty.</th>
+                                <th>Requested On</th>
+                                <th>Transfered Range</th>
+                                <th>Transfered Qty.</th>
+                                <th>Transfered On</th>
+                                <th>Status</th>
+                                <!-- <th>Action</th> -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                  <div class="d-flex align-items-center file-name-icon">
+									<a href="#" class="avatar avatar-md avatar-rounded">
+										<img src="assets/img/users/user-08.jpg" class="img-fluid" alt="Michael Scott">
+									</a>
+									<div class="ms-2">
+										<h6 class="fw-medium"><a href="#">Cavin John </a></h6>
+									</div>
+								</div>
+                                </td>
+                                <td>Sticker</td>
+                                <td>18</td>
+                                <td>
+                                    10/02/2024 
+                                </td>
+                                <td>ST001-ST0015</td>
+                                <td>15</td>
+                                <td>
+                                    10/02/2024 
+                                </td>
+                                <td>
+                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
+                                            class="badge-label">Collected</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
+
+                                <!-- <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="inspection-job-order-detail.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    
+
+                                        
+                                    </div>
+                                </td> -->
+                            </tr>
+                            <tr>
+                                <td>
+                                <div class="d-flex align-items-center file-name-icon">
+									<a href="#" class="avatar avatar-md avatar-rounded">
+										<img src="assets/img/users/user-33.jpg" class="img-fluid" alt="Jessica Harper">
+									</a>
+									<div class="ms-2">
+										<h6 class="fw-medium"><a href="#">Jessica Harper</a></h6>
+									</div>
+								</div>
+                                </td>
+                                <td>Tag</td>
+                                <td>18</td>
+                                <td>
+                                    10/02/2024 
+                                </td>
+                                <td>--</td>
+                                <td>--</td>
+                                <td>
+                                    --
+                                </td>
+                                <td>
+                                <span class="badge bg-outline-warning pendingbadge badgecustomstyle"><span class="badge-label">Approval Pending</span>
+                                        <iconify-icon icon="mynaui:info-waves"></iconify-icon>
+                                    </span>
+                                </td>
+
+                                <!-- <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="inspection-job-order-detail.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    
+
+                                        
+                                    </div>
+                                </td> -->
+                            </tr>
+                            <tr>
+                                <td>
+                                <div class="d-flex align-items-center file-name-icon">
+									<a href="#" class="avatar avatar-md avatar-rounded">
+										<img src="assets/img/users/user-29.jpg" class="img-fluid" alt="Jessica Harper">
+									</a>
+									<div class="ms-2">
+										<h6 class="fw-medium"><a href="#">Himani</a></h6>
+									</div>
+								</div>
+                                </td>
+                                <td>Tag</td>
+                                <td>18</td>
+                                <td>
+                                    10/02/2024 
+                                </td>
+                                <td>--</td>
+                                <td>--</td>
+                                <td>
+                                    --
+                                </td>
+                                <td>
+                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
+                                            class="badge-label">Approved</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
+
+                                <!-- <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="inspection-job-order-detail.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    
+
+                                        
+                                    </div>
+                                </td> -->
+                            </tr>
+                            <tr>
+                                <td>
+                                  <div class="d-flex align-items-center file-name-icon">
+									<a href="#" class="avatar avatar-md avatar-rounded">
+										<img src="assets/img/users/user-09.jpg" class="img-fluid" alt="Michael Scott">
+									</a>
+									<div class="ms-2">
+										<h6 class="fw-medium"><a href="#">Stephan Peralt</a></h6>
+									</div>
+								</div>
+                                </td>
+                                <td>Sticker</td>
+                                <td>18</td>
+                                <td>
+                                    10/02/2024 
+                                </td>
+                                <td>ST001-ST0015</td>
+                                <td>15</td>
+                                <td>
+                                    10/02/2024 
+                                </td>
+                                <td>
+                                <span class="badge bg-outline-secondary pendingbadge badgecustomstyle"><span class="badge-label">Transferd</span>
+                                        <iconify-icon icon="tabler:progress-alert"></iconify-icon>
+                                    </span>
+                                </td>
+
+                                <!-- <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="inspection-job-order-detail.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    
+
+                                        
+                                    </div>
+                                </td> -->
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </div>
+            <div id="tab4" class="tab-content tab-mainBox">
+            <div class="topHeadKOP">
+                <h6>All Received Sticker/Tag Request</h6>
+                <!-- <a href="#" class="RaisedBtn" data-bs-toggle="modal" data-bs-target="#raiseRequest"><iconify-icon icon="pepicons-pop:label"></iconify-icon> Raise Request</a> -->
+             </div>
+              <div class="custom-datatable-filter">
+                <div id="tablefiltesa_container">
+                <div class="row">
+                <div class="col-lg-12">
+                                <div class="leftprFilters">
+                                    <div class="row">
+                                    <!-- <div class="col-lg-3 col-sm-6 col-12">
+                                            <div class="input-blocks">
+                                                <iconify-icon icon="iconamoon:category-light" class="info-img"></iconify-icon>
+                                                <select class="select2">
+                                                    <option disabled selected>Select Department</option>
+                                                    <option>Inspection</option>
+                                                    <option>NDT</option>
+                                                    <option>Operator Assessment</option>
+                                                    <option>Training</option>
+                                                </select>
+
+                                            </div>
+                                        </div> -->
+                                        <div class="col-lg-3 col-sm-6 col-12">
+                                            <div class="input-blocks">
+                                                <!-- <i data-feather="box" class="info-img"></i> -->
+                                                <iconify-icon icon="uil:user" class="info-img"></iconify-icon>
+                                                <select class="select2">
+                                                    <option disabled selected>Select Inspector/Trainer</option>
+                                                    <option>Stephan Peralt</option>
+                                                    <option>Emma Johnson</option>
+                                                    <option>Amit Patel</option>
+                                                    <option>Sophia Lee</option>
+                                                    <option>Michael Carter</option>
+                                                    <option>James Smith</option>
+                                                    <option>Emily Davis</option>
+                                                    <option>Anna Taylor</option>
+                                                    <option>John Walker</option>
+                                                    <option>Jessica Brown</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-6 col-12">
+                                            <div class="input-blocks">
+                                                <!-- <i data-feather="box" class="info-img"></i> -->
+                                                <iconify-icon icon="pepicons-pop:label" class="info-img"></iconify-icon>
+                                                <select class="select2">
+                                                    <option disabled selected>Label Type</option>
+                                                    <option>Sticker</option>
+                                                    <option>Tag</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-6 col-12">
+                                            <div class="input-blocks">
+                                                <!-- <i data-feather="box" class="info-img"></i> -->
+                                                <iconify-icon icon="f7:status" class="info-img"></iconify-icon>
+                                                <select class="select2">
+                                                    <option disabled selected>Select Status</option>
+                                                    <option>Approval Pending</option>
+                                                    <option>Approved</option>
+                                                    <option>Collected</option>
+                                                    <option>Transfered</option>
+
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        
+
+                                    <div class="col-lg-3">
+                                        <div class="rightPrFilters">
+                                    <div class="input-icon mb-2 position-relative">
+                                        <span class="input-icon-addon">
+                                            <i class="ti ti-calendar text-gray-9"></i>
+                                        </span>
+                                        <input type="text" class="form-control date-range bookingrange"
+                                            placeholder="dd/mm/yyyy - dd/mm/yyyy">
+                                    </div>
+                                    
+                                </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                </div>
+                
+                <table class="table common-datatable withoutActionTR nowrap w-100">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Inspector</th>
+                                <th>Label Type</th>
+                                <th>Requested Qty.</th>
+                                <th>Requested On</th>
+                                <th>Transfered Range</th>
+                                <th>Transfered Qty.</th>
+                                <th>Transfered On</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                  <div class="d-flex align-items-center file-name-icon">
+									<a href="#" class="avatar avatar-md avatar-rounded">
+										<img src="assets/img/users/user-08.jpg" class="img-fluid" alt="Michael Scott">
+									</a>
+									<div class="ms-2">
+										<h6 class="fw-medium"><a href="#">Cavin John </a></h6>
+									</div>
+								</div>
+                                </td>
+                                <td>Sticker</td>
+                                <td>18</td>
+                                <td>
+                                    10/02/2024 
+                                </td>
+                                <td>ST001-ST0015</td>
+                                <td>15</td>
+                                <td>
+                                    10/02/2024 
+                                </td>
+                                <td>
+                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
+                                            class="badge-label">Collected</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
+                                <td>--</td>
+     
+                                <!-- <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="inspection-job-order-detail.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    
+
+                                        
+                                    </div>
+                                </td> -->
+                            </tr>
+                            <tr>
+                                <td>
+                                <div class="d-flex align-items-center file-name-icon">
+									<a href="#" class="avatar avatar-md avatar-rounded">
+										<img src="assets/img/users/user-33.jpg" class="img-fluid" alt="Jessica Harper">
+									</a>
+									<div class="ms-2">
+										<h6 class="fw-medium"><a href="#">Jessica Harper</a></h6>
+									</div>
+								</div>
+                                </td>
+                                <td>Tag</td>
+                                <td>18</td>
+                                <td>
+                                    10/02/2024 
+                                </td>
+                                <td>--</td>
+                                <td>--</td>
+                                <td>
+                                    --
+                                </td>
+                                <td>
+                                <span class="badge bg-outline-warning pendingbadge badgecustomstyle"><span class="badge-label">Approval Pending</span>
+                                        <iconify-icon icon="mynaui:info-waves"></iconify-icon>
+                                    </span>
+                                </td>
+                                <td>--</td>
+
+                                <!-- <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="inspection-job-order-detail.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    
+
+                                        
+                                    </div>
+                                </td> -->
+                            </tr>
+                            <tr>
+                                <td>
+                                <div class="d-flex align-items-center file-name-icon">
+									<a href="#" class="avatar avatar-md avatar-rounded">
+										<img src="assets/img/users/user-29.jpg" class="img-fluid" alt="Jessica Harper">
+									</a>
+									<div class="ms-2">
+										<h6 class="fw-medium"><a href="#">Himani</a></h6>
+									</div>
+								</div>
+                                </td>
+                                <td>Tag</td>
+                                <td>18</td>
+                                <td>
+                                    10/02/2024 
+                                </td>
+                                <td>--</td>
+                                <td>--</td>
+                                <td>
+                                    --
+                                </td>
+                                <td>
+                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
+                                            class="badge-label">Approved</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
+                                <td>
+                                    <a href="#" class="transferBtn" data-bs-toggle="modal" data-bs-target="#transferRequest"><iconify-icon icon="mingcute:transfer-line"></iconify-icon> Transfer</a>
+                                </td>
+
+                                <!-- <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="inspection-job-order-detail.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    
+
+                                        
+                                    </div>
+                                </td> -->
+                            </tr>
+                            <tr>
+                                <td>
+                                  <div class="d-flex align-items-center file-name-icon">
+									<a href="#" class="avatar avatar-md avatar-rounded">
+										<img src="assets/img/users/user-09.jpg" class="img-fluid" alt="Michael Scott">
+									</a>
+									<div class="ms-2">
+										<h6 class="fw-medium"><a href="#">Stephan Peralt</a></h6>
+									</div>
+								</div>
+                                </td>
+                                <td>Sticker</td>
+                                <td>18</td>
+                                <td>
+                                    10/02/2024 
+                                </td>
+                                <td>ST001-ST0015</td>
+                                <td>15</td>
+                                <td>
+                                    10/02/2024 
+                                </td>
+                                <td>
+                                <span class="badge bg-outline-secondary pendingbadge badgecustomstyle"><span class="badge-label">Transferd</span>
+                                        <iconify-icon icon="tabler:progress-alert"></iconify-icon>
+                                    </span>
+                                </td>
+                                <td>--</td>
+
+                                <!-- <td>
+                                    <div class="d-flex align-items-center ActionDropdown">
+
+                                    <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="inspection-job-order-detail.php">
+                                            <span class="icon">
+                                                <span class="feather-icon">
+                                                    <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    
+
+                                        
+                                    </div>
+                                </td> -->
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </div>
+            <div id="tab5" class="tab-content tab-mainBox">
+            <div class="topHeadKOP">
+                <h6>Raised Sticker/Tag Request From Admin</h6>
+                <a href="#" class="RaisedBtn" id="RaiseRequest"><iconify-icon icon="pepicons-pop:label"></iconify-icon> Raise Request</a>
+             </div>
+              <div class="custom-datatable-filter">
+                <div id="tablefiltesa_container">
+                <div class="row">
+                <div class="col-lg-12">
+                                <div class="leftprFilters">
+                                    <div class="row">
+                                    <!-- <div class="col-lg-3 col-sm-6 col-12">
+                                            <div class="input-blocks">
+                                                <iconify-icon icon="iconamoon:category-light" class="info-img"></iconify-icon>
+                                                <select class="select2">
+                                                    <option disabled selected>Select Department</option>
+                                                    <option>Inspection</option>
+                                                    <option>NDT</option>
+                                                    <option>Operator Assessment</option>
+                                                    <option>Training</option>
+                                                </select>
+
+                                            </div>
+                                        </div> -->
+                                       
+                                        <div class="col-lg-3 col-sm-6 col-12">
+                                            <div class="input-blocks">
+                                                <!-- <i data-feather="box" class="info-img"></i> -->
+                                                <iconify-icon icon="pepicons-pop:label" class="info-img"></iconify-icon>
+                                                <select class="select2">
+                                                    <option disabled selected>Label Type</option>
+                                                    <option>Sticker</option>
+                                                    <option>Tag</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-6 col-12">
+                                            <div class="input-blocks">
+                                                <!-- <i data-feather="box" class="info-img"></i> -->
+                                                <iconify-icon icon="f7:status" class="info-img"></iconify-icon>
+                                                <select class="select2">
+                                                    <option disabled selected>Select Status</option>
+                                                    <option>Approval Pending</option>
+                                                    <option>Approved</option>
+                                                    <option>Collected</option>
+                                                    <option>Transfered</option>
+
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                        
+
+                                    <div class="col-lg-3">
+                                        <div class="rightPrFilters">
+                                    <div class="input-icon mb-2 position-relative">
+                                        <span class="input-icon-addon">
+                                            <i class="ti ti-calendar text-gray-9"></i>
+                                        </span>
+                                        <input type="text" class="form-control date-range bookingrange"
+                                            placeholder="dd/mm/yyyy - dd/mm/yyyy">
+                                    </div>
+                                    
+                                </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                </div>
+                
+                <table class="table common-datatable withoutActionTR nowrap w-100">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Requested On</th>
+                                <th>Label Type</th>
+                                <th>Assign Range</th>
+                                <th>Collected On</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    10/02/2024 
+                                </td>
+                                <td>Sticker</td>
+                                <td>ST001-ST0015</td>
+                                <td>
+                                    10/02/2024 
+                                </td>
+                                <td>
+                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
+                                            class="badge-label">Collected</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
+                                <td>--</td>
+     
+                            </tr>
+                            <tr>
+                                <td>
+                                    10/02/2024 
+                                </td>
+                                <td>Tag</td>
+                                <td>--</td>
+                                <td>--</td>
+                                
+                                <td>
+                                <span class="badge bg-outline-warning pendingbadge badgecustomstyle"><span class="badge-label">Approval Pending</span>
+                                        <iconify-icon icon="mynaui:info-waves"></iconify-icon>
+                                    </span>
+                                </td>
+                                <td>--</td>
+
+                            </tr>
+                            <tr>
+                               <td>
+                                    10/02/2024 
+                                </td>
+                                <td>Tag</td>
+                                <td>ST0110-ST00120</td>
+                                <td>--</td>
+                                <td>
+                                    <span class="badge bg-outline-success pendingbadge badgecustomstyle"><span
+                                            class="badge-label">Approved</span>
+                                        <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                                    </span>
+                                </td>
+                                <td>
+                                    <a href="#" class="transferBtn" id="collect"><iconify-icon icon="fluent:collections-24-regular"></iconify-icon> Collect</a>
+                                </td>
+                            </tr>
+                            
+                            
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </div>
+
+         </div>
+        
+
+        </div>
+        </div>
+    </div>
 </div>
-<!-- Add client -->
-<div class="modal fade custombottm_modalStyle" id="add_users">
+
+<!--Rasie sticker/Tag -->
+<div class="modal fade custombottm_modalStyle" id="raiseRequest">
 	<div class="modal-dialog modal-dialog-centered modal-md">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h4 class="modal-title locationTitleEdit">Edit Location & Representative Details</h4>
+				<h4 class="modal-title locationTitleEdit">Raise Stiker/Tag Request</h4>
 				<button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
 					<i class="ti ti-x"></i>
 				</button>
 			</div>
-			<form action="client-detail.php">
+			<form action="#">
 				<div class="modal-body">
 					<div class="row">
 
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                    <label class="form-label">Representative Name</label>
-                                    <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                    <label class="form-label">Contact No.</label>
-                                    <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                    <label class="form-label">Email</label>
-                                    <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label class="form-label">Representative Status</label>
-                                        <select class="select2">
-                                        <option disabled selected readonly>Select option</option>
-                                            <option value="Active">Active</option>
-                                            <option value="Inactive">Inactive</option>
-                                        </select>
-                                    </div>
-                                </div>
-                               <div class="col-lg-6">
-                                    <div class="form-group">
-                                    <label class="form-label">Address Line 1</label>
-                                    <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                    <label class="form-label">Address Line 2 (Optional)</label>
-                                    <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="form-group">
-                                    <label class="form-label">Town/City</label>
-                                    <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="form-group">
-                                    <label class="form-label">Country</label>
-                                    <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="form-group">
-                                    <label class="form-label">Postal Code</label>
-                                    <input type="text" class="form-control">
-                                    </div>
-                                </div>
+                    <div class="col-lg-6 col-sm-6 col-12">
+                        <div class="form-group">
+                            <!-- <i data-feather="box" class="info-img"></i> -->
+                            <label class="form-label">Inspector</label>
+                            <select class="select2">
+                                <option disabled selected>Please select..</option>
+                                <option>Stephan Peralt</option>
+                                <option>Emma Johnson</option>
+                                <option>Amit Patel</option>
+                                <option>Sophia Lee</option>
+                                <option>Michael Carter</option>
+                                <option>James Smith</option>
+                                <option>Emily Davis</option>
+                                <option>Anna Taylor</option>
+                                <option>John Walker</option>
+                                <option>Jessica Brown</option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-12">
+                        <div class="form-group">
+                            <!-- <i data-feather="box" class="info-img"></i> -->
+                            <label class="form-label">Label Type</label>
+                            <select class="select2">
+                                <option disabled selected>Please select..</option>
+                                <option>Sticker</option>
+                                <option>Tag</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                        <label class="form-label">Quntity</label>
+                        <input type="text" class="form-control">
+                        </div>
+                    </div>
+                               
                         
 						
 					</div>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-white border me-2" data-bs-dismiss="modal">Cancel</button>
-					<button type="submit" class="btn btn-primary canvasSubmit_button">Update</button>
+					<button type="button" class="btn btn-primary canvasSubmit_button" data-bs-dismiss="modal" aria-label="Close">Raise Request</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- /Add Users -->
+
+<!-- Sticker Transfer -->
+<div class="modal fade custombottm_modalStyle" id="transferRequest">
+	<div class="modal-dialog modal-dialog-centered modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title locationTitleEdit">Transfer Stiker/Tag </h4>
+				<button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+					<i class="ti ti-x"></i>
+				</button>
+			</div>
+			<form action="#">
+				<div class="modal-body">
+					<div class="row">
+
+                    <div class="col-lg-6 col-sm-6 col-12">
+                        <div class="form-group">
+                            <!-- <i data-feather="box" class="info-img"></i> -->
+                            <label class="form-label">Inspector</label>
+                            <input type="text" class="form-control" value="Cavin John">
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-12">
+                        <div class="form-group">
+                            <!-- <i data-feather="box" class="info-img"></i> -->
+                            <label class="form-label">Label Type</label>
+                            <input type="text" class="form-control" value="Sticker">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                        <label class="form-label">Quntity</label>
+                        <input type="text" class="form-control" value="18">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                        <label class="form-label">Available Range</label>
+                        <input type="text" class="form-control" value="001-050">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group transFerRange">
+                        <label class="form-label">Transfer Range</label>
+                        <div class="row">
+                            <div class="col-lg-6">
+                            <input type="text" class="form-control" value="001">
+                            </div>
+                            <div class="col-lg-6">
+                            <input type="text" class="form-control" value="050">
+                            </div>
+                        </div>
+                        
+                        
+                        </div>
+                    </div>
+                               
+                        
+						
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-white border me-2" data-bs-dismiss="modal">Cancel</button>
+					<button type="button" class="btn btn-primary canvasSubmit_button" data-bs-dismiss="modal" aria-label="Close">Transfer</button>
 				</div>
 			</form>
 		</div>
@@ -2812,3 +4052,246 @@ Dropify Code Start Here
 <!----------------------
 Dropify Code End Here
 ----------------------->
+
+<!-- TAB JS  -->
+<script>
+    // script.js
+function showContent(event, tabId) {
+    // Remove active class from all tab buttons
+    const tabButtons = document.querySelectorAll('.tab-button');
+    tabButtons.forEach(button => {
+        button.classList.remove('active');
+    });
+
+    // Remove active class from all tab contents
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabContents.forEach(content => {
+        content.classList.remove('active');
+    });
+
+    // Add active class to the clicked tab button
+    event.currentTarget.classList.add('active');
+
+    // Add active class to the corresponding tab content
+    const contentToShow = document.getElementById(tabId);
+    contentToShow.classList.add('active');
+}
+
+</script>
+
+<script>
+  const tabsBox = document.getElementById("tabsBox");
+  const scrollLeftBtn = document.getElementById("scrollLeft");
+  const scrollRightBtn = document.getElementById("scrollRight");
+
+  function scrollTabs(amount) {
+    tabsBox.scrollBy({ left: amount, behavior: "smooth" });
+  }
+
+  function checkScrollButtons() {
+    // Show left button if scrolled beyond the leftmost edge
+    scrollLeftBtn.style.display = tabsBox.scrollLeft > 0 ? "block" : "none";
+
+    // Show right button if there is more content to scroll
+    scrollRightBtn.style.display = 
+      tabsBox.scrollLeft + tabsBox.clientWidth < tabsBox.scrollWidth ? "block" : "none";
+  }
+
+  // Check scroll buttons on window load
+  window.onload = checkScrollButtons;
+</script>
+
+<!-- Include SweetAlert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+<script>
+    $(document).ready(function () {
+        $("#collect").on("click", function (e) {
+            e.preventDefault();
+            
+            let row = $(this).closest("tr"); // Get the current row
+            
+            // Show SweetAlert
+            Swal.fire({
+                html: `
+                    <div style="text-align: center;">
+                        <div class="swalalert_custom_icon">
+                            <img src="assets/img/newimages/nutmeg.gif" alt="Success">
+                        </div>
+                        <h2 class="Swal_CustomTitle">Collected Successfully!</h2>
+                        <p>The item has been collected successfully.</p>
+                    </div>`,
+                confirmButtonText: "Okay Great",
+                customClass: {
+                    confirmButton: "my-ok-button"
+                },
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Change the status badge in the current row
+                    let statusCell = row.find("td:nth-child(8)"); // 8th column
+                    statusCell.html(`
+                        <span class="badge bg-outline-success pendingbadge badgecustomstyle">
+                            <span class="badge-label">Collected</span>
+                            <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+                        </span>
+                    `);
+                    
+                    // Remove the Collect button
+                    row.find("td:last-child").html("--");
+                }
+            });
+        });
+    });
+</script>
+
+
+
+
+<script>
+    $(document).ready(function () {
+        // Raise Request Functionality
+        $("#RaiseRequest").on("click", function (e) {
+            e.preventDefault();
+            
+            Swal.fire({
+                // title: "Select Label Type",
+                html: `
+                   <div class="LabelConet">
+                     <h5>Choose the Label Type</h5>
+                    <p>Choose the label type that best suits your needs</p>
+                   </div>
+                    <div class="radio-button-group">
+                        <label class="radio-button">
+                            <input type="radio" name="labelType" value="Sticker">
+                            <span class="button-label">
+                                <span class="radio-circle"></span> Sticker
+                            </span>
+                        </label>
+                        <label class="radio-button">
+                            <input type="radio" name="labelType" value="Tag">
+                            <span class="button-label">
+                                <span class="radio-circle"></span> Tag
+                            </span>
+                        </label>
+                    </div>`,
+                showCancelButton: true,
+                confirmButtonText: "Place Request",
+                cancelButtonText: "Cancel",
+                customClass: {
+                    popup: "swal-custom-popup"
+                },
+                preConfirm: () => {
+                    let selectedLabel = $('input[name="labelType"]:checked').val();
+                    if (!selectedLabel) {
+                        Swal.showValidationMessage("Please select a label type!");
+                    }
+                    return selectedLabel;
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    let selectedLabel = result.value;
+
+                    Swal.fire({
+                        html: `
+                            <div style="text-align: center;">
+                                <div class="swalalert_custom_icon">
+                                    <img src="assets/img/newimages/nutmeg.gif" alt="Success">
+                                </div>
+                                <h2 class="Swal_CustomTitle">Request Successfully Placed!</h2>
+                                <p>Your request for <strong>${selectedLabel}</strong> has been placed successfully.</p>
+                            </div>`,
+                        confirmButtonText: "Okay",
+                        customClass: {
+                            confirmButton: "my-ok-button"
+                        }
+                    });
+                }
+            });
+        });
+    });
+</script>
+
+<!-- Custom CSS for Button-Style Radio Selection -->
+<style>
+    .radio-button-group {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .radio-button {
+        position: relative;
+        display: inline-block;
+    }
+
+    .radio-button input {
+        display: none;
+    }
+
+    .button-label {
+    display: flex;
+    align-items: center;
+    background: #f8f8f8;
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+    padding: 8px 10px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    width: 100px;
+    text-align: center;
+}
+
+.radio-circle {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #afb3af;
+    border-radius: 50%;
+    margin-right: 8px;
+    position: relative;
+    transition: 0.3s;
+}
+    /* Checked State */
+    .radio-button input:checked + .button-label {
+    background: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+.radio-button input:checked + .button-label .radio-circle {
+    background: white;
+    border: 4px solid white;
+    box-shadow: 0 0 0 4px #0e9314;
+}
+
+    .button-label:hover {
+        background: #e0e0e0;
+    }
+
+    .radio-button input:checked + .button-label:hover {
+        background: #4CAF50;
+    }
+
+    .swal-custom-popup {
+        width: 400px;
+    }
+    h2#swal2-title {
+    font-size: 20px;
+}
+div:where(.swal2-container) div:where(.swal2-html-container) {
+    padding: 0;
+}
+.LabelConet p {
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+.LabelConet h5 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+</style>

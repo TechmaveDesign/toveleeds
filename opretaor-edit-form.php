@@ -34,20 +34,49 @@
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
 
             <div class="mb-2 d-flex gap-2">
-               <a href="assessment-job-order-detail.php" 
+               <a href="job-order-details-inspection-assessment.php" 
                     class="btn btn-back d-flex align-items-center cmnaddbtn">
                     <iconify-icon icon="mingcute:back-line"></iconify-icon> Back
                 </a>
-                <div class="dropDownBox dropDownHead">
-                    <a class="viewDetailBtnOpt" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                    <iconify-icon icon="ph:dots-three-outline-vertical"></iconify-icon>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end" style="">
-                        <a href="#" class="dropdown-item"><span><iconify-icon icon="material-symbols:download-rounded"></iconify-icon></span>Download Certificate</a>
-                        <a href="#" class="dropdown-item"><span><iconify-icon icon="material-symbols:download-rounded"></iconify-icon></span>Download Report</a>
-
-                    </div>
-                    </div>
+                <a href="javascript:void(0);" id="editButton" 
+                    class="btn btn-back d-flex align-items-center cmnaddbtn">
+                    <iconify-icon icon="akar-icons:edit"></iconify-icon> Edit
+                </a>
+                <div class="btn-group">
+                <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Preview Documents
+               </button>
+                <ul class="dropdown-menu">
+                    <li>
+                      <a href="#" class="dropdown-item"><span><iconify-icon icon="hugeicons:view"></iconify-icon></span>Preview Certificate Form</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item"><span><iconify-icon icon="hugeicons:view"></iconify-icon></span>Preview Certificate</a>
+                    </li>
+                    <li>
+                    <a href="#" class="dropdown-item"><span><iconify-icon icon="hugeicons:view"></iconify-icon></span>Preview Assessment Card</a>
+                    </li>
+                  
+                </ul>
+                </div>
+                <div class="btn-group">
+              
+                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Download Documents 
+               </button>
+                <ul class="dropdown-menu">
+                    <li>
+                      <a href="#" class="dropdown-item"><span><iconify-icon icon="material-symbols:download-rounded"></iconify-icon></span>Download Certificate Form</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown-item"><span><iconify-icon icon="material-symbols:download-rounded"></iconify-icon></span>Download Certificate</a>
+                    </li>
+                    <li>
+                    <a href="#" class="dropdown-item"><span><iconify-icon icon="material-symbols:download-rounded"></iconify-icon></span>Download Assessment Card</a>
+                    </li>
+                  
+                </ul>
+                </div>
                 <!-- <a href="manage-template.php" 
                     class="btn btn-primary d-flex align-items-center cmnaddbtn">
                     <iconify-icon icon="cuida:edit-outline"></iconify-icon> Edit 
@@ -83,7 +112,7 @@
                                                 <label class="form-label">Assessment No.</label>
                                                 </div>
                                                 <div class="col-lg-8">
-                                                <input type="text" class="form-control" value="#5432134">
+                                                <input type="text" class="form-control" value="#Asmt2500000">
                                                 </div>
                                             </div>
                                         </div>
@@ -229,7 +258,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                               
+                                
+                                <div class="col-lg-12">
+                                        <div class="inspection-container">
+                                        <div class="row">
+                                        <div class="col-md-6">
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-lg-4">
@@ -241,25 +275,51 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-lg-4">
-                                                <label class="form-label">Assessment Type </label>
-                                            </div>
-                                            <div class="col-lg-8">
-                                                <select class="form-control select2">
-                                                    <option disabled value="">Please Select...</option>
-                                                    <option value="Verbal Questioning ">Verbal Questioning </option>
-                                                    <option value="Practical Demonstration">Practical Demonstration</option>
-                                                    <option value="Verbal Questioning & Practical Demonstration " selected >Verbal Questioning & Practical Demonstration </option>
-                                                    <option value="Add new">Add new</option>
-                                                </select>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <label class="form-label">Assessment Type</label>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="inspectionBoxType">
+                                                            <select class="propertyType form-control select2">
+                                                                <option disabled selected value="">Please Select...</option>
+                                                                <option value="Verbal Questioning ">Verbal Questioning </option>
+                                                                <option value="Practical Demonstration">Practical Demonstration</option>
+                                                                <option value="Verbal Questioning & Practical Demonstration " selected >Verbal Questioning & Practical Demonstration </option>
+                                                               
+                                                            </select>
+                                                            <button type="button" class="addPropertyTypeButton btn btn-addType">
+                                                                <iconify-icon icon="eva:plus-fill"></iconify-icon>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="col-lg-6 hiddentype newPropertyTypeDiv">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <label class="form-label">Add New Type</label>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="addpropertyTypeContainer addFieldType">
+                                                            <input type="text" class="newPropertyType form-control" placeholder="New Inspection Type">
+                                                            <button type="button" class="savePropertyTypeButton btn btn-primary">Save</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+
+
+                                        </div>
+                                        
                                     </div>
-                                </div>
-                               
+                                        </div>
                                     
                                </div>
                                 </div>
@@ -267,7 +327,7 @@
                                 
                                  <div class="InspectionFormsContainer border-top">
                                     <!-- <h6 class="Instruction"><strong>Instructions:</strong> Select the correct and most suitable word for each question. Time allowed for this assessment is 45 minutes.</h6> -->
-                                 <h6 class="AssessmentSectionTitle">General Safety of Equipment and Site Safety (1-20)</h6>
+                                 <!-- <h6 class="AssessmentSectionTitle">General Safety of Equipment and Site Safety (1-20)</h6> -->
                                         <div class="list-group list-group-flush">
                                                 <div class="list-group-item QuestionAns_list_item list-item-hover shadow-sm rounded mb-2 p-3">
                                                     <div class="row align-items-center row-gap-3">
@@ -524,7 +584,7 @@
                                                 
                                                 </div>
 
-                                                <h6 class="AssessmentSectionTitle">Technical Knowledge of Equipment and Equipment Operation (21-70)</h6>
+                                                <!-- <h6 class="AssessmentSectionTitle">Technical Knowledge of Equipment and Equipment Operation (21-70)</h6> -->
                                                
                                                 <div class="list-group list-group-flush">
                                                 <div class="list-group-item QuestionAns_list_item list-item-hover shadow-sm rounded mb-2 p-3">
@@ -784,6 +844,24 @@
                                                 
                                                 </div>
                                  </div>
+
+                                 <div class="InspectionFormsContainer bg-light">
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <label class="form-label">Declaration </label>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                      <textarea name="" id="" class="form-control"> I/We hereby declare that the above information is correct, and the equipment has been thoroughly inspected as far as possible in accordance with manufacturer/standard and found to be free from any apparent defect.</textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+                                 </div>
                                
                             </div>
                         </div>
@@ -792,12 +870,12 @@
                 </div>
             </div>
             <div class="FormSubmit_fix_container">
-                    <a href="assessment-job-order-detail.php" class="SaveDataBtn">
+                    <a href="job-order-details-inspection-assessment.php" class="SaveDataBtn">
                         <button type="button" class="btn btn-primary commonUpdateButton">
                         <iconify-icon icon="ci:save"></iconify-icon> Save & Update
                         </button>
                     </a>
-                    <a href="assessment-job-order-detail.php">
+                    <a href="job-order-details-inspection-assessment.php">
                         <button type="button" class="btn commonCancleButton">
                             Cancel
                         </button>
@@ -838,3 +916,90 @@
 });
 
     </script>
+
+    <!-- Fields editable and no-editable code -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let formElements = document.querySelectorAll('input, select, textarea');
+
+        // Disable all form fields on page load
+        formElements.forEach(element => {
+            element.disabled = true;
+        });
+
+        // Disable radio button clicks manually
+        let radioButtons = document.querySelectorAll('input[type="radio"]');
+        radioButtons.forEach(radio => {
+            radio.dataset.originalDisabled = "true";
+            radio.addEventListener('click', preventRadioSelection);
+        });
+    });
+
+    // Toggle edit mode when clicking the button
+    document.getElementById('editButton').addEventListener('click', function () {
+        let formElements = document.querySelectorAll('input, select, textarea');
+        let isEditable = formElements[0].disabled; // Check current state
+
+        formElements.forEach(element => {
+            element.disabled = !element.disabled;
+        });
+
+        // Enable/Disable radio button functionality
+        let radioButtons = document.querySelectorAll('input[type="radio"]');
+        radioButtons.forEach(radio => {
+            if (radio.dataset.originalDisabled === "true") {
+                radio.dataset.originalDisabled = "false";
+                radio.removeEventListener('click', preventRadioSelection);
+            } else {
+                radio.dataset.originalDisabled = "true";
+                radio.addEventListener('click', preventRadioSelection);
+            }
+        });
+
+        // Show SweetAlert based on mode
+        Swal.fire({
+            html: `
+                <div style="text-align: center;">
+                    <div class="swalalert_custom_icon">
+                        <img src="assets/img/newimages/chat.gif" alt="Success">
+                    </div>
+                    <h2 class="Swal_CustomTitle">${isEditable ? "Editable Mode is On" : "Editable Mode is Off"}</h2>
+                    <p>${isEditable ? "You can now edit the fields." : "The fields are now locked."}</p>
+                </div>`,
+            confirmButtonText: "Okay",
+            customClass: {
+                confirmButton: "my-ok-button"
+            },
+        });
+    });
+
+    // Prevent radio selection when disabled
+    function preventRadioSelection(event) {
+        event.preventDefault();
+    }
+</script>
+
+<!-- property type custom add and reflect on select2 -->
+<script>
+    $(document).ready(function() {
+        $('.inspection-container').each(function() {
+            var container = $(this);
+            
+            container.find('.addPropertyTypeButton').on('click', function() {
+                container.find('.newPropertyTypeDiv').toggleClass('hiddentype');
+            });
+
+            container.find('.savePropertyTypeButton').on('click', function() {
+                var newPropertyType = container.find('.newPropertyType').val().trim();
+                if (newPropertyType !== "") {
+                    var newOption = new Option(newPropertyType, newPropertyType, true, true);
+                    container.find('.propertyType').prepend(newOption).trigger('change');
+                    container.find('.newPropertyTypeDiv').addClass('hiddentype');
+                    container.find('.newPropertyType').val('');
+                }
+            });
+        });
+    });
+</script>
+<!-- property type custom add and reflect on select2 -->'

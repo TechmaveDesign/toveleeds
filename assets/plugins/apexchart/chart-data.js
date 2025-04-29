@@ -2264,7 +2264,7 @@ if ($('#revenue-chart').length > 0) {
 if ($('#emp-department').length > 0) {
   var sBar = {
     chart: {
-      height: 220,
+      height: 170,
       type: 'bar',
       padding: {
         top: 0,
@@ -2299,11 +2299,11 @@ if ($('#emp-department').length > 0) {
       enabled: false
     },
     series: [{
-      data: [80, 110, 80, 20, 60, 100],
-      name: 'Employee'
+      data: [80, 110, 80, 20],
+      name: 'Task'
     }],
     xaxis: {
-      categories: ['Equipment Inspection', 'Machine Operator Assessment', 'Non-Destructive Testing', 'Training', 'User Management', 'Job Orders'],
+      categories: ['Equipment Inspection', 'Operator Assessment', 'NDT Review', 'Training',],
       labels: {
         style: {
           colors: '#111827', 
