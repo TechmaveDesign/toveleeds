@@ -98,7 +98,7 @@
                         <td>RR</td>
                         <td>
                             <div class="d-flex align-items-center ActionDropdown">
-                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-rd1-from.php">
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-dls2-from.php">
                                     <span class="icon">
                                         <span class="feather-icon">
                                             <iconify-icon icon="uiw:eye-o"></iconify-icon>
@@ -125,7 +125,7 @@
                         <td>RR</td>
                         <td>
                             <div class="d-flex align-items-center ActionDropdown">
-                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-rd1-from.php">
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-dls3-from.php">
                                     <span class="icon">
                                         <span class="feather-icon">
                                             <iconify-icon icon="uiw:eye-o"></iconify-icon>
@@ -152,7 +152,7 @@
                         <td>RR</td>
                         <td>
                             <div class="d-flex align-items-center ActionDropdown">
-                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-rd1-from.php">
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-dls4-from.php">
                                     <span class="icon">
                                         <span class="feather-icon">
                                             <iconify-icon icon="uiw:eye-o"></iconify-icon>
@@ -179,7 +179,7 @@
                         <td>RR</td>
                         <td>
                             <div class="d-flex align-items-center ActionDropdown">
-                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-rd1-from.php">
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-dls5-from.php">
                                     <span class="icon">
                                         <span class="feather-icon">
                                             <iconify-icon icon="uiw:eye-o"></iconify-icon>
@@ -206,7 +206,7 @@
                         <td>RR</td>
                         <td>
                             <div class="d-flex align-items-center ActionDropdown">
-                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-rd1-from.php">
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-dls6-from.php">
                                     <span class="icon">
                                         <span class="feather-icon">
                                             <iconify-icon icon="uiw:eye-o"></iconify-icon>
@@ -233,7 +233,7 @@
                         <td>RR</td>
                         <td>
                             <div class="d-flex align-items-center ActionDropdown">
-                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-rd1-from.php">
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-dls7-from.php">
                                     <span class="icon">
                                         <span class="feather-icon">
                                             <iconify-icon icon="uiw:eye-o"></iconify-icon>
@@ -260,7 +260,7 @@
                         <td>RR</td>
                         <td>
                             <div class="d-flex align-items-center ActionDropdown">
-                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-rd1-from.php">
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-dls8-from.php">
                                     <span class="icon">
                                         <span class="feather-icon">
                                             <iconify-icon icon="uiw:eye-o"></iconify-icon>
@@ -287,7 +287,7 @@
                         <td>RR</td>
                         <td>
                             <div class="d-flex align-items-center ActionDropdown">
-                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-rd1-from.php">
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-dls9-from.php">
                                     <span class="icon">
                                         <span class="feather-icon">
                                             <iconify-icon icon="uiw:eye-o"></iconify-icon>
@@ -297,7 +297,33 @@
                             </div>
                         </td>
                     </tr>
-
+                    <tr>
+                        <td>DLS10</td>
+                        <td>
+                            <div class="LongMesage_container">
+                                <input class="refuge-collection-input tableLongMessage_Input" value="Attention all tenants: The maintenance crew will be performing routine inspections tomorrow. Please ensure that your units are accessible. Thank you for your cooperation.">
+                                <button class="view-btn tablemessageview_btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Click to view" data-bs-original-title="Attention all tenants: The maintenance crew will be performing routine inspections tomorrow. Please ensure that your units are accessible. Thank you for your cooperation.">
+                                <iconify-icon icon="ion:eye-outline"></iconify-icon>
+                                </button>
+                                <a href="#" class="AddEditBtnRemark" data-bs-toggle="modal" data-bs-target="#EditRemark"><iconify-icon icon="cuida:edit-outline"></iconify-icon></a>
+                            </div>
+                        </td>
+                        <td>CER10</td>
+                        <td>Checklist 10</td>
+                        <td>FIR</td>
+                        <td>RR</td>
+                        <td>
+                            <div class="d-flex align-items-center ActionDropdown">
+                                <a class="btn btn-icon btn-flush-dark btn-rounded flush-soft-hover" href="view-dls10-from.php">
+                                    <span class="icon">
+                                        <span class="feather-icon">
+                                            <iconify-icon icon="uiw:eye-o"></iconify-icon>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
                    
 
                         
