@@ -566,12 +566,12 @@
                                         <li><a href="all-templates.php">All Templates</a></li>
                                     </ul>
                                 </li> -->
-                                <li class="">
+                                <!-- <li class="">
                                     <a href="all-templates.php">
                                     <iconify-icon icon="fluent:calendar-template-20-regular"></iconify-icon>
                                     <span>Checklist Templates</span>
                                     </a>
-                                </li>
+                                </li> -->
                                 <li class="">
                                     <a href="role-permission.php">
                                     <iconify-icon icon="mingcute:safe-lock-line"></iconify-icon>
