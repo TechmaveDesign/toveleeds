@@ -668,7 +668,23 @@
 
                             </ul>
                         </li>
+                        <li class="menu-title"><span>Form Management</span></li>
+                        <li>
+                            <ul>
 
+                                <li class="">
+                                    <a href="all-forms.php">
+                                        <iconify-icon icon="lsicon:report-outline"></iconify-icon><span> All Forms
+                                        </span>
+                             
+                                    </a>
+                                   
+                                </li>
+
+                            
+
+                            </ul>
+                        </li>
                         
 
                     </ul>

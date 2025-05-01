@@ -4814,3 +4814,90 @@ border: 1px solid #c1e2ff;
 .nextButton a:first-of-type{
 margin-top: 5px;
 }
+
+
+/*****************************************
+ 01 May, 2025 Form module Css Start Here
+******************************************/
+.iconImageSection {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.sectionCreateBox h5 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.sectionCreateBox p {
+    font-size: 13px;
+    color: #46596a;
+    margin-top: 5px;
+}
+.iconImageSection img {
+    width: 90px;
+    margin-bottom: 10px;
+}
+.setDataWrap {
+    display: none;
+}
+.form-wrap.form-builder .stage-wrap.empty {
+    border: none !important;
+}
+.frmb.stage-wrap {
+    padding: 20px !important;
+}
+.form-wrap.form-builder .frmb li.form-field {
+	border-color: #66afe9;
+	outline: 0;
+	box-shadow: none !important;
+	border: 1px solid #ececec;
+}
+.frmb.stage-wrap {
+	padding: 20px !important;
+}
+.form-wrap.form-builder .frmb li.form-field {
+	margin-bottom: 15px !important;
+}
+.form-wrap.form-builder .frmb .form-field{
+	border-radius: 5px !important;
+}
+.form-wrap.form-builder .stage-wrap.empty {
+  border: none !important;
+}
+.form-wrap.form-builder .frmb .field-actions .btn {
+	color: #6c6c6c !important;
+}
+
+.formpreview_button{
+  display: flex;
+  align-items: center;
+  margin-right: 9px;
+  background: #00a9ec;
+  color: #fff;
+}
+.formpreview_button:hover{
+  display: flex;
+  align-items: center;
+  margin-right: 9px;
+  background: #019cd9;
+  color: #fff;
+}
+.formpreview_button iconify-icon{
+  margin-right:5px;
+  font-size:17px;
+}
+.form-actionsbtns {
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding: 10px 20px;
+    border-top: 1px solid #eaeaea;
+    left: 0;
+}
+.innerFormWrapper {
+    padding: 20px;
+}
