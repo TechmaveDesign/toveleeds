@@ -655,15 +655,29 @@
                         <li>
                             <ul>
 
-                                <li class="">
-                                    <a href="javascript:void(0);">
-                                        <iconify-icon icon="lsicon:report-outline"></iconify-icon><span>All Report
-                                        </span>
-                             
-                                    </a>
-                                   
-                                </li>
-
+                               <li class="submenu">
+                                <a href="javascript:void(0);">
+                                <iconify-icon icon="ph:users-duotone"></iconify-icon> <span>All Reports</span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="inspection-report.php">
+                                            <span>Inspection Report</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="operator-assessment-report.php">
+                                            <span>Operator Assessment Report</span>
+                                        </a>
+                                    </li>
+                                     <li>
+                                        <a href="ndt-report.php">
+                                            <span>NDT Report</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
                             
 
                             </ul>

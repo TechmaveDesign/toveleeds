@@ -163,6 +163,31 @@
                         </select>
                         </div>
                     </div>
+                    <div class="col-lg-3">
+                   <div class="form-group">
+                      <label class="form-label">Cash Receipt <div class="requiredLabel">*</div></label>
+                      <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                   <div class="form-group">
+                      <label class="form-label">Purchase Order <div class="requiredLabel">*</div></label>
+                      <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                   <div class="form-group">
+                      <label class="form-label">Quotation <div class="requiredLabel">*</div></label>
+                      <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                   <div class="form-group">
+                      <label class="form-label">Invoice <div class="requiredLabel">*</div></label>
+                      <input type="text" class="form-control">
+                    </div>
+                </div>
+
                 <div class="col-lg-12">
                     <div class="serviceTypeContainer">
                         <div class="form-group mb-0">
@@ -702,10 +727,11 @@
                                     <label class="form-label">Payment</label>
                                     <select id="paymentSelect" class="form-control select2">
                                         <option disabled selected value="">Please Select...</option>
-                                        <option value="Receipt">Cash Receipt</option>
-                                        <option value="Purchase">Purchase Order</option>
-                                        <option value="Quotation">Quotation</option>
-                                        <option value="Invoice">Invoice</option>
+                                        <option value="Cash ">Cash</option>
+                                        <option value="Bank/Online ">Bank/Online</option>
+                                        <option value="Check">Check</option>
+                                        <option value="ATM Machine">ATM Machine</option>
+                                          <option value="Others">Others</option>
                                     </select>
                                 </div>
                             </div>
