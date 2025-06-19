@@ -20,7 +20,7 @@
             </nav>
         </div>
         <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
-        <!-- <div class="mb-2 me-2">
+            <!-- <div class="mb-2 me-2">
                 <a href="#" 
                     class="btn btn-secondary d-flex align-items-center cmnaddbtn downloadBtn">
                     <iconify-icon icon="proicons:pdf"></iconify-icon> Download PDF
@@ -34,13 +34,12 @@
                 </a>
             </div> -->
 
-             <div class="input-icon mb-2 position-relative">
-                                        <span class="input-icon-addon">
-                                            <i class="ti ti-calendar text-gray-9"></i>
-                                        </span>
-                                        <input type="text" class="form-control date-range bookingrange"
-                                            placeholder="dd/mm/yyyy - dd/mm/yyyy">
-                                    </div>
+            <div class="input-icon mb-2 position-relative">
+                <span class="input-icon-addon">
+                    <i class="ti ti-calendar text-gray-9"></i>
+                </span>
+                <input type="text" class="form-control date-range bookingrange" placeholder="dd/mm/yyyy - dd/mm/yyyy">
+            </div>
             <div class="head-icons ms-2">
                 <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top"
                     data-bs-original-title="Collapse" id="collapse-header">
@@ -50,21 +49,42 @@
         </div>
     </div>
     <!-- /Breadcrumb -->
-   
+
     <div class="card tablemaincard_nopaddingleftright">
-    <div class="custom-datatable-filter">
-                
-                    <table class="table common-datatable withoutActionTR nowrap w-100">
+        <div class="custom-datatable-filter">
+
+            <table class="table common-datatable withoutActionTR nowrap w-100">
     <thead class="thead-light">
         <tr>
-            <th> Sr. No. </th>
+            <th>Sr. No.</th>
             <th>Job Order No.</th>
             <th>DS No.</th>
+            <th>Client</th>
             <th>Report No.</th>
-            <th>Title</th>
-            <th>Test Date</th>
-            <th>Card No.</th>
             <th>Job Order Status</th>
+            <th>Job Title</th>
+            <th>Test Date</th>
+            <th>Issue Date</th>
+            <th>Representative Name</th>
+            <th>Contact Number</th>
+            <th>Email Address</th>
+            <th>Region</th>
+            <th>Location</th>
+            <th>Work Location</th>
+            <th>Letterhead No.</th>
+            <th>Old Letterhead No.</th>
+            <th>Hologram No.</th>
+            <th>Old Hologram No.</th>
+            <th>Card No.</th>
+            <th>Name</th>
+            <th>Iqama / Passport No.</th>
+            <th>Payment No.</th>
+            <th>Quotation No.</th>
+            <th>PO No.</th>
+            <th>Invoice No.</th>
+            <th>Performed By</th>
+            <th>Manager</th>
+            <th>Approved By</th>
         </tr>
     </thead>
     <tbody>
@@ -72,75 +92,181 @@
             <td>1</td>
             <td>JO-NDT-2001</td>
             <td>DS-90123</td>
+            <td class="sorting_1">
+                <div class="d-flex align-items-center file-name-icon">
+                    <a href="#" class="avatar avatar-md avatar-rounded">
+                        <img src="assets/img/users/user-28.jpg" class="img-fluid" alt="Amit Patel">
+                    </a>
+                    <div class="ms-2">
+                        <h6 class="fw-medium"><a href="#">Amit Patel</a></h6>
+                    </div>
+                </div>
+            </td>
             <td>REP-4501</td>
+            <td><span class="badge bg-outline-success pendingbadge badgecustomstyle">
+                <span class="badge-label">Completed</span>
+                <iconify-icon icon="weui:done2-outlined"></iconify-icon>
+            </span></td>
             <td>Ultrasonic Thickness Test</td>
             <td>2025-06-01</td>
+            <td>2025-06-03</td>
+            <td>Rajesh Sharma</td>
+            <td>+91-9876543210</td>
+            <td>rajesh.sharma@clientco.com</td>
+            <td>North</td>
+            <td>Delhi</td>
+            <td>Site A</td>
+            <td>LH-NDT-2001</td>
+            <td>OLH-NDT-2000</td>
+            <td>HOL-NDT-001</td>
+            <td>OHOL-NDT-001</td>
             <td>NDT-CARD-001</td>
-            <td><span class="badge bg-outline-success pendingbadge badgecustomstyle">
-    <span class="badge-label">Completed</span>
-    <iconify-icon icon="weui:done2-outlined"></iconify-icon>
-</span>
-</td>
+            <td>Amit Patel</td>
+            <td>ID-123456789</td>
+            <td>PAY-NDT-2001</td>
+            <td>QUO-NDT-2001</td>
+            <td>PO-NDT-2001</td>
+            <td>INV-NDT-2001</td>
+            <td>Vikram Singh</td>
+            <td>Anita Desai</td>
+            <td>Suresh Kumar</td>
         </tr>
         <tr>
             <td>2</td>
             <td>JO-NDT-2002</td>
             <td>DS-90124</td>
+            <td class="sorting_1">
+                <div class="d-flex align-items-center file-name-icon">
+                    <a href="#" class="avatar avatar-md avatar-rounded">
+                        <img src="assets/img/users/user-33.jpg" class="img-fluid" alt="Priya Mehta">
+                    </a>
+                    <div class="ms-2">
+                        <h6 class="fw-medium"><a href="#">Priya Mehta</a></h6>
+                    </div>
+                </div>
+            </td>
             <td>REP-4502</td>
+            <td><span class="badge bg-outline-primary pendingbadge badgecustomstyle">
+                <span class="badge-label">In Progress</span>
+                <iconify-icon icon="fluent:arrow-sync-checkmark-20-regular"></iconify-icon>
+            </span></td>
             <td>Dye Penetrant Inspection</td>
             <td>2025-06-03</td>
+            <td>2025-06-05</td>
+            <td>Sneha Gupta</td>
+            <td>+91-8765432109</td>
+            <td>sneha.gupta@clientco.com</td>
+            <td>West</td>
+            <td>Mumbai</td>
+            <td>Site B</td>
+            <td>LH-NDT-2002</td>
+            <td>OLH-NDT-2001</td>
+            <td>HOL-NDT-002</td>
+            <td>OHOL-NDT-002</td>
             <td>NDT-CARD-002</td>
-            <td>
-                <span class="badge bg-outline-primary pendingbadge badgecustomstyle">
-    <span class="badge-label">In Progress</span>
-    <iconify-icon icon="fluent:arrow-sync-checkmark-20-regular"></iconify-icon>
-</span>
-
-            </td>
+            <td>Priya Mehta</td>
+            <td>ID-987654321</td>
+            <td>PAY-NDT-2002</td>
+            <td>QUO-NDT-2002</td>
+            <td>PO-NDT-2002</td>
+            <td>INV-NDT-2002</td>
+            <td>Rahul Verma</td>
+            <td>Neha Kapoor</td>
+            <td>Arjun Rao</td>
         </tr>
         <tr>
             <td>3</td>
             <td>JO-NDT-2003</td>
             <td>DS-90125</td>
+            <td class="sorting_1">
+                <div class="d-flex align-items-center file-name-icon">
+                    <a href="#" class="avatar avatar-md avatar-rounded">
+                        <img src="assets/img/users/user-32.jpg" class="img-fluid" alt="Vikram Joshi">
+                    </a>
+                    <div class="ms-2">
+                        <h6 class="fw-medium"><a href="#">Vikram Joshi</a></h6>
+                    </div>
+                </div>
+            </td>
             <td>REP-4503</td>
+            <td><span class="badge bg-outline-warning pendingbadge badgecustomstyle">
+                <span class="badge-label">Pending</span>
+                <iconify-icon icon="mdi:clock-outline"></iconify-icon>
+            </span></td>
             <td>Radiographic Testing</td>
             <td>2025-06-07</td>
+            <td>-</td>
+            <td>Kiran Patel</td>
+            <td>+91-7654321098</td>
+            <td>kiran.patel@clientco.com</td>
+            <td>South</td>
+            <td>Chennai</td>
+            <td>Site C</td>
+            <td>LH-NDT-2003</td>
+            <td>OLH-NDT-2002</td>
+            <td>HOL-NDT-003</td>
+            <td>OHOL-NDT-003</td>
             <td>NDT-CARD-003</td>
-            <td>
-                <span class="badge bg-outline-warning pendingbadge badgecustomstyle">
-    <span class="badge-label">Pending</span>
-    <iconify-icon icon="mdi:clock-outline"></iconify-icon>
-</span>
-
-            </td>
+            <td>Vikram Joshi</td>
+            <td>ID-456789123</td>
+            <td>PAY-NDT-2003</td>
+            <td>QUO-NDT-2003</td>
+            <td>PO-NDT-2003</td>
+            <td>INV-NDT-2003</td>
+            <td>Deepak Nair</td>
+            <td>Shalini Menon</td>
+            <td>Ravi Shankar</td>
         </tr>
         <tr>
             <td>4</td>
             <td>JO-NDT-2004</td>
             <td>DS-90126</td>
+            <td class="sorting_1">
+                <div class="d-flex align-items-center file-name-icon">
+                    <a href="#" class="avatar avatar-md avatar-rounded">
+                        <img src="assets/img/users/user-34.jpg" class="img-fluid" alt="Anjali Rao">
+                    </a>
+                    <div class="ms-2">
+                        <h6 class="fw-medium"><a href="#">Anjali Rao</a></h6>
+                    </div>
+                </div>
+            </td>
             <td>REP-4504</td>
+            <td><span class="badge bg-outline-danger pendingbadge badgecustomstyle">
+                <span class="badge-label">Rejected</span>
+                <iconify-icon icon="material-symbols:cancel-outline-rounded"></iconify-icon>
+            </span></td>
             <td>Magnetic Particle Test</td>
             <td>2025-06-10</td>
+            <td>-</td>
+            <td>Manish Kumar</td>
+            <td>+91-6543210987</td>
+            <td>manish.kumar@clientco.com</td>
+            <td>East</td>
+            <td>Kolkata</td>
+            <td>Site D</td>
+            <td>LH-NDT-2004</td>
+            <td>OLH-NDT-2003</td>
+            <td>HOL-NDT-004</td>
+            <td>OHOL-NDT-004</td>
             <td>NDT-CARD-004</td>
-            <td>
-                <span class="badge bg-outline-danger pendingbadge badgecustomstyle">
-    <span class="badge-label">Rejected</span>
-    <iconify-icon icon="material-symbols:cancel-outline-rounded"></iconify-icon>
-</span>
-
-            </td>
+            <td>Anjali Rao</td>
+            <td>ID-321654987</td>
+            <td>PAY-NDT-2004</td>
+            <td>QUO-NDT-2004</td>
+            <td>PO-NDT-2004</td>
+            <td>INV-NDT-2004</td>
+            <td>Sanjay Das</td>
+            <td>Pooja Sharma</td>
+            <td>Naveen Reddy</td>
         </tr>
     </tbody>
 </table>
 
-                </div>
-      
-        
+        </div>
 
     </div>
 
 </div>
 
-
 <?php include("footer.php") ?>
-

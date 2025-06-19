@@ -165,25 +165,25 @@
                     </div>
                     <div class="col-lg-3">
                    <div class="form-group">
-                      <label class="form-label">Cash Receipt <div class="requiredLabel">*</div></label>
+                      <label class="form-label">Cash Receipt </label>
                       <input type="text" class="form-control">
                     </div>
                 </div>
                 <div class="col-lg-3">
                    <div class="form-group">
-                      <label class="form-label">Purchase Order <div class="requiredLabel">*</div></label>
+                      <label class="form-label">Purchase Order </label>
                       <input type="text" class="form-control">
                     </div>
                 </div>
                 <div class="col-lg-3">
                    <div class="form-group">
-                      <label class="form-label">Quotation <div class="requiredLabel">*</div></label>
+                      <label class="form-label">Quotation </label>
                       <input type="text" class="form-control">
                     </div>
                 </div>
                 <div class="col-lg-3">
                    <div class="form-group">
-                      <label class="form-label">Invoice <div class="requiredLabel">*</div></label>
+                      <label class="form-label">Invoice </label>
                       <input type="text" class="form-control">
                     </div>
                 </div>
