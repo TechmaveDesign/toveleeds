@@ -1,0 +1,406 @@
+<?php include("header.php") ?>
+<style>
+    .shadow-sm {
+        box-shadow: none !important;
+    }
+    .list-item-hover {
+        border: 1px solid #eaeaea !important;
+        transition: 0.5s all;
+    }
+    .list-item-hover:hover {
+        border-color: #eaeaea !important;
+        transition: 0.5s all;
+    }
+    .inspection-table th, .inspection-table td {
+        padding: 8px;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+    .inspection-table th {
+        background-color: #f8f9fa;
+    }
+    table.inspection-table {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .Centercard_tilte {
+        text-align: center;
+    }
+    .Centercard_tilte {
+        margin-bottom: 20px;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col-md-6 {
+        width: 50%;
+        padding: 0 15px;
+    }
+    .col-lg-12 {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .signature-section {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .signature-box {
+        width: 45%;
+        text-align: center;
+    }
+    .qr-code {
+        width: 100px;
+        height: 100px;
+        background: #ddd;
+        display: inline-block;
+    }
+    .disclaimer {
+        margin-top: 20px;
+        font-size: 12px;
+        color: #555;
+    }
+</style>
+<!-- Page Wrapper -->
+<div class="content">
+    <!-- Breadcrumb -->
+    <div class="d-md-flex d-block align-items-center justify-content-between page-breadcrumb">
+        <div class="my-auto mb-2">
+            <h2 class="mb-1">Certificate - 5 Form View</h2>
+            <nav>
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item">
+                        <a href="index.php"><i class="ti ti-smart-home"></i></a>
+                    </li>
+                    <li class="breadcrumb-item">Job Form Management</li>
+                    <li class="breadcrumb-item active" aria-current="page">Certificate - 5 Form</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="d-flex my-xl-auto right-content align-items-center flex-wrap ">
+
+        <div class="mb-2 d-flex gap-2">
+                <a href="javascript:void(0);" id="editButton" class="btn btn-back d-flex align-items-center cmnaddbtn">
+                    <iconify-icon icon="akar-icons:edit"></iconify-icon> Edit
+                </a>
+                <div class="btn-group">
+                <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Preview Documents
+               </button>
+                <ul class="dropdown-menu" style="">
+                    <li>
+                      <a href="#" class="dropdown-item"><span><iconify-icon icon="hugeicons:view"></iconify-icon></span>Preview Checklist</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="btn-group">
+              
+                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Download Documents 
+               </button>
+                <ul class="dropdown-menu" style="">
+                   
+                    <li>
+                      <a href="#" class="dropdown-item"><span><iconify-icon icon="material-symbols:download-rounded"></iconify-icon></span>Download Checklist</a>
+                    </li>
+                    
+                </ul>
+                </div>
+              
+            </div>
+            <div class="head-icons ms-2">
+                <a href="javascript:void(0);" class="" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Collapse" id="collapse-header">
+                    <i class="ti ti-chevrons-up"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- /Breadcrumb -->
+    <div class="card tablemaincard_nopaddingleftright">
+        <div class="CheckListMainContainer">
+            <form action="#">
+           
+  <table style="border-collapse: collapse;border: medium;width: 707px; margin: 40px auto;" class="fr-table-selection-hover">
+    <tbody>
+        <tr>
+            <td colspan="15" style="width:522.8pt;border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt;height:29.8pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:normal;font-size:16px;font-family:"Aptos",sans-serif;text-align:center;'><strong><span style='font-size:19px;font-family:"Calibri",sans-serif;'>Certificate of Inspection Forklift</span></strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 86.7pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor windowtext windowtext;border-image: none;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"Calibri",sans-serif;'>Certificate No.</span></strong></p>
+            </td>
+            <td colspan="3" style="width: 87.2pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>FL-2025-004</span></p>
+            </td>
+            <td colspan="3" style="width: 87.5pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"Calibri",sans-serif;'>Job Order No.</span></strong></p>
+            </td>
+            <td colspan="4" style="width: 87.1pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>JO-2025-1234</span></p>
+            </td>
+            <td colspan="3" style="width: 87.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"Calibri",sans-serif;'>Checklist No.</span></strong></p>
+            </td>
+            <td style="width: 87.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>CL-2025-456</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="width: 130.65pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor windowtext windowtext;border-image: none;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"Calibri",sans-serif;'>Inspection Date</span></strong></p>
+            </td>
+            <td colspan="4" style="width: 130.75pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>June 09, 2025</span></p>
+            </td>
+            <td colspan="5" style="width: 130.7pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"Calibri",sans-serif;'>Issue Date</span></strong></p>
+            </td>
+            <td colspan="3" style="width: 130.7pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>June 10, 2025</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="width: 130.65pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor windowtext windowtext;border-image: none;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"Calibri",sans-serif;'>Inspection Type</span></strong></p>
+            </td>
+            <td colspan="4" style="width: 130.75pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>6-Month Periodic</span></p>
+            </td>
+            <td colspan="5" style="width: 130.7pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"Calibri",sans-serif;'>Next Inspection Date</span></strong></p>
+            </td>
+            <td colspan="3" style="width: 130.7pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>December 09, 2025</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="width: 130.65pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor windowtext windowtext;border-image: none;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"Calibri",sans-serif;'>Equipment Owner</span></strong></p>
+            </td>
+            <td colspan="12" style="width: 392.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>XYZ Logistics Pvt. Ltd.</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="width: 130.65pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor windowtext windowtext;border-image: none;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"Calibri",sans-serif;'>Work Location</span></strong></p>
+            </td>
+            <td colspan="12" style="width: 392.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>Warehouse No. 5, Mumbai Port, Mumbai, India</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="width: 130.65pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor windowtext windowtext;border-image: none;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"Calibri",sans-serif;'>Standard Reference</span></strong></p>
+            </td>
+            <td colspan="12" style="width: 392.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>ISO 3691-1:2011</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="width: 130.65pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor windowtext windowtext;border-image: none;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"Calibri",sans-serif;'>Manufacturer Name</span></strong></p>
+            </td>
+            <td colspan="4" style="width: 130.75pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>Toyota Material Handling</span></p>
+            </td>
+            <td colspan="5" style="width: 130.7pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"Calibri",sans-serif;'>Year of Manufacture</span></strong></p>
+            </td>
+            <td colspan="3" style="width: 130.7pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>2019</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="width: 130.65pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor windowtext windowtext;border-image: none;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"Calibri",sans-serif;'>Serial No. / VIN</span></strong></p>
+            </td>
+            <td colspan="4" style="width: 130.75pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>TMH-123456789</span></p>
+            </td>
+            <td colspan="5" style="width: 130.7pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"Calibri",sans-serif;'>Registration Plate No.</span></strong></p>
+            </td>
+            <td colspan="3" style="width: 130.7pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>MH-FL-9012</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="width: 130.65pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor windowtext windowtext;border-image: none;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"Calibri",sans-serif;'>Model No.</span></strong></p>
+            </td>
+            <td colspan="4" style="width: 130.75pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>8FGU25</span></p>
+            </td>
+            <td colspan="5" style="width: 130.7pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"Calibri",sans-serif;'>Company No.</span></strong></p>
+            </td>
+            <td colspan="3" style="width: 130.7pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>XYZ-456</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="width: 130.65pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor windowtext windowtext;border-image: none;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"Calibri",sans-serif;'>Sticker No.</span></strong></p>
+            </td>
+            <td colspan="4" style="width: 130.75pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>STK-2025-234</span></p>
+            </td>
+            <td colspan="5" style="width: 130.7pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"Calibri",sans-serif;'>Last Inspection Date</span></strong></p>
+            </td>
+            <td colspan="3" style="width: 130.7pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>December 09, 2024</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="9" style="width: 313.6pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor windowtext windowtext;border-image: none;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:normal;font-size:16px;font-family:"Aptos",sans-serif;text-align:center;'><strong><span style='font-family:"Calibri",sans-serif;'>Description</span></strong></p>
+            </td>
+            <td colspan="4" style="width: 104.55pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:normal;font-size:16px;font-family:"Aptos",sans-serif;text-align:center;'><strong><span style='font-family:"Calibri",sans-serif;'>Rated Capacity</span></strong></p>
+            </td>
+            <td colspan="2" style="width: 104.65pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:normal;font-size:16px;font-family:"Aptos",sans-serif;text-align:center;'><strong><span style='font-family:"Calibri",sans-serif;'>Load Test</span></strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="9" style="width: 313.6pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor windowtext windowtext;border-image: none;padding: 0in 5.4pt;height: 140.9pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-size:13px;font-family:"Calibri",sans-serif;'>Forklift inspected for mast, forks, hydraulic system, and brakes. All safety features, including seat belts and warning lights, were tested and functional.</span></p>
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-size:13px;font-family:"Calibri",sans-serif;'>Slight wear on tires noted, recommended for replacement within next 3 months.</span></p>
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-size:13px;font-family:"Calibri",sans-serif;'>Load test conducted at 125% of rated capacity, passed successfully.</span></p>
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;text-align: justify;'><strong><span style='font-size:13px;font-family:  "Calibri",sans-serif;'>Visual inspection and functional tests were Satisfactory and free from apparent defects. </span></strong><span style='font-size:13px;font-family:"Calibri",sans-serif;'>Any major repair will cause the cancelation of this certificate & equipment needs to be inspected again.</span></p>
+            </td>
+            <td colspan="4" style="width: 104.55pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;height: 140.9pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>2.5 tons</span></p>
+            </td>
+            <td colspan="2" style="width: 104.65pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;height: 140.9pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-size:15px;font-family:"Calibri",sans-serif;'>3.125 tons</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="12" style="width: 392.1pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor windowtext windowtext;border-image: none;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"Calibri",sans-serif;'>Reason For Examination</span></strong></p>
+            </td>
+            <td colspan="3" style="width: 130.7pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:normal;font-size:16px;font-family:"Aptos",sans-serif;text-align:center;'><strong><span style='font-family:"Calibri",sans-serif;'>B</span></strong></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="width: 87.05pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor windowtext windowtext;border-image: none;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-size:15px;font-family:"Calibri",sans-serif;'>A</span></strong><span style='font-size:15px;font-family:"Calibri",sans-serif;'> 3-months</span></p>
+            </td>
+            <td colspan="3" style="width: 87.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-size:15px;font-family:"Calibri",sans-serif;'>B</span></strong><span style='font-size:15px;font-family:"Calibri",sans-serif;'> 6-months</span></p>
+            </td>
+            <td colspan="2" style="width: 87.2pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-size:15px;font-family:"Calibri",sans-serif;'>C</span></strong><span style='font-size:15px;font-family:"Calibri",sans-serif;'> 12-months</span></p>
+            </td>
+            <td colspan="4" style="width: 87.1pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-size:15px;font-family:"Calibri",sans-serif;'>D</span></strong><span style='font-size:15px;font-family:"Calibri",sans-serif;'> Written Scheme</span></p>
+            </td>
+            <td colspan="3" style="width: 87.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-size:15px;font-family:"Calibri",sans-serif;'>E</span></strong><span style='font-size:15px;font-family:"Calibri",sans-serif;'> Exceptional Circumstances</span></p>
+            </td>
+            <td style="width: 87.15pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-size:15px;font-family:"Calibri",sans-serif;'>F</span></strong><span style='font-size:15px;font-family:"Calibri",sans-serif;'> Installation</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 86.7pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor windowtext windowtext;border-image: none;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-size:15px;font-family:"Calibri",sans-serif;'>Result</span></strong></p>
+            </td>
+            <td colspan="7" style="width: 217.7pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:normal;font-size:16px;font-family:"Aptos",sans-serif;text-align:center;'><span style='font-size:15px;font-family:"Calibri",sans-serif;'>Accepted    </span><span style="font-size:15px;font-family:Wingdings;">ü</span></p>
+            </td>
+            <td colspan="7" style="width: 218.4pt;border-width: medium 1pt 1pt medium;border-style: none solid solid none;border-color: currentcolor windowtext windowtext currentcolor;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:normal;font-size:16px;font-family:"Aptos",sans-serif;text-align:center;'><span style='font-size:15px;font-family:"Calibri",sans-serif;'>Rejected </span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="15" style="width: 522.8pt;border-width: medium 1pt 1pt;border-style: none solid solid;border-color: currentcolor windowtext windowtext;border-image: none;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:normal;font-size:16px;font-family:"Aptos",sans-serif;text-align: justify;'><span style='font-family:"Calibri",sans-serif;'>Name & address of employer’s person making and authenticating this report:</span></p>
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:normal;font-size:16px;font-family:"Aptos",sans-serif;text-align: justify;'><span style='font-family:"Calibri",sans-serif;'>Tove Leeds Inspection Services, 789 Compliance Avenue, Mumbai, India</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="15" style="width: 522.8pt;border: medium;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:normal;font-size:16px;font-family:"Aptos",sans-serif;text-align: justify;'><span style='font-family:"Calibri",sans-serif;'></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="13" style="width: 522.8pt;border: medium;padding: 0in 5.4pt;vertical-align: top;">
+                <p style="margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:&quot;Aptos&quot;,sans-serif;text-align: justify;"><span style="font-family:&quot;Calibri&quot;,sans-serif;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="15" style="width: 522.8pt;border: medium;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:normal;font-size:16px;font-family:"Aptos",sans-serif;text-align: justify;'><strong><span style='font-family:"Calibri",sans-serif;'>Declaration:</span></strong><span style='font-family:"Calibri",sans-serif;'> I/We hereby declare that the above information is correct, and the equipment has been thoroughly inspected as far as possible in accordance with manufacturer/standard and found to be free from any apparent defect.</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="13" style="width: 522.8pt;border: medium;padding: 0in 5.4pt;vertical-align: top;">
+                <p style="margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:&quot;Aptos&quot;,sans-serif;text-align: justify;"><span style="font-family:&quot;Calibri&quot;,sans-serif;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="15" style="width: 522.8pt;border: medium;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:normal;font-size:16px;font-family:"Aptos",sans-serif;text-align: justify;'><span style='font-family:"Calibri",sans-serif;'></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="width: 206.75pt;border: medium;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>Inspected by [sign]</span></p>
+            </td>
+            <td colspan="4" rowspan="2" style="width:121.5pt;border:none;padding:0in 5.4pt 0in 5.4pt;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:normal;font-size:16px;font-family:"Aptos",sans-serif;text-align:center;'>[QR CODE]</p>
+            </td>
+            <td colspan="5" style="width: 194.55pt;border: medium;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>Approved by</span></p>
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="width: 206.75pt;border: medium;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'>Ravi Sharma</span></p>
+            </td>
+            <td colspan="5" style="width: 194.55pt;border: medium;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><strong><span style='font-family:"Calibri",sans-serif;'>Shahid Javed </span></strong><span style='font-family:"Calibri",sans-serif;'>Technical Manager</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="6" style="width: 206.75pt;border: medium;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style='font-family:"Calibri",sans-serif;'></span></p>
+            </td>
+            <td colspan="4" style="width: 121.5pt;border: medium;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;text-align: justify;'><span style='font-family:"Calibri",sans-serif;'></span></p>
+            </td>
+            <td colspan="5" style="width: 194.55pt;border: medium;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:"Aptos",sans-serif;'><span style="margin-top: 30px;width:92px;height:35px; display: flex;"><img src="assets/img/newimages/certficate/cer1.png" alt=""><img src="assets/img/newimages/certficate/cert2.jpg" alt=""></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="13" style="width: 522.8pt;border: medium;padding: 0in 5.4pt;vertical-align: top;">
+                <p style="margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height: normal;font-size:16px;font-family:&quot;Aptos&quot;,sans-serif;text-align: justify;"><span style="font-size:15px;font-family:&quot;Calibri&quot;,sans-serif;">&nbsp;</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="15" style="width: 522.8pt;border: medium;padding: 0in 5.4pt;vertical-align: top;">
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:normal;font-size:16px;font-family:"Aptos",sans-serif;text-align: justify;'><span style='font-size:12px;font-family:"Calibri",sans-serif;'></span></p>
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:normal;font-size:16px;font-family:"Aptos",sans-serif;text-align: justify;'><span style='font-size:12px;font-family:"Calibri",sans-serif;'></span></p>
+                <p style='margin-top:0in;margin-right:0in;margin-bottom:.0001pt;margin-left:0in;line-height:normal;font-size:16px;font-family:"Aptos",sans-serif;text-align: justify;'><span style='font-size:12px;font-family:"Calibri",sans-serif;'>Disclaimer: Tove Leeds is not liable for any failure, damage caused by misuse, improper installation, poor maintenance, environmental conditions and user errors etc.</span></p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+            </form>
+        </div>
+    </div>
+</div>
+<?php include("footer.php") ?>
